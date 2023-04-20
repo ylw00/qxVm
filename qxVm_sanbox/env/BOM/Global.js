@@ -1,0 +1,1 @@
+canShar = function canShare() { };
