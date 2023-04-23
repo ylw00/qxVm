@@ -7,7 +7,7 @@
 - 因为是前期版本, 所以并没有加入`dom解析`,属性的方法实现
 - 内部使用`弱引用`, 不会影响内存回收问题以及`new出来的dom节点公用一块内存问题`
 
-## 调用方式
+## 调用方式(z_working目录)
 ```js
 const QXVM_GENERATE = require('../qxVm_sanbox/qxVm.sanbox');
 
