@@ -43,15 +43,15 @@ console.log(result.get_form())
 - 半自动方式可以看(qxVm_sanbox\tools\create_ptototype_js.py)
 
 ## qxVm优化方向(当然新版都是已经实现的)
-- debugger 改为 日志打印, 并加入日志开关
+- debugger改为日志打印,加入日志开关, 并且避免使用`proxy`代理
 - 加入dom解析 可以套壳jsdom, 我是使用了cheerio
 - 优化堆栈替换, 防止检测堆栈
-- 加入动态更换框架内浏览器环境的逻辑(保证框架只加载一次)
+- 加入动态更换框架内浏览器环境的逻辑, 保证框架只加载一次
 - 加入内部指纹库, 可以随意更改指纹
 - 套壳 canvas, 实现canvas指纹生成
 
-## qxVm(最新, 没有开源)
-
+## qxVm(最新)
+- 暂时没开源
 - 框架加载速度 200ms左右
 - dom解析
 - form特性
