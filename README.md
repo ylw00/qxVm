@@ -1,4 +1,4 @@
-# qxVm补环境框架(js)(历史)
+## qxVm补环境框架(历史)
 - 微信公众号: y小白的笔记(https://mp.weixin.qq.com/s/GGqecHvqN54IzL3ap5c28A)
 - git: https://github.com/ylw00/qxVm
 - 基于 `node16`
@@ -49,11 +49,13 @@ console.log(result.get_form())
 - 加入动态更换框架内浏览器环境的逻辑, 保证框架只加载一次
 - 加入内部指纹库, 可以随意更改指纹
 - 套壳 canvas, 实现canvas指纹生成
+- 随机浏览器环境
 
 ## qxVm(最新)
 - 暂时没开源
-- 框架加载速度 200ms左右
+- 框架加载速度 100ms左右
 - dom解析
 - form特性
+- 瑞数, 阿里,腾讯
 ![](https://files.mdnice.com/user/23430/b583c38d-b2e2-454b-960d-657d15d0b101.png)
 
