@@ -1,5 +1,4 @@
 # qxVm补环境框架(js)(历史)
----------------
 - 微信公众号: y小白的笔记(https://mp.weixin.qq.com/s/GGqecHvqN54IzL3ap5c28A)
 - git: https://github.com/ylw00/qxVm
 - 基于 `node16`
