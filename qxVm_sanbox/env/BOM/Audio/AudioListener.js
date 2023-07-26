@@ -1,9 +1,9 @@
 AudioListener = function AudioListener(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(AudioListener);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(AudioListener);
 
 ; (function () {
     const $safe_get_attribute = ['forwardX', 'forwardY', 'forwardZ', 'positionX', 'positionY', 'positionZ', 'upX', 'upY', 'upZ'];
@@ -12,106 +12,119 @@ AudioListener = function AudioListener(createObj_key) {
 
     AudioListener.prototype = {
         get forwardX() {
-            debugger;
             if (!AudioListener.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let ele = qxVm.memory.private_data.get(this).forwardX;
+            let ele = lwVm.memory.private_data.get(this).forwardX;
             if (ele === undefined) {
-                ele = new AudioParam(qxVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38, -3.4028234663852886e+38);
-                qxVm.memory.private_data.get(this).forwardX = ele;
+                ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38, -3.4028234663852886e+38);
+                lwVm.memory.private_data.get(this).forwardX = ele;
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioListener', 'forwardX', arguments, result);
+            return result;
         },
         get forwardY() {
-            debugger;
             if (!AudioListener.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let ele = qxVm.memory.private_data.get(this).forwardY;
+            let ele = lwVm.memory.private_data.get(this).forwardY;
             if (ele === undefined) {
-                ele = new AudioParam(qxVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38, -3.4028234663852886e+38);
-                qxVm.memory.private_data.get(this).forwardY = ele;
+                ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38, -3.4028234663852886e+38);
+                lwVm.memory.private_data.get(this).forwardY = ele;
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioListener', 'forwardY', arguments, result);
+            return result;
         },
         get forwardZ() {
-            debugger;
             if (!AudioListener.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let ele = qxVm.memory.private_data.get(this).forwardZ;
+            let ele = lwVm.memory.private_data.get(this).forwardZ;
             if (ele === undefined) {
-                ele = new AudioParam(qxVm.memory.$createObj_key, "a-rate", -1, 3.4028234663852886e+38, -3.4028234663852886e+38);
-                qxVm.memory.private_data.get(this).forwardZ = ele;
+                ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", -1, 3.4028234663852886e+38, -3.4028234663852886e+38);
+                lwVm.memory.private_data.get(this).forwardZ = ele;
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioListener', 'forwardZ', arguments, result);
+            return result;
         },
         get positionX() {
-            debugger;
             if (!AudioListener.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let ele = qxVm.memory.private_data.get(this).positionX;
+            let ele = lwVm.memory.private_data.get(this).positionX;
             if (ele === undefined) {
-                ele = new AudioParam(qxVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38, -3.4028234663852886e+38);
-                qxVm.memory.private_data.get(this).positionX = ele;
+                ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38, -3.4028234663852886e+38);
+                lwVm.memory.private_data.get(this).positionX = ele;
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioListener', 'positionX', arguments, result);
+            return result;
         },
         get positionY() {
-            debugger;
             if (!AudioListener.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let ele = qxVm.memory.private_data.get(this).positionY;
+            let ele = lwVm.memory.private_data.get(this).positionY;
             if (ele === undefined) {
-                ele = new AudioParam(qxVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38, -3.4028234663852886e+38);
-                qxVm.memory.private_data.get(this).positionY = ele;
+                ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38, -3.4028234663852886e+38);
+                lwVm.memory.private_data.get(this).positionY = ele;
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioListener', 'positionY', arguments, result);
+            return result;
         },
         get positionZ() {
-            debugger;
             if (!AudioListener.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let ele = qxVm.memory.private_data.get(this).positionZ;
+            let ele = lwVm.memory.private_data.get(this).positionZ;
             if (ele === undefined) {
-                ele = new AudioParam(qxVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38, -3.4028234663852886e+38);
-                qxVm.memory.private_data.get(this).positionZ = ele;
+                ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38, -3.4028234663852886e+38);
+                lwVm.memory.private_data.get(this).positionZ = ele;
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioListener', 'positionZ', arguments, result);
+            return result;
         },
         setOrientation() {
-            debugger;
             if (!AudioListener.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'AudioListener', 'setOrientation', arguments, result);
+            return result;
         },
         setPosition() {
-            debugger;
             if (!AudioListener.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'AudioListener', 'setPosition', arguments, result);
+            return result;
         },
         get upX() {
-            debugger;
             if (!AudioListener.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let ele = qxVm.memory.private_data.get(this).upX;
+            let ele = lwVm.memory.private_data.get(this).upX;
             if (ele === undefined) {
-                ele = new AudioParam(qxVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38, -3.4028234663852886e+38);
-                qxVm.memory.private_data.get(this).upX = ele;
+                ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38, -3.4028234663852886e+38);
+                lwVm.memory.private_data.get(this).upX = ele;
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioListener', 'upX', arguments, result);
+            return result;
         },
         get upY() {
-            debugger;
             if (!AudioListener.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let ele = qxVm.memory.private_data.get(this).upY;
+            let ele = lwVm.memory.private_data.get(this).upY;
             if (ele === undefined) {
-                ele = new AudioParam(qxVm.memory.$createObj_key, "a-rate", 1, 3.4028234663852886e+38, -3.4028234663852886e+38);
-                qxVm.memory.private_data.get(this).upY = ele;
+                ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 1, 3.4028234663852886e+38, -3.4028234663852886e+38);
+                lwVm.memory.private_data.get(this).upY = ele;
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioListener', 'upY', arguments, result);
+            return result;
         },
         get upZ() {
-            debugger;
             if (!AudioListener.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let ele = qxVm.memory.private_data.get(this).upZ;
+            let ele = lwVm.memory.private_data.get(this).upZ;
             if (ele === undefined) {
-                ele = new AudioParam(qxVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38);
-                qxVm.memory.private_data.get(this).upZ = ele;
+                ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38);
+                lwVm.memory.private_data.get(this).upZ = ele;
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioListener', 'upZ', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(AudioListener.prototype, "AudioListener");
-    qxVm.safeDescriptor_addConstructor(AudioListener);
-    qxVm.safe_Objattribute(AudioListener, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(AudioListener.prototype, "AudioListener");
+    lwVm.safeDescriptor_addConstructor(AudioListener);
+    lwVm.safe_Objattribute(AudioListener, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 })();
 

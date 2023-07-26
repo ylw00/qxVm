@@ -32,7 +32,7 @@ Error.prepareStackTrace = function (error, callSites) {
 };
 
 
-qxVm.Illegal_error = function Illegal_error(message, stack) {
+lwVm.Illegal_error = function Illegal_error(message, stack) {
     let e = new TypeError()
     if (message) e.message = message
     else e.message = "Illegal constructor"

@@ -1,9 +1,9 @@
 TrustedTypePolicyFactory = function TrustedTypePolicyFactory(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(TrustedTypePolicyFactory);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(TrustedTypePolicyFactory);
 
 ; (function () {
     const $safe_get_attribute = ['defaultPolicy', 'emptyHTML', 'emptyScript'];
@@ -12,55 +12,72 @@ TrustedTypePolicyFactory = function TrustedTypePolicyFactory(createObj_key) {
 
     TrustedTypePolicyFactory.prototype = {
         createPolicy() {
-            debugger;
             if (!TrustedTypePolicyFactory.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'TrustedTypePolicyFactory', 'createPolicy', arguments, result);
+            return result;
         },
         get defaultPolicy() {
-            debugger;
             if (!TrustedTypePolicyFactory.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return null;
+            let result = null;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'TrustedTypePolicyFactory', 'defaultPolicy', arguments, result);
+            return result;
         },
         get emptyHTML() {
-            debugger;
             if (!TrustedTypePolicyFactory.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).emptyHTML, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).emptyHTML, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'TrustedTypePolicyFactory', 'emptyHTML', arguments, result);
+            return result;
         },
         get emptyScript() {
-            debugger;
             if (!TrustedTypePolicyFactory.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).emptyScript, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).emptyScript, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'TrustedTypePolicyFactory', 'emptyScript', arguments, result);
+            return result;
         },
         getAttributeType() {
-            debugger;
             if (!TrustedTypePolicyFactory.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'TrustedTypePolicyFactory', 'getAttributeType', arguments, result);
+            return result;
         },
         getPropertyType() {
-            debugger;
             if (!TrustedTypePolicyFactory.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'TrustedTypePolicyFactory', 'getPropertyType', arguments, result);
+            return result;
         },
         getTypeMapping() {
-            debugger;
             if (!TrustedTypePolicyFactory.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'TrustedTypePolicyFactory', 'getTypeMapping', arguments, result);
+            return result;
         },
         isHTML() {
-            debugger;
             if (!TrustedTypePolicyFactory.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'TrustedTypePolicyFactory', 'isHTML', arguments, result);
+            return result;
         },
         isScript() {
-            debugger;
             if (!TrustedTypePolicyFactory.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'TrustedTypePolicyFactory', 'isScript', arguments, result);
+            return result;
         },
         isScriptURL() {
-            debugger;
             if (!TrustedTypePolicyFactory.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'TrustedTypePolicyFactory', 'isScriptURL', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(TrustedTypePolicyFactory.prototype, "TrustedTypePolicyFactory");
-    qxVm.safeDescriptor_addConstructor(TrustedTypePolicyFactory);
-    qxVm.safe_Objattribute(TrustedTypePolicyFactory, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(TrustedTypePolicyFactory.prototype, "TrustedTypePolicyFactory");
+    lwVm.safeDescriptor_addConstructor(TrustedTypePolicyFactory);
+    lwVm.safe_Objattribute(TrustedTypePolicyFactory, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(TrustedTypePolicyFactory.prototype, EventTarget.prototype);
     Object.setPrototypeOf(TrustedTypePolicyFactory, EventTarget);
 })();
-trustedTypes = new TrustedTypePolicyFactory(qxVm.memory.$createObj_key)
+trustedTypes = new TrustedTypePolicyFactory(lwVm.memory.$createObj_key)
 

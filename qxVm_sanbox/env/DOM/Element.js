@@ -1,7 +1,7 @@
 Element = function Element() {
     throw new TypeError("Illegal constructor");
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(Element);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(Element);
 
 ; (function () {
     const $safe_get_attribute = [
@@ -43,698 +43,1008 @@ Element = function Element() {
 
     Element.prototype = {
         after() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'after', arguments, result);
+            return result;
         },
         animate() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'animate', arguments, result);
+            return result;
         },
         append() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'append', arguments, result);
+            return result;
         },
         get ariaAtomic() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaAtomic', arguments, result);
+            return result;
         },
         set ariaAtomic(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaAtomic', arguments);
+            lwVm.memory.private_data.get(this).ariaAtomic = value;
         },
         get ariaAutoComplete() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaAutoComplete', arguments, result);
+            return result;
         },
         set ariaAutoComplete(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaAutoComplete', arguments);
+            lwVm.memory.private_data.get(this).ariaAutoComplete = value;
         },
         get ariaBusy() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaBusy', arguments, result);
+            return result;
         },
         set ariaBusy(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaBusy', arguments);
+            lwVm.memory.private_data.get(this).ariaBusy = value;
         },
         get ariaChecked() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaChecked', arguments, result);
+            return result;
         },
         set ariaChecked(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaChecked', arguments);
+            lwVm.memory.private_data.get(this).ariaChecked = value;
         },
         get ariaColCount() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaColCount', arguments, result);
+            return result;
         },
         set ariaColCount(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaColCount', arguments);
+            lwVm.memory.private_data.get(this).ariaColCount = value;
         },
         get ariaColIndex() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaColIndex', arguments, result);
+            return result;
         },
         set ariaColIndex(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaColIndex', arguments);
+            lwVm.memory.private_data.get(this).ariaColIndex = value;
         },
         get ariaColSpan() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaColSpan', arguments, result);
+            return result;
         },
         set ariaColSpan(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaColSpan', arguments);
+            lwVm.memory.private_data.get(this).ariaColSpan = value;
         },
         get ariaCurrent() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaCurrent', arguments, result);
+            return result;
         },
         set ariaCurrent(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaCurrent', arguments);
+            lwVm.memory.private_data.get(this).ariaCurrent = value;
         },
         get ariaDescription() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaDescription', arguments, result);
+            return result;
         },
         set ariaDescription(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaDescription', arguments);
+            lwVm.memory.private_data.get(this).ariaDescription = value;
         },
         get ariaDisabled() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaDisabled', arguments, result);
+            return result;
         },
         set ariaDisabled(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaDisabled', arguments);
+            lwVm.memory.private_data.get(this).ariaDisabled = value;
         },
         get ariaExpanded() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaExpanded', arguments, result);
+            return result;
         },
         set ariaExpanded(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaExpanded', arguments);
+            lwVm.memory.private_data.get(this).ariaExpanded = value;
         },
         get ariaHasPopup() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaHasPopup', arguments, result);
+            return result;
         },
         set ariaHasPopup(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaHasPopup', arguments);
+            lwVm.memory.private_data.get(this).ariaHasPopup = value;
         },
         get ariaHidden() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaHidden', arguments, result);
+            return result;
         },
         set ariaHidden(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaHidden', arguments);
+            lwVm.memory.private_data.get(this).ariaHidden = value;
         },
         get ariaKeyShortcuts() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaKeyShortcuts', arguments, result);
+            return result;
         },
         set ariaKeyShortcuts(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaKeyShortcuts', arguments);
+            lwVm.memory.private_data.get(this).ariaKeyShortcuts = value;
         },
         get ariaLabel() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaLabel', arguments, result);
+            return result;
         },
         set ariaLabel(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaLabel', arguments);
+            lwVm.memory.private_data.get(this).ariaLabel = value;
         },
         get ariaLevel() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaLevel', arguments, result);
+            return result;
         },
         set ariaLevel(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaLevel', arguments);
+            lwVm.memory.private_data.get(this).ariaLevel = value;
         },
         get ariaLive() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaLive', arguments, result);
+            return result;
         },
         set ariaLive(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaLive', arguments);
+            lwVm.memory.private_data.get(this).ariaLive = value;
         },
         get ariaModal() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaModal', arguments, result);
+            return result;
         },
         set ariaModal(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaModal', arguments);
+            lwVm.memory.private_data.get(this).ariaModal = value;
         },
         get ariaMultiLine() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaMultiLine', arguments, result);
+            return result;
         },
         set ariaMultiLine(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaMultiLine', arguments);
+            lwVm.memory.private_data.get(this).ariaMultiLine = value;
         },
         get ariaMultiSelectable() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaMultiSelectable', arguments, result);
+            return result;
         },
         set ariaMultiSelectable(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaMultiSelectable', arguments);
+            lwVm.memory.private_data.get(this).ariaMultiSelectable = value;
         },
         get ariaOrientation() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaOrientation', arguments, result);
+            return result;
         },
         set ariaOrientation(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaOrientation', arguments);
+            lwVm.memory.private_data.get(this).ariaOrientation = value;
         },
         get ariaPlaceholder() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaPlaceholder', arguments, result);
+            return result;
         },
         set ariaPlaceholder(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaPlaceholder', arguments);
+            lwVm.memory.private_data.get(this).ariaPlaceholder = value;
         },
         get ariaPosInSet() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaPosInSet', arguments, result);
+            return result;
         },
         set ariaPosInSet(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaPosInSet', arguments);
+            lwVm.memory.private_data.get(this).ariaPosInSet = value;
         },
         get ariaPressed() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaPressed', arguments, result);
+            return result;
         },
         set ariaPressed(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaPressed', arguments);
+            lwVm.memory.private_data.get(this).ariaPressed = value;
         },
         get ariaReadOnly() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaReadOnly', arguments, result);
+            return result;
         },
         set ariaReadOnly(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaReadOnly', arguments);
+            lwVm.memory.private_data.get(this).ariaReadOnly = value;
         },
         get ariaRelevant() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaRelevant', arguments, result);
+            return result;
         },
         set ariaRelevant(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaRelevant', arguments);
+            lwVm.memory.private_data.get(this).ariaRelevant = value;
         },
         get ariaRequired() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaRequired', arguments, result);
+            return result;
         },
         set ariaRequired(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaRequired', arguments);
+            lwVm.memory.private_data.get(this).ariaRequired = value;
         },
         get ariaRoleDescription() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaRoleDescription', arguments, result);
+            return result;
         },
         set ariaRoleDescription(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaRoleDescription', arguments);
+            lwVm.memory.private_data.get(this).ariaRoleDescription = value;
         },
         get ariaRowCount() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaRowCount', arguments, result);
+            return result;
         },
         set ariaRowCount(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaRowCount', arguments);
+            lwVm.memory.private_data.get(this).ariaRowCount = value;
         },
         get ariaRowIndex() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaRowIndex', arguments, result);
+            return result;
         },
         set ariaRowIndex(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaRowIndex', arguments);
+            lwVm.memory.private_data.get(this).ariaRowIndex = value;
         },
         get ariaRowSpan() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaRowSpan', arguments, result);
+            return result;
         },
         set ariaRowSpan(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaRowSpan', arguments);
+            lwVm.memory.private_data.get(this).ariaRowSpan = value;
         },
         get ariaSelected() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaSelected', arguments, result);
+            return result;
         },
         set ariaSelected(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaSelected', arguments);
+            lwVm.memory.private_data.get(this).ariaSelected = value;
         },
         get ariaSetSize() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaSetSize', arguments, result);
+            return result;
         },
         set ariaSetSize(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaSetSize', arguments);
+            lwVm.memory.private_data.get(this).ariaSetSize = value;
         },
         get ariaSort() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaSort', arguments, result);
+            return result;
         },
         set ariaSort(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaSort', arguments);
+            lwVm.memory.private_data.get(this).ariaSort = value;
         },
         get ariaValueMax() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaValueMax', arguments, result);
+            return result;
         },
         set ariaValueMax(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaValueMax', arguments);
+            lwVm.memory.private_data.get(this).ariaValueMax = value;
         },
         get ariaValueMin() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaValueMin', arguments, result);
+            return result;
         },
         set ariaValueMin(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaValueMin', arguments);
+            lwVm.memory.private_data.get(this).ariaValueMin = value;
         },
         get ariaValueNow() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaValueNow', arguments, result);
+            return result;
         },
         set ariaValueNow(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaValueNow', arguments);
+            lwVm.memory.private_data.get(this).ariaValueNow = value;
         },
         get ariaValueText() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'ariaValueText', arguments, result);
+            return result;
         },
         set ariaValueText(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'ariaValueText', arguments);
+            lwVm.memory.private_data.get(this).ariaValueText = value;
         },
         get assignedSlot() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'assignedSlot', arguments, result);
+            return result;
         },
         attachShadow() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'attachShadow', arguments, result);
+            return result;
         },
         get attributeStyleMap() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'attributeStyleMap', arguments, result);
+            return result;
         },
         get attributes() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'attributes', arguments, result);
+            return result;
         },
         before() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'before', arguments, result);
+            return result;
         },
         get childElementCount() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'childElementCount', arguments, result);
+            return result;
         },
         get children() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'children', arguments, result);
+            return result;
         },
         get classList() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'classList', arguments, result);
+            return result;
         },
         set classList(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'classList', arguments);
+            lwVm.memory.private_data.get(this).classList = value;
         },
         get className() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'className', arguments, result);
+            return result;
         },
         set className(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'className', arguments);
+            lwVm.memory.private_data.get(this).className = value;
         },
         get clientHeight() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return 1290
+            let result = 1290;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'clientHeight', arguments, result);
+            return result;
         },
         get clientLeft() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'clientLeft', arguments, result);
+            return result;
         },
         get clientTop() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'clientTop', arguments, result);
+            return result;
         },
         get clientWidth() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return 2560
+            let result = 2560;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'clientWidth', arguments, result);
+            return result;
         },
         closest() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'closest', arguments, result);
+            return result;
         },
         computedStyleMap() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'computedStyleMap', arguments, result);
+            return result;
         },
         get elementTiming() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'elementTiming', arguments, result);
+            return result;
         },
         set elementTiming(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'elementTiming', arguments);
+            lwVm.memory.private_data.get(this).elementTiming = value;
         },
         get firstElementChild() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'firstElementChild', arguments, result);
+            return result;
         },
         getAnimations() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'getAnimations', arguments, result);
+            return result;
         },
         getAttribute() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'getAttribute', arguments, result);
+            return result;
         },
         getAttributeNS() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'getAttributeNS', arguments, result);
+            return result;
         },
         getAttributeNames() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'getAttributeNames', arguments, result);
+            return result;
         },
         getAttributeNode() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'getAttributeNode', arguments, result);
+            return result;
         },
         getAttributeNodeNS() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'getAttributeNodeNS', arguments, result);
+            return result;
         },
         getBoundingClientRect() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'getBoundingClientRect', arguments, result);
+            return result;
         },
         getClientRects() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'getClientRects', arguments, result);
+            return result;
         },
         getElementsByClassName() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'getElementsByClassName', arguments, result);
+            return result;
         },
         getElementsByTagName() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'getElementsByTagName', arguments, result);
+            return result;
         },
         getElementsByTagNameNS() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'getElementsByTagNameNS', arguments, result);
+            return result;
         },
         getInnerHTML() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'getInnerHTML', arguments, result);
+            return result;
         },
         hasAttribute() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'hasAttribute', arguments, result);
+            return result;
         },
         hasAttributeNS() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'hasAttributeNS', arguments, result);
+            return result;
         },
         hasAttributes() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'hasAttributes', arguments, result);
+            return result;
         },
         hasPointerCapture() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'hasPointerCapture', arguments, result);
+            return result;
         },
         get id() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'id', arguments, result);
+            return result;
         },
         set id(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'id', arguments);
+            lwVm.memory.private_data.get(this).id = value;
         },
         get innerHTML() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).innerHTML, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).innerHTML, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'innerHTML', arguments, result);
+            return result;
         },
         set innerHTML(value) {
-            debugger;
-            qxVm.memory.private_data.get(this).innerHTML = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'innerHTML', arguments);
+            lwVm.memory.private_data.get(this).innerHTML = value + "";
         },
         insertAdjacentElement() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'insertAdjacentElement', arguments, result);
+            return result;
         },
         insertAdjacentHTML() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'insertAdjacentHTML', arguments, result);
+            return result;
         },
         insertAdjacentText() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'insertAdjacentText', arguments, result);
+            return result;
         },
         get lastElementChild() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'lastElementChild', arguments, result);
+            return result;
         },
         get localName() {
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.htmls_toStringTag(this).toLowerCase()
+            let result = lwVm.htmls_toStringTag(this).toLowerCase();
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'localName', arguments, result);
+            return result;
         },
         matches() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'matches', arguments, result);
+            return result;
         },
         get namespaceURI() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'namespaceURI', arguments, result);
+            return result;
         },
         get nextElementSibling() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'nextElementSibling', arguments, result);
+            return result;
         },
         get onbeforecopy() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'onbeforecopy', arguments, result);
+            return result;
         },
         set onbeforecopy(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'onbeforecopy', arguments);
+            lwVm.memory.private_data.get(this).onbeforecopy = value;
         },
         get onbeforecut() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'onbeforecut', arguments, result);
+            return result;
         },
         set onbeforecut(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'onbeforecut', arguments);
+            lwVm.memory.private_data.get(this).onbeforecut = value;
         },
         get onbeforepaste() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'onbeforepaste', arguments, result);
+            return result;
         },
         set onbeforepaste(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'onbeforepaste', arguments);
+            lwVm.memory.private_data.get(this).onbeforepaste = value;
         },
         get onfullscreenchange() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'onfullscreenchange', arguments, result);
+            return result;
         },
         set onfullscreenchange(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'onfullscreenchange', arguments);
+            lwVm.memory.private_data.get(this).onfullscreenchange = value;
         },
         get onfullscreenerror() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'onfullscreenerror', arguments, result);
+            return result;
         },
         set onfullscreenerror(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'onfullscreenerror', arguments);
+            lwVm.memory.private_data.get(this).onfullscreenerror = value;
         },
         get onsearch() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'onsearch', arguments, result);
+            return result;
         },
         set onsearch(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'onsearch', arguments);
+            lwVm.memory.private_data.get(this).onsearch = value;
         },
         get onwebkitfullscreenchange() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'onwebkitfullscreenchange', arguments, result);
+            return result;
         },
         set onwebkitfullscreenchange(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'onwebkitfullscreenchange', arguments);
+            lwVm.memory.private_data.get(this).onwebkitfullscreenchange = value;
         },
         get onwebkitfullscreenerror() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'onwebkitfullscreenerror', arguments, result);
+            return result;
         },
         set onwebkitfullscreenerror(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'onwebkitfullscreenerror', arguments);
+            lwVm.memory.private_data.get(this).onwebkitfullscreenerror = value;
         },
         get outerHTML() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'outerHTML', arguments, result);
+            return result;
         },
         set outerHTML(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'outerHTML', arguments);
+            lwVm.memory.private_data.get(this).outerHTML = value;
         },
         get part() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'part', arguments, result);
+            return result;
         },
         set part(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'part', arguments);
+            lwVm.memory.private_data.get(this).part = value;
         },
         get prefix() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'prefix', arguments, result);
+            return result;
         },
         prepend() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'prepend', arguments, result);
+            return result;
         },
         get previousElementSibling() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'previousElementSibling', arguments, result);
+            return result;
         },
         querySelector() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'querySelector', arguments, result);
+            return result;
         },
         querySelectorAll() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'querySelectorAll', arguments, result);
+            return result;
         },
         releasePointerCapture() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'releasePointerCapture', arguments, result);
+            return result;
         },
         remove() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'remove', arguments, result);
+            return result;
         },
         removeAttribute() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'removeAttribute', arguments, result);
+            return result;
         },
         removeAttributeNS() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'removeAttributeNS', arguments, result);
+            return result;
         },
         removeAttributeNode() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'removeAttributeNode', arguments, result);
+            return result;
         },
         replaceChildren() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'replaceChildren', arguments, result);
+            return result;
         },
         replaceWith() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'replaceWith', arguments, result);
+            return result;
         },
         requestFullscreen() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'requestFullscreen', arguments, result);
+            return result;
         },
         requestPointerLock() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'requestPointerLock', arguments, result);
+            return result;
         },
         scroll() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'scroll', arguments, result);
+            return result;
         },
         scrollBy() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'scrollBy', arguments, result);
+            return result;
         },
         get scrollHeight() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'scrollHeight', arguments, result);
+            return result;
         },
         scrollIntoView() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'scrollIntoView', arguments, result);
+            return result;
         },
 
         scrollIntoViewIfNeeded() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'scrollIntoViewIfNeeded', arguments, result);
+            return result;
         },
         get scrollLeft() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'scrollLeft', arguments, result);
+            return result;
         },
         set scrollLeft(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'scrollLeft', arguments);
+            lwVm.memory.private_data.get(this).scrollLeft = value;
         },
         scrollTo() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'scrollTo', arguments, result);
+            return result;
         },
         get scrollTop() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'scrollTop', arguments, result);
+            return result;
         },
         set scrollTop(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'scrollTop', arguments);
+            lwVm.memory.private_data.get(this).scrollTop = value;
         },
         get scrollWidth() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'scrollWidth', arguments, result);
+            return result;
         },
         setAttribute() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'setAttribute', arguments, result);
+            return result;
         },
         setAttributeNS() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'setAttributeNS', arguments, result);
+            return result;
         },
         setAttributeNode() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'setAttributeNode', arguments, result);
+            return result;
         },
         setAttributeNodeNS() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'setAttributeNodeNS', arguments, result);
+            return result;
         },
         setPointerCapture() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'setPointerCapture', arguments, result);
+            return result;
         },
         get shadowRoot() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'shadowRoot', arguments, result);
+            return result;
         },
         get slot() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'slot', arguments, result);
+            return result;
         },
         set slot(value) {
-            debugger;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Element', 'slot', arguments);
+            lwVm.memory.private_data.get(this).slot = value;
         },
         get tagName() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'tagName', arguments, result);
+            return result;
         },
         toggleAttribute() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'toggleAttribute', arguments, result);
+            return result;
         },
         webkitMatchesSelector() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'webkitMatchesSelector', arguments, result);
+            return result;
         },
         webkitRequestFullScreen() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'webkitRequestFullScreen', arguments, result);
+            return result;
         },
         webkitRequestFullscreen() {
-            debugger;
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Element', 'webkitRequestFullscreen', arguments, result);
+            return result;
         }
     };
-    qxVm.rename(Element.prototype, "Element");
-    qxVm.safeDescriptor_addConstructor(Element);
-    qxVm.safe_Objattribute(Element, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(Element.prototype, "Element");
+    lwVm.safeDescriptor_addConstructor(Element);
+    lwVm.safe_Objattribute(Element, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.defineProperties(Element.prototype, {
         [Symbol.unscopables]: {

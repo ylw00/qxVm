@@ -1,16 +1,16 @@
 Performance = function Performance(createObj_key) {//构造函数
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(Performance);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(Performance);
 
 ; (function () {
     MemoryInfo = function MemoryInfo(createObj_key) {
-        if (createObj_key !== qxVm.memory.$createObj_key) {
+        if (createObj_key !== lwVm.memory.$createObj_key) {
             throw new TypeError("Illegal constructor");
         }
-    }; qxVm.safefunction(MemoryInfo);
+    }; lwVm.safefunction(MemoryInfo);
 
     ; (function () {
         const $safe_get_attribute = ['jsHeapSizeLimit', 'totalJSHeapSize', 'usedJSHeapSize'];
@@ -19,24 +19,27 @@ Performance = function Performance(createObj_key) {//构造函数
 
         MemoryInfo.prototype = {
             get jsHeapSizeLimit() {
-                debugger;
                 if (!MemoryInfo.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-                return 2330000000;
+            let result = 2330000000;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MemoryInfo', 'jsHeapSizeLimit', arguments, result);
+            return result;
             },
             get totalJSHeapSize() {
-                debugger;
                 if (!MemoryInfo.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-                return 18200000;
+            let result = 18200000;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MemoryInfo', 'totalJSHeapSize', arguments, result);
+            return result;
             },
             get usedJSHeapSize() {
-                debugger;
                 if (!MemoryInfo.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-                return 15200000;
+            let result = 15200000;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MemoryInfo', 'usedJSHeapSize', arguments, result);
+            return result;
             },
         }
-        qxVm.rename(MemoryInfo.prototype, "MemoryInfo");
-        qxVm.safeDescriptor_addConstructor(MemoryInfo);
-        qxVm.safe_Objattribute(MemoryInfo, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+        lwVm.rename(MemoryInfo.prototype, "MemoryInfo");
+        lwVm.safeDescriptor_addConstructor(MemoryInfo);
+        lwVm.safe_Objattribute(MemoryInfo, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
     })();
 
 
@@ -47,32 +50,42 @@ Performance = function Performance(createObj_key) {//构造函数
     // Performance.prototype.eventCounts
     Performance.prototype = {
         clearMarks() {
-            debugger;
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Performance', 'clearMarks', arguments, result);
+            return result;
         },
         clearMeasures() {
-            debugger;
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Performance', 'clearMeasures', arguments, result);
+            return result;
         },
         clearResourceTimings() {
-            debugger;
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Performance', 'clearResourceTimings', arguments, result);
+            return result;
         },
         get eventCounts() {
-            debugger;
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).eventCounts, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).eventCounts, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Performance', 'eventCounts', arguments, result);
+            return result;
         },
         getEntries() {
-            debugger;
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Performance', 'getEntries', arguments, result);
+            return result;
         },
         getEntriesByName() {
-            debugger;
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Performance', 'getEntriesByName', arguments, result);
+            return result;
         },
         getEntriesByType(type) {
-            debugger;
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
             if (type === undefined)
                 throw new TypeError(`Failed to execute 'getEntriesByType' on 'Performance': 1 argument required, but only 0 present.`)
@@ -81,7 +94,6 @@ Performance = function Performance(createObj_key) {//构造函数
             let ele;
             switch (type){
                 default:
-                    debugger;
                     ele = [];
                     break
             };
@@ -89,81 +101,98 @@ Performance = function Performance(createObj_key) {//构造函数
 
         },
         mark() {
-            debugger;
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Performance', 'mark', arguments, result);
+            return result;
         },
         measure() {
-            debugger;
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Performance', 'measure', arguments, result);
+            return result;
         },
         get memory() {
-            debugger;
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let ele = qxVm.memory.private_data.get(this).memory;
+            let ele = lwVm.memory.private_data.get(this).memory;
             if (!ele) {
-                ele = new MemoryInfo(qxVm.memory.$createObj_key);
-                qxVm.memory.private_data.get(this).memory = ele;
+                ele = new MemoryInfo(lwVm.memory.$createObj_key);
+                lwVm.memory.private_data.get(this).memory = ele;
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Performance', 'if ', arguments, result);
+            return result;
         },
         get navigation() {
-            debugger;
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let ele = qxVm.memory.private_data.get(this).navigation;
+            let ele = lwVm.memory.private_data.get(this).navigation;
             if (!ele) {
-                ele = new PerformanceNavigation(qxVm.memory.$createObj_key);
-                qxVm.memory.private_data.get(this).navigation = ele;
+                ele = new PerformanceNavigation(lwVm.memory.$createObj_key);
+                lwVm.memory.private_data.get(this).navigation = ele;
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Performance', 'if ', arguments, result);
+            return result;
         },
         now() {
-            debugger;
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Performance', 'now', arguments, result);
+            return result;
         },
         get onresourcetimingbufferfull() {
-            debugger;
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onresourcetimingbufferfull, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onresourcetimingbufferfull, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Performance', 'onresourcetimingbufferfull', arguments, result);
+            return result;
         },
         set onresourcetimingbufferfull(value) {
-            debugger;
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onresourcetimingbufferfull = value;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Performance', 'onresourcetimingbufferfull', arguments);
+            lwVm.memory.private_data.get(this).onresourcetimingbufferfull = value;
         },
         setResourceTimingBufferSize() {
-            debugger;
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Performance', 'setResourceTimingBufferSize', arguments, result);
+            return result;
         },
         get timeOrigin() {
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let ele = qxVm.memory.private_data.get(this).timeOrigin;
+            let ele = lwVm.memory.private_data.get(this).timeOrigin;
             if (!ele){
                 ele = (new Date().getTime()) + parseFloat((Math.random()).toFixed(1))
-                qxVm.memory.private_data.get(this).timeOrigin = ele
+                lwVm.memory.private_data.get(this).timeOrigin = ele
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Performance', 'timeOrigin', arguments, result);
+            return result;
         },
         get timing() {
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let ele = qxVm.memory.private_data.get(this).timing;
+            let ele = lwVm.memory.private_data.get(this).timing;
             if (!ele){
-                ele = new PerformanceTiming(qxVm.memory.$createObj_key, parseInt(this.timeOrigin));
-                qxVm.memory.private_data.get(this).timing = ele;
+                ele = new PerformanceTiming(lwVm.memory.$createObj_key, parseInt(this.timeOrigin));
+                lwVm.memory.private_data.get(this).timing = ele;
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Performance', 'timing', arguments, result);
+            return result;
         },
         toJSON() {
-            debugger;
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Performance', 'toJSON', arguments, result);
+            return result;
         }
     };
 
-    qxVm.rename(Performance.prototype, "Performance");
-    qxVm.safeDescriptor_addConstructor(Performance);
-    qxVm.safe_Objattribute(Performance, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(Performance.prototype, "Performance");
+    lwVm.safeDescriptor_addConstructor(Performance);
+    lwVm.safe_Objattribute(Performance, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(Performance.prototype, EventTarget.prototype);
     Object.setPrototypeOf(Performance, EventTarget);
 })();
-performance = new Performance(qxVm.memory.$createObj_key);
+performance = new Performance(lwVm.memory.$createObj_key);
 

@@ -1,9 +1,9 @@
 BaseAudioContext = function BaseAudioContext(createObj_key) {//构造函数
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(BaseAudioContext);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(BaseAudioContext);
 
 ; (function () {
     const $safe_get_attribute = ['audioWorklet', 'currentTime', 'destination', 'listener', 'onstatechange', 'sampleRate', 'state'];
@@ -17,145 +17,186 @@ BaseAudioContext = function BaseAudioContext(createObj_key) {//构造函数
     
     BaseAudioContext.prototype = {
         get audioWorklet() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let ele = qxVm.memory.private_data.get(this).audioWorklet;
+            let ele = lwVm.memory.private_data.get(this).audioWorklet;
             if (ele === undefined){
-                ele = new AudioWorklet(qxVm.memory.$createObj_key);
-                qxVm.memory.private_data.get(this).audioWorklet = ele;
+                ele = new AudioWorklet(lwVm.memory.$createObj_key);
+                lwVm.memory.private_data.get(this).audioWorklet = ele;
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'BaseAudioContext', 'audioWorklet', arguments, result);
+            return result;
         },
         createAnalyser() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createAnalyser', arguments, result);
+            return result;
         },
         createBiquadFilter() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createBiquadFilter', arguments, result);
+            return result;
         },
         createBuffer() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createBuffer', arguments, result);
+            return result;
         },
         createBufferSource() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createBufferSource', arguments, result);
+            return result;
         },
         createChannelMerger() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createChannelMerger', arguments, result);
+            return result;
         },
         createChannelSplitter() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createChannelSplitter', arguments, result);
+            return result;
         },
         createConstantSource() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createConstantSource', arguments, result);
+            return result;
         },
         createConvolver() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createConvolver', arguments, result);
+            return result;
         },
         createDelay() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createDelay', arguments, result);
+            return result;
         },
         createDynamicsCompressor() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let ele = new DynamicsCompressorNode(qxVm.memory.$createObj_key);
+            let ele = new DynamicsCompressorNode(lwVm.memory.$createObj_key);
             ele.channelCountMode = "clamped-max";
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createDynamicsCompressor', arguments, result);
+            return result;
         },
         createGain() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createGain', arguments, result);
+            return result;
         },
         createIIRFilter() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createIIRFilter', arguments, result);
+            return result;
         },
         createOscillator() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return new OscillatorNode();
+            let result = new OscillatorNode();;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createOscillator', arguments, result);
+            return result;
         },
         createPanner() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createPanner', arguments, result);
+            return result;
         },
         createPeriodicWave() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createPeriodicWave', arguments, result);
+            return result;
         },
         createScriptProcessor() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createScriptProcessor', arguments, result);
+            return result;
         },
         createStereoPanner() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createStereoPanner', arguments, result);
+            return result;
         },
         createWaveShaper() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createWaveShaper', arguments, result);
+            return result;
         },
         get currentTime() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).currentTime, 0);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).currentTime, 0);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'BaseAudioContext', 'currentTime', arguments, result);
+            return result;
         },
         decodeAudioData() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'decodeAudioData', arguments, result);
+            return result;
         },
         get destination() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let ele = qxVm.memory.private_data.get(this).destination;
+            let ele = lwVm.memory.private_data.get(this).destination;
             if (ele === undefined){
-                ele = new AudioDestinationNode(qxVm.memory.$createObj_key, "explicit");
-                qxVm.memory.private_data.get(this).destination = ele;
+                ele = new AudioDestinationNode(lwVm.memory.$createObj_key, "explicit");
+                lwVm.memory.private_data.get(this).destination = ele;
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'BaseAudioContext', 'destination', arguments, result);
+            return result;
         },
         get listener() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let ele = qxVm.memory.private_data.get(this).listener;
+            let ele = lwVm.memory.private_data.get(this).listener;
             if (ele === undefined){
-                ele = new AudioListener(qxVm.memory.$createObj_key);
-                qxVm.memory.private_data.get(this).listener = ele;
+                ele = new AudioListener(lwVm.memory.$createObj_key);
+                lwVm.memory.private_data.get(this).listener = ele;
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'BaseAudioContext', 'listener', arguments, result);
+            return result;
         },
         get onstatechange() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onstatechange, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onstatechange, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'BaseAudioContext', 'onstatechange', arguments, result);
+            return result;
         },
         set onstatechange(value) {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onstatechange = value;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'BaseAudioContext', 'onstatechange', arguments);
+            lwVm.memory.private_data.get(this).onstatechange = value;
         },
         get sampleRate() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.memory.private_data.get(this).sampleRate;
+            let result = lwVm.memory.private_data.get(this).sampleRate;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'BaseAudioContext', 'sampleRate', arguments, result);
+            return result;
         },
         get state() {
-            debugger;
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).state, "suspended");
+            return lwVm.abs(lwVm.memory.private_data.get(this).state, "suspended");
         }
     }
 
-    qxVm.rename(BaseAudioContext.prototype, "BaseAudioContext");
-    qxVm.safeDescriptor_addConstructor(BaseAudioContext);
-    qxVm.safe_Objattribute(BaseAudioContext, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(BaseAudioContext.prototype, "BaseAudioContext");
+    lwVm.safeDescriptor_addConstructor(BaseAudioContext);
+    lwVm.safe_Objattribute(BaseAudioContext, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(BaseAudioContext.prototype, EventTarget.prototype);
     Object.setPrototypeOf(BaseAudioContext, EventTarget);

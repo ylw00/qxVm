@@ -1,9 +1,9 @@
 HTMLInputElement = function HTMLInputElement(createObj_key) {//构造函数
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(HTMLInputElement);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(HTMLInputElement);
 
 ; (function () {
     const $safe_get_attribute = [
@@ -26,454 +26,398 @@ HTMLInputElement = function HTMLInputElement(createObj_key) {//构造函数
     HTMLInputElement.prototype = {
 
         get accept(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).accept, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).accept, "");
         },
         set accept(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).accept = value + "";
+            lwVm.memory.private_data.get(this).accept = value + "";
         },
         get align(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).align, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).align, "");
         },
         set align(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).align = value + "";
+            lwVm.memory.private_data.get(this).align = value + "";
         },
         get alt(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).alt, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).alt, "");
         },
         set alt(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).alt = value + "";
+            lwVm.memory.private_data.get(this).alt = value + "";
         },
         get autocomplete(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).autocomplete, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).autocomplete, "");
         },
         set autocomplete(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).autocomplete = value + "";
+            lwVm.memory.private_data.get(this).autocomplete = value + "";
         },
         checkValidity(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
         },
         get checked(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).checked, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).checked, "");
         },
         set checked(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).checked = value + "";
+            lwVm.memory.private_data.get(this).checked = value + "";
         },
         get defaultChecked(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).defaultChecked, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).defaultChecked, "");
         },
         set defaultChecked(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).defaultChecked = value + "";
+            lwVm.memory.private_data.get(this).defaultChecked = value + "";
         },
         get defaultValue(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).defaultValue, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).defaultValue, "");
         },
         set defaultValue(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).defaultValue = value + "";
+            lwVm.memory.private_data.get(this).defaultValue = value + "";
         },
         get dirName(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).dirName, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).dirName, "");
         },
         set dirName(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).dirName = value + "";
+            lwVm.memory.private_data.get(this).dirName = value + "";
         },
         get disabled(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).disabled, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).disabled, "");
         },
         set disabled(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).disabled = value + "";
+            lwVm.memory.private_data.get(this).disabled = value + "";
         },
         get files(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).files, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).files, "");
         },
         set files(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).files = value + "";
+            lwVm.memory.private_data.get(this).files = value + "";
         },
         get form(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).form, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).form, "");
         },
         set form(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).form = value + "";
+            lwVm.memory.private_data.get(this).form = value + "";
         },
         get formAction(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).formAction, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).formAction, "");
         },
         set formAction(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).formAction = value + "";
+            lwVm.memory.private_data.get(this).formAction = value + "";
         },
         get formEnctype(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).formEnctype, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).formEnctype, "");
         },
         set formEnctype(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).formEnctype = value + "";
+            lwVm.memory.private_data.get(this).formEnctype = value + "";
         },
         get formMethod(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).formMethod, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).formMethod, "");
         },
         set formMethod(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).formMethod = value + "";
+            lwVm.memory.private_data.get(this).formMethod = value + "";
         },
         get formNoValidate(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).formNoValidate, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).formNoValidate, "");
         },
         set formNoValidate(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).formNoValidate = value + "";
+            lwVm.memory.private_data.get(this).formNoValidate = value + "";
         },
         get formTarget(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).formTarget, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).formTarget, "");
         },
         set formTarget(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).formTarget = value + "";
+            lwVm.memory.private_data.get(this).formTarget = value + "";
         },
         get height(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).height, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).height, "");
         },
         set height(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).height = value + "";
+            lwVm.memory.private_data.get(this).height = value + "";
         },
         get incremental(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).incremental, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).incremental, "");
         },
         set incremental(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).incremental = value + "";
+            lwVm.memory.private_data.get(this).incremental = value + "";
         },
         get indeterminate(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).indeterminate, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).indeterminate, "");
         },
         set indeterminate(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).indeterminate = value + "";
+            lwVm.memory.private_data.get(this).indeterminate = value + "";
         },
         get labels(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).labels, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).labels, "");
         },
         get list(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).list, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).list, "");
         },
         get max(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).max, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).max, "");
         },
         set max(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).max = value + "";
+            lwVm.memory.private_data.get(this).max = value + "";
         },
         get maxLength(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).maxLength, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).maxLength, "");
         },
         set maxLength(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).maxLength = value + "";
+            lwVm.memory.private_data.get(this).maxLength = value + "";
         },
         get min(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).min, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).min, "");
         },
         set min(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).min = value + "";
+            lwVm.memory.private_data.get(this).min = value + "";
         },
         get minLength(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).minLength, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).minLength, "");
         },
         set minLength(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).minLength = value + "";
+            lwVm.memory.private_data.get(this).minLength = value + "";
         },
         get multiple(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).multiple, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).multiple, "");
         },
         set multiple(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).multiple = value + "";
+            lwVm.memory.private_data.get(this).multiple = value + "";
         },
         get name(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).name, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).name, "");
         },
         set name(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).name = value + "";
+            lwVm.memory.private_data.get(this).name = value + "";
         },
         get pattern(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).pattern, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).pattern, "");
         },
         set pattern(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).pattern = value + "";
+            lwVm.memory.private_data.get(this).pattern = value + "";
         },
         get placeholder(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).placeholder, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).placeholder, "");
         },
         set placeholder(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).placeholder = value + "";
+            lwVm.memory.private_data.get(this).placeholder = value + "";
         },
         get readOnly(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).readOnly, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).readOnly, "");
         },
         set readOnly(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).readOnly = value + "";
+            lwVm.memory.private_data.get(this).readOnly = value + "";
         },
         reportValidity(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
         },
         get required(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).required, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).required, "");
         },
         set required(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).required = value + "";
+            lwVm.memory.private_data.get(this).required = value + "";
         },
         select(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
         },
         get selectionDirection(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).selectionDirection, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).selectionDirection, "");
         },
         set selectionDirection(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).selectionDirection = value + "";
+            lwVm.memory.private_data.get(this).selectionDirection = value + "";
         },
         get selectionEnd(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).selectionEnd, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).selectionEnd, "");
         },
         set selectionEnd(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).selectionEnd = value + "";
+            lwVm.memory.private_data.get(this).selectionEnd = value + "";
         },
         get selectionStart(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).selectionStart, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).selectionStart, "");
         },
         set selectionStart(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).selectionStart = value + "";
+            lwVm.memory.private_data.get(this).selectionStart = value + "";
         },
         setCustomValidity(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
         },
         setRangeText(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
         },
         setSelectionRange(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
         },
         get size(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).size, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).size, "");
         },
         set size(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).size = value + "";
+            lwVm.memory.private_data.get(this).size = value + "";
         },
         get src(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).src, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).src, "");
         },
         set src(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).src = value + "";
+            lwVm.memory.private_data.get(this).src = value + "";
         },
         get step(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).step, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).step, "");
         },
         set step(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).step = value + "";
+            lwVm.memory.private_data.get(this).step = value + "";
         },
         stepDown(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
         },
         stepUp(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
         },
         get type(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).type, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).type, "");
         },
         set type(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).type = value + "";
+            lwVm.memory.private_data.get(this).type = value + "";
         },
         get useMap(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).useMap, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).useMap, "");
         },
         set useMap(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).useMap = value + "";
+            lwVm.memory.private_data.get(this).useMap = value + "";
         },
         get validationMessage(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).validationMessage, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).validationMessage, "");
         },
         get validity(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).validity, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).validity, "");
         },
         get value(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).value, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).value, "");
         },
         set value(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).value = value + "";
+            lwVm.memory.private_data.get(this).value = value + "";
         },
         get valueAsDate(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).valueAsDate, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).valueAsDate, "");
         },
         set valueAsDate(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).valueAsDate = value + "";
+            lwVm.memory.private_data.get(this).valueAsDate = value + "";
         },
         get valueAsNumber(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).valueAsNumber, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).valueAsNumber, "");
         },
         set valueAsNumber(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).valueAsNumber = value + "";
+            lwVm.memory.private_data.get(this).valueAsNumber = value + "";
         },
         get webkitEntries(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).webkitEntries, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).webkitEntries, "");
         },
         get webkitdirectory(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).webkitdirectory, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).webkitdirectory, "");
         },
         set webkitdirectory(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).webkitdirectory = value + "";
+            lwVm.memory.private_data.get(this).webkitdirectory = value + "";
         },
         get width(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).width, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).width, "");
         },
         set width(value){
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).width = value + "";
+            lwVm.memory.private_data.get(this).width = value + "";
         },
         get willValidate(){
-            debugger;
             if (!HTMLInputElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).willValidate, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).willValidate, "");
         }
     }
 
-    qxVm.rename(HTMLInputElement.prototype, "HTMLInputElement");
-    qxVm.safeDescriptor_addConstructor(HTMLInputElement);
-    qxVm.safe_Objattribute(HTMLInputElement, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(HTMLInputElement.prototype, "HTMLInputElement");
+    lwVm.safeDescriptor_addConstructor(HTMLInputElement);
+    lwVm.safe_Objattribute(HTMLInputElement, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(HTMLInputElement.prototype, HTMLElement.prototype);
     Object.setPrototypeOf(HTMLInputElement, HTMLElement);
 })();
-qxVm.memory.htmlElements["input"] = function () {
-    return new HTMLInputElement(qxVm.memory.$createObj_key);
+lwVm.memory.htmlElements["input"] = function () {
+    return new HTMLInputElement(lwVm.memory.$createObj_key);
 }

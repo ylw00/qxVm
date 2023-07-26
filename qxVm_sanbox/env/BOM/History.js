@@ -1,6 +1,6 @@
 History = function History() {
     throw new TypeError("Illegal constructor");
-}; qxVm.safefunction(History);
+}; lwVm.safefunction(History);
 history = {};
 
 ; (function () {
@@ -10,48 +10,60 @@ history = {};
 
     History.prototype = {
         back() {
-            debugger;
             if (!History.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'History', 'back', arguments, result);
+            return result;
         },
         forward() {
-            debugger;
             if (!History.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'History', 'forward', arguments, result);
+            return result;
         },
         go() {
-            debugger;
             if (!History.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'History', 'go', arguments, result);
+            return result;
         },
         get length() {
             if (!History.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return Object.keys(this).length;
+            let result = Object.keys(this).length;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'History', 'length', arguments, result);
+            return result;
         },
         pushState() {
-            debugger;
             if (!History.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'History', 'pushState', arguments, result);
+            return result;
         },
         replaceState() {
-            debugger;
             if (!History.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'History', 'replaceState', arguments, result);
+            return result;
         },
         get scrollRestoration() {
-            debugger;
             if (!History.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return "auto";
+            let result = "auto";;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'History', 'scrollRestoration', arguments, result);
+            return result;
         },
         set scrollRestoration(value) {
-            debugger;
-            if (!History.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'History', 'scrollRestoration', arguments);
+            lwVm.memory.private_data.get(this).scrollRestoration = value;
         },
         get state() {
-            debugger;
             if (!History.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
             return {
                 idx: 0
             }
         }
-    }; qxVm.rename(History.prototype, 'History')
-    qxVm.safeDescriptor_addConstructor(History);
-    qxVm.safe_Objattribute(History, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    }; lwVm.rename(History.prototype, 'History')
+    lwVm.safeDescriptor_addConstructor(History);
+    lwVm.safe_Objattribute(History, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(history, History.prototype);
 

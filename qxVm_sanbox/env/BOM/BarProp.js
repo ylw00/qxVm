@@ -1,8 +1,8 @@
 BarProp = function BarProp(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-}; qxVm.safefunction(BarProp);
+}; lwVm.safefunction(BarProp);
 
 ; (function () {
     const $safe_get_attribute = ['visible'];
@@ -11,19 +11,20 @@ BarProp = function BarProp(createObj_key) {
 
     BarProp.prototype = {
         get visible() {
-            debugger;
             if (!BarProp.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return true;
+            let result = true;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'BarProp', 'visible', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(BarProp.prototype, "BarProp");
-    qxVm.safeDescriptor_addConstructor(BarProp);
-    qxVm.safe_Objattribute(BarProp, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(BarProp.prototype, "BarProp");
+    lwVm.safeDescriptor_addConstructor(BarProp);
+    lwVm.safe_Objattribute(BarProp, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 })();
-locationbar = new BarProp(qxVm.memory.$createObj_key);
-menubar = new BarProp(qxVm.memory.$createObj_key);
-personalbar = new BarProp(qxVm.memory.$createObj_key);
-scrollbars = new BarProp(qxVm.memory.$createObj_key);
-statusbar = new BarProp(qxVm.memory.$createObj_key);
-toolbar = new BarProp(qxVm.memory.$createObj_key);
+locationbar = new BarProp(lwVm.memory.$createObj_key);
+menubar = new BarProp(lwVm.memory.$createObj_key);
+personalbar = new BarProp(lwVm.memory.$createObj_key);
+scrollbars = new BarProp(lwVm.memory.$createObj_key);
+statusbar = new BarProp(lwVm.memory.$createObj_key);
+toolbar = new BarProp(lwVm.memory.$createObj_key);
 

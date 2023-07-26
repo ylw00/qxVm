@@ -1,9 +1,9 @@
 Presentation = function Presentation(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(Presentation);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(Presentation);
 
 ; (function () {
     const $safe_get_attribute = ['defaultRequest', 'receiver'];
@@ -12,23 +12,25 @@ Presentation = function Presentation(createObj_key) {
 
     Presentation.prototype = {
         get defaultRequest() {
-            debugger;
             if (!Presentation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).defaultRequest, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).defaultRequest, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Presentation', 'defaultRequest', arguments, result);
+            return result;
         },
         set defaultRequest(value) {
-            debugger;
             if (!Presentation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).defaultRequest = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Presentation', 'defaultRequest', arguments);
+            lwVm.memory.private_data.get(this).defaultRequest = value + "";
         },
         get receiver() {
-            debugger;
             if (!Presentation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return null;
+            let result = null;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Presentation', 'receiver', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(Presentation.prototype, "Presentation");
-    qxVm.safeDescriptor_addConstructor(Presentation);
-    qxVm.safe_Objattribute(Presentation, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(Presentation.prototype, "Presentation");
+    lwVm.safeDescriptor_addConstructor(Presentation);
+    lwVm.safe_Objattribute(Presentation, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
 })();

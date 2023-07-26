@@ -2,8 +2,8 @@ Path2D = function Path2D() {
     if(new.target !== Path2D){
 		throw new TypeError(`Failed to construct 'Path2D': Please use the 'new' operator, this DOM object constructor cannot be called as a function.`)
 	}
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(Path2D);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(Path2D);
 
 ; (function () {
     const $safe_get_attribute = [];
@@ -12,52 +12,74 @@ Path2D = function Path2D() {
     Path2D.prototype = {
 
         addPath() {
-            debugger;
             if (!Path2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Path2D', 'addPath', arguments, result);
+            return result;
         },
         arc() {
-            debugger;
             if (!Path2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Path2D', 'arc', arguments, result);
+            return result;
         },
         arcTo() {
-            debugger;
             if (!Path2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Path2D', 'arcTo', arguments, result);
+            return result;
         },
         bezierCurveTo() {
-            debugger;
             if (!Path2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Path2D', 'bezierCurveTo', arguments, result);
+            return result;
         },
         closePath() {
-            debugger;
             if (!Path2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Path2D', 'closePath', arguments, result);
+            return result;
         },
         ellipse() {
-            debugger;
             if (!Path2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Path2D', 'ellipse', arguments, result);
+            return result;
         },
         lineTo() {
-            debugger;
             if (!Path2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Path2D', 'lineTo', arguments, result);
+            return result;
         },
         moveTo() {
-            debugger;
             if (!Path2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Path2D', 'moveTo', arguments, result);
+            return result;
         },
         quadraticCurveTo() {
-            debugger;
             if (!Path2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Path2D', 'quadraticCurveTo', arguments, result);
+            return result;
         },
         rect() {
-            debugger;
             if (!Path2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Path2D', 'rect', arguments, result);
+            return result;
         },
         roundRect() {
-            debugger;
             if (!Path2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Path2D', 'roundRect', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(Path2D.prototype, "Path2D");
-    qxVm.safeDescriptor_addConstructor(Path2D);
-    qxVm.safe_Objattribute(Path2D, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(Path2D.prototype, "Path2D");
+    lwVm.safeDescriptor_addConstructor(Path2D);
+    lwVm.safe_Objattribute(Path2D, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
 })();

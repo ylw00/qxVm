@@ -1,9 +1,9 @@
 HTMLHtmlElement = function HTMLHtmlElement(createObj_key) {//构造函数
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(HTMLHtmlElement);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(HTMLHtmlElement);
 
 ; (function () {
     const $safe_get_attribute = ['version'];
@@ -13,22 +13,24 @@ HTMLHtmlElement = function HTMLHtmlElement(createObj_key) {//构造函数
     HTMLHtmlElement.prototype = {
         get version() {
             if (!HTMLHtmlElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); }
-            return qxVm.abs(qxVm.memory.private_data.get(this).version, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).version, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLHtmlElement', 'version', arguments, result);
+            return result;
         },
         set version(value) {
             if (!HTMLHtmlElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); }
-            qxVm.memory.private_data.get(this).version = value + "";
+            lwVm.memory.private_data.get(this).version = value + "";
         }
     };
 
-    qxVm.rename(HTMLHtmlElement.prototype, "HTMLHtmlElement");
-    qxVm.safeDescriptor_addConstructor(HTMLHtmlElement);
-    qxVm.safe_Objattribute(HTMLHtmlElement, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(HTMLHtmlElement.prototype, "HTMLHtmlElement");
+    lwVm.safeDescriptor_addConstructor(HTMLHtmlElement);
+    lwVm.safe_Objattribute(HTMLHtmlElement, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(HTMLHtmlElement.prototype, HTMLElement.prototype);
     Object.setPrototypeOf(HTMLHtmlElement, HTMLElement);
 })();
-qxVm.memory.htmlElements["html"] = function () {
-    return new HTMLHtmlElement(qxVm.memory.$createObj_key);
+lwVm.memory.htmlElements["html"] = function () {
+    return new HTMLHtmlElement(lwVm.memory.$createObj_key);
 }
 

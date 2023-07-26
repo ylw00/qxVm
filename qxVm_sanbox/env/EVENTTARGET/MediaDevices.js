@@ -1,9 +1,9 @@
 MediaDevices = function MediaDevices(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(MediaDevices);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(MediaDevices);
 
 ; (function () {
     const $safe_get_attribute = ['ondevicechange'];
@@ -12,35 +12,44 @@ MediaDevices = function MediaDevices(createObj_key) {
 
     MediaDevices.prototype = {
         enumerateDevices() {
-            debugger;
             if (!MediaDevices.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'MediaDevices', 'enumerateDevices', arguments, result);
+            return result;
         },
         getDisplayMedia() {
-            debugger;
             if (!MediaDevices.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'MediaDevices', 'getDisplayMedia', arguments, result);
+            return result;
         },
         getSupportedConstraints() {
-            debugger;
             if (!MediaDevices.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'MediaDevices', 'getSupportedConstraints', arguments, result);
+            return result;
         },
         getUserMedia() {
-            debugger;
             if (!MediaDevices.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'MediaDevices', 'getUserMedia', arguments, result);
+            return result;
         },
         get ondevicechange() {
-            debugger;
             if (!MediaDevices.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).ondevicechange, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondevicechange, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MediaDevices', 'ondevicechange', arguments, result);
+            return result;
         },
         set ondevicechange(value) {
-            debugger;
             if (!MediaDevices.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).ondevicechange = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'MediaDevices', 'ondevicechange', arguments);
+            lwVm.memory.private_data.get(this).ondevicechange = value + "";
         },
     }
-    qxVm.rename(MediaDevices.prototype, "MediaDevices");
-    qxVm.safeDescriptor_addConstructor(MediaDevices);
-    qxVm.safe_Objattribute(MediaDevices, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(MediaDevices.prototype, "MediaDevices");
+    lwVm.safeDescriptor_addConstructor(MediaDevices);
+    lwVm.safe_Objattribute(MediaDevices, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(MediaDevices.prototype, EventTarget.prototype);
     Object.setPrototypeOf(MediaDevices, EventTarget);

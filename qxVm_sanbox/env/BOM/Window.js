@@ -3,7 +3,7 @@
 Window = function Window() {
     throw new TypeError("Illegal constructor");
 }; 
-qxVm.safefunction(Window);
+lwVm.safefunction(Window);
 window = this;
 
 ; (function () {
@@ -11,10 +11,10 @@ window = this;
     let WindowProperties = (function () {
         let WindowProperties = function WindowProperties() {
             throw new TypeError("Illegal constructor");
-        }; qxVm.safefunction(WindowProperties);
+        }; lwVm.safefunction(WindowProperties);
 
         delete WindowProperties.prototype.constructor;
-        qxVm.rename(WindowProperties.prototype, "WindowProperties");
+        lwVm.rename(WindowProperties.prototype, "WindowProperties");
         Object.setPrototypeOf(WindowProperties.prototype, EventTarget.prototype);
         return WindowProperties;
     })();
@@ -24,8 +24,8 @@ window = this;
         PERSISTENT: 1
     };
 
-    qxVm.rename(Window.prototype, "Window");
-    qxVm.add_capitalLetter_attribute(Window, $attributes);
+    lwVm.rename(Window.prototype, "Window");
+    lwVm.add_capitalLetter_attribute(Window, $attributes);
 
     Object.setPrototypeOf(WindowProperties.prototype, EventTarget.prototype);
     Object.setPrototypeOf(Window.prototype, WindowProperties.prototype);

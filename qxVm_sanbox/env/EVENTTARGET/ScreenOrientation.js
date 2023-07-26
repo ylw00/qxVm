@@ -1,9 +1,9 @@
 ScreenOrientation = function ScreenOrientation(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(ScreenOrientation);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(ScreenOrientation);
 
 ; (function () {
     const $safe_get_attribute = ['angle', 'onchange', 'type'];
@@ -12,37 +12,43 @@ ScreenOrientation = function ScreenOrientation(createObj_key) {
 
     ScreenOrientation.prototype = {
         get angle() {
-            debugger;
             if (!ScreenOrientation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return 0;
+            let result = 0;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'ScreenOrientation', 'angle', arguments, result);
+            return result;
         },
         lock() {
-            debugger;
             if (!ScreenOrientation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'ScreenOrientation', 'lock', arguments, result);
+            return result;
         },
         get onchange() {
-            debugger;
             if (!ScreenOrientation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onchange, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onchange, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'ScreenOrientation', 'onchange', arguments, result);
+            return result;
         },
         set onchange(value) {
             // debugger;
             if (!ScreenOrientation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            // qxVm.memory.private_data.get(this).onchange = value + "";
         },
         get type() {
-            debugger;
             if (!ScreenOrientation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return "landscape-primary";
+            let result = "landscape-primary";;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'ScreenOrientation', 'type', arguments, result);
+            return result;
         },
         unlock() {
-            debugger;
             if (!ScreenOrientation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'ScreenOrientation', 'unlock', arguments, result);
+            return result;
         }
     }
-    qxVm.rename(ScreenOrientation.prototype, "ScreenOrientation");
-    qxVm.safeDescriptor_addConstructor(ScreenOrientation);
-    qxVm.safe_Objattribute(ScreenOrientation, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(ScreenOrientation.prototype, "ScreenOrientation");
+    lwVm.safeDescriptor_addConstructor(ScreenOrientation);
+    lwVm.safe_Objattribute(ScreenOrientation, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(ScreenOrientation.prototype, EventTarget.prototype);
     Object.setPrototypeOf(ScreenOrientation, EventTarget);

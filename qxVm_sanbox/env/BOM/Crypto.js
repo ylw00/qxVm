@@ -1,9 +1,9 @@
 Crypto = function Crypto(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(Crypto);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(Crypto);
 // crypto = {};
 
 ; (function () {
@@ -13,24 +13,29 @@ Crypto = function Crypto(createObj_key) {
 
     Crypto.prototype = {
         getRandomValues() {
-            debugger;
             if (!Crypto.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Crypto', 'getRandomValues', arguments, result);
+            return result;
         },
         randomUUID() {
-            debugger;
             if (!Crypto.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Crypto', 'randomUUID', arguments, result);
+            return result;
         },
         get subtle() {
-            debugger;
             if (!Crypto.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).subtle, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).subtle, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Crypto', 'subtle', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(Crypto.prototype, "Crypto");
-    qxVm.safeDescriptor_addConstructor(Crypto);
-    qxVm.safe_Objattribute(Crypto, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(Crypto.prototype, "Crypto");
+    lwVm.safeDescriptor_addConstructor(Crypto);
+    lwVm.safe_Objattribute(Crypto, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     // Object.setPrototypeOf(crypto, Crypto.prototype);
 })();
-crypto = new Crypto(qxVm.memory.$createObj_key)
+crypto = new Crypto(lwVm.memory.$createObj_key)
 

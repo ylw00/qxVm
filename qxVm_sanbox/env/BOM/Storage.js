@@ -1,6 +1,6 @@
 Storage = function Storage() {//构造函数
     throw new TypeError("Illegal constructor");
-}; qxVm.safefunction(Storage);
+}; lwVm.safefunction(Storage);
 
 localStorage = {};
 sessionStorage = {};
@@ -13,35 +13,36 @@ sessionStorage = {};
 
     Storage.prototype = {
         clear() {
-            debugger;
             var temp = Object.keys(this)
             for (var i = 0; temp.length > i; i++) {
                 delete this[temp[i]];
             }
         },
         getItem(k) {
-            debugger;
-            return this[k] ? this[k] : null;
+            let result = this[k] ? this[k] : null;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Storage', 'getItem', arguments, result);
+            return result;
         },
         key(index) {
-            debugger;
-            return Object.keys(this)[index];
+            let result = Object.keys(this)[index];;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Storage', 'key', arguments, result);
+            return result;
         },
         get length() {
             if (!Storage.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return Object.keys(this).length;
+            let result = Object.keys(this).length;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Storage', 'length', arguments, result);
+            return result;
         },
         removeItem(k) {
-            debugger;
             delete this[k];
         },
         setItem(k, v) {
-            debugger;
             this[k] = v;
         }
-    }; qxVm.rename(Storage.prototype, "Storage");
-    qxVm.safeDescriptor_addConstructor(Storage);
-    qxVm.safe_Objattribute(Storage, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    }; lwVm.rename(Storage.prototype, "Storage");
+    lwVm.safeDescriptor_addConstructor(Storage);
+    lwVm.safe_Objattribute(Storage, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(localStorage, Storage.prototype);
     Object.setPrototypeOf(sessionStorage, Storage.prototype);

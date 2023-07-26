@@ -1,9 +1,9 @@
 KeyboardEvent = function KeyboardEvent(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(KeyboardEvent);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(KeyboardEvent);
 
 ; (function () {
 
@@ -20,73 +20,86 @@ KeyboardEvent = function KeyboardEvent(createObj_key) {
 
     KeyboardEvent.prototype = {
         get altKey() {
-            debugger;
             if (!KeyboardEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).altKey, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).altKey, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'KeyboardEvent', 'altKey', arguments, result);
+            return result;
         },
         get charCode() {
-            debugger;
             if (!KeyboardEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).charCode, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).charCode, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'KeyboardEvent', 'charCode', arguments, result);
+            return result;
         },
         get code() {
-            debugger;
             if (!KeyboardEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).code, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).code, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'KeyboardEvent', 'code', arguments, result);
+            return result;
         },
         get ctrlKey() {
-            debugger;
             if (!KeyboardEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).ctrlKey, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ctrlKey, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'KeyboardEvent', 'ctrlKey', arguments, result);
+            return result;
         },
         getModifierState() {
-            debugger;
             if (!KeyboardEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'KeyboardEvent', 'getModifierState', arguments, result);
+            return result;
         },
         initKeyboardEvent() {
-            debugger;
             if (!KeyboardEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'KeyboardEvent', 'initKeyboardEvent', arguments, result);
+            return result;
         },
         get isComposing() {
-            debugger;
             if (!KeyboardEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).isComposing, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).isComposing, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'KeyboardEvent', 'isComposing', arguments, result);
+            return result;
         },
         get key() {
-            debugger;
             if (!KeyboardEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).key, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).key, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'KeyboardEvent', 'key', arguments, result);
+            return result;
         },
         get keyCode() {
-            debugger;
             if (!KeyboardEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).keyCode, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).keyCode, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'KeyboardEvent', 'keyCode', arguments, result);
+            return result;
         },
         get location() {
-            debugger;
             if (!KeyboardEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).location, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).location, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'KeyboardEvent', 'location', arguments, result);
+            return result;
         },
         get metaKey() {
-            debugger;
             if (!KeyboardEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).metaKey, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).metaKey, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'KeyboardEvent', 'metaKey', arguments, result);
+            return result;
         },
         get repeat() {
-            debugger;
             if (!KeyboardEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).repeat, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).repeat, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'KeyboardEvent', 'repeat', arguments, result);
+            return result;
         },
         get shiftKey() {
-            debugger;
             if (!KeyboardEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).shiftKey, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).shiftKey, "");
         }
     };
-    qxVm.rename(KeyboardEvent.prototype, "KeyboardEvent");
-    qxVm.safeDescriptor_addConstructor(KeyboardEvent);
-    qxVm.safe_Objattribute(KeyboardEvent, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
-    qxVm.add_capitalLetter_attribute(KeyboardEvent, $attributes);
+    lwVm.rename(KeyboardEvent.prototype, "KeyboardEvent");
+    lwVm.safeDescriptor_addConstructor(KeyboardEvent);
+    lwVm.safe_Objattribute(KeyboardEvent, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.add_capitalLetter_attribute(KeyboardEvent, $attributes);
 
     Object.setPrototypeOf(KeyboardEvent.prototype, UIEvent.prototype);
     Object.setPrototypeOf(KeyboardEvent, UIEvent);

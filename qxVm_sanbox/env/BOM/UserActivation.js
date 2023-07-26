@@ -1,9 +1,9 @@
 UserActivation = function UserActivation(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(UserActivation);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(UserActivation);
 
 ; (function () {
     const $safe_get_attribute = ['hasBeenActive', 'isActive'];
@@ -12,19 +12,19 @@ UserActivation = function UserActivation(createObj_key) {
 
     UserActivation.prototype = {
         get hasBeenActive() {
-            debugger;
             if (!UserActivation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return true;
+            let result = true;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'UserActivation', 'hasBeenActive', arguments, result);
+            return result;
         },
         get isActive() {
-            debugger;
             if (!UserActivation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
             return false;
         }
     }
-    qxVm.rename(UserActivation.prototype, "UserActivation");
-    qxVm.safeDescriptor_addConstructor(UserActivation);
-    qxVm.safe_Objattribute(UserActivation, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(UserActivation.prototype, "UserActivation");
+    lwVm.safeDescriptor_addConstructor(UserActivation);
+    lwVm.safe_Objattribute(UserActivation, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
 })();
 

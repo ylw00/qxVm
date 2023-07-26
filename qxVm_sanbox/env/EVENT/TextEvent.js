@@ -1,9 +1,9 @@
 TextEvent = function TextEvent(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(TextEvent);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(TextEvent);
 
 ; (function () {
     const $safe_get_attribute = ['data'];
@@ -12,18 +12,21 @@ TextEvent = function TextEvent(createObj_key) {
 
     TextEvent.prototype = {
         get data() {
-            debugger;
             if (!TextEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).data, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).data, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'TextEvent', 'data', arguments, result);
+            return result;
         },
         initTextEvent() {
-            debugger;
             if (!TextEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'TextEvent', 'initTextEvent', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(TextEvent.prototype, "TextEvent");
-    qxVm.safeDescriptor_addConstructor(TextEvent);
-    qxVm.safe_Objattribute(TextEvent, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(TextEvent.prototype, "TextEvent");
+    lwVm.safeDescriptor_addConstructor(TextEvent);
+    lwVm.safe_Objattribute(TextEvent, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(TextEvent.prototype, UIEvent.prototype);
     Object.setPrototypeOf(TextEvent, UIEvent);

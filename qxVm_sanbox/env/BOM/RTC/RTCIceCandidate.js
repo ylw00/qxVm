@@ -1,9 +1,9 @@
 RTCIceCandidate = function RTCIceCandidate(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(RTCIceCandidate);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(RTCIceCandidate);
 
 ; (function () {
     const $safe_get_attribute = ['address', 'candidate', 'component', 'foundation', 'port', 'priority', 'protocol', 'relatedAddress', 'relatedPort', 'sdpMLineIndex', 'sdpMid', 'tcpType', 'type', 'usernameFragment'];
@@ -12,83 +12,99 @@ RTCIceCandidate = function RTCIceCandidate(createObj_key) {
 
     RTCIceCandidate.prototype = {
         get address() {
-            debugger;
             if (!RTCIceCandidate.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).address, "192.168.0.103");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).address, "192.168.0.103");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCIceCandidate', 'address', arguments, result);
+            return result;
         },
         get candidate() {
-            debugger;
             if (!RTCIceCandidate.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).candidate, "candidate:1840965416 1 udp 2122260223 192.168.0.103 49325 typ host generation 0 ufrag o6U2 network-id 1 network-cost 10");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).candidate, "candidate:1840965416 1 udp 2122260223 192.168.0.103 49325 typ host generation 0 ufrag o6U2 network-id 1 network-cost 10");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCIceCandidate', 'candidate', arguments, result);
+            return result;
         },
         get component() {
-            debugger;
             if (!RTCIceCandidate.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).component, "rtp");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).component, "rtp");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCIceCandidate', 'component', arguments, result);
+            return result;
         },
         get foundation() {
-            debugger;
             if (!RTCIceCandidate.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).foundation, "1840965416");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).foundation, "1840965416");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCIceCandidate', 'foundation', arguments, result);
+            return result;
         },
         get port() {
-            debugger;
             if (!RTCIceCandidate.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).port, 49325);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).port, 49325);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCIceCandidate', 'port', arguments, result);
+            return result;
         },
         get priority() {
-            debugger;
             if (!RTCIceCandidate.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).priority, 2122260223);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).priority, 2122260223);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCIceCandidate', 'priority', arguments, result);
+            return result;
         },
         get protocol() {
-            debugger;
             if (!RTCIceCandidate.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).protocol, "udp");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).protocol, "udp");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCIceCandidate', 'protocol', arguments, result);
+            return result;
         },
         get relatedAddress() {
-            debugger;
             if (!RTCIceCandidate.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).relatedAddress, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).relatedAddress, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCIceCandidate', 'relatedAddress', arguments, result);
+            return result;
         },
         get relatedPort() {
-            debugger;
             if (!RTCIceCandidate.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).relatedPort, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).relatedPort, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCIceCandidate', 'relatedPort', arguments, result);
+            return result;
         },
         get sdpMLineIndex() {
-            debugger;
             if (!RTCIceCandidate.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).sdpMLineIndex, 0);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).sdpMLineIndex, 0);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCIceCandidate', 'sdpMLineIndex', arguments, result);
+            return result;
         },
         get sdpMid() {
-            debugger;
             if (!RTCIceCandidate.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).sdpMid, "1");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).sdpMid, "1");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCIceCandidate', 'sdpMid', arguments, result);
+            return result;
         },
         get tcpType() {
-            debugger;
             if (!RTCIceCandidate.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).tcpType, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).tcpType, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCIceCandidate', 'tcpType', arguments, result);
+            return result;
         },
         toJSON() {
-            debugger;
             if (!RTCIceCandidate.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCIceCandidate', 'toJSON', arguments, result);
+            return result;
         },
         get type() {
-            debugger;
             if (!RTCIceCandidate.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).type, "host");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).type, "host");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCIceCandidate', 'type', arguments, result);
+            return result;
         },
         get usernameFragment() {
-            debugger;
             if (!RTCIceCandidate.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).usernameFragment, "o6U2");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).usernameFragment, "o6U2");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCIceCandidate', 'usernameFragment', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(RTCIceCandidate.prototype, "RTCIceCandidate");
-    qxVm.safeDescriptor_addConstructor(RTCIceCandidate);
-    qxVm.safe_Objattribute(RTCIceCandidate, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(RTCIceCandidate.prototype, "RTCIceCandidate");
+    lwVm.safeDescriptor_addConstructor(RTCIceCandidate);
+    lwVm.safe_Objattribute(RTCIceCandidate, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
 })();
 

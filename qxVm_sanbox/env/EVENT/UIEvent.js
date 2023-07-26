@@ -1,9 +1,9 @@
 UIEvent = function UIEvent(createObj_key) {//构造函数
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(UIEvent);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(UIEvent);
 
 ; (function () {
     const $safe_get_attribute = ['detail', 'sourceCapabilities', 'view', 'which'];
@@ -12,34 +12,38 @@ UIEvent = function UIEvent(createObj_key) {//构造函数
 
     UIEvent.prototype = {
         get detail() {
-            debugger;
             if (!UIEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).detail, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).detail, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'UIEvent', 'detail', arguments, result);
+            return result;
         },
         initUIEvent() {
-            debugger;
             if (!UIEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'UIEvent', 'initUIEvent', arguments, result);
+            return result;
         },
         get sourceCapabilities() {
-            debugger;
             if (!UIEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).sourceCapabilities, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).sourceCapabilities, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'UIEvent', 'sourceCapabilities', arguments, result);
+            return result;
         },
         get view() {
-            debugger;
             if (!UIEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).view, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).view, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'UIEvent', 'view', arguments, result);
+            return result;
         },
         get which() {
-            debugger;
             if (!UIEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).which, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).which, "");
         }
     }
 
-    qxVm.rename(UIEvent.prototype, "UIEvent");
-    qxVm.safeDescriptor_addConstructor(UIEvent);
-    qxVm.safe_Objattribute(UIEvent, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(UIEvent.prototype, "UIEvent");
+    lwVm.safeDescriptor_addConstructor(UIEvent);
+    lwVm.safe_Objattribute(UIEvent, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(UIEvent.prototype, Event.prototype);
     Object.setPrototypeOf(UIEvent, Event);

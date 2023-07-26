@@ -1,7 +1,7 @@
 PluginArray = function PluPluginArraygin() {//构造函数
     throw new TypeError("Illegal constructor");
 };
-qxVm.safefunction(PluginArray);
+lwVm.safefunction(PluginArray);
 
 ; (function () {
     const $safe_get_attribute = ['length'];
@@ -12,44 +12,52 @@ qxVm.safefunction(PluginArray);
     PluginArray.prototype = {
         item(index) {
             if (!PluginArray.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return this[index];
+            let result = this[index];;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'PluginArray', 'item', arguments, result);
+            return result;
         },
         get length() {
             if (!PluginArray.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.memory.pluginArray.temp.length;
+            let result = lwVm.memory.pluginArray.temp.length;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PluginArray', 'length', arguments, result);
+            return result;
         },
         namedItem(key) {
             if (!PluginArray.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return this[key];
+            let result = this[key];;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'PluginArray', 'namedItem', arguments, result);
+            return result;
         },
         refresh() {
             if (!PluginArray.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            debugger;
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'PluginArray', 'refresh', arguments, result);
+            return result;
         }
     };
-    qxVm.set_iterator(PluginArray);
-    qxVm.rename(PluginArray.prototype, 'PluginArray');
-    qxVm.safeDescriptor_addConstructor(PluginArray);
-    qxVm.safe_Objattribute(PluginArray, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.set_iterator(PluginArray);
+    lwVm.rename(PluginArray.prototype, 'PluginArray');
+    lwVm.safeDescriptor_addConstructor(PluginArray);
+    lwVm.safe_Objattribute(PluginArray, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
     
 
-    qxVm.memory.pluginArray.instantiate = {};
+    lwVm.memory.pluginArray.instantiate = {};
     ; (function add_default_pluginArray() {
-        if (Array.isArray(qxVm.memory.pluginArray.temp) && qxVm.memory.pluginArray.temp.length > 0) {
-            for (let index = 0; index < qxVm.memory.pluginArray.temp.length; index++) {
-                let plugin_temp = qxVm.memory.plugin.new(qxVm.memory.pluginArray.temp[index]);
+        if (Array.isArray(lwVm.memory.pluginArray.temp) && lwVm.memory.pluginArray.temp.length > 0) {
+            for (let index = 0; index < lwVm.memory.pluginArray.temp.length; index++) {
+                let plugin_temp = lwVm.memory.plugin.new(lwVm.memory.pluginArray.temp[index]);
 
-                Object.defineProperty(qxVm.memory.pluginArray.instantiate, index, {
+                Object.defineProperty(lwVm.memory.pluginArray.instantiate, index, {
                     value: plugin_temp, configurable: true, enumerable: true, writable: false
                 });
-                Object.defineProperty(qxVm.memory.pluginArray.instantiate, plugin_temp.name, {
+                Object.defineProperty(lwVm.memory.pluginArray.instantiate, plugin_temp.name, {
                     value: plugin_temp, configurable: true, enumerable: false, writable: false
                 });
             }
         }
     })();
 
-    Object.setPrototypeOf(qxVm.memory.pluginArray.instantiate, PluginArray.prototype);
+    Object.setPrototypeOf(lwVm.memory.pluginArray.instantiate, PluginArray.prototype);
 
 })();
 

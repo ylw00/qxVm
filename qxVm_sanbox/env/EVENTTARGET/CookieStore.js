@@ -1,9 +1,9 @@
 CookieStore = function CookieStore(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(CookieStore);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(CookieStore);
 
 ; (function () {
     const $safe_get_attribute = ['onchange'];
@@ -12,38 +12,47 @@ CookieStore = function CookieStore(createObj_key) {
 
     CookieStore.prototype = {
         delete() {
-            debugger;
             if (!CookieStore.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CookieStore', 'delete', arguments, result);
+            return result;
         },
         get() {
-            debugger;
             if (!CookieStore.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CookieStore', 'get', arguments, result);
+            return result;
         },
         getAll() {
-            debugger;
             if (!CookieStore.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CookieStore', 'getAll', arguments, result);
+            return result;
         },
         get onchange() {
-            debugger;
             if (!CookieStore.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onchange, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onchange, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CookieStore', 'onchange', arguments, result);
+            return result;
         },
         set onchange(value) {
-            debugger;
             if (!CookieStore.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onchange = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'CookieStore', 'onchange', arguments);
+            lwVm.memory.private_data.get(this).onchange = value + "";
         },
         set() {
-            debugger;
             if (!CookieStore.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CookieStore', 'set', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(CookieStore.prototype, "CookieStore");
-    qxVm.safeDescriptor_addConstructor(CookieStore);
-    qxVm.safe_Objattribute(CookieStore, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(CookieStore.prototype, "CookieStore");
+    lwVm.safeDescriptor_addConstructor(CookieStore);
+    lwVm.safe_Objattribute(CookieStore, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(CookieStore.prototype, EventTarget.prototype);
     Object.setPrototypeOf(CookieStore, EventTarget);
 })();
-cookieStore = new CookieStore(qxVm.memory.$createObj_key);
+cookieStore = new CookieStore(lwVm.memory.$createObj_key);
 

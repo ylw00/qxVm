@@ -3,8 +3,8 @@ XMLHttpRequest = function XMLHttpRequest() {//构造函数
 		throw new TypeError(`Failed to construct 'XMLHttpRequest': Please use the 'new' operator, this DOM object constructor cannot be called as a function.`)
 	}
 
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(XMLHttpRequest);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(XMLHttpRequest);
 ; (function () {
     const $attributes = {
         DONE: 4,
@@ -22,118 +22,139 @@ XMLHttpRequest = function XMLHttpRequest() {//构造函数
     
     XMLHttpRequest.prototype = {
         abort() {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'XMLHttpRequest', 'abort', arguments, result);
+            return result;
         },
         getAllResponseHeaders() {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'XMLHttpRequest', 'getAllResponseHeaders', arguments, result);
+            return result;
         },
         getResponseHeader() {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'XMLHttpRequest', 'getResponseHeader', arguments, result);
+            return result;
         },
         get onreadystatechange() {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onreadystatechange, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onreadystatechange, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'onreadystatechange', arguments, result);
+            return result;
         },
         set onreadystatechange(value) {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onreadystatechange = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'XMLHttpRequest', 'onreadystatechange', arguments);
+            lwVm.memory.private_data.get(this).onreadystatechange = value + "";
         },
         open() {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'XMLHttpRequest', 'open', arguments, result);
+            return result;
         },
         overrideMimeType() {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'XMLHttpRequest', 'overrideMimeType', arguments, result);
+            return result;
         },
         get readyState() {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).readyState, 0);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).readyState, 0);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'readyState', arguments, result);
+            return result;
         },
         get response() {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).response, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).response, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'response', arguments, result);
+            return result;
         },
         set response(value) {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).response = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'XMLHttpRequest', 'response', arguments);
+            lwVm.memory.private_data.get(this).response = value + "";
         },
         get responseText() {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).responseText, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).responseText, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'responseText', arguments, result);
+            return result;
         },
         get responseType() {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).responseType, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).responseType, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'responseType', arguments, result);
+            return result;
         },
         set responseType(value) {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).responseType = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'XMLHttpRequest', 'responseType', arguments);
+            lwVm.memory.private_data.get(this).responseType = value + "";
         },
         get responseURL() {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).responseURL, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).responseURL, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'responseURL', arguments, result);
+            return result;
         },
         get responseXML() {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).responseXML, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).responseXML, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'responseXML', arguments, result);
+            return result;
         },
         send(body) {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return body
+            let result = body;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'XMLHttpRequest', 'send', arguments, result);
+            return result;
         },
         setRequestHeader() {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'XMLHttpRequest', 'setRequestHeader', arguments, result);
+            return result;
         },
         get status() {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).status, 0);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).status, 0);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'status', arguments, result);
+            return result;
         },
         get statusText() {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).statusText, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).statusText, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'statusText', arguments, result);
+            return result;
         },
         get timeout() {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).timeout, 0);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).timeout, 0);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'timeout', arguments, result);
+            return result;
         },
         set timeout(value) {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).timeout = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'XMLHttpRequest', 'timeout', arguments);
+            lwVm.memory.private_data.get(this).timeout = value + "";
         },
         get upload() {  //  XMLHttpRequestUpload
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).upload, "");
         },
         get withCredentials() {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).withCredentials, false);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).withCredentials, false);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'withCredentials', arguments, result);
+            return result;
         },
         set withCredentials(value) {
-            debugger;
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).withCredentials = value;
+            lwVm.memory.private_data.get(this).withCredentials = value;
         }
     }
 
@@ -145,9 +166,9 @@ XMLHttpRequest = function XMLHttpRequest() {//构造函数
         }
     };
 
-    qxVm.rename(XMLHttpRequest.prototype, "XMLHttpRequest");
-    qxVm.safeDescriptor_addConstructor(XMLHttpRequest);
-    qxVm.safe_Objattribute(XMLHttpRequest, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(XMLHttpRequest.prototype, "XMLHttpRequest");
+    lwVm.safeDescriptor_addConstructor(XMLHttpRequest);
+    lwVm.safe_Objattribute(XMLHttpRequest, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(XMLHttpRequest.prototype, XMLHttpRequestEventTarget.prototype);
     Object.setPrototypeOf(XMLHttpRequest, XMLHttpRequestEventTarget);

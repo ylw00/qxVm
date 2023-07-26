@@ -1,4 +1,4 @@
-document = new HTMLDocument(qxVm.memory.$createObj_key);
+document = new HTMLDocument(lwVm.memory.$createObj_key);
 ; (function () {
     let $attribute_map = {
         'location': location
@@ -13,8 +13,8 @@ document = new HTMLDocument(qxVm.memory.$createObj_key);
                 configurable: false,
                 enumerable: true
             });
-            qxVm.safefunction(Object.getOwnPropertyDescriptor(document, key)['get'], `get ${key}`, true);
-            qxVm.safefunction(Object.getOwnPropertyDescriptor(document, key)['set'], `set ${key}`, true);
+            lwVm.safefunction(Object.getOwnPropertyDescriptor(document, key)['get'], `get ${key}`, true);
+            lwVm.safefunction(Object.getOwnPropertyDescriptor(document, key)['set'], `set ${key}`, true);
         }
     };
 
@@ -44,12 +44,11 @@ document = new HTMLDocument(qxVm.memory.$createObj_key);
             }
             Object.defineProperty(window, key, desc);
 
-            qxVm.safefunction(Object.getOwnPropertyDescriptor(window, key)['get'], `get ${key}`, true);
+            lwVm.safefunction(Object.getOwnPropertyDescriptor(window, key)['get'], `get ${key}`, true);
             if (set === true) {
-                qxVm.safefunction(Object.getOwnPropertyDescriptor(window, key)['set'], `set ${key}`, true);
+                lwVm.safefunction(Object.getOwnPropertyDescriptor(window, key)['set'], `set ${key}`, true);
             }
         }
     };
 
 })();
-debugger;

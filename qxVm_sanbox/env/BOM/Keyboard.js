@@ -1,9 +1,9 @@
 Keyboard = function Keyboard(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(Keyboard);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(Keyboard);
 
 ; (function () {
     const $safe_get_attribute = [];
@@ -12,21 +12,27 @@ Keyboard = function Keyboard(createObj_key) {
 
     Keyboard.prototype = {
         getLayoutMap() {
-            debugger;
             if (!Keyboard.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Keyboard', 'getLayoutMap', arguments, result);
+            return result;
         },
         lock() {
-            debugger;
             if (!Keyboard.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Keyboard', 'lock', arguments, result);
+            return result;
         },
         unlock() {
-            debugger;
             if (!Keyboard.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Keyboard', 'unlock', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(Keyboard.prototype, "Keyboard");
-    qxVm.safeDescriptor_addConstructor(Keyboard);
-    qxVm.safe_Objattribute(Keyboard, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(Keyboard.prototype, "Keyboard");
+    lwVm.safeDescriptor_addConstructor(Keyboard);
+    lwVm.safe_Objattribute(Keyboard, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
 })();
 

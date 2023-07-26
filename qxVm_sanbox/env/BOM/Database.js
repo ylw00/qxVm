@@ -2,14 +2,14 @@ openDatabase = undefined;
 
 ; (function () {
     SQLResultSetRowList = function SQLResultSetRowList(createObj_key, rows) {
-        if (createObj_key !== qxVm.memory.$createObj_key) {
+        if (createObj_key !== lwVm.memory.$createObj_key) {
             throw new TypeError("Illegal constructor");
         }
-        qxVm.memory.private_data.set(this, {
+        lwVm.memory.private_data.set(this, {
             rows: rows,
             length: rows.length
         })
-    }; qxVm.safefunction(SQLResultSetRowList);
+    }; lwVm.safefunction(SQLResultSetRowList);
 
     ; (function () {
         const $safe_get_attribute = ['length'];
@@ -17,28 +17,30 @@ openDatabase = undefined;
         const $safe_func_attribute = ['item'];
         SQLResultSetRowList.prototype = {
             item() {
-                debugger;
                 if (!SQLResultSetRowList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-                return qxVm.memory.private_data.get(this).rows
+            let result = lwVm.memory.private_data.get(this).rows;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'SQLResultSetRowList', 'item', arguments, result);
+            return result;
             },
             get length() {
-                debugger;
                 if (!SQLResultSetRowList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-                return qxVm.abs(qxVm.memory.private_data.get(this).length, 0);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).length, 0);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SQLResultSetRowList', 'length', arguments, result);
+            return result;
             },
         }
-        qxVm.rename(SQLResultSetRowList.prototype, "SQLResultSetRowList");
-        qxVm.safeDescriptor_addConstructor(SQLResultSetRowList);
-        qxVm.safe_Objattribute(SQLResultSetRowList, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+        lwVm.rename(SQLResultSetRowList.prototype, "SQLResultSetRowList");
+        lwVm.safeDescriptor_addConstructor(SQLResultSetRowList);
+        lwVm.safe_Objattribute(SQLResultSetRowList, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
     })();
 
     // -----------------------------------------------------------SQLResultSet----------------------------------------------------------------
     SQLResultSet = function SQLResultSet(createObj_key) {
-        if (createObj_key !== qxVm.memory.$createObj_key) {
+        if (createObj_key !== lwVm.memory.$createObj_key) {
             throw new TypeError("Illegal constructor");
         }
-        qxVm.memory.private_data.set(this, {})
-    }; qxVm.safefunction(SQLResultSet);
+        lwVm.memory.private_data.set(this, {})
+    }; lwVm.safefunction(SQLResultSet);
 
     ; (function () {
         const $safe_get_attribute = ['insertId', 'rows', 'rowsAffected'];
@@ -47,36 +49,39 @@ openDatabase = undefined;
 
         SQLResultSet.prototype = {
             get insertId() {
-                debugger;
                 if (!SQLResultSet.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-                return qxVm.abs(qxVm.memory.private_data.get(this).insertId, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).insertId, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SQLResultSet', 'insertId', arguments, result);
+            return result;
             },
             get rows() {
-                debugger;
                 if (!SQLResultSet.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
 
-                // let sql_result_row_list = new SQLResultSetRowList(qxVm.memory.$createObj_key, {"value": window.sql_values});
-                return { "value": "0" }
+                // let sql_result_row_list = new SQLResultSetRowList(lwVm.memory.$createObj_key, {"value": window.sql_values});
+            let result = { "value": "0" };
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SQLResultSet', 'rows', arguments, result);
+            return result;
             },
             get rowsAffected() {
-                debugger;
                 if (!SQLResultSet.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-                return qxVm.abs(qxVm.memory.private_data.get(this).rowsAffected, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).rowsAffected, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SQLResultSet', 'rowsAffected', arguments, result);
+            return result;
             },
         }
-        qxVm.rename(SQLResultSet.prototype, "SQLResultSet");
-        qxVm.safeDescriptor_addConstructor(SQLResultSet);
-        qxVm.safe_Objattribute(SQLResultSet, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+        lwVm.rename(SQLResultSet.prototype, "SQLResultSet");
+        lwVm.safeDescriptor_addConstructor(SQLResultSet);
+        lwVm.safe_Objattribute(SQLResultSet, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     })();
 
     // -----------------------------------------------------------SQLTransaction----------------------------------------------------------------
     SQLTransaction = function SQLTransaction(createObj_key) {
-        if (createObj_key !== qxVm.memory.$createObj_key) {
+        if (createObj_key !== lwVm.memory.$createObj_key) {
             throw new TypeError("Illegal constructor");
         }
-        qxVm.memory.private_data.set(this, {})
-    }; qxVm.safefunction(SQLTransaction);
+        lwVm.memory.private_data.set(this, {})
+    }; lwVm.safefunction(SQLTransaction);
 
     ; (function () {
         const $safe_get_attribute = [];
@@ -85,20 +90,23 @@ openDatabase = undefined;
 
         SQLTransaction.prototype = {
             executeSql(sql, arg, succrssCallback, errorCallback) {
-                debugger;
                 if (!SQLTransaction.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
                 try {
 
                 } catch (error) {
-                    return errorCallback(this, sql_result);
+            let result = errorCallback(this, sql_result);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'SQLTransaction', '} catch ', arguments, result);
+            return result;
                 }
-                let sql_result = new SQLResultSet(qxVm.memory.$createObj_key);
-                return succrssCallback(this, sql_result)
+                let sql_result = new SQLResultSet(lwVm.memory.$createObj_key);
+            let result = succrssCallback(this, sql_result);
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'SQLTransaction', '} catch ', arguments, result);
+            return result;
             }
         }
-        qxVm.rename(SQLTransaction.prototype, "SQLTransaction");
-        qxVm.safeDescriptor_addConstructor(SQLTransaction);
-        qxVm.safe_Objattribute(SQLTransaction, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+        lwVm.rename(SQLTransaction.prototype, "SQLTransaction");
+        lwVm.safeDescriptor_addConstructor(SQLTransaction);
+        lwVm.safe_Objattribute(SQLTransaction, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
     })();
 
 
@@ -108,13 +116,13 @@ openDatabase = undefined;
 
 
     Database = function Database(createObj_key, version) {
-        if (createObj_key !== qxVm.memory.$createObj_key) {
+        if (createObj_key !== lwVm.memory.$createObj_key) {
             throw new TypeError("Illegal constructor");
         }
-        qxVm.memory.private_data.set(this, {
+        lwVm.memory.private_data.set(this, {
             version: version
         })
-    }; qxVm.safefunction(Database);
+    }; lwVm.safefunction(Database);
 
     ; (function () {
         const $safe_get_attribute = ['version'];
@@ -122,44 +130,46 @@ openDatabase = undefined;
         const $safe_func_attribute = ['changeVersion', 'readTransaction', 'transaction'];
         Database.prototype = {
             changeVersion(old_version, new_version) {
-                debugger;
                 if (!Database.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-                let this_info = qxVm.memory.private_data.get(this);
+                let this_info = lwVm.memory.private_data.get(this);
                 if (old_version == this_info.version) {
                     this_info.version = new_version;
                 }
             },
             readTransaction(func) {
-                debugger;
                 if (!Database.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Database', 'readTransaction', arguments, result);
+            return result;
             },
             transaction(func) {
-                debugger;
                 if (!Database.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-                let sql_tran = new SQLTransaction(qxVm.memory.$createObj_key);
-                return func(sql_tran);
+                let sql_tran = new SQLTransaction(lwVm.memory.$createObj_key);
+            let result = func(sql_tran);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Database', 'transaction', arguments, result);
+            return result;
             },
             get version() {
-                debugger;
                 if (!Database.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-                return qxVm.abs(qxVm.memory.private_data.get(this).version, "");
+                return lwVm.abs(lwVm.memory.private_data.get(this).version, "");
             }
         }
-        qxVm.rename(Database.prototype, "Database");
-        qxVm.safeDescriptor_addConstructor(Database);
-        qxVm.safe_Objattribute(Database, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+        lwVm.rename(Database.prototype, "Database");
+        lwVm.safeDescriptor_addConstructor(Database);
+        lwVm.safe_Objattribute(Database, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     })();
 
 
     openDatabase = function openDatabase(name, version, desc, size, callback) {
-        debugger;
 
         let db = buffer_memory[name];
         if (db) {
-            return db;
+            let result = db;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Database', 'if ', arguments, result);
+            return result;
         }
-        db = new Database(qxVm.memory.$createObj_key, version);
+        db = new Database(lwVm.memory.$createObj_key, version);
         buffer_memory[name] = db;
 
         return db;

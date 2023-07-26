@@ -1,13 +1,13 @@
 AudioNode = function AudioNode(createObj_key, channelCountMode) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
 
     channelCountMode = channelCountMode || "max"
-    qxVm.memory.private_data.set(this, {
+    lwVm.memory.private_data.set(this, {
         channelCountMode:channelCountMode
     })
-}; qxVm.safefunction(AudioNode);
+}; lwVm.safefunction(AudioNode);
 
 ; (function () {
     const $safe_get_attribute = ['channelCount', 'channelCountMode', 'channelInterpretation', 'context', 'numberOfInputs', 'numberOfOutputs'];
@@ -16,68 +16,78 @@ AudioNode = function AudioNode(createObj_key, channelCountMode) {
 
     AudioNode.prototype = {
         get channelCount() {
-            debugger;
             if (!AudioNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).channelCount, 2);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).channelCount, 2);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioNode', 'channelCount', arguments, result);
+            return result;
         },
         set channelCount(value) {
-            debugger;
             if (!AudioNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).channelCount = value;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'AudioNode', 'channelCount', arguments);
+            lwVm.memory.private_data.get(this).channelCount = value;
         },
         get channelCountMode() {
-            debugger;
             if (!AudioNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).channelCountMode, "max");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).channelCountMode, "max");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioNode', 'channelCountMode', arguments, result);
+            return result;
         },
         set channelCountMode(value) {
-            debugger;
             if (!AudioNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).channelCountMode = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'AudioNode', 'channelCountMode', arguments);
+            lwVm.memory.private_data.get(this).channelCountMode = value + "";
         },
         get channelInterpretation() {
-            debugger;
             if (!AudioNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).channelInterpretation, "speakers");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).channelInterpretation, "speakers");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioNode', 'channelInterpretation', arguments, result);
+            return result;
         },
         set channelInterpretation(value) {
-            debugger;
             if (!AudioNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).channelInterpretation = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'AudioNode', 'channelInterpretation', arguments);
+            lwVm.memory.private_data.get(this).channelInterpretation = value + "";
         },
         connect() {
-            debugger;
             if (!AudioNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'AudioNode', 'connect', arguments, result);
+            return result;
         },
         get context() {
-            debugger;
             if (!AudioNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
             // return this;
-            let ele = qxVm.memory.private_data.get(this).context;
+            let ele = lwVm.memory.private_data.get(this).context;
             if (ele === undefined) {
-                ele = new OfflineAudioContext(qxVm.memory.$createObj_key);
-                qxVm.memory.private_data.get(this).context = ele;
+                ele = new OfflineAudioContext(lwVm.memory.$createObj_key);
+                lwVm.memory.private_data.get(this).context = ele;
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioNode', 'context', arguments, result);
+            return result;
         },
         disconnect() {
-            debugger;
             if (!AudioNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'AudioNode', 'disconnect', arguments, result);
+            return result;
         },
         get numberOfInputs() {
-            debugger;
             if (!AudioNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).numberOfInputs, 0);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).numberOfInputs, 0);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioNode', 'numberOfInputs', arguments, result);
+            return result;
         },
         get numberOfOutputs() {
-            debugger;
             if (!AudioNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).numberOfOutputs, 1);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).numberOfOutputs, 1);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioNode', 'numberOfOutputs', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(AudioNode.prototype, "AudioNode");
-    qxVm.safeDescriptor_addConstructor(AudioNode);
-    qxVm.safe_Objattribute(AudioNode, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(AudioNode.prototype, "AudioNode");
+    lwVm.safeDescriptor_addConstructor(AudioNode);
+    lwVm.safe_Objattribute(AudioNode, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(AudioNode.prototype, EventTarget.prototype);
     Object.setPrototypeOf(AudioNode, EventTarget);

@@ -1,9 +1,9 @@
 DOMTokenList = function DOMTokenList(createObj_key) {//构造函数
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(DOMTokenList);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(DOMTokenList);
 
 ; (function () {
     const $safe_get_attribute = ['length', 'value'];
@@ -12,73 +12,99 @@ DOMTokenList = function DOMTokenList(createObj_key) {//构造函数
     
     DOMTokenList.prototype = {
         add() {
-            debugger;
             if (!DOMTokenList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'DOMTokenList', 'add', arguments, result);
+            return result;
         },
         contains() {
-            debugger;
             if (!DOMTokenList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'DOMTokenList', 'contains', arguments, result);
+            return result;
         },
         entries() {
-            debugger;
             if (!DOMTokenList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'DOMTokenList', 'entries', arguments, result);
+            return result;
         },
         forEach() {
-            debugger;
             if (!DOMTokenList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'DOMTokenList', 'forEach', arguments, result);
+            return result;
         },
         item() {
-            debugger;
             if (!DOMTokenList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'DOMTokenList', 'item', arguments, result);
+            return result;
         },
         keys() {
-            debugger;
             if (!DOMTokenList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'DOMTokenList', 'keys', arguments, result);
+            return result;
         },
         get length() {
-            debugger;
             if (!DOMTokenList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).length, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).length, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMTokenList', 'length', arguments, result);
+            return result;
         },
         remove() {
-            debugger;
             if (!DOMTokenList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'DOMTokenList', 'remove', arguments, result);
+            return result;
         },
         replace() {
-            debugger;
             if (!DOMTokenList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'DOMTokenList', 'replace', arguments, result);
+            return result;
         },
         supports() {
-            debugger;
             if (!DOMTokenList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'DOMTokenList', 'supports', arguments, result);
+            return result;
         },
         toString() {
-            debugger;
             if (!DOMTokenList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'DOMTokenList', 'toString', arguments, result);
+            return result;
         },
         toggle() {
-            debugger;
             if (!DOMTokenList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'DOMTokenList', 'toggle', arguments, result);
+            return result;
         },
         get value() {
-            debugger;
             if (!DOMTokenList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).value, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).value, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMTokenList', 'value', arguments, result);
+            return result;
         },
         set value(value) {
-            debugger;
             if (!DOMTokenList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).value = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'DOMTokenList', 'value', arguments);
+            lwVm.memory.private_data.get(this).value = value + "";
         },
         values() {
-            debugger;
             if (!DOMTokenList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'DOMTokenList', 'values', arguments, result);
+            return result;
         }
     };
 
-    qxVm.rename(DOMTokenList.prototype, "DOMTokenList");
-    qxVm.safeDescriptor_addConstructor(DOMTokenList);
-    qxVm.safe_Objattribute(DOMTokenList, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(DOMTokenList.prototype, "DOMTokenList");
+    lwVm.safeDescriptor_addConstructor(DOMTokenList);
+    lwVm.safe_Objattribute(DOMTokenList, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
 })();
 

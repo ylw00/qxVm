@@ -1,9 +1,9 @@
 VirtualKeyboard = function VirtualKeyboard(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(VirtualKeyboard);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(VirtualKeyboard);
 
 ; (function () {
     const $safe_get_attribute = ['boundingRect', 'ongeometrychange', 'overlaysContent'];
@@ -12,42 +12,47 @@ VirtualKeyboard = function VirtualKeyboard(createObj_key) {
 
     VirtualKeyboard.prototype = {
         get boundingRect() { // 有问题
-            debugger;
             if (!VirtualKeyboard.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).boundingRect, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).boundingRect, "");
         },
         hide() {
-            debugger;
             if (!VirtualKeyboard.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'VirtualKeyboard', 'hide', arguments, result);
+            return result;
         },
         get ongeometrychange() {
-            debugger;
             if (!VirtualKeyboard.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).ongeometrychange, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ongeometrychange, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'VirtualKeyboard', 'ongeometrychange', arguments, result);
+            return result;
         },
         set ongeometrychange(value) {
-            debugger;
             if (!VirtualKeyboard.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).ongeometrychange = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'VirtualKeyboard', 'ongeometrychange', arguments);
+            lwVm.memory.private_data.get(this).ongeometrychange = value + "";
         },
         get overlaysContent() {
-            debugger;
             if (!VirtualKeyboard.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).overlaysContent, false);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).overlaysContent, false);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'VirtualKeyboard', 'overlaysContent', arguments, result);
+            return result;
         },
         set overlaysContent(value) {
-            debugger;
             if (!VirtualKeyboard.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).overlaysContent = value ? true : false;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'VirtualKeyboard', 'overlaysContent', arguments);
+            lwVm.memory.private_data.get(this).overlaysContent = value ? true : false;
         },
         show() {
-            debugger;
             if (!VirtualKeyboard.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'VirtualKeyboard', 'show', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(VirtualKeyboard.prototype, "VirtualKeyboard");
-    qxVm.safeDescriptor_addConstructor(VirtualKeyboard);
-    qxVm.safe_Objattribute(VirtualKeyboard, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(VirtualKeyboard.prototype, "VirtualKeyboard");
+    lwVm.safeDescriptor_addConstructor(VirtualKeyboard);
+    lwVm.safe_Objattribute(VirtualKeyboard, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(VirtualKeyboard.prototype, EventTarget.prototype);
     Object.setPrototypeOf(VirtualKeyboard, EventTarget);

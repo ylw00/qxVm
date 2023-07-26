@@ -1,9 +1,9 @@
 RTCSessionDescription = function RTCSessionDescription(createObj_key, sdp, type) {//构造函数
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, { sdp: sdp, type: type })
-}; qxVm.safefunction(RTCSessionDescription);
+    lwVm.memory.private_data.set(this, { sdp: sdp, type: type })
+}; lwVm.safefunction(RTCSessionDescription);
 
 ; (function () {
     const $safe_get_attribute = ['sdp', 'type'];
@@ -12,34 +12,38 @@ RTCSessionDescription = function RTCSessionDescription(createObj_key, sdp, type)
 
     RTCSessionDescription.prototype = {
         get sdp() {
-            debugger;
             if (!RTCSessionDescription.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).sdp, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).sdp, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCSessionDescription', 'sdp', arguments, result);
+            return result;
         },
         set sdp(value) {
-            debugger;
             if (!RTCSessionDescription.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).sdp = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCSessionDescription', 'sdp', arguments);
+            lwVm.memory.private_data.get(this).sdp = value + "";
         },
         toJSON() {
-            debugger;
             if (!RTCSessionDescription.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCSessionDescription', 'toJSON', arguments, result);
+            return result;
         },
         get type() {
-            debugger;
             if (!RTCSessionDescription.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).type, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).type, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCSessionDescription', 'type', arguments, result);
+            return result;
         },
         set type(value) {
-            debugger;
             if (!RTCSessionDescription.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).type = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCSessionDescription', 'type', arguments);
+            lwVm.memory.private_data.get(this).type = value + "";
         },
     };
 
-    qxVm.rename(RTCSessionDescription.prototype, "RTCSessionDescription");
-    qxVm.safeDescriptor_addConstructor(RTCSessionDescription);
-    qxVm.safe_Objattribute(RTCSessionDescription, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(RTCSessionDescription.prototype, "RTCSessionDescription");
+    lwVm.safeDescriptor_addConstructor(RTCSessionDescription);
+    lwVm.safe_Objattribute(RTCSessionDescription, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
 })();
 

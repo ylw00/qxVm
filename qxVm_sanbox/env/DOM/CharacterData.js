@@ -1,9 +1,9 @@
 CharacterData = function (createObj_key) {//构造函数
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(CharacterData);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(CharacterData);
 
 ; (function () {
     const $safe_get_attribute = ['data', 'length', 'nextElementSibling', 'previousElementSibling'];
@@ -12,71 +12,93 @@ CharacterData = function (createObj_key) {//构造函数
 
     CharacterData.prototype = {
         after() {
-            debugger;
             if (!CharacterData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CharacterData', 'after', arguments, result);
+            return result;
         },
         appendData() {
-            debugger;
             if (!CharacterData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CharacterData', 'appendData', arguments, result);
+            return result;
         },
         before() {
-            debugger;
             if (!CharacterData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CharacterData', 'before', arguments, result);
+            return result;
         },
         get data() {
-            debugger;
             if (!CharacterData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).data, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).data, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CharacterData', 'data', arguments, result);
+            return result;
         },
         set data(value) {
-            debugger;
             if (!CharacterData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).data = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'CharacterData', 'data', arguments);
+            lwVm.memory.private_data.get(this).data = value + "";
         },
         deleteData() {
-            debugger;
             if (!CharacterData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CharacterData', 'deleteData', arguments, result);
+            return result;
         },
         insertData() {
-            debugger;
             if (!CharacterData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CharacterData', 'insertData', arguments, result);
+            return result;
         },
         get length() {
-            debugger;
             if (!CharacterData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).length, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).length, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CharacterData', 'length', arguments, result);
+            return result;
         },
         get nextElementSibling() {
-            debugger;
             if (!CharacterData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).nextElementSibling, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).nextElementSibling, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CharacterData', 'nextElementSibling', arguments, result);
+            return result;
         },
         get previousElementSibling() {
-            debugger;
             if (!CharacterData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).previousElementSibling, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).previousElementSibling, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CharacterData', 'previousElementSibling', arguments, result);
+            return result;
         },
         remove() {
-            debugger;
             if (!CharacterData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CharacterData', 'remove', arguments, result);
+            return result;
         },
         replaceData() {
-            debugger;
             if (!CharacterData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CharacterData', 'replaceData', arguments, result);
+            return result;
         },
         replaceWith() {
-            debugger;
             if (!CharacterData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CharacterData', 'replaceWith', arguments, result);
+            return result;
         },
         substringData() {
-            debugger;
             if (!CharacterData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CharacterData', 'substringData', arguments, result);
+            return result;
         }
     };
 
-    qxVm.rename(CharacterData.prototype, "CharacterData");
-    qxVm.safeDescriptor_addConstructor(CharacterData);
-    qxVm.safe_Objattribute(CharacterData, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(CharacterData.prototype, "CharacterData");
+    lwVm.safeDescriptor_addConstructor(CharacterData);
+    lwVm.safe_Objattribute(CharacterData, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.defineProperties(CharacterData.prototype, {
         [Symbol.unscopables]: {

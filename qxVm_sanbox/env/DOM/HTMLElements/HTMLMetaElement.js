@@ -1,9 +1,9 @@
 HTMLMetaElement = function HTMLMetaElement(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(HTMLMetaElement);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(HTMLMetaElement);
 
 ; (function () {
     const $safe_get_attribute = ['content', 'httpEquiv', 'media', 'name', 'scheme'];
@@ -12,64 +12,69 @@ HTMLMetaElement = function HTMLMetaElement(createObj_key) {
     HTMLMetaElement.prototype = {
 
         get content() {
-            debugger;
             if (!HTMLMetaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).content, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).content, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMetaElement', 'content', arguments, result);
+            return result;
         },
         set content(value) {
-            debugger;
             if (!HTMLMetaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).content = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'HTMLMetaElement', 'content', arguments);
+            lwVm.memory.private_data.get(this).content = value + "";
         },
         get httpEquiv() {
-            debugger;
             if (!HTMLMetaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).httpEquiv, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).httpEquiv, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMetaElement', 'httpEquiv', arguments, result);
+            return result;
         },
         set httpEquiv(value) {
-            debugger;
             if (!HTMLMetaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).httpEquiv = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'HTMLMetaElement', 'httpEquiv', arguments);
+            lwVm.memory.private_data.get(this).httpEquiv = value + "";
         },
         get media() {
-            debugger;
             if (!HTMLMetaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).media, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).media, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMetaElement', 'media', arguments, result);
+            return result;
         },
         set media(value) {
-            debugger;
             if (!HTMLMetaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).media = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'HTMLMetaElement', 'media', arguments);
+            lwVm.memory.private_data.get(this).media = value + "";
         },
         get name() {
-            debugger;
             if (!HTMLMetaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).name, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).name, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMetaElement', 'name', arguments, result);
+            return result;
         },
         set name(value) {
-            debugger;
             if (!HTMLMetaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).name = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'HTMLMetaElement', 'name', arguments);
+            lwVm.memory.private_data.get(this).name = value + "";
         },
         get scheme() {
-            debugger;
             if (!HTMLMetaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).scheme, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).scheme, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMetaElement', 'scheme', arguments, result);
+            return result;
         },
         set scheme(value) {
-            debugger;
             if (!HTMLMetaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).scheme = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'HTMLMetaElement', 'scheme', arguments);
+            lwVm.memory.private_data.get(this).scheme = value + "";
         },
     }
-    qxVm.rename(HTMLMetaElement.prototype, "HTMLMetaElement");
-    qxVm.safeDescriptor_addConstructor(HTMLMetaElement);
-    qxVm.safe_Objattribute(HTMLMetaElement, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(HTMLMetaElement.prototype, "HTMLMetaElement");
+    lwVm.safeDescriptor_addConstructor(HTMLMetaElement);
+    lwVm.safe_Objattribute(HTMLMetaElement, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(HTMLMetaElement.prototype, HTMLElement.prototype);
     Object.setPrototypeOf(HTMLMetaElement, HTMLElement);
 })();
 
-qxVm.memory.htmlElements["meta"] = function () {
-    return new HTMLMetaElement(qxVm.memory.$createObj_key);
+lwVm.memory.htmlElements["meta"] = function () {
+    return new HTMLMetaElement(lwVm.memory.$createObj_key);
 }

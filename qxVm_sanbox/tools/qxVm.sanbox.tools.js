@@ -56,11 +56,18 @@ ${js_code}`;
 }
 
 
+function deepCopy(targetObj){
+    return JSON.parse(JSON.stringify(targetObj));
+}
+
+
+
 module.exports = {
     str_is_funcName,
     isFilePath,
     compress_jsCode,
-    set_Time_Random
+    set_Time_Random,
+    deepCopy: deepCopy
 };
 
 

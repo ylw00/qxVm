@@ -1,9 +1,9 @@
 NetworkInformation = function NetworkInformation(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(NetworkInformation);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(NetworkInformation);
 
 ; (function () {
     const $safe_get_attribute = ['downlink', 'effectiveType', 'onchange', 'rtt', 'saveData'];
@@ -12,39 +12,44 @@ NetworkInformation = function NetworkInformation(createObj_key) {
 
     NetworkInformation.prototype = {
         get downlink() {
-            debugger;
             if (!NetworkInformation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return 0.4;
+            let result = 0.4;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'NetworkInformation', 'downlink', arguments, result);
+            return result;
         },
         get effectiveType() {
-            debugger;
             if (!NetworkInformation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return "4g";
+            let result = "4g";;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'NetworkInformation', 'effectiveType', arguments, result);
+            return result;
         },
         get onchange() {
-            debugger;
             if (!NetworkInformation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onchange, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onchange, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'NetworkInformation', 'onchange', arguments, result);
+            return result;
         },
         set onchange(value) {
-            debugger;
             if (!NetworkInformation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onchange = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'NetworkInformation', 'onchange', arguments);
+            lwVm.memory.private_data.get(this).onchange = value + "";
         },
         get rtt() {
-            debugger;
             if (!NetworkInformation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return 250;
+            let result = 250;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'NetworkInformation', 'rtt', arguments, result);
+            return result;
         },
         get saveData() {
-            debugger;
             if (!NetworkInformation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return false;
+            let result = false;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'NetworkInformation', 'saveData', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(NetworkInformation.prototype, "NetworkInformation");
-    qxVm.safeDescriptor_addConstructor(NetworkInformation);
-    qxVm.safe_Objattribute(NetworkInformation, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(NetworkInformation.prototype, "NetworkInformation");
+    lwVm.safeDescriptor_addConstructor(NetworkInformation);
+    lwVm.safe_Objattribute(NetworkInformation, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(NetworkInformation.prototype, EventTarget.prototype);
     Object.setPrototypeOf(NetworkInformation, EventTarget);

@@ -1,9 +1,9 @@
 HTMLLabelElement = function HTMLLabelElement(createObj_key) {//构造函数
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(HTMLLabelElement);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(HTMLLabelElement);
 
 ; (function () {
     const $safe_get_attribute = ['control', 'form', 'htmlFor'];
@@ -12,29 +12,33 @@ HTMLLabelElement = function HTMLLabelElement(createObj_key) {//构造函数
 
     HTMLLabelElement.prototype = {
         get control() {
-            debugger;
             if (!HTMLLabelElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).control, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).control, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLabelElement', 'control', arguments, result);
+            return result;
         },
         get form() {
-            debugger;
             if (!HTMLLabelElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).form, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).form, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLabelElement', 'form', arguments, result);
+            return result;
         },
         get htmlFor() {
-            debugger;
             if (!HTMLLabelElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).htmlFor, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).htmlFor, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLabelElement', 'htmlFor', arguments, result);
+            return result;
         },
         set htmlFor(value) {
             if (!HTMLLabelElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).htmlFor = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'HTMLLabelElement', 'htmlFor', arguments);
+            lwVm.memory.private_data.get(this).htmlFor = value + "";
         },
     }
 
-    qxVm.rename(HTMLLabelElement.prototype, "HTMLLabelElement");
-    qxVm.safeDescriptor_addConstructor(HTMLLabelElement);
-    qxVm.safe_Objattribute(HTMLLabelElement, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(HTMLLabelElement.prototype, "HTMLLabelElement");
+    lwVm.safeDescriptor_addConstructor(HTMLLabelElement);
+    lwVm.safe_Objattribute(HTMLLabelElement, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(HTMLLabelElement.prototype, HTMLElement.prototype);
     Object.setPrototypeOf(HTMLLabelElement, HTMLElement);
@@ -42,6 +46,6 @@ HTMLLabelElement = function HTMLLabelElement(createObj_key) {//构造函数
 })();
 
 
-qxVm.memory.htmlElements["label"] = function () {
-    return new HTMLLabelElement(qxVm.memory.$createObj_key);
+lwVm.memory.htmlElements["label"] = function () {
+    return new HTMLLabelElement(lwVm.memory.$createObj_key);
 }

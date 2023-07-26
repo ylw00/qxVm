@@ -1,9 +1,9 @@
 DOMRectReadOnly = function DOMRectReadOnly(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(DOMRectReadOnly);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(DOMRectReadOnly);
 
 ; (function () {
     const $safe_get_attribute = ['bottom', 'height', 'left', 'right', 'top', 'width', 'x', 'y'];
@@ -12,52 +12,62 @@ DOMRectReadOnly = function DOMRectReadOnly(createObj_key) {
 
     DOMRectReadOnly.prototype = {
         get bottom() {
-            debugger;
             if (!DOMRectReadOnly.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return 0;
+            let result = 0;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRectReadOnly', 'bottom', arguments, result);
+            return result;
         },
         get height() {
-            debugger;
             if (!DOMRectReadOnly.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return 0;
+            let result = 0;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRectReadOnly', 'height', arguments, result);
+            return result;
         },
         get left() {
-            debugger;
             if (!DOMRectReadOnly.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return 0;
+            let result = 0;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRectReadOnly', 'left', arguments, result);
+            return result;
         },
         get right() {
-            debugger;
             if (!DOMRectReadOnly.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return 0;
+            let result = 0;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRectReadOnly', 'right', arguments, result);
+            return result;
         },
         toJSON() {
-            debugger;
             if (!DOMRectReadOnly.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'DOMRectReadOnly', 'toJSON', arguments, result);
+            return result;
         },
         get top() {
-            debugger;
             if (!DOMRectReadOnly.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return 0;
+            let result = 0;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRectReadOnly', 'top', arguments, result);
+            return result;
         },
         get width() {
-            debugger;
             if (!DOMRectReadOnly.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return 0;
+            let result = 0;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRectReadOnly', 'width', arguments, result);
+            return result;
         },
         get x() {
-            debugger;
             if (!DOMRectReadOnly.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return 0;
+            let result = 0;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRectReadOnly', 'x', arguments, result);
+            return result;
         },
         get y() {
-            debugger;
             if (!DOMRectReadOnly.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return 0;
+            let result = 0;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRectReadOnly', 'y', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(DOMRectReadOnly.prototype, "DOMRectReadOnly");
-    qxVm.safeDescriptor_addConstructor(DOMRectReadOnly);
-    qxVm.safe_Objattribute(DOMRectReadOnly, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(DOMRectReadOnly.prototype, "DOMRectReadOnly");
+    lwVm.safeDescriptor_addConstructor(DOMRectReadOnly);
+    lwVm.safe_Objattribute(DOMRectReadOnly, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 })();
 

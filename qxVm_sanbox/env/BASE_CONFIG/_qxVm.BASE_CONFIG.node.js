@@ -11,6 +11,13 @@ function Get_baseConfig_node_code() {
     return code;
 };
 
+function Get_frameEnd_code(){
+    let code = ""
+    code += ReadCode("vm_frameLoadEnd.js");
+    return code;
+}
+
 module.exports = {
-    Get_baseConfig_node_code
+    Get_baseConfig_node_code, 
+    Get_frameEnd_code
 }

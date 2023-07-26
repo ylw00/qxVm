@@ -1,9 +1,9 @@
 RTCDataChannel = function RTCDataChannel(createObj_key, label) {//构造函数
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {label:label})
-}; qxVm.safefunction(RTCDataChannel);
+    lwVm.memory.private_data.set(this, {label:label})
+}; lwVm.safefunction(RTCDataChannel);
 
 ; (function () {
     const $safe_get_attribute = ['binaryType', 'bufferedAmount', 'bufferedAmountLowThreshold', 'id', 'label', 'maxRetransmitTime', 'maxRetransmits', 'negotiated', 'onbufferedamountlow', 'onclose', 'onerror', 'onmessage', 'onopen', 'ordered', 'protocol', 'readyState', 'reliable'];
@@ -12,143 +12,164 @@ RTCDataChannel = function RTCDataChannel(createObj_key, label) {//构造函数
     RTCDataChannel.prototype = {
 
         get binaryType() {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).binaryType, "arraybuffer");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).binaryType, "arraybuffer");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCDataChannel', 'binaryType', arguments, result);
+            return result;
         },
         set binaryType(value) {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).binaryType = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCDataChannel', 'binaryType', arguments);
+            lwVm.memory.private_data.get(this).binaryType = value + "";
         },
         get bufferedAmount() {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).bufferedAmount, 0);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).bufferedAmount, 0);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCDataChannel', 'bufferedAmount', arguments, result);
+            return result;
         },
         set bufferedAmount(value) {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).bufferedAmount = value;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCDataChannel', 'bufferedAmount', arguments);
+            lwVm.memory.private_data.get(this).bufferedAmount = value;
         },
         get bufferedAmountLowThreshold() {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).bufferedAmountLowThreshold, 0);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).bufferedAmountLowThreshold, 0);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCDataChannel', 'bufferedAmountLowThreshold', arguments, result);
+            return result;
         },
         set bufferedAmountLowThreshold(value) {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).bufferedAmountLowThreshold = value;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCDataChannel', 'bufferedAmountLowThreshold', arguments);
+            lwVm.memory.private_data.get(this).bufferedAmountLowThreshold = value;
         },
         close() {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCDataChannel', 'close', arguments, result);
+            return result;
         },
         get id() {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).id, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).id, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCDataChannel', 'id', arguments, result);
+            return result;
         },
         get label() {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.memory.private_data.get(this).label;
+            let result = lwVm.memory.private_data.get(this).label;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCDataChannel', 'label', arguments, result);
+            return result;
         },
         get maxRetransmitTime() {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).maxRetransmitTime, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).maxRetransmitTime, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCDataChannel', 'maxRetransmitTime', arguments, result);
+            return result;
         },
         get maxRetransmits() {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).maxRetransmits, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).maxRetransmits, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCDataChannel', 'maxRetransmits', arguments, result);
+            return result;
         },
         get negotiated() {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).negotiated, false);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).negotiated, false);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCDataChannel', 'negotiated', arguments, result);
+            return result;
         },
         get onbufferedamountlow() {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onbufferedamountlow, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onbufferedamountlow, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCDataChannel', 'onbufferedamountlow', arguments, result);
+            return result;
         },
         set onbufferedamountlow(value) {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onbufferedamountlow = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCDataChannel', 'onbufferedamountlow', arguments);
+            lwVm.memory.private_data.get(this).onbufferedamountlow = value + "";
         },
         get onclose() {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onclose, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onclose, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCDataChannel', 'onclose', arguments, result);
+            return result;
         },
         set onclose(value) {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onclose = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCDataChannel', 'onclose', arguments);
+            lwVm.memory.private_data.get(this).onclose = value + "";
         },
         get onerror() {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onerror, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onerror, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCDataChannel', 'onerror', arguments, result);
+            return result;
         },
         set onerror(value) {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onerror = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCDataChannel', 'onerror', arguments);
+            lwVm.memory.private_data.get(this).onerror = value + "";
         },
         get onmessage() {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onmessage, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmessage, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCDataChannel', 'onmessage', arguments, result);
+            return result;
         },
         set onmessage(value) {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onmessage = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCDataChannel', 'onmessage', arguments);
+            lwVm.memory.private_data.get(this).onmessage = value + "";
         },
         get onopen() {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onopen, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onopen, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCDataChannel', 'onopen', arguments, result);
+            return result;
         },
         set onopen(value) {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onopen = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCDataChannel', 'onopen', arguments);
+            lwVm.memory.private_data.get(this).onopen = value + "";
         },
         get ordered() {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).ordered, true);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ordered, true);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCDataChannel', 'ordered', arguments, result);
+            return result;
         },
         get protocol() {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).protocol, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).protocol, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCDataChannel', 'protocol', arguments, result);
+            return result;
         },
         get readyState() {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).readyState, "connecting");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).readyState, "connecting");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCDataChannel', 'readyState', arguments, result);
+            return result;
         },
         get reliable() {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).reliable, true);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).reliable, true);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCDataChannel', 'reliable', arguments, result);
+            return result;
         },
         send() {
-            debugger;
             if (!RTCDataChannel.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCDataChannel', 'send', arguments, result);
+            return result;
         }
     };
 
-    qxVm.rename(RTCDataChannel.prototype, "RTCDataChannel");
-    qxVm.safeDescriptor_addConstructor(RTCDataChannel);
-    qxVm.safe_Objattribute(RTCDataChannel, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(RTCDataChannel.prototype, "RTCDataChannel");
+    lwVm.safeDescriptor_addConstructor(RTCDataChannel);
+    lwVm.safe_Objattribute(RTCDataChannel, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(RTCDataChannel.prototype, EventTarget.prototype);
     Object.setPrototypeOf(RTCDataChannel, EventTarget);

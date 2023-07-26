@@ -1,9 +1,9 @@
 Bluetooth = function Bluetooth(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(Bluetooth);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(Bluetooth);
 
 ; (function () {
     const $safe_get_attribute = [];
@@ -12,17 +12,21 @@ Bluetooth = function Bluetooth(createObj_key) {
 
     Bluetooth.prototype = {
         getAvailability() {
-            debugger;
             if (!Bluetooth.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Bluetooth', 'getAvailability', arguments, result);
+            return result;
         },
         requestDevice() {
-            debugger;
             if (!Bluetooth.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Bluetooth', 'requestDevice', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(Bluetooth.prototype, "Bluetooth");
-    qxVm.safeDescriptor_addConstructor(Bluetooth);
-    qxVm.safe_Objattribute(Bluetooth, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(Bluetooth.prototype, "Bluetooth");
+    lwVm.safeDescriptor_addConstructor(Bluetooth);
+    lwVm.safe_Objattribute(Bluetooth, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(Bluetooth.prototype, EventTarget.prototype);
     Object.setPrototypeOf(Bluetooth, EventTarget);

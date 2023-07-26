@@ -1,9 +1,9 @@
 LockManager = function LockManager(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(LockManager);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(LockManager);
 
 ; (function () {
     const $safe_get_attribute = [];
@@ -12,17 +12,21 @@ LockManager = function LockManager(createObj_key) {
 
     LockManager.prototype = {
         query() {
-            debugger;
             if (!LockManager.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'LockManager', 'query', arguments, result);
+            return result;
         },
         request() {
-            debugger;
             if (!LockManager.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'LockManager', 'request', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(LockManager.prototype, "LockManager");
-    qxVm.safeDescriptor_addConstructor(LockManager);
-    qxVm.safe_Objattribute(LockManager, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(LockManager.prototype, "LockManager");
+    lwVm.safeDescriptor_addConstructor(LockManager);
+    lwVm.safe_Objattribute(LockManager, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
 })();
 

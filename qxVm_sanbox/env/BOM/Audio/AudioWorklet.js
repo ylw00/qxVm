@@ -1,9 +1,9 @@
 AudioWorklet = function AudioWorklet(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(AudioWorklet);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(AudioWorklet);
 
 ; (function () {
     const $safe_get_attribute = [];
@@ -12,9 +12,9 @@ AudioWorklet = function AudioWorklet(createObj_key) {
 
     AudioWorklet.prototype = {
     }
-    qxVm.rename(AudioWorklet.prototype, "AudioWorklet");
-    qxVm.safeDescriptor_addConstructor(AudioWorklet);
-    qxVm.safe_Objattribute(AudioWorklet, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(AudioWorklet.prototype, "AudioWorklet");
+    lwVm.safeDescriptor_addConstructor(AudioWorklet);
+    lwVm.safe_Objattribute(AudioWorklet, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(AudioWorklet.prototype, Worklet.prototype);
     Object.setPrototypeOf(AudioWorklet, Worklet);

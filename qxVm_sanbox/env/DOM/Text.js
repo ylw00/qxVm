@@ -3,8 +3,8 @@ Text = function Text(wholeText) {
         throw new TypeError(`Failed to construct 'Text': Please use the 'new' operator, this DOM object constructor cannot be called as a function.`)
     }
 
-    qxVm.memory.private_data.set(this, { wholeText: wholeText })
-}; qxVm.safefunction(Text);
+    lwVm.memory.private_data.set(this, { wholeText: wholeText })
+}; lwVm.safefunction(Text);
 
 ; (function () {
     const $safe_get_attribute = ['assignedSlot'];
@@ -13,23 +13,25 @@ Text = function Text(wholeText) {
 
     Text.prototype = {
         get assignedSlot() {
-            debugger;
             if (!Text.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).assignedSlot, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).assignedSlot, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Text', 'assignedSlot', arguments, result);
+            return result;
         },
         splitText() {
-            debugger;
             if (!Text.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Text', 'splitText', arguments, result);
+            return result;
         },
         get wholeText() {
-            debugger;
             if (!Text.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).wholeText, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).wholeText, "");
         }
     }
-    qxVm.rename(Text.prototype, "Text");
-    qxVm.safeDescriptor_addConstructor(Text);
-    qxVm.safe_Objattribute(Text, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(Text.prototype, "Text");
+    lwVm.safeDescriptor_addConstructor(Text);
+    lwVm.safe_Objattribute(Text, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(Text.prototype, CharacterData.prototype);
     Object.setPrototypeOf(Text, CharacterData);

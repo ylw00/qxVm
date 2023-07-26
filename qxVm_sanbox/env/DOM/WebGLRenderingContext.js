@@ -1,13 +1,13 @@
 WebGLRenderingContext = function WebGLRenderingContext(createObj_key, canvas) {//构造函数
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, { canvas: canvas })
-}; qxVm.safefunction(WebGLRenderingContext);
+    lwVm.memory.private_data.set(this, { canvas: canvas })
+}; lwVm.safefunction(WebGLRenderingContext);
 
 ; (function () {
     let WebGLDebugRendererInfo = function WebGLDebugRendererInfo(createObj_key) {
-        qxVm.memory.private_data.set(this, {})
+        lwVm.memory.private_data.set(this, {})
     };
     ; (function () {
         const $attributes = {
@@ -24,8 +24,8 @@ WebGLRenderingContext = function WebGLRenderingContext(createObj_key, canvas) {/
             }
         };
 
-        qxVm.rename(WebGLDebugRendererInfo.prototype, "WebGLDebugRendererInfo");
-        qxVm.safeDescriptor_addConstructor(WebGLDebugRendererInfo);
+        lwVm.rename(WebGLDebugRendererInfo.prototype, "WebGLDebugRendererInfo");
+        lwVm.safeDescriptor_addConstructor(WebGLDebugRendererInfo);
 
     })();
 
@@ -355,266 +355,390 @@ WebGLRenderingContext = function WebGLRenderingContext(createObj_key, canvas) {/
 
     WebGLRenderingContext.prototype = {
         activeTexture() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'activeTexture', arguments, result);
+            return result;
         },
         attachShader() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'attachShader', arguments, result);
+            return result;
         },
         bindAttribLocation() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'bindAttribLocation', arguments, result);
+            return result;
         },
         bindBuffer() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'bindBuffer', arguments, result);
+            return result;
         },
         bindFramebuffer() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'bindFramebuffer', arguments, result);
+            return result;
         },
         bindRenderbuffer() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'bindRenderbuffer', arguments, result);
+            return result;
         },
         bindTexture() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'bindTexture', arguments, result);
+            return result;
         },
         blendColor() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'blendColor', arguments, result);
+            return result;
         },
         blendEquation() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'blendEquation', arguments, result);
+            return result;
         },
         blendEquationSeparate() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'blendEquationSeparate', arguments, result);
+            return result;
         },
         blendFunc() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'blendFunc', arguments, result);
+            return result;
         },
         blendFuncSeparate() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'blendFuncSeparate', arguments, result);
+            return result;
         },
         bufferData() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'bufferData', arguments, result);
+            return result;
         },
         bufferSubData() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'bufferSubData', arguments, result);
+            return result;
         },
         get canvas() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.memory.private_data.get(this).canvas;
+            let result = lwVm.memory.private_data.get(this).canvas;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'WebGLRenderingContext', 'canvas', arguments, result);
+            return result;
         },
         checkFramebufferStatus() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'checkFramebufferStatus', arguments, result);
+            return result;
         },
         clear() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'clear', arguments, result);
+            return result;
         },
         clearColor() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'clearColor', arguments, result);
+            return result;
         },
         clearDepth() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'clearDepth', arguments, result);
+            return result;
         },
         clearStencil() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'clearStencil', arguments, result);
+            return result;
         },
         colorMask() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'colorMask', arguments, result);
+            return result;
         },
         compileShader() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'compileShader', arguments, result);
+            return result;
         },
         compressedTexImage2D() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'compressedTexImage2D', arguments, result);
+            return result;
         },
         compressedTexSubImage2D() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'compressedTexSubImage2D', arguments, result);
+            return result;
         },
         copyTexImage2D() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'copyTexImage2D', arguments, result);
+            return result;
         },
         copyTexSubImage2D() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'copyTexSubImage2D', arguments, result);
+            return result;
         },
         createBuffer() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'createBuffer', arguments, result);
+            return result;
         },
         createFramebuffer() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'createFramebuffer', arguments, result);
+            return result;
         },
         createProgram() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'createProgram', arguments, result);
+            return result;
         },
         createRenderbuffer() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'createRenderbuffer', arguments, result);
+            return result;
         },
         createShader() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'createShader', arguments, result);
+            return result;
         },
         createTexture() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'createTexture', arguments, result);
+            return result;
         },
         cullFace() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'cullFace', arguments, result);
+            return result;
         },
         deleteBuffer() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'deleteBuffer', arguments, result);
+            return result;
         },
         deleteFramebuffer() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'deleteFramebuffer', arguments, result);
+            return result;
         },
         deleteProgram() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'deleteProgram', arguments, result);
+            return result;
         },
         deleteRenderbuffer() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'deleteRenderbuffer', arguments, result);
+            return result;
         },
         deleteShader() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'deleteShader', arguments, result);
+            return result;
         },
         deleteTexture() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'deleteTexture', arguments, result);
+            return result;
         },
         depthFunc() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'depthFunc', arguments, result);
+            return result;
         },
         depthMask() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'depthMask', arguments, result);
+            return result;
         },
         depthRange() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'depthRange', arguments, result);
+            return result;
         },
         detachShader() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'detachShader', arguments, result);
+            return result;
         },
         disable() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'disable', arguments, result);
+            return result;
         },
         disableVertexAttribArray() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'disableVertexAttribArray', arguments, result);
+            return result;
         },
         drawArrays() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'drawArrays', arguments, result);
+            return result;
         },
         drawElements() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'drawElements', arguments, result);
+            return result;
         },
         get drawingBufferHeight() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return 150;
+            let result = 150;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'WebGLRenderingContext', 'drawingBufferHeight', arguments, result);
+            return result;
         },
         get drawingBufferWidth() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return 300;
+            let result = 300;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'WebGLRenderingContext', 'drawingBufferWidth', arguments, result);
+            return result;
         },
         enable() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'enable', arguments, result);
+            return result;
         },
         enableVertexAttribArray() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'enableVertexAttribArray', arguments, result);
+            return result;
         },
         finish() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'finish', arguments, result);
+            return result;
         },
         flush() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'flush', arguments, result);
+            return result;
         },
         framebufferRenderbuffer() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'framebufferRenderbuffer', arguments, result);
+            return result;
         },
         framebufferTexture2D() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'framebufferTexture2D', arguments, result);
+            return result;
         },
         frontFace() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'frontFace', arguments, result);
+            return result;
         },
         generateMipmap() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'generateMipmap', arguments, result);
+            return result;
         },
         getActiveAttrib() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getActiveAttrib', arguments, result);
+            return result;
         },
         getActiveUniform() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getActiveUniform', arguments, result);
+            return result;
         },
         getAttachedShaders() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getAttachedShaders', arguments, result);
+            return result;
         },
         getAttribLocation() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getAttribLocation', arguments, result);
+            return result;
         },
         getBufferParameter() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getBufferParameter', arguments, result);
+            return result;
         },
         getContextAttributes() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getContextAttributes', arguments, result);
+            return result;
         },
         getError() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getError', arguments, result);
+            return result;
         },
         getExtension(name) {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
             let ele;
             switch (name) {
@@ -622,14 +746,17 @@ WebGLRenderingContext = function WebGLRenderingContext(createObj_key, canvas) {/
                     ele = new WebGLDebugRendererInfo(name);
                     break;
                 default:
-                    debugger;
             };
 
-            return ele
+            let result = ele;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'switch ', arguments, result);
+            return result;
         },
         getFramebufferAttachmentParameter() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getFramebufferAttachmentParameter', arguments, result);
+            return result;
         },
         getParameter(param) {
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
@@ -642,41 +769,55 @@ WebGLRenderingContext = function WebGLRenderingContext(createObj_key, canvas) {/
                     ele = "ANGLE (NVIDIA, NVIDIA GeForce GTX 1660 Direct3D11 vs_5_0 ps_5_0, D3D11)"
                     break
                 default:
-                    debugger;
                     break
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getParameter', arguments, result);
+            return result;
         },
         getProgramInfoLog() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getProgramInfoLog', arguments, result);
+            return result;
         },
         getProgramParameter() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getProgramParameter', arguments, result);
+            return result;
         },
         getRenderbufferParameter() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getRenderbufferParameter', arguments, result);
+            return result;
         },
         getShaderInfoLog() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getShaderInfoLog', arguments, result);
+            return result;
         },
         getShaderParameter() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getShaderParameter', arguments, result);
+            return result;
         },
         getShaderPrecisionFormat() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getShaderPrecisionFormat', arguments, result);
+            return result;
         },
         getShaderSource() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getShaderSource', arguments, result);
+            return result;
         },
         getSupportedExtensions() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
             return [
                 "ANGLE_instanced_arrays",
@@ -715,264 +856,394 @@ WebGLRenderingContext = function WebGLRenderingContext(createObj_key, canvas) {/
             ]
         },
         getTexParameter() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getTexParameter', arguments, result);
+            return result;
         },
         getUniform() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getUniform', arguments, result);
+            return result;
         },
         getUniformLocation() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getUniformLocation', arguments, result);
+            return result;
         },
         getVertexAttrib() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getVertexAttrib', arguments, result);
+            return result;
         },
         getVertexAttribOffset() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getVertexAttribOffset', arguments, result);
+            return result;
         },
         hint() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'hint', arguments, result);
+            return result;
         },
         isBuffer() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'isBuffer', arguments, result);
+            return result;
         },
         isContextLost() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'isContextLost', arguments, result);
+            return result;
         },
         isEnabled() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'isEnabled', arguments, result);
+            return result;
         },
         isFramebuffer() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'isFramebuffer', arguments, result);
+            return result;
         },
         isProgram() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'isProgram', arguments, result);
+            return result;
         },
         isRenderbuffer() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'isRenderbuffer', arguments, result);
+            return result;
         },
         isShader() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'isShader', arguments, result);
+            return result;
         },
         isTexture() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'isTexture', arguments, result);
+            return result;
         },
         lineWidth() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'lineWidth', arguments, result);
+            return result;
         },
         linkProgram() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'linkProgram', arguments, result);
+            return result;
         },
         makeXRCompatible() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'makeXRCompatible', arguments, result);
+            return result;
         },
         pixelStorei() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'pixelStorei', arguments, result);
+            return result;
         },
         polygonOffset() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'polygonOffset', arguments, result);
+            return result;
         },
         readPixels() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'readPixels', arguments, result);
+            return result;
         },
         renderbufferStorage() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'renderbufferStorage', arguments, result);
+            return result;
         },
         sampleCoverage() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'sampleCoverage', arguments, result);
+            return result;
         },
         scissor() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'scissor', arguments, result);
+            return result;
         },
         shaderSource() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'shaderSource', arguments, result);
+            return result;
         },
         stencilFunc() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'stencilFunc', arguments, result);
+            return result;
         },
         stencilFuncSeparate() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'stencilFuncSeparate', arguments, result);
+            return result;
         },
         stencilMask() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'stencilMask', arguments, result);
+            return result;
         },
         stencilMaskSeparate() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'stencilMaskSeparate', arguments, result);
+            return result;
         },
         stencilOp() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'stencilOp', arguments, result);
+            return result;
         },
         stencilOpSeparate() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'stencilOpSeparate', arguments, result);
+            return result;
         },
         texImage2D() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'texImage2D', arguments, result);
+            return result;
         },
         texParameterf() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'texParameterf', arguments, result);
+            return result;
         },
         texParameteri() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'texParameteri', arguments, result);
+            return result;
         },
         texSubImage2D() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'texSubImage2D', arguments, result);
+            return result;
         },
         uniform1f() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'uniform1f', arguments, result);
+            return result;
         },
         uniform1fv() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'uniform1fv', arguments, result);
+            return result;
         },
         uniform1i() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'uniform1i', arguments, result);
+            return result;
         },
         uniform1iv() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'uniform1iv', arguments, result);
+            return result;
         },
         uniform2f() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'uniform2f', arguments, result);
+            return result;
         },
         uniform2fv() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'uniform2fv', arguments, result);
+            return result;
         },
         uniform2i() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'uniform2i', arguments, result);
+            return result;
         },
         uniform2iv() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'uniform2iv', arguments, result);
+            return result;
         },
         uniform3f() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'uniform3f', arguments, result);
+            return result;
         },
         uniform3fv() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'uniform3fv', arguments, result);
+            return result;
         },
         uniform3i() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'uniform3i', arguments, result);
+            return result;
         },
         uniform3iv() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'uniform3iv', arguments, result);
+            return result;
         },
         uniform4f() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'uniform4f', arguments, result);
+            return result;
         },
         uniform4fv() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'uniform4fv', arguments, result);
+            return result;
         },
         uniform4i() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'uniform4i', arguments, result);
+            return result;
         },
         uniform4iv() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'uniform4iv', arguments, result);
+            return result;
         },
         uniformMatrix2fv() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'uniformMatrix2fv', arguments, result);
+            return result;
         },
         uniformMatrix3fv() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'uniformMatrix3fv', arguments, result);
+            return result;
         },
         uniformMatrix4fv() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'uniformMatrix4fv', arguments, result);
+            return result;
         },
         useProgram() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'useProgram', arguments, result);
+            return result;
         },
         validateProgram() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'validateProgram', arguments, result);
+            return result;
         },
         vertexAttrib1f() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'vertexAttrib1f', arguments, result);
+            return result;
         },
         vertexAttrib1fv() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'vertexAttrib1fv', arguments, result);
+            return result;
         },
         vertexAttrib2f() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'vertexAttrib2f', arguments, result);
+            return result;
         },
         vertexAttrib2fv() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'vertexAttrib2fv', arguments, result);
+            return result;
         },
         vertexAttrib3f() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'vertexAttrib3f', arguments, result);
+            return result;
         },
         vertexAttrib3fv() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'vertexAttrib3fv', arguments, result);
+            return result;
         },
         vertexAttrib4f() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'vertexAttrib4f', arguments, result);
+            return result;
         },
         vertexAttrib4fv() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'vertexAttrib4fv', arguments, result);
+            return result;
         },
         vertexAttribPointer() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'vertexAttribPointer', arguments, result);
+            return result;
         },
         viewport() {
-            debugger;
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'viewport', arguments, result);
+            return result;
         },
     };
 
@@ -984,8 +1255,8 @@ WebGLRenderingContext = function WebGLRenderingContext(createObj_key, canvas) {/
         }
     };
 
-    qxVm.rename(WebGLRenderingContext.prototype, "WebGLRenderingContext");
-    qxVm.safeDescriptor_addConstructor(WebGLRenderingContext);
-    qxVm.safe_Objattribute(WebGLRenderingContext, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(WebGLRenderingContext.prototype, "WebGLRenderingContext");
+    lwVm.safeDescriptor_addConstructor(WebGLRenderingContext);
+    lwVm.safe_Objattribute(WebGLRenderingContext, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
 })();

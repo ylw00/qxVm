@@ -1,9 +1,9 @@
 PerformanceNavigation = function PerformanceNavigation(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(PerformanceNavigation);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(PerformanceNavigation);
 
 ; (function () {
     const $attributes = {
@@ -18,23 +18,27 @@ PerformanceNavigation = function PerformanceNavigation(createObj_key) {
 
     PerformanceNavigation.prototype = {
         get redirectCount() {
-            debugger;
             if (!PerformanceNavigation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return 0;
+            let result = 0;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PerformanceNavigation', 'redirectCount', arguments, result);
+            return result;
         },
         toJSON() {
-            debugger;
             if (!PerformanceNavigation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'PerformanceNavigation', 'toJSON', arguments, result);
+            return result;
         },
         get type() {
-            debugger;
             if (!PerformanceNavigation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return 0;
+            let result = 0;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PerformanceNavigation', 'type', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(PerformanceNavigation.prototype, "PerformanceNavigation");
-    qxVm.safeDescriptor_addConstructor(PerformanceNavigation);
-    qxVm.safe_Objattribute(PerformanceNavigation, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
-    qxVm.add_capitalLetter_attribute(PerformanceNavigation, $attributes);
+    lwVm.rename(PerformanceNavigation.prototype, "PerformanceNavigation");
+    lwVm.safeDescriptor_addConstructor(PerformanceNavigation);
+    lwVm.safe_Objattribute(PerformanceNavigation, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.add_capitalLetter_attribute(PerformanceNavigation, $attributes);
 
 })();

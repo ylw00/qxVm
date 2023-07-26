@@ -1,9 +1,9 @@
 CustomEvent = function CustomEvent(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(CustomEvent);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(CustomEvent);
 
 ; (function () {
     const $safe_get_attribute = ['detail'];
@@ -12,18 +12,21 @@ CustomEvent = function CustomEvent(createObj_key) {
 
     CustomEvent.prototype = {
         get detail() {
-            debugger;
             if (!CustomEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).detail, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).detail, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CustomEvent', 'detail', arguments, result);
+            return result;
         },
         initCustomEvent() {
-            debugger;
             if (!CustomEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CustomEvent', 'initCustomEvent', arguments, result);
+            return result;
         }
     };
-    qxVm.rename(CustomEvent.prototype, "CustomEvent");
-    qxVm.safeDescriptor_addConstructor(CustomEvent);
-    qxVm.safe_Objattribute(CustomEvent, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(CustomEvent.prototype, "CustomEvent");
+    lwVm.safeDescriptor_addConstructor(CustomEvent);
+    lwVm.safe_Objattribute(CustomEvent, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(CustomEvent.prototype, Event.prototype);
     Object.setPrototypeOf(CustomEvent, Event);

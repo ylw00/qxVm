@@ -1,6 +1,6 @@
 Plugin = function Plugin() {
     throw new TypeError("Illegal constructor");
-}; qxVm.safefunction(Plugin);
+}; lwVm.safefunction(Plugin);
 
 ; (function () {
     const $safe_get_attribute = ['description', 'filename', 'length', 'name'];
@@ -11,32 +11,47 @@ Plugin = function Plugin() {
     Plugin.prototype = {
         get description() {
             if (!Plugin.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Plugin', 'description', arguments, result);
+            return result;
         },
         get filename() {
             if (!Plugin.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Plugin', 'filename', arguments, result);
+            return result;
         },
         item(index) {
             // debugger;
-            return this[index];
+            let result = this[index];;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Plugin', 'item', arguments, result);
+            return result;
         },
         get length() {
             if (!Plugin.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Plugin', 'length', arguments, result);
+            return result;
         },
         get name() {
             if (!Plugin.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Plugin', 'name', arguments, result);
+            return result;
         },
         namedItem(key) {
-            debugger;
-            return this[key];
+            let result = this[key];;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Plugin', 'namedItem', arguments, result);
+            return result;
         },
     }; 
-    qxVm.set_iterator(Plugin);
-    qxVm.rename(Plugin.prototype, 'Plugin');
-    qxVm.safeDescriptor_addConstructor(Plugin);
-    qxVm.safe_Objattribute(Plugin, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.set_iterator(Plugin);
+    lwVm.rename(Plugin.prototype, 'Plugin');
+    lwVm.safeDescriptor_addConstructor(Plugin);
+    lwVm.safe_Objattribute(Plugin, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
     
 
-    qxVm.memory.plugin.new = function (plugin_data) {
+    lwVm.memory.plugin.new = function (plugin_data) {
         let plugin = {};
 
         if (plugin_data !== undefined) {
@@ -46,7 +61,7 @@ Plugin = function Plugin() {
 
             for (let mtindex = 0; mtindex < plugin_data.MimeTypes.length; mtindex++) {
                 let mimeType_data = plugin_data.MimeTypes[mtindex];
-                let mimeType = qxVm.memory.mimeType.new(mimeType_data, plugin);
+                let mimeType = lwVm.memory.mimeType.new(mimeType_data, plugin);
 
                 Object.defineProperty(plugin, mtindex, {
                     value: mimeType, configurable: true, enumerable: true, writable: false
@@ -58,7 +73,9 @@ Plugin = function Plugin() {
             plugin.length = plugin_data.MimeTypes.length;
         }
         Object.setPrototypeOf(plugin, Plugin.prototype)
-        return plugin;
+            let result = plugin;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Plugin', 'namedItem', arguments, result);
+            return result;
     }
 
 })()

@@ -1,9 +1,9 @@
 RTCPeerConnectionIceEvent = function RTCPeerConnectionIceEvent(createObj_key, type) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, { type: type })
-}; qxVm.safefunction(RTCPeerConnectionIceEvent);
+    lwVm.memory.private_data.set(this, { type: type })
+}; lwVm.safefunction(RTCPeerConnectionIceEvent);
 
 ; (function () {
     const $safe_get_attribute = ['candidate'];
@@ -12,14 +12,15 @@ RTCPeerConnectionIceEvent = function RTCPeerConnectionIceEvent(createObj_key, ty
 
     RTCPeerConnectionIceEvent.prototype = {
         get candidate() {
-            debugger;
             if (!RTCPeerConnectionIceEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).candidate, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).candidate, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnectionIceEvent', 'candidate', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(RTCPeerConnectionIceEvent.prototype, "RTCPeerConnectionIceEvent");
-    qxVm.safeDescriptor_addConstructor(RTCPeerConnectionIceEvent);
-    qxVm.safe_Objattribute(RTCPeerConnectionIceEvent, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(RTCPeerConnectionIceEvent.prototype, "RTCPeerConnectionIceEvent");
+    lwVm.safeDescriptor_addConstructor(RTCPeerConnectionIceEvent);
+    lwVm.safe_Objattribute(RTCPeerConnectionIceEvent, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(RTCPeerConnectionIceEvent.prototype, Event.prototype);
     Object.setPrototypeOf(RTCPeerConnectionIceEvent, Event);

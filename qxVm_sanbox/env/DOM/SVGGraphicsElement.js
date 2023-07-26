@@ -1,9 +1,9 @@
 SVGGraphicsElement = function SVGGraphicsElement(createObj_key) {//构造函数
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(SVGGraphicsElement);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(SVGGraphicsElement);
 
 ; (function () {
     const $safe_get_attribute = ['farthestViewportElement', 'nearestViewportElement', 'requiredExtensions', 'systemLanguage', 'transform'];
@@ -12,54 +12,65 @@ SVGGraphicsElement = function SVGGraphicsElement(createObj_key) {//构造函数
 
     SVGGraphicsElement.prototype = {
         get farthestViewportElement() {
-            debugger;
             if (!SVGGraphicsElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).farthestViewportElement, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).farthestViewportElement, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGGraphicsElement', 'farthestViewportElement', arguments, result);
+            return result;
         },
         getBBox() {
-            debugger;
             if (!SVGGraphicsElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'SVGGraphicsElement', 'getBBox', arguments, result);
+            return result;
         },
         getCTM() {
-            debugger;
             if (!SVGGraphicsElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'SVGGraphicsElement', 'getCTM', arguments, result);
+            return result;
         },
         getScreenCTM() {
-            debugger;
             if (!SVGGraphicsElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'SVGGraphicsElement', 'getScreenCTM', arguments, result);
+            return result;
         },
         get nearestViewportElement() {
-            debugger;
             if (!SVGGraphicsElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).nearestViewportElement, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).nearestViewportElement, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGGraphicsElement', 'nearestViewportElement', arguments, result);
+            return result;
         },
         get requiredExtensions() {
-            debugger;
             if (!SVGGraphicsElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).requiredExtensions, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).requiredExtensions, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGGraphicsElement', 'requiredExtensions', arguments, result);
+            return result;
         },
         get systemLanguage() {
-            debugger;
             if (!SVGGraphicsElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).systemLanguage, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).systemLanguage, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGGraphicsElement', 'systemLanguage', arguments, result);
+            return result;
         },
         get transform() {
-            debugger;
             if (!SVGGraphicsElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).transform, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).transform, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGGraphicsElement', 'transform', arguments, result);
+            return result;
         },
     }
 
-    qxVm.rename(SVGGraphicsElement.prototype, "SVGGraphicsElement");
-    qxVm.safeDescriptor_addConstructor(SVGGraphicsElement);
-    qxVm.safe_Objattribute(SVGGraphicsElement, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(SVGGraphicsElement.prototype, "SVGGraphicsElement");
+    lwVm.safeDescriptor_addConstructor(SVGGraphicsElement);
+    lwVm.safe_Objattribute(SVGGraphicsElement, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(SVGGraphicsElement.prototype, SVGElement.prototype);
     Object.setPrototypeOf(SVGGraphicsElement, SVGElement);
 
 })();
 
-qxVm.memory.htmlElements["div"] = function () {
-    return new SVGGraphicsElement(qxVm.memory.$createObj_key);
+lwVm.memory.htmlElements["div"] = function () {
+    return new SVGGraphicsElement(lwVm.memory.$createObj_key);
 }
 

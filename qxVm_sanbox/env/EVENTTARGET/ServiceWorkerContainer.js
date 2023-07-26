@@ -1,9 +1,9 @@
 ServiceWorkerContainer = function ServiceWorkerContainer(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(ServiceWorkerContainer);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(ServiceWorkerContainer);
 
 ; (function () {
     const $safe_get_attribute = ['controller', 'oncontrollerchange', 'onmessage', 'onmessageerror', 'ready'];
@@ -12,65 +12,78 @@ ServiceWorkerContainer = function ServiceWorkerContainer(createObj_key) {
 
     ServiceWorkerContainer.prototype = {
         get controller() {
-            debugger;
             if (!ServiceWorkerContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return null;
+            let result = null;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'ServiceWorkerContainer', 'controller', arguments, result);
+            return result;
         },
         getRegistration() {
-            debugger;
             if (!ServiceWorkerContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'ServiceWorkerContainer', 'getRegistration', arguments, result);
+            return result;
         },
         getRegistrations() {
-            debugger;
             if (!ServiceWorkerContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'ServiceWorkerContainer', 'getRegistrations', arguments, result);
+            return result;
         },
         get oncontrollerchange() {
-            debugger;
             if (!ServiceWorkerContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).oncontrollerchange, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncontrollerchange, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'ServiceWorkerContainer', 'oncontrollerchange', arguments, result);
+            return result;
         },
         set oncontrollerchange(value) {
-            debugger;
             if (!ServiceWorkerContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).oncontrollerchange = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'ServiceWorkerContainer', 'oncontrollerchange', arguments);
+            lwVm.memory.private_data.get(this).oncontrollerchange = value + "";
         },
         get onmessage() {
-            debugger;
             if (!ServiceWorkerContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onmessage, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmessage, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'ServiceWorkerContainer', 'onmessage', arguments, result);
+            return result;
         },
         set onmessage(value) {
-            debugger;
             if (!ServiceWorkerContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onmessage = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'ServiceWorkerContainer', 'onmessage', arguments);
+            lwVm.memory.private_data.get(this).onmessage = value + "";
         },
         get onmessageerror() {
-            debugger;
             if (!ServiceWorkerContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onmessageerror, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmessageerror, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'ServiceWorkerContainer', 'onmessageerror', arguments, result);
+            return result;
         },
         set onmessageerror(value) {
-            debugger;
             if (!ServiceWorkerContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onmessageerror = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'ServiceWorkerContainer', 'onmessageerror', arguments);
+            lwVm.memory.private_data.get(this).onmessageerror = value + "";
         },
         get ready() {
-            debugger;
             if (!ServiceWorkerContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return new Promise(function () { });
+            let result = new Promise(function () { });;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'ServiceWorkerContainer', 'ready', arguments, result);
+            return result;
         },
         register() {
-            debugger;
             if (!ServiceWorkerContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'ServiceWorkerContainer', 'register', arguments, result);
+            return result;
         },
         startMessages() {
-            debugger;
             if (!ServiceWorkerContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'ServiceWorkerContainer', 'startMessages', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(ServiceWorkerContainer.prototype, "ServiceWorkerContainer");
-    qxVm.safeDescriptor_addConstructor(ServiceWorkerContainer);
-    qxVm.safe_Objattribute(ServiceWorkerContainer, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(ServiceWorkerContainer.prototype, "ServiceWorkerContainer");
+    lwVm.safeDescriptor_addConstructor(ServiceWorkerContainer);
+    lwVm.safe_Objattribute(ServiceWorkerContainer, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(ServiceWorkerContainer.prototype, EventTarget.prototype);
     Object.setPrototypeOf(ServiceWorkerContainer, EventTarget);

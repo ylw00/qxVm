@@ -1,12 +1,12 @@
 AudioDestinationNode = function AudioDestinationNode(createObj_key, channelCountMode) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {
+    lwVm.memory.private_data.set(this, {
         channelCountMode:channelCountMode,
         maxChannelCount: 1
     })
-}; qxVm.safefunction(AudioDestinationNode);
+}; lwVm.safefunction(AudioDestinationNode);
 
 ; (function () {
     const $safe_get_attribute = ['maxChannelCount'];
@@ -15,14 +15,15 @@ AudioDestinationNode = function AudioDestinationNode(createObj_key, channelCount
 
     AudioDestinationNode.prototype = {
         get maxChannelCount() {
-            debugger;
             if (!AudioDestinationNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.memory.private_data.get(this).maxChannelCount;
+            let result = lwVm.memory.private_data.get(this).maxChannelCount;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioDestinationNode', 'maxChannelCount', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(AudioDestinationNode.prototype, "AudioDestinationNode");
-    qxVm.safeDescriptor_addConstructor(AudioDestinationNode);
-    qxVm.safe_Objattribute(AudioDestinationNode, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(AudioDestinationNode.prototype, "AudioDestinationNode");
+    lwVm.safeDescriptor_addConstructor(AudioDestinationNode);
+    lwVm.safe_Objattribute(AudioDestinationNode, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(AudioDestinationNode.prototype, AudioNode.prototype);
     Object.setPrototypeOf(AudioDestinationNode, AudioNode);

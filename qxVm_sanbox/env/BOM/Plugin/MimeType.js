@@ -1,6 +1,6 @@
 MimeType = function MimeType() {
     throw new TypeError("Illegal constructor");
-}; qxVm.safefunction(MimeType);
+}; lwVm.safefunction(MimeType);
 
 ; (function () {
 
@@ -23,14 +23,17 @@ MimeType = function MimeType() {
         },
         get type() {
             if (!MimeType.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MimeType', 'type', arguments, result);
+            return result;
         },
 
-    }; qxVm.rename(MimeType.prototype, 'MimeType');
-    qxVm.safeDescriptor_addConstructor(MimeType);
-    qxVm.safe_Objattribute(MimeType, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    }; lwVm.rename(MimeType.prototype, 'MimeType');
+    lwVm.safeDescriptor_addConstructor(MimeType);
+    lwVm.safe_Objattribute(MimeType, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
 
-    qxVm.memory.mimeType.new = function (mimeType_data, initPlugin) {
+    lwVm.memory.mimeType.new = function (mimeType_data, initPlugin) {
         let mimetype = {};
         if (mimeType_data !== undefined) {
             mimetype.description = mimeType_data.description;

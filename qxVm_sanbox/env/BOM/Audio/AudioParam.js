@@ -1,5 +1,5 @@
 AudioParam = function AudioParam(createObj_key, automationRate, defaultValue, maxValue, minValue) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
 
@@ -9,14 +9,14 @@ AudioParam = function AudioParam(createObj_key, automationRate, defaultValue, ma
     maxValue = maxValue || 3.4028234663852886e+38;
     minValue = minValue || -3.4028234663852886e+38;
     const value = defaultValue;
-    qxVm.memory.private_data.set(this, {
+    lwVm.memory.private_data.set(this, {
         automationRate: automationRate,
         defaultValue: defaultValue,
         maxValue: maxValue,
         minValue: minValue,
         value: value
     })
-}; qxVm.safefunction(AudioParam);
+}; lwVm.safefunction(AudioParam);
 
 ; (function () {
     const $safe_get_attribute = ['automationRate', 'defaultValue', 'maxValue', 'minValue', 'value'];
@@ -28,72 +28,90 @@ AudioParam = function AudioParam(createObj_key, automationRate, defaultValue, ma
 
     AudioParam.prototype = {
         get automationRate() {
-            debugger;
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).automationRate, "a-rate");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).automationRate, "a-rate");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioParam', 'automationRate', arguments, result);
+            return result;
         },
         set automationRate(value) {
-            debugger;
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).automationRate = value;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'AudioParam', 'automationRate', arguments);
+            lwVm.memory.private_data.get(this).automationRate = value;
         },
         cancelAndHoldAtTime() {
-            debugger;
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'AudioParam', 'cancelAndHoldAtTime', arguments, result);
+            return result;
         },
         cancelScheduledValues() {
-            debugger;
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'AudioParam', 'cancelScheduledValues', arguments, result);
+            return result;
         },
         get defaultValue() {
-            debugger;
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).defaultValue, 0);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).defaultValue, 0);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioParam', 'defaultValue', arguments, result);
+            return result;
         },
         exponentialRampToValueAtTime() {
-            debugger;
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'AudioParam', 'exponentialRampToValueAtTime', arguments, result);
+            return result;
         },
         linearRampToValueAtTime() {
-            debugger;
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'AudioParam', 'linearRampToValueAtTime', arguments, result);
+            return result;
         },
         get maxValue() {
-            debugger;
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.memory.private_data.get(this).maxValue;
+            let result = lwVm.memory.private_data.get(this).maxValue;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioParam', 'maxValue', arguments, result);
+            return result;
         },
         get minValue() {
-            debugger;
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.memory.private_data.get(this).minValue;
+            let result = lwVm.memory.private_data.get(this).minValue;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioParam', 'minValue', arguments, result);
+            return result;
         },
         setTargetAtTime() {
-            debugger;
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'AudioParam', 'setTargetAtTime', arguments, result);
+            return result;
         },
         setValueAtTime() {
-            debugger;
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return new AudioParam(qxVm.memory.$createObj_key, "a-rate", 440, 22050);
+            let result = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 440, 22050);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'AudioParam', 'setValueAtTime', arguments, result);
+            return result;
         },
         setValueCurveAtTime() {
-            debugger;
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'AudioParam', 'setValueCurveAtTime', arguments, result);
+            return result;
         },
         get value() {
-            debugger;
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).value, 0);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).value, 0);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioParam', 'value', arguments, result);
+            return result;
         },
         set value(value) {
-            debugger;
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).value = value;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'AudioParam', 'value', arguments);
+            lwVm.memory.private_data.get(this).value = value;
         },
     }
-    qxVm.rename(AudioParam.prototype, "AudioParam");
-    qxVm.safeDescriptor_addConstructor(AudioParam);
-    qxVm.safe_Objattribute(AudioParam, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(AudioParam.prototype, "AudioParam");
+    lwVm.safeDescriptor_addConstructor(AudioParam);
+    lwVm.safe_Objattribute(AudioParam, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 })();
 

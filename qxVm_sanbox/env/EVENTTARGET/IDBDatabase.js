@@ -1,12 +1,12 @@
 IDBDatabase = function IDBDatabase(createObj_key, name, version) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {
+    lwVm.memory.private_data.set(this, {
         name: name,
         version: version || 1
     })
-}; qxVm.safefunction(IDBDatabase);
+}; lwVm.safefunction(IDBDatabase);
 
 ; (function () {
     const $safe_get_attribute = ['name', 'objectStoreNames', 'onabort', 'onclose', 'onerror', 'onversionchange', 'version'];
@@ -15,80 +15,93 @@ IDBDatabase = function IDBDatabase(createObj_key, name, version) {
 
     IDBDatabase.prototype = {
         close() {
-            debugger;
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'IDBDatabase', 'close', arguments, result);
+            return result;
         },
         createObjectStore() {
-            debugger;
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'IDBDatabase', 'createObjectStore', arguments, result);
+            return result;
         },
         deleteObjectStore() {
-            debugger;
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'IDBDatabase', 'deleteObjectStore', arguments, result);
+            return result;
         },
         get name() {
-            debugger;
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.memory.private_data.get(this).name;
+            let result = lwVm.memory.private_data.get(this).name;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'IDBDatabase', 'name', arguments, result);
+            return result;
         },
         get objectStoreNames() {
-            debugger;
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).objectStoreNames, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).objectStoreNames, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'IDBDatabase', 'objectStoreNames', arguments, result);
+            return result;
         },
         get onabort() {
-            debugger;
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onabort, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onabort, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'IDBDatabase', 'onabort', arguments, result);
+            return result;
         },
         set onabort(value) {
-            debugger;
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onabort = value;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'IDBDatabase', 'onabort', arguments);
+            lwVm.memory.private_data.get(this).onabort = value;
         },
         get onclose() {
-            debugger;
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onclose);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onclose);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'IDBDatabase', 'onclose', arguments, result);
+            return result;
         },
         set onclose(value) {
-            debugger;
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onclose = value;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'IDBDatabase', 'onclose', arguments);
+            lwVm.memory.private_data.get(this).onclose = value;
         },
         get onerror() {
-            debugger;
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onerror, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onerror, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'IDBDatabase', 'onerror', arguments, result);
+            return result;
         },
         set onerror(value) {
-            debugger;
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onerror = value;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'IDBDatabase', 'onerror', arguments);
+            lwVm.memory.private_data.get(this).onerror = value;
         },
         get onversionchange() {
-            debugger;
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onversionchange, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onversionchange, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'IDBDatabase', 'onversionchange', arguments, result);
+            return result;
         },
         set onversionchange(value) {
-            debugger;
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onversionchange = value;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'IDBDatabase', 'onversionchange', arguments);
+            lwVm.memory.private_data.get(this).onversionchange = value;
         },
         transaction() {
-            debugger;
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'IDBDatabase', 'transaction', arguments, result);
+            return result;
         },
         get version() {
-            debugger;
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.memory.private_data.get(this).version;
+            return lwVm.memory.private_data.get(this).version;
         }
     }
-    qxVm.rename(IDBDatabase.prototype, "IDBDatabase");
-    qxVm.safeDescriptor_addConstructor(IDBDatabase);
-    qxVm.safe_Objattribute(IDBDatabase, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(IDBDatabase.prototype, "IDBDatabase");
+    lwVm.safeDescriptor_addConstructor(IDBDatabase);
+    lwVm.safe_Objattribute(IDBDatabase, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(IDBDatabase.prototype, EventTarget.prototype);
     Object.setPrototypeOf(IDBDatabase, EventTarget);

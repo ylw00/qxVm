@@ -1,9 +1,9 @@
 MediaSession = function MediaSession(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(MediaSession);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(MediaSession);
 
 ; (function () {
     const $safe_get_attribute = ['metadata', 'playbackState'];
@@ -12,44 +12,54 @@ MediaSession = function MediaSession(createObj_key) {
 
     MediaSession.prototype = {
         get metadata() {
-            debugger;
             if (!MediaSession.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).metadata, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).metadata, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MediaSession', 'metadata', arguments, result);
+            return result;
         },
         set metadata(value) {
-            debugger;
             if (!MediaSession.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).metadata = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'MediaSession', 'metadata', arguments);
+            lwVm.memory.private_data.get(this).metadata = value + "";
         },
         get playbackState() {
-            debugger;
             if (!MediaSession.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).playbackState, "none");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).playbackState, "none");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MediaSession', 'playbackState', arguments, result);
+            return result;
         },
         set playbackState(value) {
-            debugger;
             if (!MediaSession.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).playbackState = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'MediaSession', 'playbackState', arguments);
+            lwVm.memory.private_data.get(this).playbackState = value + "";
         },
         setActionHandler() {
-            debugger;
             if (!MediaSession.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'MediaSession', 'setActionHandler', arguments, result);
+            return result;
         },
         setCameraActive() {
-            debugger;
             if (!MediaSession.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'MediaSession', 'setCameraActive', arguments, result);
+            return result;
         },
         setMicrophoneActive() {
-            debugger;
             if (!MediaSession.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'MediaSession', 'setMicrophoneActive', arguments, result);
+            return result;
         },
         setPositionState() {
-            debugger;
             if (!MediaSession.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'MediaSession', 'setPositionState', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(MediaSession.prototype, "MediaSession");
-    qxVm.safeDescriptor_addConstructor(MediaSession);
-    qxVm.safe_Objattribute(MediaSession, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(MediaSession.prototype, "MediaSession");
+    lwVm.safeDescriptor_addConstructor(MediaSession);
+    lwVm.safe_Objattribute(MediaSession, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
 })();

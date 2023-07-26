@@ -1,9 +1,9 @@
 DOMRect = function DOMRect(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(DOMRect);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(DOMRect);
 
 ; (function () {
     const $safe_get_attribute = ['height', 'width', 'x', 'y'];
@@ -12,49 +12,53 @@ DOMRect = function DOMRect(createObj_key) {
 
     DOMRect.prototype = {
         get height() {
-            debugger;
             if (!DOMRect.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).height, 0);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).height, 0);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRect', 'height', arguments, result);
+            return result;
         },
         set height(value) {
-            debugger;
             if (!DOMRect.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).height = value;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'DOMRect', 'height', arguments);
+            lwVm.memory.private_data.get(this).height = value;
         },
         get width() {
-            debugger;
             if (!DOMRect.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).width, 0);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).width, 0);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRect', 'width', arguments, result);
+            return result;
         },
         set width(value) {
-            debugger;
             if (!DOMRect.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).width = value;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'DOMRect', 'width', arguments);
+            lwVm.memory.private_data.get(this).width = value;
         },
         get x() {
-            debugger;
             if (!DOMRect.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).x, 0);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).x, 0);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRect', 'x', arguments, result);
+            return result;
         },
         set x(value) {
-            debugger;
             if (!DOMRect.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).x = value;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'DOMRect', 'x', arguments);
+            lwVm.memory.private_data.get(this).x = value;
         },
         get y() {
-            debugger;
             if (!DOMRect.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).y, 0);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).y, 0);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRect', 'y', arguments, result);
+            return result;
         },
         set y(value) {
-            debugger;
             if (!DOMRect.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).y = value;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'DOMRect', 'y', arguments);
+            lwVm.memory.private_data.get(this).y = value;
         },
     }
-    qxVm.rename(DOMRect.prototype, "DOMRect");
-    qxVm.safeDescriptor_addConstructor(DOMRect);
-    qxVm.safe_Objattribute(DOMRect, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(DOMRect.prototype, "DOMRect");
+    lwVm.safeDescriptor_addConstructor(DOMRect);
+    lwVm.safe_Objattribute(DOMRect, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(DOMRect.prototype, DOMRectReadOnly.prototype);
     Object.setPrototypeOf(DOMRect, DOMRectReadOnly);

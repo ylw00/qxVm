@@ -1,9 +1,9 @@
 XRSystem = function XRSystem(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(XRSystem);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(XRSystem);
 
 ; (function () {
     const $safe_get_attribute = ['ondevicechange'];
@@ -12,31 +12,38 @@ XRSystem = function XRSystem(createObj_key) {
 
     XRSystem.prototype = {
         isSessionSupported() {
-            debugger;
             if (!XRSystem.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'XRSystem', 'isSessionSupported', arguments, result);
+            return result;
         },
         get ondevicechange() {
-            debugger;
             if (!XRSystem.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).ondevicechange, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondevicechange, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XRSystem', 'ondevicechange', arguments, result);
+            return result;
         },
         set ondevicechange(value) {
-            debugger;
             if (!XRSystem.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).ondevicechange = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'XRSystem', 'ondevicechange', arguments);
+            lwVm.memory.private_data.get(this).ondevicechange = value + "";
         },
         requestSession() {
-            debugger;
             if (!XRSystem.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'XRSystem', 'requestSession', arguments, result);
+            return result;
         },
         supportsSession() {
-            debugger;
             if (!XRSystem.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'XRSystem', 'supportsSession', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(XRSystem.prototype, "XRSystem");
-    qxVm.safeDescriptor_addConstructor(XRSystem);
-    qxVm.safe_Objattribute(XRSystem, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(XRSystem.prototype, "XRSystem");
+    lwVm.safeDescriptor_addConstructor(XRSystem);
+    lwVm.safe_Objattribute(XRSystem, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(XRSystem.prototype, EventTarget.prototype);
     Object.setPrototypeOf(XRSystem, EventTarget);

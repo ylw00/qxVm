@@ -3,8 +3,8 @@ RTCPeerConnection = function RTCPeerConnection() {//构造函数
 		throw new TypeError(`Failed to construct 'RTCPeerConnection': Please use the 'new' operator, this DOM object constructor cannot be called as a function.`)
 	}
 
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(RTCPeerConnection);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(RTCPeerConnection);
 
 ; (function () {
     const $safe_get_attribute = [
@@ -21,280 +21,340 @@ RTCPeerConnection = function RTCPeerConnection() {//构造函数
 
     RTCPeerConnection.prototype = {
         addIceCandidate() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'addIceCandidate', arguments, result);
+            return result;
         },
         addStream() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'addStream', arguments, result);
+            return result;
         },
         addTrack() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'addTrack', arguments, result);
+            return result;
         },
         addTransceiver() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'addTransceiver', arguments, result);
+            return result;
         },
         get canTrickleIceCandidates() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).canTrickleIceCandidates, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).canTrickleIceCandidates, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'canTrickleIceCandidates', arguments, result);
+            return result;
         },
         close() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'close', arguments, result);
+            return result;
         },
         get connectionState() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).connectionState, "new");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).connectionState, "new");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'connectionState', arguments, result);
+            return result;
         },
         createAnswer() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'createAnswer', arguments, result);
+            return result;
         },
         createDTMFSender() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'createDTMFSender', arguments, result);
+            return result;
         },
         createDataChannel(label) {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
             if (label === undefined) { throw new TypeError(`Failed to execute 'createDataChannel' on 'RTCPeerConnection': 1 argument required, but only 0 present.`) }
-            return new RTCDataChannel(qxVm.memory.$createObj_key, label);
+            let result = new RTCDataChannel(lwVm.memory.$createObj_key, label);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'createDataChannel', arguments, result);
+            return result;
         },
         async createOffer(successCallback, failureCallback) {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
 
             return new Promise(resolve=>{
                 return function(offer){
                     console.log(offer)
-                    resolve(new RTCSessionDescription(qxVm.memory.$createObj_key))
+                    resolve(new RTCSessionDescription(lwVm.memory.$createObj_key))
                 }
             })
         },
         get currentLocalDescription() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).currentLocalDescription, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).currentLocalDescription, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'currentLocalDescription', arguments, result);
+            return result;
         },
         get currentRemoteDescription() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).currentRemoteDescription, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).currentRemoteDescription, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'currentRemoteDescription', arguments, result);
+            return result;
         },
         getConfiguration() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'getConfiguration', arguments, result);
+            return result;
         },
         getLocalStreams() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'getLocalStreams', arguments, result);
+            return result;
         },
         getReceivers() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'getReceivers', arguments, result);
+            return result;
         },
         getRemoteStreams() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'getRemoteStreams', arguments, result);
+            return result;
         },
         getSenders() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'getSenders', arguments, result);
+            return result;
         },
         getStats() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'getStats', arguments, result);
+            return result;
         },
         getTransceivers() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'getTransceivers', arguments, result);
+            return result;
         },
         get iceConnectionState() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).iceConnectionState, "new");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).iceConnectionState, "new");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'iceConnectionState', arguments, result);
+            return result;
         },
         get iceGatheringState() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).iceGatheringState, "new");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).iceGatheringState, "new");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'iceGatheringState', arguments, result);
+            return result;
         },
         get localDescription() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).localDescription, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).localDescription, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'localDescription', arguments, result);
+            return result;
         },
         get onaddstream() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onaddstream, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onaddstream, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'onaddstream', arguments, result);
+            return result;
         },
         set onaddstream(value) {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onaddstream = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCPeerConnection', 'onaddstream', arguments);
+            lwVm.memory.private_data.get(this).onaddstream = value + "";
         },
         get onconnectionstatechange() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onconnectionstatechange, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onconnectionstatechange, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'onconnectionstatechange', arguments, result);
+            return result;
         },
         set onconnectionstatechange(value) {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onconnectionstatechange = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCPeerConnection', 'onconnectionstatechange', arguments);
+            lwVm.memory.private_data.get(this).onconnectionstatechange = value + "";
         },
         get ondatachannel() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).ondatachannel, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondatachannel, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'ondatachannel', arguments, result);
+            return result;
         },
         set ondatachannel(value) {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).ondatachannel = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCPeerConnection', 'ondatachannel', arguments);
+            lwVm.memory.private_data.get(this).ondatachannel = value + "";
         },
         get onicecandidate() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onicecandidate, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onicecandidate, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'onicecandidate', arguments, result);
+            return result;
         },
         set onicecandidate(value) {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onicecandidate = value;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCPeerConnection', 'onicecandidate', arguments);
+            lwVm.memory.private_data.get(this).onicecandidate = value;
         },
         get onicecandidateerror() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onicecandidateerror, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onicecandidateerror, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'onicecandidateerror', arguments, result);
+            return result;
         },
         set onicecandidateerror(value) {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onicecandidateerror = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCPeerConnection', 'onicecandidateerror', arguments);
+            lwVm.memory.private_data.get(this).onicecandidateerror = value + "";
         },
         get oniceconnectionstatechange() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).oniceconnectionstatechange, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oniceconnectionstatechange, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'oniceconnectionstatechange', arguments, result);
+            return result;
         },
         set oniceconnectionstatechange(value) {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).oniceconnectionstatechange = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCPeerConnection', 'oniceconnectionstatechange', arguments);
+            lwVm.memory.private_data.get(this).oniceconnectionstatechange = value + "";
         },
         get onicegatheringstatechange() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onicegatheringstatechange, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onicegatheringstatechange, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'onicegatheringstatechange', arguments, result);
+            return result;
         },
         set onicegatheringstatechange(value) {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onicegatheringstatechange = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCPeerConnection', 'onicegatheringstatechange', arguments);
+            lwVm.memory.private_data.get(this).onicegatheringstatechange = value + "";
         },
         get onnegotiationneeded() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onnegotiationneeded, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onnegotiationneeded, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'onnegotiationneeded', arguments, result);
+            return result;
         },
         set onnegotiationneeded(value) {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onnegotiationneeded = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCPeerConnection', 'onnegotiationneeded', arguments);
+            lwVm.memory.private_data.get(this).onnegotiationneeded = value + "";
         },
         get onremovestream() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onremovestream, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onremovestream, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'onremovestream', arguments, result);
+            return result;
         },
         set onremovestream(value) {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onremovestream = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCPeerConnection', 'onremovestream', arguments);
+            lwVm.memory.private_data.get(this).onremovestream = value + "";
         },
         get onsignalingstatechange() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onsignalingstatechange, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onsignalingstatechange, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'onsignalingstatechange', arguments, result);
+            return result;
         },
         set onsignalingstatechange(value) {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onsignalingstatechange = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCPeerConnection', 'onsignalingstatechange', arguments);
+            lwVm.memory.private_data.get(this).onsignalingstatechange = value + "";
         },
         get ontrack() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).ontrack, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontrack, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'ontrack', arguments, result);
+            return result;
         },
         set ontrack(value) {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).ontrack = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'RTCPeerConnection', 'ontrack', arguments);
+            lwVm.memory.private_data.get(this).ontrack = value + "";
         },
         get pendingLocalDescription() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).pendingLocalDescription, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).pendingLocalDescription, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'pendingLocalDescription', arguments, result);
+            return result;
         },
         get pendingRemoteDescription() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).pendingRemoteDescription, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).pendingRemoteDescription, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'pendingRemoteDescription', arguments, result);
+            return result;
         },
         get remoteDescription() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).remoteDescription, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).remoteDescription, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'remoteDescription', arguments, result);
+            return result;
         },
         removeStream() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'removeStream', arguments, result);
+            return result;
         },
         removeTrack() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'removeTrack', arguments, result);
+            return result;
         },
         restartIce() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'restartIce', arguments, result);
+            return result;
         },
         get sctp() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).sctp, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).sctp, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnection', 'sctp', arguments, result);
+            return result;
         },
         setConfiguration() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'setConfiguration', arguments, result);
+            return result;
         },
         async setLocalDescription(session) {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
             this.localDescription = session;
             this.pendingLocalDescription = session;
-            return Promise.resolve()
+            let result = Promise.resolve();
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'async setLocalDescription', arguments, result);
+            return result;
         },
         setRemoteDescription() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'RTCPeerConnection', 'setRemoteDescription', arguments, result);
+            return result;
         },
         get signalingState() {
-            debugger;
             if (!RTCPeerConnection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).signalingState, "stable");
+            return lwVm.abs(lwVm.memory.private_data.get(this).signalingState, "stable");
         }
     };
 
-    qxVm.rename(RTCPeerConnection.prototype, "RTCPeerConnection");
-    qxVm.safeDescriptor_addConstructor(RTCPeerConnection);
-    qxVm.safe_Objattribute(RTCPeerConnection, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(RTCPeerConnection.prototype, "RTCPeerConnection");
+    lwVm.safeDescriptor_addConstructor(RTCPeerConnection);
+    lwVm.safe_Objattribute(RTCPeerConnection, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(RTCPeerConnection.prototype, EventTarget.prototype);
     Object.setPrototypeOf(RTCPeerConnection, EventTarget);

@@ -1,9 +1,9 @@
 MouseEvent = function MouseEvent(createObj_key) {//构造函数
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(MouseEvent);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(MouseEvent);
 
 ; (function () {
     const $safe_get_attribute = [
@@ -15,133 +15,158 @@ MouseEvent = function MouseEvent(createObj_key) {//构造函数
 
     MouseEvent.prototype = {
         get altKey() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).altKey, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).altKey, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'altKey', arguments, result);
+            return result;
         },
         get button() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).button, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).button, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'button', arguments, result);
+            return result;
         },
         get buttons() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).buttons, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).buttons, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'buttons', arguments, result);
+            return result;
         },
         get clientX() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).clientX, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).clientX, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'clientX', arguments, result);
+            return result;
         },
         get clientY() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).clientY, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).clientY, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'clientY', arguments, result);
+            return result;
         },
         get ctrlKey() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).ctrlKey, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ctrlKey, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'ctrlKey', arguments, result);
+            return result;
         },
         get fromElement() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).fromElement, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).fromElement, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'fromElement', arguments, result);
+            return result;
         },
         getModifierState() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'MouseEvent', 'getModifierState', arguments, result);
+            return result;
         },
         initMouseEvent() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'MouseEvent', 'initMouseEvent', arguments, result);
+            return result;
         },
         get layerX() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).layerX, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).layerX, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'layerX', arguments, result);
+            return result;
         },
         get layerY() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).layerY, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).layerY, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'layerY', arguments, result);
+            return result;
         },
         get metaKey() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).metaKey, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).metaKey, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'metaKey', arguments, result);
+            return result;
         },
         get movementX() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).movementX, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).movementX, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'movementX', arguments, result);
+            return result;
         },
         get movementY() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).movementY, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).movementY, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'movementY', arguments, result);
+            return result;
         },
         get offsetX() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).offsetX, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).offsetX, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'offsetX', arguments, result);
+            return result;
         },
         get offsetY() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).offsetY, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).offsetY, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'offsetY', arguments, result);
+            return result;
         },
         get pageX() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).pageX, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).pageX, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'pageX', arguments, result);
+            return result;
         },
         get pageY() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).pageY, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).pageY, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'pageY', arguments, result);
+            return result;
         },
         get relatedTarget() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).relatedTarget, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).relatedTarget, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'relatedTarget', arguments, result);
+            return result;
         },
         get screenX() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).screenX, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).screenX, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'screenX', arguments, result);
+            return result;
         },
         get screenY() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).screenY, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).screenY, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'screenY', arguments, result);
+            return result;
         },
         get shiftKey() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).shiftKey, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).shiftKey, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'shiftKey', arguments, result);
+            return result;
         },
         get toElement() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).toElement, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).toElement, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'toElement', arguments, result);
+            return result;
         },
         get x() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).x, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).x, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MouseEvent', 'x', arguments, result);
+            return result;
         },
         get y() {
-            debugger;
             if (!MouseEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).y, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).y, "");
         }
     }
 
-    qxVm.rename(MouseEvent.prototype, "MouseEvent");
-    qxVm.safeDescriptor_addConstructor(MouseEvent);
-    qxVm.safe_Objattribute(MouseEvent, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(MouseEvent.prototype, "MouseEvent");
+    lwVm.safeDescriptor_addConstructor(MouseEvent);
+    lwVm.safe_Objattribute(MouseEvent, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(MouseEvent.prototype, UIEvent.prototype);
     Object.setPrototypeOf(MouseEvent, UIEvent);

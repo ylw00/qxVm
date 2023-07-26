@@ -1,9 +1,9 @@
 Geolocation = function Geolocation(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(Geolocation);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(Geolocation);
 
 ; (function () {
     const $safe_get_attribute = [];
@@ -12,20 +12,26 @@ Geolocation = function Geolocation(createObj_key) {
     
     Geolocation.prototype = {
         clearWatch() {
-            debugger;
             if (!Geolocation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Geolocation', 'clearWatch', arguments, result);
+            return result;
         },
         getCurrentPosition() {
-            debugger;
             if (!Geolocation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Geolocation', 'getCurrentPosition', arguments, result);
+            return result;
         },
         watchPosition() {
-            debugger;
             if (!Geolocation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Geolocation', 'watchPosition', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(Geolocation.prototype, "Geolocation");
-    qxVm.safeDescriptor_addConstructor(Geolocation);
-    qxVm.safe_Objattribute(Geolocation, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(Geolocation.prototype, "Geolocation");
+    lwVm.safeDescriptor_addConstructor(Geolocation);
+    lwVm.safe_Objattribute(Geolocation, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
 })();

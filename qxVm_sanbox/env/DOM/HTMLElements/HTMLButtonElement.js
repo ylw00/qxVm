@@ -1,9 +1,9 @@
 HTMLButtonElement = function HTMLButtonElement(createObj_key) {//构造函数
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(HTMLButtonElement);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(HTMLButtonElement);
 
 ; (function () {
     const $safe_get_attribute = ['disabled', 'form', 'formAction', 'formEnctype', 'formMethod', 'formNoValidate', 'formTarget', 'labels', 'name', 'type', 'validationMessage', 'validity', 'value', 'willValidate'];
@@ -12,135 +12,158 @@ HTMLButtonElement = function HTMLButtonElement(createObj_key) {//构造函数
     
     HTMLButtonElement.prototype = {
         checkValidity() {
-            debugger;
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return true;
+            let result = true;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLButtonElement', 'checkValidity', arguments, result);
+            return result;
         },
         get disabled() {
-            debugger;
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).disabled, false);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).disabled, false);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'disabled', arguments, result);
+            return result;
         },
         set disabled(value) {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
 
-            qxVm.memory.private_data.get(this).disabled = value ? true: false;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'HTMLButtonElement', 'disabled', arguments);
+            lwVm.memory.private_data.get(this).disabled = value ? true: false;
         },
         get form() {
-            debugger;
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).form, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).form, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'form', arguments, result);
+            return result;
         },
         set form(value) {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).form = null;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'HTMLButtonElement', 'form', arguments);
+            lwVm.memory.private_data.get(this).form = null;
         },
         get formAction() {
-            debugger;
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).formAction, location.href);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).formAction, location.href);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'formAction', arguments, result);
+            return result;
         },
         set formAction(value) {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).formAction = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'HTMLButtonElement', 'formAction', arguments);
+            lwVm.memory.private_data.get(this).formAction = value + "";
         },
         get formEnctype() {
-            debugger;
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).formEnctype, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).formEnctype, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'formEnctype', arguments, result);
+            return result;
         },
         set formEnctype(value) {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).formEnctype = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'HTMLButtonElement', 'formEnctype', arguments);
+            lwVm.memory.private_data.get(this).formEnctype = value + "";
         },
         get formMethod() {
-            debugger;
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).formMethod, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).formMethod, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'formMethod', arguments, result);
+            return result;
         },
         set formMethod(value) {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).formMethod = value.toLowerCase() + "" === 'post'? 'post': 'get';
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'HTMLButtonElement', 'formMethod', arguments);
+            lwVm.memory.private_data.get(this).formMethod = value.toLowerCase() + "" === 'post'? 'post': 'get';
         },
         get formNoValidate() {
-            debugger;
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).formNoValidate, false);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).formNoValidate, false);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'formNoValidate', arguments, result);
+            return result;
         },
         set formNoValidate(value) {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).formNoValidate = value ? true: false;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'HTMLButtonElement', 'formNoValidate', arguments);
+            lwVm.memory.private_data.get(this).formNoValidate = value ? true: false;
         },
         get formTarget() {
-            debugger;
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).formTarget, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).formTarget, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'formTarget', arguments, result);
+            return result;
         },
         set formTarget(value) {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).formTarget = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'HTMLButtonElement', 'formTarget', arguments);
+            lwVm.memory.private_data.get(this).formTarget = value + "";
         },
         get labels() {  // NodeList 
-            debugger;
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).labels, "");
         },
         get name() {
-            debugger;
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).name, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).name, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'name', arguments, result);
+            return result;
         },
         set name(value) {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).name = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'HTMLButtonElement', 'name', arguments);
+            lwVm.memory.private_data.get(this).name = value + "";
         },
         reportValidity() {
-            debugger;
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return true;
+            let result = true;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLButtonElement', 'reportValidity', arguments, result);
+            return result;
         },
         setCustomValidity() {
-            debugger;
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLButtonElement', 'setCustomValidity', arguments, result);
+            return result;
         },
         get type() {
-            debugger;
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).type, "submit");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).type, "submit");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'type', arguments, result);
+            return result;
         },
         set type(value) {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).type = "submit";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'HTMLButtonElement', 'type', arguments);
+            lwVm.memory.private_data.get(this).type = "submit";
         },
         get validationMessage() {
-            debugger;
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).validationMessage, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).validationMessage, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'validationMessage', arguments, result);
+            return result;
         },
         get validity() {  // ValidityState 
-            debugger;
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).validity, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).validity, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'validationMessage', arguments, result);
+            return result;
         },
         get value() {
-            debugger;
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).value, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).value, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'value', arguments, result);
+            return result;
         },
         set value(value) {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).value = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'HTMLButtonElement', 'value', arguments);
+            lwVm.memory.private_data.get(this).value = value + "";
         },
         get willValidate() {
-            debugger;
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
             return true;
         }
     };
 
-    qxVm.rename(HTMLButtonElement.prototype, "HTMLButtonElement");
-    qxVm.safeDescriptor_addConstructor(HTMLButtonElement);
-    qxVm.safe_Objattribute(HTMLButtonElement, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(HTMLButtonElement.prototype, "HTMLButtonElement");
+    lwVm.safeDescriptor_addConstructor(HTMLButtonElement);
+    lwVm.safe_Objattribute(HTMLButtonElement, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(HTMLButtonElement.prototype, HTMLElement.prototype);
     Object.setPrototypeOf(HTMLButtonElement, HTMLElement);
@@ -148,6 +171,6 @@ HTMLButtonElement = function HTMLButtonElement(createObj_key) {//构造函数
 })();
 
 
-qxVm.memory.htmlElements["button"] = function () {
-    return new HTMLButtonElement(qxVm.memory.$createObj_key);
+lwVm.memory.htmlElements["button"] = function () {
+    return new HTMLButtonElement(lwVm.memory.$createObj_key);
 }

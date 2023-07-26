@@ -1,9 +1,9 @@
 NodeList = function NodeList(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(NodeList);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(NodeList);
 
 ; (function () {
     const $safe_get_attribute = ['length'];
@@ -12,39 +12,49 @@ NodeList = function NodeList(createObj_key) {
 
     NodeList.prototype = {
         entries() {
-            debugger;
             if (!NodeList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'NodeList', 'entries', arguments, result);
+            return result;
         },
         forEach(callback, ...args) {
-            debugger;
             if (!NodeList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'NodeList', 'forEach', arguments, result);
+            return result;
         },
         item(imdex) {
-            debugger;
             if (!NodeList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
             try{
                 return this[imdex]
             }catch(error){
-                return null;
+            let result = null;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'NodeList', 'item', arguments, result);
+            return result;
             }
         },
         keys() {
             if (!NodeList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return Object.keys(this);
+            let result = Object.keys(this);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'NodeList', 'keys', arguments, result);
+            return result;
         },
         get length() {
-            debugger;
             if (!NodeList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).length, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).length, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'NodeList', 'length', arguments, result);
+            return result;
         },
         values() {
-            debugger;
             if (!NodeList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'NodeList', 'values', arguments, result);
+            return result;
         }
     };
-    qxVm.set_iterator(NodeList);
-    qxVm.rename(NodeList.prototype, "NodeList");
-    qxVm.safeDescriptor_addConstructor(NodeList);
-    qxVm.safe_Objattribute(NodeList, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.set_iterator(NodeList);
+    lwVm.rename(NodeList.prototype, "NodeList");
+    lwVm.safeDescriptor_addConstructor(NodeList);
+    lwVm.safe_Objattribute(NodeList, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
 })();

@@ -2,8 +2,8 @@ OscillatorNode = function OscillatorNode() {
     if(new.target !== OscillatorNode){
 		throw new TypeError(`Failed to construct 'OscillatorNode': Please use the 'new' operator, this DOM object constructor cannot be called as a function.`)
 	}
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(OscillatorNode);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(OscillatorNode);
 
 ; (function () {
     const $safe_get_attribute = ['detune', 'frequency', 'type'];
@@ -12,43 +12,47 @@ OscillatorNode = function OscillatorNode() {
 
     OscillatorNode.prototype = {
         get detune() {
-            debugger;
             if (!OscillatorNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let ele = qxVm.memory.private_data.get(this).detune;
+            let ele = lwVm.memory.private_data.get(this).detune;
             if (ele === undefined) {
-                ele = new AudioParam(qxVm.memory.$createObj_key, "a-rate", 0, 153600, -153600);
-                qxVm.memory.private_data.get(this).detune = ele;
+                ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 0, 153600, -153600);
+                lwVm.memory.private_data.get(this).detune = ele;
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'OscillatorNode', 'detune', arguments, result);
+            return result;
         },
         get frequency() {
-            debugger;
             if (!OscillatorNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let ele = qxVm.memory.private_data.get(this).detune;
+            let ele = lwVm.memory.private_data.get(this).detune;
             if (ele === undefined) {
-                ele = new AudioParam(qxVm.memory.$createObj_key, "a-rate", 440, 22050, -22050);
-                qxVm.memory.private_data.get(this).detune = ele;
+                ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 440, 22050, -22050);
+                lwVm.memory.private_data.get(this).detune = ele;
             }
-            return ele;
+            let result = ele;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'OscillatorNode', 'frequency', arguments, result);
+            return result;
         },
         setPeriodicWave() {
-            debugger;
             if (!OscillatorNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'OscillatorNode', 'setPeriodicWave', arguments, result);
+            return result;
         },
         get type() {
-            debugger;
             if (!OscillatorNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).type, "sine");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).type, "sine");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'OscillatorNode', 'type', arguments, result);
+            return result;
         },
         set type(value) {
-            debugger;
             if (!OscillatorNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).type = value + "";
+            lwVm.memory.private_data.get(this).type = value + "";
         }
     }
-    qxVm.rename(OscillatorNode.prototype, "OscillatorNode");
-    qxVm.safeDescriptor_addConstructor(OscillatorNode);
-    qxVm.safe_Objattribute(OscillatorNode, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(OscillatorNode.prototype, "OscillatorNode");
+    lwVm.safeDescriptor_addConstructor(OscillatorNode);
+    lwVm.safe_Objattribute(OscillatorNode, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(OscillatorNode.prototype, AudioScheduledSourceNode.prototype);
     Object.setPrototypeOf(OscillatorNode, AudioScheduledSourceNode);

@@ -3,7 +3,7 @@
  */
 
 //  保护伪造的函数(Function.toString()) 让其更难被识破
-qxVm.safefunction = (function() {
+lwVm.safefunction = (function() {
     "use strict";
     const $toString = Function.toString;
     const myFunction_toString_symbol = Symbol('('.concat('', ')_', (Math.random() + '').toString(36)));
@@ -51,7 +51,7 @@ qxVm.safefunction = (function() {
 
 
 //  保护伪造的对象(Object.toString())  让其更难被识破
-qxVm.rename = (function () {
+lwVm.rename = (function () {
     function buffer_memory(value) {
         let d = buffer_memory.d || (
             buffer_memory.d = {
@@ -77,7 +77,7 @@ qxVm.rename = (function () {
 
 
 // 保护 Object.prototype属性的对象描述符, 并给Object.prototype添加constructor属性
-qxVm.safeDescriptor_addConstructor = (function () {
+lwVm.safeDescriptor_addConstructor = (function () {
     function buffer_memory_proto(value) {
         let d = buffer_memory_proto.d || (
             buffer_memory_proto.d = {
@@ -120,7 +120,7 @@ qxVm.safeDescriptor_addConstructor = (function () {
  * @param { Boolean } oneself - 给自身添加, 而不是 prototype
  * @returns { undefined } 
  */
-qxVm.safe_Objattribute = function (Obj, safe_get_attribute, safe_set_attribute, safe_func_attribute, oneself) {
+lwVm.safe_Objattribute = function (Obj, safe_get_attribute, safe_set_attribute, safe_func_attribute, oneself) {
     /*
     Obj：                需要保护的对象, 默认是保护对象的原型对象
     safe_get_attribute： 需要保护的 get 属性
@@ -132,15 +132,15 @@ qxVm.safe_Objattribute = function (Obj, safe_get_attribute, safe_set_attribute, 
 
     // 保护get属性
     for (let key of safe_get_attribute) {
-        qxVm.safefunction(Object.getOwnPropertyDescriptor(obj, key)['get']);
+        lwVm.safefunction(Object.getOwnPropertyDescriptor(obj, key)['get']);
     }
     // 保护set属性
     for (let key of safe_set_attribute) {
-        qxVm.safefunction(Object.getOwnPropertyDescriptor(obj, key)['set']);
+        lwVm.safefunction(Object.getOwnPropertyDescriptor(obj, key)['set']);
     }
     // 保护func属性
     for (let key of safe_func_attribute) {
-        qxVm.safefunction(obj[key]);
+        lwVm.safefunction(obj[key]);
     }
 }
 
@@ -151,7 +151,7 @@ qxVm.safe_Objattribute = function (Obj, safe_get_attribute, safe_set_attribute, 
  * @param { Boolean } oneself - 是否给自身添加, 而不是 prototype
  * @returns { undefined } 
  */
-qxVm.set_iterator = function (Obj, oneself) {
+lwVm.set_iterator = function (Obj, oneself) {
     const obj = oneself ? Obj : Obj.prototype;
 
     Object.defineProperties(obj, {
@@ -168,7 +168,7 @@ qxVm.set_iterator = function (Obj, oneself) {
 大写字母的属性, 都是原型以及本身, 都会有一份
 给原型, 以及本身设置属性, 并设置对象描述符
 */
-qxVm.add_capitalLetter_attribute = (function () {
+lwVm.add_capitalLetter_attribute = (function () {
     function buffer_memory(value) {
         let d = buffer_memory.d || (
             buffer_memory.d = {

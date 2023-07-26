@@ -1,9 +1,9 @@
 Scheduler = function Scheduler(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(Scheduler);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(Scheduler);
 
 ; (function () {
     const $safe_get_attribute = [];
@@ -12,13 +12,15 @@ Scheduler = function Scheduler(createObj_key) {
 
     Scheduler.prototype = {
         postTask() {
-            debugger;
             if (!Scheduler.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Scheduler', 'postTask', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(Scheduler.prototype, "Scheduler");
-    qxVm.safeDescriptor_addConstructor(Scheduler);
-    qxVm.safe_Objattribute(Scheduler, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(Scheduler.prototype, "Scheduler");
+    lwVm.safeDescriptor_addConstructor(Scheduler);
+    lwVm.safe_Objattribute(Scheduler, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 })();
-scheduler = new Scheduler(qxVm.memory.$createObj_key)
+scheduler = new Scheduler(lwVm.memory.$createObj_key)
 

@@ -1,9 +1,9 @@
 CustomElementRegistry = function CustomElementRegistry(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(CustomElementRegistry);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(CustomElementRegistry);
 
 ; (function () {
     const $safe_get_attribute = [];
@@ -12,25 +12,33 @@ CustomElementRegistry = function CustomElementRegistry(createObj_key) {
     
     CustomElementRegistry.prototype = {
         define() {
-            debugger;
             if (!CustomElementRegistry.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CustomElementRegistry', 'define', arguments, result);
+            return result;
         },
         get() {
-            debugger;
             if (!CustomElementRegistry.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CustomElementRegistry', 'get', arguments, result);
+            return result;
         },
         upgrade() {
-            debugger;
             if (!CustomElementRegistry.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CustomElementRegistry', 'upgrade', arguments, result);
+            return result;
         },
         whenDefined() {
-            debugger;
             if (!CustomElementRegistry.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CustomElementRegistry', 'whenDefined', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(CustomElementRegistry.prototype, "CustomElementRegistry");
-    qxVm.safeDescriptor_addConstructor(CustomElementRegistry);
-    qxVm.safe_Objattribute(CustomElementRegistry, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(CustomElementRegistry.prototype, "CustomElementRegistry");
+    lwVm.safeDescriptor_addConstructor(CustomElementRegistry);
+    lwVm.safe_Objattribute(CustomElementRegistry, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 })();
-customElements = new CustomElementRegistry(qxVm.memory.$createObj_key)
+customElements = new CustomElementRegistry(lwVm.memory.$createObj_key)
 

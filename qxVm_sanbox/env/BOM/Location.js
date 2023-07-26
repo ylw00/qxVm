@@ -1,12 +1,12 @@
 Location = function Location() {
     throw new TypeError("TypeError", "Illegal constructor")
-}; qxVm.safefunction(Location);
+}; lwVm.safefunction(Location);
 location = {};
 
 ; (function () {
     Location.prototype = {};
-    qxVm.rename(Location.prototype, "Location");
-    qxVm.safeDescriptor_addConstructor(Location);
+    lwVm.rename(Location.prototype, "Location");
+    lwVm.safeDescriptor_addConstructor(Location);
 
 
     const $safe_get_attribute = ['hash', 'host', 'hostname', 'href', 'origin', 'pathname', 'port', 'protocol', 'search'];
@@ -26,37 +26,52 @@ location = {};
 
     location = {
         ancestorOrigins() {
-            debugger;
-            return new class DOMStringList { }
+            let result = new class DOMStringList { };
+            if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Location', 'ancestorOrigins', arguments, result);
+            return result;
         },
         assign() {
-            debugger;
+            let result = undefined;
+            if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Location', 'assign', arguments, result);
+            return result;
         },
         get hash() {
-            return $attribute_map.hash
+            let result = $attribute_map.hash;
+            if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Location', 'hash', arguments, result);
+            return result
         },
         set hash(value) {
+            if (lwVm.config.log_print === true) lwVm.logAdd('Set', 'Location', 'hash', arguments);
             $attribute_map.hash = value
         },
 
         get host() {
-            return $attribute_map.host
+            let result = $attribute_map.host
+            if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Location', 'host', arguments, result);
+            return result
         },
         set host(value) {
+            if (lwVm.config.log_print === true) lwVm.logAdd('Set', 'Location', 'host', arguments);
             $attribute_map.host = value
         },
 
         get hostname() {
-            return $attribute_map.hostname
+            let result = $attribute_map.hostname;
+            if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Location', 'hostname', arguments, result);
+            return result
         },
         set hostname(value) {
+            if (lwVm.config.log_print === true) lwVm.logAdd('Set', 'Location', 'hostname', arguments);
             $attribute_map.hostname = value
         },
 
         get href() {
-            return $attribute_map.href
+            let result = $attribute_map.href
+            if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Location', 'href', arguments, result);
+            return result
         },
         set href(value) {
+            if (lwVm.config.log_print === true) lwVm.logAdd('Set', 'Location', 'href', arguments);
             let a = value.match(/([^:]+:)\/\/([^/:?#]+):?(\d+)?([^?#]*)?(\?[^#]*)?(#.*)?/);
             location.protocol = a[1] ? a[1] : "";
             location.host = a[2] ? a[2] : "";
@@ -70,46 +85,66 @@ location = {};
         },
 
         get origin() {
-            return $attribute_map.origin
+            let result = $attribute_map.origin;
+            if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Location', 'origin', arguments, result);
+            return result
         },
         set origin(value) {
+            if (lwVm.config.log_print === true) lwVm.logAdd('Set', 'Location', 'origin', arguments);
             $attribute_map.origin = value
         },
 
         get pathname() {
-            return $attribute_map.pathname
+            let result = $attribute_map.pathname
+            if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Location', 'pathname', arguments, result);
+            return result
         },
         set pathname(value) {
+            if (lwVm.config.log_print === true) lwVm.logAdd('Set', 'Location', 'pathname', arguments);
             $attribute_map.pathname = value
         },
 
         get port() {
-            return $attribute_map.port
+            let result =  $attribute_map.port;
+            if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Location', 'port', arguments, result);
+            return result
         },
         set port(value) {
+            if (lwVm.config.log_print === true) lwVm.logAdd('Set', 'Location', 'port', arguments);
             $attribute_map.port = value
         },
-
         get protocol() {
-            return $attribute_map.protocol
+            let result = $attribute_map.protocol;
+            if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Location', 'protocol', arguments, result);
+            return result;
         },
         set protocol(value) {
+            if (lwVm.config.log_print === true) lwVm.logAdd('Set', 'Location', 'protocol', arguments);
             $attribute_map.protocol = value
         },
         reload() {
-            debugger;
+            let result = undefined;
+            if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Location', 'reload', arguments, result);
+            return result;
         },
         replace() {
-            debugger;
+            let result = undefined;
+            if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Location', 'replace', arguments, result);
+            return result;
         },
         get search() {
-            return $attribute_map.search
+            let result = $attribute_map.search;
+            if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Location', 'search', arguments, result);
+            return result
         },
         set search(value) {
+            if (lwVm.config.log_print === true) lwVm.logAdd('Set', 'Location', 'search', arguments);
             $attribute_map.search = value
         },
         toString() {
-            return location.href
+            let result = location.href;
+            if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Location', 'toString', arguments, result);
+            return result
         }
     };
     // 添加两个特殊的属性
@@ -121,8 +156,8 @@ location = {};
             configurable: false,
             enumerable: true
         });
-        qxVm.safefunction(Object.getOwnPropertyDescriptor(location, key)['get']);
-        qxVm.safefunction(Object.getOwnPropertyDescriptor(location, key)['set']);
+        lwVm.safefunction(Object.getOwnPropertyDescriptor(location, key)['get']);
+        lwVm.safefunction(Object.getOwnPropertyDescriptor(location, key)['set']);
     };
 
     for (let key of $safe_func_attribute) {
@@ -132,11 +167,11 @@ location = {};
             enumerable: true,
             writable: false
         });
-        qxVm.safefunction(Object.getOwnPropertyDescriptor(location, key)['value'])
+        lwVm.safefunction(Object.getOwnPropertyDescriptor(location, key)['value'])
     }
     Object.setPrototypeOf(location, Location.prototype);
 
     // 初始化用户配置
-    location.href = qxVm.default_envs['location']['href'];
+    location.href = lwVm.default_envs['location']['href'];
 })()
 

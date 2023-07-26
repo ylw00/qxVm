@@ -1,9 +1,9 @@
 HTMLDivElement = function HTMLDivElement(createObj_key) {//构造函数
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(HTMLDivElement);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(HTMLDivElement);
 
 ; (function () {
     const $safe_get_attribute = ['align'];
@@ -13,24 +13,26 @@ HTMLDivElement = function HTMLDivElement(createObj_key) {//构造函数
     HTMLDivElement.prototype = {
         get align() {
             if (!HTMLDivElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); }
-            return qxVm.abs(qxVm.memory.private_data.get(this).align, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).align, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLDivElement', 'align', arguments, result);
+            return result;
         },
         set align(value) {
             if (!HTMLDivElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); }
-            qxVm.memory.private_data.get(this).align = value + "";
+            lwVm.memory.private_data.get(this).align = value + "";
         }
     };
 
-    qxVm.rename(HTMLDivElement.prototype, "HTMLDivElement");
-    qxVm.safeDescriptor_addConstructor(HTMLDivElement);
-    qxVm.safe_Objattribute(HTMLDivElement, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(HTMLDivElement.prototype, "HTMLDivElement");
+    lwVm.safeDescriptor_addConstructor(HTMLDivElement);
+    lwVm.safe_Objattribute(HTMLDivElement, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(HTMLDivElement.prototype, HTMLElement.prototype);
     Object.setPrototypeOf(HTMLDivElement, HTMLElement);
 
 })();
 
-qxVm.memory.htmlElements["div"] = function () {
-    return new HTMLDivElement(qxVm.memory.$createObj_key);
+lwVm.memory.htmlElements["div"] = function () {
+    return new HTMLDivElement(lwVm.memory.$createObj_key);
 }
 

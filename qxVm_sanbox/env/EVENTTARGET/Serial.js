@@ -1,9 +1,9 @@
 Serial = function Serial(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(Serial);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(Serial);
 
 ; (function () {
     const $safe_get_attribute = ['onconnect', 'ondisconnect'];
@@ -12,37 +12,43 @@ Serial = function Serial(createObj_key) {
 
     Serial.prototype = {
         getPorts() {
-            debugger;
             if (!Serial.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Serial', 'getPorts', arguments, result);
+            return result;
         },
         get onconnect() {
-            debugger;
             if (!Serial.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onconnect, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onconnect, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Serial', 'onconnect', arguments, result);
+            return result;
         },
         set onconnect(value) {
-            debugger;
             if (!Serial.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onconnect = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Serial', 'onconnect', arguments);
+            lwVm.memory.private_data.get(this).onconnect = value + "";
         },
         get ondisconnect() {
-            debugger;
             if (!Serial.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).ondisconnect, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondisconnect, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Serial', 'ondisconnect', arguments, result);
+            return result;
         },
         set ondisconnect(value) {
-            debugger;
             if (!Serial.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).ondisconnect = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Serial', 'ondisconnect', arguments);
+            lwVm.memory.private_data.get(this).ondisconnect = value + "";
         },
         requestPort() {
-            debugger;
             if (!Serial.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Serial', 'requestPort', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(Serial.prototype, "Serial");
-    qxVm.safeDescriptor_addConstructor(Serial);
-    qxVm.safe_Objattribute(Serial, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(Serial.prototype, "Serial");
+    lwVm.safeDescriptor_addConstructor(Serial);
+    lwVm.safe_Objattribute(Serial, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(Serial.prototype, EventTarget.prototype);
     Object.setPrototypeOf(Serial, EventTarget);

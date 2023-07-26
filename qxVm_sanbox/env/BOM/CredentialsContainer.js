@@ -1,9 +1,9 @@
 CredentialsContainer = function CredentialsContainer(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(CredentialsContainer);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(CredentialsContainer);
 
 ; (function () {
     const $safe_get_attribute = [];
@@ -12,24 +12,32 @@ CredentialsContainer = function CredentialsContainer(createObj_key) {
 
     CredentialsContainer.prototype = {
         create() {
-            debugger;
             if (!CredentialsContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CredentialsContainer', 'create', arguments, result);
+            return result;
         },
         get() {
-            debugger;
             if (!CredentialsContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CredentialsContainer', 'get', arguments, result);
+            return result;
         },
         preventSilentAccess() {
-            debugger;
             if (!CredentialsContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CredentialsContainer', 'preventSilentAccess', arguments, result);
+            return result;
         },
         store() {
-            debugger;
             if (!CredentialsContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CredentialsContainer', 'store', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(CredentialsContainer.prototype, "CredentialsContainer");
-    qxVm.safeDescriptor_addConstructor(CredentialsContainer);
-    qxVm.safe_Objattribute(CredentialsContainer, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(CredentialsContainer.prototype, "CredentialsContainer");
+    lwVm.safeDescriptor_addConstructor(CredentialsContainer);
+    lwVm.safe_Objattribute(CredentialsContainer, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
 })();

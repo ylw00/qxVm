@@ -1,9 +1,9 @@
 NavigatorUAData = function NavigatorUAData(createObj_key) {//构造函数
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(NavigatorUAData);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(NavigatorUAData);
 
 ; (function () {
     const $safe_get_attribute = ['brands', 'mobile', 'platform'];
@@ -12,7 +12,6 @@ NavigatorUAData = function NavigatorUAData(createObj_key) {//构造函数
 
     NavigatorUAData.prototype = {
         get brands() { // 这个属性得对象描述符不正确, 
-            debugger;
             if (!NavigatorUAData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
             return [
                 { brand: ' Not;A Brand', version: '99' },
@@ -21,24 +20,32 @@ NavigatorUAData = function NavigatorUAData(createObj_key) {//构造函数
             ]
         },
         getHighEntropyValues() {
-            debugger;
             if (!NavigatorUAData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'NavigatorUAData', 'getHighEntropyValues', arguments, result);
+            return result;
         },
         get mobile() {
             if (!NavigatorUAData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return false;
+            let result = false;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'NavigatorUAData', 'mobile', arguments, result);
+            return result;
         },
         get platform() {
             if (!NavigatorUAData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return "Windows";
+            let result = "Windows";;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'NavigatorUAData', 'platform', arguments, result);
+            return result;
         },
         toJSON() {
-            debugger;
             if (!NavigatorUAData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'NavigatorUAData', 'toJSON', arguments, result);
+            return result;
         },
     };
-    qxVm.rename(NavigatorUAData.prototype, "NavigatorUAData");
-    qxVm.safeDescriptor_addConstructor(NavigatorUAData);
-    qxVm.safe_Objattribute(NavigatorUAData, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(NavigatorUAData.prototype, "NavigatorUAData");
+    lwVm.safeDescriptor_addConstructor(NavigatorUAData);
+    lwVm.safe_Objattribute(NavigatorUAData, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 })()
 

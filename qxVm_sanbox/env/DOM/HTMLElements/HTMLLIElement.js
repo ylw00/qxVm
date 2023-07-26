@@ -1,9 +1,9 @@
 HTMLLIElement = function HTMLLIElement(createObj_key) {//构造函数
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(HTMLLIElement);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(HTMLLIElement);
 
 ; (function () {
     const $safe_get_attribute = ['type', 'value'];
@@ -12,37 +12,38 @@ HTMLLIElement = function HTMLLIElement(createObj_key) {//构造函数
     HTMLLIElement.prototype = {
 
         get type() {
-            debugger;
             if (!HTMLLIElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).type, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).type, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLIElement', 'type', arguments, result);
+            return result;
         },
         set type(value) {
-            debugger;
             if (!HTMLLIElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).type = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'HTMLLIElement', 'type', arguments);
+            lwVm.memory.private_data.get(this).type = value + "";
         },
         get value() {
-            debugger;
             if (!HTMLLIElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).value, "");
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).value, "");;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLIElement', 'value', arguments, result);
+            return result;
         },
         set value(value) {
-            debugger;
             if (!HTMLLIElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).value = value + "";
+            lwVm.memory.private_data.get(this).value = value + "";
         }
     };
 
-    qxVm.rename(HTMLLIElement.prototype, "HTMLLIElement");
-    qxVm.safeDescriptor_addConstructor(HTMLLIElement);
-    qxVm.safe_Objattribute(HTMLLIElement, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(HTMLLIElement.prototype, "HTMLLIElement");
+    lwVm.safeDescriptor_addConstructor(HTMLLIElement);
+    lwVm.safe_Objattribute(HTMLLIElement, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(HTMLLIElement.prototype, HTMLElement.prototype);
     Object.setPrototypeOf(HTMLLIElement, HTMLElement);
 
 })();
 
-qxVm.memory.htmlElements["li"] = function () {
-    return new HTMLLIElement(qxVm.memory.$createObj_key);
+lwVm.memory.htmlElements["li"] = function () {
+    return new HTMLLIElement(lwVm.memory.$createObj_key);
 }
 

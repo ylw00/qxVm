@@ -15,8 +15,6 @@ function qxVm_env_generate(user_config_str) {
 
     code += `${TOOLS_NODE.Get_tools_node_code()}\r\n`;  // 自己封装的工具
 
-    code += user_config_str.pop('proxy_config_str');  // 代理配置
-
     code += user_config_str.pop('canvas_str');    // 自定义canvas指纹放到框架内存
 
     code += user_config_str.pop('env_str');    // 自定义浏览器环境放到框架内存
@@ -35,12 +33,12 @@ function qxVm_env_generate(user_config_str) {
 
     code += `${DOM_NODE.Get_Dom_node_code()}\r\n`;  // DOM
 
-    code += 'qxVm.memory.htmlCollection[0] = new HTMLBodyElement(qxVm.memory.$createObj_key);\r\n\r\n';  // 初始化DOM节点
-    code += 'qxVm.memory.htmlCollection[1] = new HTMLHeadElement(qxVm.memory.$createObj_key);\r\n\r\n';  // 初始化DOM节点
+    code += 'lwVm.memory.htmlCollection[0] = new HTMLBodyElement(lwVm.memory.$createObj_key);\r\n\r\n';  // 初始化DOM节点
+    code += 'lwVm.memory.htmlCollection[1] = new HTMLHeadElement(lwVm.memory.$createObj_key);\r\n\r\n';  // 初始化DOM节点
 
     code += `${VM_PROXYOBJ.vm_proxyObj()}\r\n`;  // 设置代理对象
 
-    code += "debugger;\r\n";
+    code += `${BASE_OBJ_NODE.Get_frameEnd_code()}\r\n`  // 结束的操作
 
     return code
 }

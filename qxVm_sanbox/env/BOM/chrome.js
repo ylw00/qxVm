@@ -15,34 +15,24 @@ chrome = {
             SORTING_CODE: "SORTING_CODE"
         },
         getAddressComponents() {
-            debugger;
         },
         getAddressComponents() {
-            debugger;
         },
         getAddressList() {
-            debugger;
         },
         getCountryList() {
-            debugger;
         },
         getCreditCardList() {
-            debugger;
         },
         getUpiIdList() {
-            debugger;
         },
         logServerCardLinkClicked() {
-            debugger;
         },
         maskCreditCard() {
-            debugger;
         },
         migrateCreditCards() {
-            debugger;
         },
         get onPersonalDataChanged() {
-            debugger;
             return {
                 addListener() { debugger; },
                 dispatch() { debugger; },
@@ -52,29 +42,21 @@ chrome = {
             }
         },
         set onPersonalDataChanged(value) {
-            debugger;
         },
         removeEntry() {
-            debugger;
         },
         saveAddress() {
-            debugger;
         },
         saveCreditCard() {
-            debugger;
         },
         setCreditCardFIDOAuthEnabledState() {
-            debugger;
         },
         validatePhoneNumbers() {
-            debugger;
         }
     },
     csi: function csi() {
-        debugger;
     },
     getVariableValue() {
-        debugger;
     },
     inputMethodPrivate: {
         AutoCapitalizeType: {
@@ -120,154 +102,104 @@ chrome = {
             UNDERLINE: "underline",
         },
         addWordToDictionary() {
-            debugger;
         },
         fetchAllDictionaryWords() {
-            debugger;
         },
         finishComposingText() {
-            debugger;
         },
         getAutocorrectCharacterBounds() {
-            debugger;
         },
         getAutocorrectRange() {
-            debugger;
         },
         getCompositionBounds() {
-            debugger;
         },
         getCurrentInputMethod() {
-            debugger;
         },
         getEncryptSyncEnabled() {
-            debugger;
         },
         getInputMethodConfig() {
-            debugger;
         },
         getInputMethods() {
-            debugger;
         },
         getSettings() {
-            debugger;
         },
         getSurroundingText() {
-            debugger;
         },
         getTextFieldBounds() {
-            debugger;
         },
         hideInputView() {
-            debugger;
         },
         notifyImeMenuItemActivated() {
-            debugger;
         },
         onAutocorrect() {
-            debugger;
         },
         get onChanged() {
-            debugger;
         },
         set onChanged(value) {
-            debugger;
         },
         get onCompositionBoundsChanged() {
-            debugger;
         },
         set onCompositionBoundsChanged(value) {
-            debugger;
         },
         get onDictionaryChanged() {
-            debugger;
         },
         set onDictionaryChanged(value) {
-            debugger;
         },
         get onDictionaryLoaded() {
-            debugger;
         },
         set onDictionaryLoaded(value) {
-            debugger;
         },
         get onFocus() {
-            debugger;
         },
         set onFocus(value) {
-            debugger;
         },
         get onImeMenuActivationChanged() {
-            debugger;
         },
         set onImeMenuActivationChanged(value) {
-            debugger;
         },
         get onImeMenuItemsChanged() {
-            debugger;
         },
         set onImeMenuItemsChanged(value) {
-            debugger;
         },
         get onImeMenuListChanged() {
-            debugger;
         },
         set onImeMenuListChanged(value) {
-            debugger;
         },
         get onInputMethodOptionsChanged() {
-            debugger;
         },
         set onInputMethodOptionsChanged(value) {
-            debugger;
         },
         get onScreenProjectionChanged() {
-            debugger;
         },
         set onScreenProjectionChanged(value) {
-            debugger;
         },
         get onSettingsChanged() {
-            debugger;
         },
         set onSettingsChanged(value) {
-            debugger;
         },
         get onSuggestionsChanged() {
-            debugger;
         },
         set onSuggestionsChanged(value) {
-            debugger;
         },
         openOptionsPage() {
-            debugger;
         },
         reset() {
-            debugger;
         },
         setAutocorrectRange() {
-            debugger;
         },
         setComposingRange() {
-            debugger;
         },
         setCompositionRange() {
-            debugger;
         },
         setCurrentInputMethod() {
-            debugger;
         },
         setSelectionRange() {
-            debugger;
         },
         setSettings() {
-            debugger;
         },
         setXkbLayout() {
-            debugger;
         },
         showInputView() {
-            debugger;
         },
     },
     languageSettingsPrivate: {
@@ -278,96 +210,68 @@ chrome = {
             UP: "UP",
         },
         addInputMethod() {
-            debugger;
         },
         addSpellcheckWord() {
-            debugger;
         },
         disableLanguage() {
-            debugger;
         },
         enableLanguage() {
-            debugger;
         },
         getAlwaysTranslateLanguages() {
-            debugger;
         },
         getInputMethodLists() {
-            debugger;
         },
         getLanguageList() {
-            debugger;
         },
         getNeverTranslateLanguages() {
-            debugger;
         },
         getSpellcheckDictionaryStatuses() {
-            debugger;
         },
         getSpellcheckWords() {
-            debugger;
         },
         getTranslateTargetLanguage() {
-            debugger;
         },
         moveLanguage() {
-            debugger;
         },
         onCustomDictionaryChanged: {
             addListener() {
-                debugger;
             },
             dispatch() {
-                debugger;
             },
             hasListener() {
-                debugger;
             },
             hasListeners() {
-                debugger;
             },
             removeListener() {
-                debugger;
             }
         },
         get onInputMethodAdded() {
             return {
                 addListener() {
-                    debugger;
                 },
                 dispatch() {
-                    debugger;
                 },
                 hasListener() {
-                    debugger;
                 },
                 hasListeners() {
-                    debugger;
                 },
                 removeListener() {
-                    debugger;
                 }
             }
         },
         set onInputMethodAdded(value) {
-            debugger;
         },
         get onInputMethodRemoved() {
             return {
                 addListener() {
-                    debugger;
                 },
                 dispatch() {
-                    debugger;
                 },
                 hasListener() {
-                    debugger;
                 },
                 hasListeners() {
-                    debugger;
                 },
                 removeListener() {
-                    debugger;
                 }
             }
         },
@@ -376,43 +280,31 @@ chrome = {
         },
         onSpellcheckDictionariesChanged: {
             addListener() {
-                debugger;
             },
             dispatch() {
-                debugger;
             },
             hasListener() {
-                debugger;
             },
             hasListeners() {
-                debugger;
             },
             removeListener() {
-                debugger;
             }
         },
         removeInputMethod() {
-            debugger;
         },
         removeSpellcheckWord() {
-            debugger;
         },
         retryDownloadDictionary() {
-            debugger;
         },
         setEnableTranslationForLanguage() {
-            debugger;
         },
         setLanguageAlwaysTranslateState() {
-            debugger;
         },
         setTranslateTargetLanguage() {
-            debugger;
         },
 
     },
     loadTimes: function loadTimes() {
-        debugger;
     },
     management: {
         ExtensionDisabledReason: {
@@ -441,83 +333,60 @@ chrome = {
             OPEN_FULL_SCREEN: "OPEN_FULL_SCREEN",
         },
         createAppShortcut() {
-            debugger;
         },
         generateAppForLink() {
-            debugger;
         },
         get() {
-            debugger;
         },
         getAll() {
-            debugger;
         },
         getPermissionWarningsById() {
-            debugger;
         },
         launchApp() {
-            debugger;
         },
         get onDisabled() {
             return {
                 addListener() {
-                    debugger;
                 },
                 dispatch() {
-                    debugger;
                 },
                 hasListener() {
-                    debugger;
                 },
                 hasListeners() {
-                    debugger;
                 },
                 removeListener() {
-                    debugger;
                 }
             }
         },
         set onDisabled(value) {
-            debugger;
         },
         get onEnabled() {
             return {
                 addListener() {
-                    debugger;
                 },
                 dispatch() {
-                    debugger;
                 },
                 hasListener() {
-                    debugger;
                 },
                 hasListeners() {
-                    debugger;
                 },
                 removeListener() {
-                    debugger;
                 }
             }
         },
         set onEnabled(value) {
-            debugger;
         },
         get onInstalled() {
             return {
                 addListener() {
-                    debugger;
                 },
                 dispatch() {
-                    debugger;
                 },
                 hasListener() {
-                    debugger;
                 },
                 hasListeners() {
-                    debugger;
                 },
                 removeListener() {
-                    debugger;
                 }
             }
         },
@@ -527,19 +396,14 @@ chrome = {
         get onUninstalled() {
             return {
                 addListener() {
-                    debugger;
                 },
                 dispatch() {
-                    debugger;
                 },
                 hasListener() {
-                    debugger;
                 },
                 hasListeners() {
-                    debugger;
                 },
                 removeListener() {
-                    debugger;
                 }
             }
         },
@@ -547,13 +411,10 @@ chrome = {
             debugger
         },
         setEnabled() {
-            debugger;
         },
         setLaunchType() {
-            debugger;
         },
         uninstall() {
-            debugger;
         }
     },
     metricsPrivate: {
@@ -562,52 +423,36 @@ chrome = {
             HISTOGRAM_LOG: "histogram-log"
         },
         getFieldTrial() {
-            debugger;
         },
         getHistogram() {
-            debugger;
         },
         getVariationParams() {
-            debugger;
         },
         recordBoolean() {
-            debugger;
         },
         recordCount() {
-            debugger;
         },
         recordEnumerationValue() {
-            debugger;
         },
         recordLongTime() {
-            debugger;
         },
         recordMediumCount() {
-            debugger;
         },
         recordMediumTime() {
-            debugger;
         },
         recordPercentage() {
-            debugger;
         },
         recordSmallCount() {
-            debugger;
         },
         recordSparseHashable() {
-            debugger;
         },
         recordSparseValue() {
-            debugger;
         },
         recordTime() {
-            debugger;
         },
         recordUserAction() {
-            debugger;
         },
         recordValue() {
-            debugger;
         }
     },
     passwordsPrivate: {
@@ -639,69 +484,48 @@ chrome = {
             VIEW: "VIEW"
         },
         addPassword() {
-            debugger;
         },
         cancelExportPasswords() {
-            debugger;
         },
         changeInsecureCredential() {
-            debugger;
         },
         changeSavedPassword() {
-            debugger;
         },
         exportPasswords() {
-            debugger;
         },
         getCompromisedCredentials() {
-            debugger;
         },
         getPasswordCheckStatus() {
-            debugger;
         },
         getPasswordExceptionList() {
-            debugger;
         },
         getPlaintextInsecurePassword() {
-            debugger;
         },
         getSavedPasswordList() {
-            debugger;
         },
         getUrlCollection() {
-            debugger;
         },
         getWeakCredentials() {
-            debugger;
         },
         importPasswords() {
-            debugger;
         },
         isAccountStoreDefault() {
-            debugger;
         },
         isOptedInForAccountStorage() {
-            debugger;
         },
         movePasswordsToAccount() {
-            debugger;
         },
         get onAccountStorageOptInStateChanged() {
             return {
                 addListener() {
-                    debugger;
                 },
                 dispatch() {
-                    debugger;
                 },
                 hasListener() {
-                    debugger;
                 },
                 hasListeners() {
-                    debugger;
                 },
                 removeListener() {
-                    debugger;
                 }
             }
         },
@@ -710,37 +534,27 @@ chrome = {
         },
         onCompromisedCredentialsChanged: {
             addListener() {
-                debugger;
             },
             dispatch() {
-                debugger;
             },
             hasListener() {
-                debugger;
             },
             hasListeners() {
-                debugger;
             },
             removeListener() {
-                debugger;
             }
         },
         get onPasswordExceptionsListChanged() {
             return {
                 addListener() {
-                    debugger;
                 },
                 dispatch() {
-                    debugger;
                 },
                 hasListener() {
-                    debugger;
                 },
                 hasListeners() {
-                    debugger;
                 },
                 removeListener() {
-                    debugger;
                 }
             }
         },
@@ -750,19 +564,14 @@ chrome = {
         get onPasswordsFileExportProgress() {
             return {
                 addListener() {
-                    debugger;
                 },
                 dispatch() {
-                    debugger;
                 },
                 hasListener() {
-                    debugger;
                 },
                 hasListeners() {
-                    debugger;
                 },
                 removeListener() {
-                    debugger;
                 }
             }
         },
@@ -772,19 +581,14 @@ chrome = {
         get onSavedPasswordsListChanged() {
             return {
                 addListener() {
-                    debugger;
                 },
                 dispatch() {
-                    debugger;
                 },
                 hasListener() {
-                    debugger;
                 },
                 hasListeners() {
-                    debugger;
                 },
                 removeListener() {
-                    debugger;
                 }
             }
         },
@@ -793,56 +597,39 @@ chrome = {
         },
         onWeakCredentialsChanged: {
             addListener() {
-                debugger;
             },
             dispatch() {
-                debugger;
             },
             hasListener() {
-                debugger;
             },
             hasListeners() {
-                debugger;
             },
             removeListener() {
-                debugger;
             }
         },
         optInForAccountStorage() {
-            debugger;
         },
         recordPasswordsPageAccessInSettings() {
-            debugger;
         },
         removeInsecureCredential() {
-            debugger;
         },
         removePasswordException() {
-            debugger;
         },
         removePasswordExceptions() {
-            debugger;
         },
         removeSavedPassword() {
-            debugger;
         },
         removeSavedPasswords() {
-            debugger;
         },
         requestExportProgressStatus() {
-            debugger;
         },
         requestPlaintextPassword() {
-            debugger;
         },
         startPasswordCheck() {
-            debugger;
         },
         stopPasswordCheck() {
-            debugger;
         },
         undoRemoveSavedPasswordOrException() {
-            debugger;
         }
     },
     runtime: {
@@ -889,11 +676,9 @@ chrome = {
             return undefined;
         },
         set id(value) {
-            debugger;
         }
     },
     send() {
-        debugger;
     },
     settingsPrivate: {
         ControlledBy: {
@@ -919,36 +704,26 @@ chrome = {
             URL: "URL"
         },
         getAllPrefs() {
-            debugger;
         },
         getDefaultZoom() {
-            debugger;
         },
         getPref() {
-            debugger;
         },
         onPrefsChanged: {
             addListener() {
-                debugger;
             },
             dispatch() {
-                debugger;
             },
             hasListener() {
-                debugger;
             },
             hasListeners() {
-                debugger;
             },
             removeListener() {
-                debugger;
             }
         },
         setDefaultZoom() {
-            debugger;
         },
         setPref() {
-            debugger;
         }
     }
 }

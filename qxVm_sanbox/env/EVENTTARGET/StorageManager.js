@@ -1,9 +1,9 @@
 StorageManager = function StorageManager(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(StorageManager);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(StorageManager);
 
 ; (function () {
     const $safe_get_attribute = [];
@@ -12,25 +12,33 @@ StorageManager = function StorageManager(createObj_key) {
 
     StorageManager.prototype = {
         estimate() {
-            debugger;
             if (!StorageManager.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'StorageManager', 'estimate', arguments, result);
+            return result;
         },
         getDirectory() {
-            debugger;
             if (!StorageManager.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'StorageManager', 'getDirectory', arguments, result);
+            return result;
         },
         persist() {
-            debugger;
             if (!StorageManager.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'StorageManager', 'persist', arguments, result);
+            return result;
         },
         persisted() {
-            debugger;
             if (!StorageManager.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'StorageManager', 'persisted', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(StorageManager.prototype, "StorageManager");
-    qxVm.safeDescriptor_addConstructor(StorageManager);
-    qxVm.safe_Objattribute(StorageManager, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(StorageManager.prototype, "StorageManager");
+    lwVm.safeDescriptor_addConstructor(StorageManager);
+    lwVm.safe_Objattribute(StorageManager, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(StorageManager.prototype, EventTarget.prototype);
     Object.setPrototypeOf(StorageManager, EventTarget);

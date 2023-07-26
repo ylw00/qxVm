@@ -4,12 +4,12 @@ OfflineAudioContext = function OfflineAudioContext(numberOfChannels, length, sam
 	}
     this.numberOfChannels = numberOfChannels;
 
-    qxVm.memory.private_data.set(this, {
+    lwVm.memory.private_data.set(this, {
         numberOfChannels:numberOfChannels, 
         length:length, 
         sampleRate:sampleRate,
     })
-}; qxVm.safefunction(OfflineAudioContext);
+}; lwVm.safefunction(OfflineAudioContext);
 
 ; (function () {
     const $safe_get_attribute = ['length', 'oncomplete'];
@@ -18,27 +18,29 @@ OfflineAudioContext = function OfflineAudioContext(numberOfChannels, length, sam
 
     OfflineAudioContext.prototype = {
         get length() {
-            debugger;
             if (!OfflineAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.memory.private_data.get(this).length;
+            let result = lwVm.memory.private_data.get(this).length;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'OfflineAudioContext', 'length', arguments, result);
+            return result;
         },
         get oncomplete() {
-            debugger;
             if (!OfflineAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).oncomplete, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncomplete, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'OfflineAudioContext', 'oncomplete', arguments, result);
+            return result;
         },
         set oncomplete(value) {
-            debugger;
             if (!OfflineAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).oncomplete = value;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'OfflineAudioContext', 'oncomplete', arguments);
+            lwVm.memory.private_data.get(this).oncomplete = value;
         },
         resume() {
-            debugger;
             if (!OfflineAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return new Promise(function () { debugger; })
+            let result = new Promise(function () { debugger; });
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'OfflineAudioContext', 'resume', arguments, result);
+            return result;
         },
         startRendering() {
-            debugger;
             if (!OfflineAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
             const length = this.length;
             const sampleRate = this.sampleRate;
@@ -53,15 +55,16 @@ OfflineAudioContext = function OfflineAudioContext(numberOfChannels, length, sam
             })
         },
         suspend() {
-            debugger;
             if (!OfflineAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return new Promise(function () { debugger; })
+            let result = new Promise(function () { debugger; });
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'OfflineAudioContext', 'suspend', arguments, result);
+            return result;
         },
     }
 
-    qxVm.rename(OfflineAudioContext.prototype, "OfflineAudioContext");
-    qxVm.safeDescriptor_addConstructor(OfflineAudioContext);
-    qxVm.safe_Objattribute(OfflineAudioContext, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(OfflineAudioContext.prototype, "OfflineAudioContext");
+    lwVm.safeDescriptor_addConstructor(OfflineAudioContext);
+    lwVm.safe_Objattribute(OfflineAudioContext, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(OfflineAudioContext.prototype, BaseAudioContext.prototype);
     Object.setPrototypeOf(OfflineAudioContext, BaseAudioContext);

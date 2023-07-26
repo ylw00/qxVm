@@ -1,9 +1,9 @@
 HTMLCanvasElement = function HTMLCanvasElement(createObj_key) {//构造函数
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, { getContext: null, contextType: null })
-}; qxVm.safefunction(HTMLCanvasElement);
+    lwVm.memory.private_data.set(this, { getContext: null, contextType: null })
+}; lwVm.safefunction(HTMLCanvasElement);
 
 ; (function () {
     const $safe_get_attribute = ['height', 'width'];
@@ -12,79 +12,92 @@ HTMLCanvasElement = function HTMLCanvasElement(createObj_key) {//构造函数
 
     HTMLCanvasElement.prototype = {
         captureStream() {
-            debugger;
             if (!HTMLCanvasElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLCanvasElement', 'captureStream', arguments, result);
+            return result;
         },
         getContext(contextType, contextAttributes) {
-            debugger;
             if (!HTMLCanvasElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
             if (contextType === undefined) { throw new TypeError("Failed to execute 'getContext' on 'HTMLCanvasElement': 1 argument required, but only 0 present.") }
 
-            const buffer_context = qxVm.memory.private_data.get(this).getContext;
-            const buffer_contextType = qxVm.memory.private_data.get(this).contextType;
+            const buffer_context = lwVm.memory.private_data.get(this).getContext;
+            const buffer_contextType = lwVm.memory.private_data.get(this).contextType;
 
             if (buffer_context === null) {
                 let context = {};
                 switch (contextType) {
                     case "webgl":
-                        context = new WebGLRenderingContext(qxVm.memory.$createObj_key, this)
+                        context = new WebGLRenderingContext(lwVm.memory.$createObj_key, this)
                         break;
                     case "2d":
-                        context = new CanvasRenderingContext2D(qxVm.memory.$createObj_key, this)
+                        context = new CanvasRenderingContext2D(lwVm.memory.$createObj_key, this)
                         break
                     default:
-                        debugger;
                         context = null;
                 };
 
-                qxVm.memory.private_data.get(this).getContext = context;
-                qxVm.memory.private_data.get(this).contextType = contextType
-                return context;
+                lwVm.memory.private_data.get(this).getContext = context;
+                lwVm.memory.private_data.get(this).contextType = contextType
+            let result = context;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLCanvasElement', 'switch ', arguments, result);
+            return result;
             }
 
             if (buffer_context !== null && contextType === buffer_contextType) {
-                return buffer_context;
+            let result = buffer_context;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLCanvasElement', 'switch ', arguments, result);
+            return result;
             }
-            return null;
+            let result = null;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLCanvasElement', 'switch ', arguments, result);
+            return result;
         },
         get height() {
-            debugger;
             if (!HTMLCanvasElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).height, 150);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).height, 150);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLCanvasElement', 'height', arguments, result);
+            return result;
         },
         set height(value) {
-            debugger;
             if (!HTMLCanvasElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).height = (!isNaN(parseFloat(value)) && isFinite(value)) ? parseInt(value) : 0;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'HTMLCanvasElement', 'height', arguments);
+            lwVm.memory.private_data.get(this).height = (!isNaN(parseFloat(value)) && isFinite(value)) ? parseInt(value) : 0;
         },
         toBlob(callback, type, quality) {
-            debugger;
             if (!HTMLCanvasElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLCanvasElement', 'toBlob', arguments, result);
+            return result;
         },
         toDataURL() {
-            debugger;
             if (!HTMLCanvasElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.default_envs.canvas;
+            let result = lwVm.default_envs.canvas;;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLCanvasElement', 'toDataURL', arguments, result);
+            return result;
         },
         transferControlToOffscreen() {
-            debugger;
             if (!HTMLCanvasElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLCanvasElement', 'transferControlToOffscreen', arguments, result);
+            return result;
         },
         get width() {
-            debugger;
             if (!HTMLCanvasElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).width, 300);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).width, 300);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLCanvasElement', 'width', arguments, result);
+            return result;
         },
         set width(value) {
-            debugger;
             if (!HTMLCanvasElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).width = (!isNaN(parseFloat(value)) && isFinite(value)) ? parseInt(value) : 0;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'HTMLCanvasElement', 'width', arguments);
+            lwVm.memory.private_data.get(this).width = (!isNaN(parseFloat(value)) && isFinite(value)) ? parseInt(value) : 0;
         },
     }
 
-    qxVm.rename(HTMLCanvasElement.prototype, "HTMLCanvasElement");
-    qxVm.safeDescriptor_addConstructor(HTMLCanvasElement);
-    qxVm.safe_Objattribute(HTMLCanvasElement, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(HTMLCanvasElement.prototype, "HTMLCanvasElement");
+    lwVm.safeDescriptor_addConstructor(HTMLCanvasElement);
+    lwVm.safe_Objattribute(HTMLCanvasElement, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(HTMLCanvasElement.prototype, HTMLElement.prototype);
     Object.setPrototypeOf(HTMLCanvasElement, HTMLElement);
@@ -92,8 +105,8 @@ HTMLCanvasElement = function HTMLCanvasElement(createObj_key) {//构造函数
 })();
 
 
-qxVm.memory.htmlElements["canvas"] = function () {
-    return new HTMLCanvasElement(qxVm.memory.$createObj_key);
+lwVm.memory.htmlElements["canvas"] = function () {
+    return new HTMLCanvasElement(lwVm.memory.$createObj_key);
 }
 
 

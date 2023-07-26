@@ -1,9 +1,9 @@
 USB = function USB(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(USB);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(USB);
 
 ; (function () {
     const $safe_get_attribute = ['onconnect', 'ondisconnect'];
@@ -12,37 +12,43 @@ USB = function USB(createObj_key) {
 
     USB.prototype = {
         getDevices() {
-            debugger;
             if (!USB.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'USB', 'getDevices', arguments, result);
+            return result;
         },
         get onconnect() {
-            debugger;
             if (!USB.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onconnect, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onconnect, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'USB', 'onconnect', arguments, result);
+            return result;
         },
         set onconnect(value) {
-            debugger;
             if (!USB.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onconnect = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'USB', 'onconnect', arguments);
+            lwVm.memory.private_data.get(this).onconnect = value + "";
         },
         get ondisconnect() {
-            debugger;
             if (!USB.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).ondisconnect, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondisconnect, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'USB', 'ondisconnect', arguments, result);
+            return result;
         },
         set ondisconnect(value) {
-            debugger;
             if (!USB.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).ondisconnect = value + "";
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'USB', 'ondisconnect', arguments);
+            lwVm.memory.private_data.get(this).ondisconnect = value + "";
         },
         requestDevice() {
-            debugger;
             if (!USB.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'USB', 'requestDevice', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(USB.prototype, "USB");
-    qxVm.safeDescriptor_addConstructor(USB);
-    qxVm.safe_Objattribute(USB, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(USB.prototype, "USB");
+    lwVm.safeDescriptor_addConstructor(USB);
+    lwVm.safe_Objattribute(USB, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(USB.prototype, EventTarget.prototype);
     Object.setPrototypeOf(USB, EventTarget);

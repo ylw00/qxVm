@@ -6,11 +6,11 @@ Event:
 */
 
 Event = function Event(createObj_key) {//构造函数
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(Event);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(Event);
 
 ; (function () {
     const $attributes = {
@@ -25,104 +25,126 @@ Event = function Event(createObj_key) {//构造函数
 
     Event.prototype = {
         get bubbles() {
-            debugger;
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).bubbles, false);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).bubbles, false);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'bubbles', arguments, result);
+            return result;
         },
         get cancelBubble() {
-            debugger;
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).cancelBubble, false);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).cancelBubble, false);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'cancelBubble', arguments, result);
+            return result;
         },
         set cancelBubble(value) {
-            debugger;
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).cancelBubble = value ? true :false;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Event', 'cancelBubble', arguments);
+            lwVm.memory.private_data.get(this).cancelBubble = value ? true :false;
         },
         get cancelable() {
-            debugger;
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).cancelable, false);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).cancelable, false);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'cancelable', arguments, result);
+            return result;
         },
         get composed() {
-            debugger;
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).composed, false);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).composed, false);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'composed', arguments, result);
+            return result;
         },
         composedPath() {
-            debugger;
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Event', 'composedPath', arguments, result);
+            return result;
         },
         get currentTarget() {
-            debugger;
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).currentTarget, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).currentTarget, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'currentTarget', arguments, result);
+            return result;
         },
         get defaultPrevented() {
-            debugger;
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).defaultPrevented, false);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).defaultPrevented, false);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'defaultPrevented', arguments, result);
+            return result;
         },
         get eventPhase() {
-            debugger;
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).eventPhase, 0);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).eventPhase, 0);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'eventPhase', arguments, result);
+            return result;
         },
         initEvent() {
-            debugger;
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Event', 'initEvent', arguments, result);
+            return result;
         },
         get path() {
-            debugger;
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return [];
+            let result = [];;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'path', arguments, result);
+            return result;
         },
         preventDefault() {
-            debugger;
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Event', 'preventDefault', arguments, result);
+            return result;
         },
         get returnValue() {
-            debugger;
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).returnValue, true);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).returnValue, true);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'returnValue', arguments, result);
+            return result;
         },
         set returnValue(value) {
-            debugger;
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).returnValue = value ? true :false;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'Event', 'returnValue', arguments);
+            lwVm.memory.private_data.get(this).returnValue = value ? true :false;
         },
         get srcElement() {
-            debugger;
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).srcElement, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).srcElement, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'srcElement', arguments, result);
+            return result;
         },
         stopImmediatePropagation() {
-            debugger;
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Event', 'stopImmediatePropagation', arguments, result);
+            return result;
         },
         stopPropagation() {
-            debugger;
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Event', 'stopPropagation', arguments, result);
+            return result;
         },
         get target() {
-            debugger;
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).target, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).target, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'target', arguments, result);
+            return result;
         },
         get timeStamp() {
-            debugger;
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).timeStamp, 2778.600000023842);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).timeStamp, 2778.600000023842);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'timeStamp', arguments, result);
+            return result;
         },
         get type() {
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).type, "");
+            return lwVm.abs(lwVm.memory.private_data.get(this).type, "");
         }
     };
 
-    qxVm.rename(Event.prototype, "Event");
-    qxVm.add_capitalLetter_attribute(Event, $attributes);
-    qxVm.safeDescriptor_addConstructor(Event);
-    qxVm.safe_Objattribute(Event, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(Event.prototype, "Event");
+    lwVm.add_capitalLetter_attribute(Event, $attributes);
+    lwVm.safeDescriptor_addConstructor(Event);
+    lwVm.safe_Objattribute(Event, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
 })();

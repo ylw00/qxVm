@@ -1,9 +1,9 @@
 AudioScheduledSourceNode = function AudioScheduledSourceNode(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(AudioScheduledSourceNode);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(AudioScheduledSourceNode);
 
 ; (function () {
     const $safe_get_attribute = ['onended'];
@@ -12,27 +12,32 @@ AudioScheduledSourceNode = function AudioScheduledSourceNode(createObj_key) {
 
     AudioScheduledSourceNode.prototype = {
         get onended() {
-            debugger;
             if (!AudioScheduledSourceNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return qxVm.abs(qxVm.memory.private_data.get(this).onended, null);
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onended, null);;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioScheduledSourceNode', 'onended', arguments, result);
+            return result;
         },
         set onended(value) {
-            debugger;
             if (!AudioScheduledSourceNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            qxVm.memory.private_data.get(this).onended = value;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Set', 'AudioScheduledSourceNode', 'onended', arguments);
+            lwVm.memory.private_data.get(this).onended = value;
         },
         start() {
-            debugger;
             if (!AudioScheduledSourceNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'AudioScheduledSourceNode', 'start', arguments, result);
+            return result;
         },
         stop() {
-            debugger;
             if (!AudioScheduledSourceNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'AudioScheduledSourceNode', 'stop', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(AudioScheduledSourceNode.prototype, "AudioScheduledSourceNode");
-    qxVm.safeDescriptor_addConstructor(AudioScheduledSourceNode);
-    qxVm.safe_Objattribute(AudioScheduledSourceNode, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(AudioScheduledSourceNode.prototype, "AudioScheduledSourceNode");
+    lwVm.safeDescriptor_addConstructor(AudioScheduledSourceNode);
+    lwVm.safe_Objattribute(AudioScheduledSourceNode, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 
     Object.setPrototypeOf(AudioScheduledSourceNode.prototype, AudioNode.prototype);
     Object.setPrototypeOf(AudioScheduledSourceNode, AudioNode);

@@ -292,9 +292,9 @@ self = window;
             }
             Object.defineProperty(window, key, desc);
 
-            qxVm.safefunction(Object.getOwnPropertyDescriptor(window, key)['get'], `get ${key}`, true);
+            lwVm.safefunction(Object.getOwnPropertyDescriptor(window, key)['get'], `get ${key}`, true);
             if (set === true) {
-                qxVm.safefunction(Object.getOwnPropertyDescriptor(window, key)['set'], `set ${key}`, true);
+                lwVm.safefunction(Object.getOwnPropertyDescriptor(window, key)['set'], `set ${key}`, true);
             }
         }
     };
@@ -310,7 +310,7 @@ self = window;
             Object.defineProperty(window, key, {
                 value: value, configurable: configurable, enumerable: enumerable, writable: writable
             });
-            qxVm.safefunction(Object.getOwnPropertyDescriptor(window, key)['value'])
+            lwVm.safefunction(Object.getOwnPropertyDescriptor(window, key)['value'])
         }
     }
 

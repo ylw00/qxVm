@@ -1,9 +1,9 @@
 CacheStorage = function CacheStorage(createObj_key) {
-    if (createObj_key !== qxVm.memory.$createObj_key) {
+    if (createObj_key !== lwVm.memory.$createObj_key) {
         throw new TypeError("Illegal constructor");
     }
-    qxVm.memory.private_data.set(this, {})
-}; qxVm.safefunction(CacheStorage);
+    lwVm.memory.private_data.set(this, {})
+}; lwVm.safefunction(CacheStorage);
 
 ; (function () {
     const $safe_get_attribute = [];
@@ -12,29 +12,39 @@ CacheStorage = function CacheStorage(createObj_key) {
 
     CacheStorage.prototype = {
         delete() {
-            debugger;
             if (!CacheStorage.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CacheStorage', 'delete', arguments, result);
+            return result;
         },
         has() {
-            debugger;
             if (!CacheStorage.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CacheStorage', 'has', arguments, result);
+            return result;
         },
         keys() {
-            debugger;
             if (!CacheStorage.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CacheStorage', 'keys', arguments, result);
+            return result;
         },
         match() {
-            debugger;
             if (!CacheStorage.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CacheStorage', 'match', arguments, result);
+            return result;
         },
         open() {
-            debugger;
             if (!CacheStorage.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
+            let result = undefined;
+            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CacheStorage', 'open', arguments, result);
+            return result;
         },
     }
-    qxVm.rename(CacheStorage.prototype, "CacheStorage");
-    qxVm.safeDescriptor_addConstructor(CacheStorage);
-    qxVm.safe_Objattribute(CacheStorage, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
+    lwVm.rename(CacheStorage.prototype, "CacheStorage");
+    lwVm.safeDescriptor_addConstructor(CacheStorage);
+    lwVm.safe_Objattribute(CacheStorage, $safe_get_attribute, $safe_set_attribute, $safe_func_attribute);
 })();
-caches = new CacheStorage(qxVm.memory.$createObj_key);
+caches = new CacheStorage(lwVm.memory.$createObj_key);
 
