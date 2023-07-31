@@ -4,20 +4,18 @@
 
 - 微信公众号: y小白的笔记(https://mp.weixin.qq.com/s/GGqecHvqN54IzL3ap5c28A)
 - git: https://github.com/ylw00/qxVm
-- 基于 `node16`
-- 基于`vm2`模块纯js设计一个补环境框架
+- 基于 `node16`, `vm2`模块, 纯js设计一个补环境框架
 - 目前的设计思路以及实现的方式,检测点相对来说是比较少的
-- 因为是前期版本, 所以并没有加入`dom解析`,属性的方法实现
+- 因为是前期版本, 所以并没有加入动态`dom解析`
 - 内部使用`弱引用`, 不会影响内存回收问题
 - 优化实例产生的方式
-
-
 
  ## 声明
 
 - 不会在已有的基础之上添加新的api功能
 - 框架内部的dom操作不可信(开源版本没有加入dom解析), 需要重写(详情见/z_working/rs4.js)
 - 运行代码在z_working目录, 格式为**Vm.js结尾, 并有两个demo
+- 持续更新, 看(start/点赞量), 随心情更新
 
 
 ##  2023-07-26更新
@@ -41,7 +39,7 @@ const js_code = "function get_form (){ return '' }";  // 导出函数是一定�
 const user_config = {  // 用户配置
     isTest: true,  // 是不是测试状态, 如果是, 则会固定时间戳, 随机数
     compress: false,  // 是否压缩js, 准对检测格式化的网站
-    runConfig: { proxy: false, proxy_proto: false, logOpen: true },  // 是否挂代理
+    runConfig: { proxy: false, logOpen: true },  // 运行配置
     window_attribute: {},
     env: {  // 浏览器环境
         canvas: "",
@@ -56,7 +54,7 @@ const user_config = {  // 用户配置
     }
 }
 
-let result = QXVM_GENERATE.QXVm_sanbox(js_code, "get_form", user_config);
+let result = QXVM_GENERATE.QXVm_sanbox(js_code, "get_form", user_config, );
 console.log(result.get_form())
 ```
 - 三个参数 (需要运行的目标js, 需要导出的目标函数, 个人配置)
