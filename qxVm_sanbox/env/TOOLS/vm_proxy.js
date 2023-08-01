@@ -64,7 +64,7 @@ lwVm.proxy = function (obj, objname, type) {
                 if (typeof (propKey) !== "symbol" && propKey !== "toString") {
                     try {
                         if (lwVm.config.logOpen === true) {
-                            console.log(`\ngetting propKey-> ${WatchName}.${propKey?.description ?? propKey}  result-> ${result}  typeof-> ${result_type}`);
+                            console.log(`\ngetting propKey-> ${WatchName}.${propKey.description ?? propKey}  result-> ${result}  typeof-> ${result_type}`);
                         }
                     } catch (e) {
                         console.log(`[${WatchName}] getting error`);
