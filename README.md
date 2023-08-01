@@ -15,6 +15,7 @@
 - 持续更新, 看(start/点赞量), 随心情更新
 - 不会在已有的基础之上添加新的api功能
 - 框架内部的dom操作不可信(开源版本没有加入dom解析), 需要重写(详情见/z_working/rs4.js)
+- 推荐`vscode`插件`Code Runner` 右键运行 
 - 工作代码在z_working目录, 有两个demo, 入口文件格式为**Vm.js结尾
 
 
