@@ -43,7 +43,7 @@ lwVm.proxy = function (obj, objname, type) {
                 let result_type = get_attribute_type(result);
 
                 if (result instanceof Object) {
-                    if (Object.getOwnPropertyDescriptor(target, propKey)?.writable === false) {
+                    if (Object.getOwnPropertyDescriptor(target, propKey).writable === false) {
                         console.log(`getting propKey-> ${WatchName}.${propKey} it is non-writable`)
                     } else {
                         if (typeof result === "function") {
