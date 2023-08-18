@@ -17,13 +17,13 @@ MediaEncryptedEvent = function MediaEncryptedEvent(type) {
     MediaEncryptedEvent.prototype = {
         get initData() {
             if (!MediaEncryptedEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).initData, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).initData, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MediaEncryptedEvent', 'initData', arguments, result);
             return result;
         },
         get initDataType() {
             if (!MediaEncryptedEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).initDataType, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).initDataType, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MediaEncryptedEvent', 'initDataType', arguments, result);
             return result;
         },

@@ -13,7 +13,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
     HTMLAnchorElement.prototype = {
         get charset() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).charset, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).charset, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'charset', arguments, result);
             return result;
         },
@@ -24,7 +24,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get coords() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).coords, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).coords, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'coords', arguments, result);
             return result;
         },
@@ -35,7 +35,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get download() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).download, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).download, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'download', arguments, result);
             return result;
         },
@@ -46,7 +46,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get hash() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).hash, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).hash, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'hash', arguments, result);
             return result;
         },
@@ -57,7 +57,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get host() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).host, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).host, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'host', arguments, result);
             return result;
         },
@@ -68,7 +68,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get hostname() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).hostname, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).hostname, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'hostname', arguments, result);
             return result;
         },
@@ -79,7 +79,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get href() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).href, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).href, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'href', arguments, result);
             return result;
         },
@@ -90,7 +90,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get hrefTranslate() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).hrefTranslate, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).hrefTranslate, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'hrefTranslate', arguments, result);
             return result;
         },
@@ -101,7 +101,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get hreflang() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).hreflang, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).hreflang, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'hreflang', arguments, result);
             return result;
         },
@@ -112,7 +112,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get name() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).name, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).name, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'name', arguments, result);
             return result;
         },
@@ -123,13 +123,13 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get origin() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).origin, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).origin, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'origin', arguments, result);
             return result;
         },
         get password() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).password, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).password, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'password', arguments, result);
             return result;
         },
@@ -140,7 +140,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get pathname() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).pathname, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).pathname, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'pathname', arguments, result);
             return result;
         },
@@ -151,7 +151,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get ping() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ping, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ping, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'ping', arguments, result);
             return result;
         },
@@ -162,7 +162,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get port() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).port, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).port, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'port', arguments, result);
             return result;
         },
@@ -173,7 +173,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get protocol() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).protocol, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).protocol, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'protocol', arguments, result);
             return result;
         },
@@ -184,7 +184,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get referrerPolicy() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).referrerPolicy, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).referrerPolicy, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'referrerPolicy', arguments, result);
             return result;
         },
@@ -195,7 +195,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get rel() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).rel, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).rel, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'rel', arguments, result);
             return result;
         },
@@ -206,7 +206,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get relList() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).relList, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).relList, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'relList', arguments, result);
             return result;
         },
@@ -217,7 +217,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get rev() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).rev, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).rev, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'rev', arguments, result);
             return result;
         },
@@ -228,7 +228,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get search() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).search, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).search, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'search', arguments, result);
             return result;
         },
@@ -239,7 +239,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get shape() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).shape, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).shape, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'shape', arguments, result);
             return result;
         },
@@ -250,7 +250,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get target() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).target, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).target, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'target', arguments, result);
             return result;
         },
@@ -261,7 +261,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get text() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).text, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).text, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'text', arguments, result);
             return result;
         },
@@ -278,7 +278,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get type() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).type, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).type, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'type', arguments, result);
             return result;
         },
@@ -289,7 +289,7 @@ HTMLAnchorElement = function HTMLAnchorElement(createObj_key) {//构造函数
         },
         get username() {
             if (!HTMLAnchorElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).username, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).username, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLAnchorElement', 'username', arguments, result);
             return result;
         },

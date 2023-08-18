@@ -16,7 +16,7 @@ IDBOpenDBRequest = function IDBOpenDBRequest(createObj_key, name, version) {
     IDBOpenDBRequest.prototype = {
         get onblocked() {
             if (!IDBOpenDBRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onblocked, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onblocked, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'IDBOpenDBRequest', 'onblocked', arguments, result);
             return result;
         },
@@ -27,7 +27,7 @@ IDBOpenDBRequest = function IDBOpenDBRequest(createObj_key, name, version) {
         },
         get onupgradeneeded() {
             if (!IDBOpenDBRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onupgradeneeded, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onupgradeneeded, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'IDBOpenDBRequest', 'onupgradeneeded', arguments, result);
             return result;
         },

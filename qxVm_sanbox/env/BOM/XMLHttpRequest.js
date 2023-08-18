@@ -41,7 +41,7 @@ XMLHttpRequest = function XMLHttpRequest() {//构造函数
         },
         get onreadystatechange() {
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onreadystatechange, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onreadystatechange, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'onreadystatechange', arguments, result);
             return result;
         },
@@ -64,13 +64,13 @@ XMLHttpRequest = function XMLHttpRequest() {//构造函数
         },
         get readyState() {
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).readyState, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).readyState, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'readyState', arguments, result);
             return result;
         },
         get response() {
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).response, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).response, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'response', arguments, result);
             return result;
         },
@@ -81,13 +81,13 @@ XMLHttpRequest = function XMLHttpRequest() {//构造函数
         },
         get responseText() {
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).responseText, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).responseText, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'responseText', arguments, result);
             return result;
         },
         get responseType() {
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).responseType, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).responseType, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'responseType', arguments, result);
             return result;
         },
@@ -98,13 +98,13 @@ XMLHttpRequest = function XMLHttpRequest() {//构造函数
         },
         get responseURL() {
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).responseURL, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).responseURL, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'responseURL', arguments, result);
             return result;
         },
         get responseXML() {
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).responseXML, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).responseXML, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'responseXML', arguments, result);
             return result;
         },
@@ -122,19 +122,19 @@ XMLHttpRequest = function XMLHttpRequest() {//构造函数
         },
         get status() {
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).status, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).status, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'status', arguments, result);
             return result;
         },
         get statusText() {
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).statusText, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).statusText, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'statusText', arguments, result);
             return result;
         },
         get timeout() {
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).timeout, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).timeout, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'timeout', arguments, result);
             return result;
         },
@@ -148,7 +148,7 @@ XMLHttpRequest = function XMLHttpRequest() {//构造函数
         },
         get withCredentials() {
             if (!XMLHttpRequest.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).withCredentials, false);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).withCredentials, false);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequest', 'withCredentials', arguments, result);
             return result;
         },

@@ -13,7 +13,7 @@ CustomEvent = function CustomEvent(createObj_key) {
     CustomEvent.prototype = {
         get detail() {
             if (!CustomEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).detail, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).detail, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CustomEvent', 'detail', arguments, result);
             return result;
         },

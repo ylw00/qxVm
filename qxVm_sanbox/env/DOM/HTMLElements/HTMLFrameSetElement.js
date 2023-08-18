@@ -21,7 +21,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
     HTMLFrameSetElement.prototype = {
         get cols() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).cols, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).cols, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'cols', arguments, result);
             return result;
         },
@@ -32,7 +32,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onafterprint() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onafterprint, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onafterprint, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onafterprint', arguments, result);
             return result;
         },
@@ -43,7 +43,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onbeforeprint() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onbeforeprint, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onbeforeprint, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onbeforeprint', arguments, result);
             return result;
         },
@@ -54,7 +54,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onbeforeunload() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onbeforeunload, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onbeforeunload, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onbeforeunload', arguments, result);
             return result;
         },
@@ -65,7 +65,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onblur() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onblur, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onblur, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onblur', arguments, result);
             return result;
         },
@@ -76,7 +76,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onerror() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onerror, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onerror, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onerror', arguments, result);
             return result;
         },
@@ -87,7 +87,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onfocus() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onfocus, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onfocus, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onfocus', arguments, result);
             return result;
         },
@@ -98,7 +98,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onhashchange() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onhashchange, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onhashchange, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onhashchange', arguments, result);
             return result;
         },
@@ -109,7 +109,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onlanguagechange() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onlanguagechange, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onlanguagechange, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onlanguagechange', arguments, result);
             return result;
         },
@@ -120,7 +120,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onload() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onload, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onload, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onload', arguments, result);
             return result;
         },
@@ -131,7 +131,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onmessage() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmessage, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmessage, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onmessage', arguments, result);
             return result;
         },
@@ -142,7 +142,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onmessageerror() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmessageerror, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmessageerror, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onmessageerror', arguments, result);
             return result;
         },
@@ -153,7 +153,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onoffline() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onoffline, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onoffline, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onoffline', arguments, result);
             return result;
         },
@@ -164,7 +164,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get ononline() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ononline, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ononline, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'ononline', arguments, result);
             return result;
         },
@@ -175,7 +175,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onpagehide() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpagehide, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpagehide, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onpagehide', arguments, result);
             return result;
         },
@@ -186,7 +186,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onpageshow() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpageshow, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpageshow, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onpageshow', arguments, result);
             return result;
         },
@@ -197,7 +197,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onpopstate() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpopstate, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpopstate, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onpopstate', arguments, result);
             return result;
         },
@@ -208,7 +208,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onrejectionhandled() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onrejectionhandled, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onrejectionhandled, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onrejectionhandled', arguments, result);
             return result;
         },
@@ -219,7 +219,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onresize() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onresize, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onresize, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onresize', arguments, result);
             return result;
         },
@@ -230,7 +230,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onscroll() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onscroll, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onscroll, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onscroll', arguments, result);
             return result;
         },
@@ -241,7 +241,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onstorage() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onstorage, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onstorage, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onstorage', arguments, result);
             return result;
         },
@@ -252,7 +252,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onunhandledrejection() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onunhandledrejection, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onunhandledrejection, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onunhandledrejection', arguments, result);
             return result;
         },
@@ -263,7 +263,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get onunload() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onunload, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onunload, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'onunload', arguments, result);
             return result;
         },
@@ -274,7 +274,7 @@ HTMLFrameSetElement = function HTMLFrameSetElement(createObj_key) {//构造函�
         },
         get rows() {
             if (!HTMLFrameSetElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).rows, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).rows, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLFrameSetElement', 'rows', arguments, result);
             return result;
         },

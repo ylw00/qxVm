@@ -13,7 +13,7 @@ UserActivation = function UserActivation(createObj_key) {
     UserActivation.prototype = {
         get hasBeenActive() {
             if (!UserActivation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = true;;
+            let result = true;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'UserActivation', 'hasBeenActive', arguments, result);
             return result;
         },

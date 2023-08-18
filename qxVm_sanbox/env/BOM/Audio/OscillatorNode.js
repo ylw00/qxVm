@@ -18,7 +18,7 @@ OscillatorNode = function OscillatorNode() {
                 ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 0, 153600, -153600);
                 lwVm.memory.private_data.get(this).detune = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'OscillatorNode', 'detune', arguments, result);
             return result;
         },
@@ -29,7 +29,7 @@ OscillatorNode = function OscillatorNode() {
                 ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 440, 22050, -22050);
                 lwVm.memory.private_data.get(this).detune = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'OscillatorNode', 'frequency', arguments, result);
             return result;
         },
@@ -41,7 +41,7 @@ OscillatorNode = function OscillatorNode() {
         },
         get type() {
             if (!OscillatorNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).type, "sine");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).type, "sine");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'OscillatorNode', 'type', arguments, result);
             return result;
         },

@@ -13,7 +13,7 @@ RTCPeerConnectionIceEvent = function RTCPeerConnectionIceEvent(createObj_key, ty
     RTCPeerConnectionIceEvent.prototype = {
         get candidate() {
             if (!RTCPeerConnectionIceEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).candidate, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).candidate, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCPeerConnectionIceEvent', 'candidate', arguments, result);
             return result;
         },

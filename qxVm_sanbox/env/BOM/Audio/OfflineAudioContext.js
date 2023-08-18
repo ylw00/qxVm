@@ -19,13 +19,13 @@ OfflineAudioContext = function OfflineAudioContext(numberOfChannels, length, sam
     OfflineAudioContext.prototype = {
         get length() {
             if (!OfflineAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.memory.private_data.get(this).length;;
+            let result = lwVm.memory.private_data.get(this).length;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'OfflineAudioContext', 'length', arguments, result);
             return result;
         },
         get oncomplete() {
             if (!OfflineAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncomplete, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncomplete, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'OfflineAudioContext', 'oncomplete', arguments, result);
             return result;
         },

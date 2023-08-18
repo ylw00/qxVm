@@ -440,7 +440,7 @@ WebGLRenderingContext = function WebGLRenderingContext(createObj_key, canvas) {/
         },
         get canvas() {
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.memory.private_data.get(this).canvas;;
+            let result = lwVm.memory.private_data.get(this).canvas;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'WebGLRenderingContext', 'canvas', arguments, result);
             return result;
         },
@@ -638,13 +638,13 @@ WebGLRenderingContext = function WebGLRenderingContext(createObj_key, canvas) {/
         },
         get drawingBufferHeight() {
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 150;;
+            let result = 150;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'WebGLRenderingContext', 'drawingBufferHeight', arguments, result);
             return result;
         },
         get drawingBufferWidth() {
             if (!WebGLRenderingContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 300;;
+            let result = 300;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'WebGLRenderingContext', 'drawingBufferWidth', arguments, result);
             return result;
         },
@@ -771,7 +771,7 @@ WebGLRenderingContext = function WebGLRenderingContext(createObj_key, canvas) {/
                 default:
                     break
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'WebGLRenderingContext', 'getParameter', arguments, result);
             return result;
         },

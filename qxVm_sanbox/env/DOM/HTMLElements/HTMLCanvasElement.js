@@ -39,23 +39,23 @@ HTMLCanvasElement = function HTMLCanvasElement(createObj_key) {//构造函数
 
                 lwVm.memory.private_data.get(this).getContext = context;
                 lwVm.memory.private_data.get(this).contextType = contextType
-            let result = context;;
+            let result = context;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLCanvasElement', 'switch ', arguments, result);
             return result;
             }
 
             if (buffer_context !== null && contextType === buffer_contextType) {
-            let result = buffer_context;;
+            let result = buffer_context;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLCanvasElement', 'switch ', arguments, result);
             return result;
             }
-            let result = null;;
+            let result = null;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLCanvasElement', 'switch ', arguments, result);
             return result;
         },
         get height() {
             if (!HTMLCanvasElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).height, 150);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).height, 150);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLCanvasElement', 'height', arguments, result);
             return result;
         },
@@ -72,7 +72,7 @@ HTMLCanvasElement = function HTMLCanvasElement(createObj_key) {//构造函数
         },
         toDataURL() {
             if (!HTMLCanvasElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.default_envs.canvas;;
+            let result = lwVm.default_envs.canvas;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLCanvasElement', 'toDataURL', arguments, result);
             return result;
         },
@@ -84,7 +84,7 @@ HTMLCanvasElement = function HTMLCanvasElement(createObj_key) {//构造函数
         },
         get width() {
             if (!HTMLCanvasElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).width, 300);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).width, 300);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLCanvasElement', 'width', arguments, result);
             return result;
         },

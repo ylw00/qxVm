@@ -18,7 +18,7 @@ DynamicsCompressorNode = function DynamicsCompressorNode(createObj_key) {
                 ele = new AudioParam(lwVm.memory.$createObj_key, "k-rate", 0.003000000026077032, 1, 0);
                 lwVm.memory.private_data.get(this).attack = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DynamicsCompressorNode', 'attack', arguments, result);
             return result;
         },
@@ -29,7 +29,7 @@ DynamicsCompressorNode = function DynamicsCompressorNode(createObj_key) {
                 ele = new AudioParam(lwVm.memory.$createObj_key, "k-rate", 30, 40, 0);
                 lwVm.memory.private_data.get(this).knee = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DynamicsCompressorNode', 'knee', arguments, result);
             return result;
         },
@@ -40,13 +40,13 @@ DynamicsCompressorNode = function DynamicsCompressorNode(createObj_key) {
                 ele = new AudioParam(lwVm.memory.$createObj_key, "k-rate", 12, 20, 1);
                 lwVm.memory.private_data.get(this).ratio = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DynamicsCompressorNode', 'ratio', arguments, result);
             return result;
         },
         get reduction() {
             if (!DynamicsCompressorNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 0;;
+            let result = 0;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DynamicsCompressorNode', 'reduction', arguments, result);
             return result;
         },
@@ -57,7 +57,7 @@ DynamicsCompressorNode = function DynamicsCompressorNode(createObj_key) {
                 ele = new AudioParam(lwVm.memory.$createObj_key, "k-rate", 0.25, 1, 0);
                 lwVm.memory.private_data.get(this).release = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DynamicsCompressorNode', 'release', arguments, result);
             return result;
         },

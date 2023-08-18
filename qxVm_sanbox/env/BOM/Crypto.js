@@ -26,7 +26,7 @@ Crypto = function Crypto(createObj_key) {
         },
         get subtle() {
             if (!Crypto.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).subtle, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).subtle, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Crypto', 'subtle', arguments, result);
             return result;
         },

@@ -13,13 +13,13 @@ HTMLButtonElement = function HTMLButtonElement(createObj_key) {//构造函数
     HTMLButtonElement.prototype = {
         checkValidity() {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = true;;
+            let result = true;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLButtonElement', 'checkValidity', arguments, result);
             return result;
         },
         get disabled() {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).disabled, false);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).disabled, false);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'disabled', arguments, result);
             return result;
         },
@@ -31,7 +31,7 @@ HTMLButtonElement = function HTMLButtonElement(createObj_key) {//构造函数
         },
         get form() {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).form, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).form, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'form', arguments, result);
             return result;
         },
@@ -42,7 +42,7 @@ HTMLButtonElement = function HTMLButtonElement(createObj_key) {//构造函数
         },
         get formAction() {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).formAction, location.href);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).formAction, location.href);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'formAction', arguments, result);
             return result;
         },
@@ -53,7 +53,7 @@ HTMLButtonElement = function HTMLButtonElement(createObj_key) {//构造函数
         },
         get formEnctype() {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).formEnctype, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).formEnctype, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'formEnctype', arguments, result);
             return result;
         },
@@ -64,7 +64,7 @@ HTMLButtonElement = function HTMLButtonElement(createObj_key) {//构造函数
         },
         get formMethod() {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).formMethod, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).formMethod, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'formMethod', arguments, result);
             return result;
         },
@@ -75,7 +75,7 @@ HTMLButtonElement = function HTMLButtonElement(createObj_key) {//构造函数
         },
         get formNoValidate() {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).formNoValidate, false);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).formNoValidate, false);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'formNoValidate', arguments, result);
             return result;
         },
@@ -86,7 +86,7 @@ HTMLButtonElement = function HTMLButtonElement(createObj_key) {//构造函数
         },
         get formTarget() {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).formTarget, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).formTarget, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'formTarget', arguments, result);
             return result;
         },
@@ -100,7 +100,7 @@ HTMLButtonElement = function HTMLButtonElement(createObj_key) {//构造函数
         },
         get name() {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).name, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).name, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'name', arguments, result);
             return result;
         },
@@ -111,7 +111,7 @@ HTMLButtonElement = function HTMLButtonElement(createObj_key) {//构造函数
         },
         reportValidity() {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = true;;
+            let result = true;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLButtonElement', 'reportValidity', arguments, result);
             return result;
         },
@@ -123,7 +123,7 @@ HTMLButtonElement = function HTMLButtonElement(createObj_key) {//构造函数
         },
         get type() {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).type, "submit");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).type, "submit");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'type', arguments, result);
             return result;
         },
@@ -134,19 +134,19 @@ HTMLButtonElement = function HTMLButtonElement(createObj_key) {//构造函数
         },
         get validationMessage() {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).validationMessage, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).validationMessage, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'validationMessage', arguments, result);
             return result;
         },
         get validity() {  // ValidityState 
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).validity, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).validity, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'validationMessage', arguments, result);
             return result;
         },
         get value() {
             if (!HTMLButtonElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).value, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).value, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLButtonElement', 'value', arguments, result);
             return result;
         },

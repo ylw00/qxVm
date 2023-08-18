@@ -13,7 +13,7 @@ SpeechSynthesisUtterance = function SpeechSynthesisUtterance(createObj_key) {
     SpeechSynthesisUtterance.prototype = {
         get lang() {
             if (!SpeechSynthesisUtterance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).lang, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).lang, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SpeechSynthesisUtterance', 'lang', arguments, result);
             return result;
         },
@@ -24,7 +24,7 @@ SpeechSynthesisUtterance = function SpeechSynthesisUtterance(createObj_key) {
         },
         get onboundary() {
             if (!SpeechSynthesisUtterance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onboundary, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onboundary, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SpeechSynthesisUtterance', 'onboundary', arguments, result);
             return result;
         },
@@ -35,7 +35,7 @@ SpeechSynthesisUtterance = function SpeechSynthesisUtterance(createObj_key) {
         },
         get onend() {
             if (!SpeechSynthesisUtterance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onend, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onend, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SpeechSynthesisUtterance', 'onend', arguments, result);
             return result;
         },
@@ -46,7 +46,7 @@ SpeechSynthesisUtterance = function SpeechSynthesisUtterance(createObj_key) {
         },
         get onerror() {
             if (!SpeechSynthesisUtterance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onerror, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onerror, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SpeechSynthesisUtterance', 'onerror', arguments, result);
             return result;
         },
@@ -57,7 +57,7 @@ SpeechSynthesisUtterance = function SpeechSynthesisUtterance(createObj_key) {
         },
         get onmark() {
             if (!SpeechSynthesisUtterance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmark, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmark, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SpeechSynthesisUtterance', 'onmark', arguments, result);
             return result;
         },
@@ -68,7 +68,7 @@ SpeechSynthesisUtterance = function SpeechSynthesisUtterance(createObj_key) {
         },
         get onpause() {
             if (!SpeechSynthesisUtterance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpause, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpause, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SpeechSynthesisUtterance', 'onpause', arguments, result);
             return result;
         },
@@ -79,7 +79,7 @@ SpeechSynthesisUtterance = function SpeechSynthesisUtterance(createObj_key) {
         },
         get onresume() {
             if (!SpeechSynthesisUtterance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onresume, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onresume, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SpeechSynthesisUtterance', 'onresume', arguments, result);
             return result;
         },
@@ -90,7 +90,7 @@ SpeechSynthesisUtterance = function SpeechSynthesisUtterance(createObj_key) {
         },
         get onstart() {
             if (!SpeechSynthesisUtterance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onstart, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onstart, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SpeechSynthesisUtterance', 'onstart', arguments, result);
             return result;
         },
@@ -101,7 +101,7 @@ SpeechSynthesisUtterance = function SpeechSynthesisUtterance(createObj_key) {
         },
         get pitch() {
             if (!SpeechSynthesisUtterance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).pitch, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).pitch, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SpeechSynthesisUtterance', 'pitch', arguments, result);
             return result;
         },
@@ -112,7 +112,7 @@ SpeechSynthesisUtterance = function SpeechSynthesisUtterance(createObj_key) {
         },
         get rate() {
             if (!SpeechSynthesisUtterance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).rate, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).rate, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SpeechSynthesisUtterance', 'rate', arguments, result);
             return result;
         },
@@ -123,7 +123,7 @@ SpeechSynthesisUtterance = function SpeechSynthesisUtterance(createObj_key) {
         },
         get text() {
             if (!SpeechSynthesisUtterance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).text, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).text, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SpeechSynthesisUtterance', 'text', arguments, result);
             return result;
         },
@@ -134,7 +134,7 @@ SpeechSynthesisUtterance = function SpeechSynthesisUtterance(createObj_key) {
         },
         get voice() {
             if (!SpeechSynthesisUtterance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).voice, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).voice, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SpeechSynthesisUtterance', 'voice', arguments, result);
             return result;
         },
@@ -145,7 +145,7 @@ SpeechSynthesisUtterance = function SpeechSynthesisUtterance(createObj_key) {
         },
         get volume() {
             if (!SpeechSynthesisUtterance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).volume, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).volume, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SpeechSynthesisUtterance', 'volume', arguments, result);
             return result;
         },

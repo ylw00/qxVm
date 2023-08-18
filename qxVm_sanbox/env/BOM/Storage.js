@@ -19,18 +19,18 @@ sessionStorage = {};
             }
         },
         getItem(k) {
-            let result = this[k] ? this[k] : null;;
+            let result = this[k] ? this[k] : null;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Storage', 'getItem', arguments, result);
             return result;
         },
         key(index) {
-            let result = Object.keys(this)[index];;
+            let result = Object.keys(this)[index];
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Storage', 'key', arguments, result);
             return result;
         },
         get length() {
             if (!Storage.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = Object.keys(this).length;;
+            let result = Object.keys(this).length;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Storage', 'length', arguments, result);
             return result;
         },

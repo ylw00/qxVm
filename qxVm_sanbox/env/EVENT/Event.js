@@ -1,15 +1,22 @@
-/*
-Event:
-    UIEvent:
-        MouseEvent:
-            PointerEvent
-*/
-
-Event = function Event(createObj_key) {//构造函数
-    if (createObj_key !== lwVm.memory.$createObj_key) {
-        throw new TypeError("Illegal constructor");
-    }
-    lwVm.memory.private_data.set(this, {})
+Event = function Event(type, ...args) {//构造函数
+    if (new.target !== Event) throw new TypeError(`Failed to construct 'Event': Please use the 'new' operator, this DOM object constructor cannot be called as a function.`)
+    
+    lwVm.protectAddIsTrusted(this);
+    lwVm.memory.private_data.set(this, {
+        bubbles: false,
+        cancelBubble: false,
+        cancelable: false,
+        composed: false,
+        currentTarget: null,
+        defaultPrevented: false,
+        eventPhase: 0,
+        path: [],
+        returnValue: true,
+        srcElement: null,
+        target: null,
+        timeStamp: 0,
+        type: type.toLowerCase(),
+    });
 }; lwVm.safefunction(Event);
 
 ; (function () {
@@ -26,13 +33,13 @@ Event = function Event(createObj_key) {//构造函数
     Event.prototype = {
         get bubbles() {
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).bubbles, false);;
+            let result = lwVm.memory.private_data.get(this).bubbles;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'bubbles', arguments, result);
             return result;
         },
         get cancelBubble() {
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).cancelBubble, false);;
+            let result = lwVm.memory.private_data.get(this).cancelBubble;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'cancelBubble', arguments, result);
             return result;
         },
@@ -43,13 +50,13 @@ Event = function Event(createObj_key) {//构造函数
         },
         get cancelable() {
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).cancelable, false);;
+            let result = lwVm.memory.private_data.get(this).cancelable;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'cancelable', arguments, result);
             return result;
         },
         get composed() {
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).composed, false);;
+            let result = lwVm.memory.private_data.get(this).composed;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'composed', arguments, result);
             return result;
         },
@@ -61,19 +68,19 @@ Event = function Event(createObj_key) {//构造函数
         },
         get currentTarget() {
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).currentTarget, null);;
+            let result = lwVm.memory.private_data.get(this).currentTarget;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'currentTarget', arguments, result);
             return result;
         },
         get defaultPrevented() {
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).defaultPrevented, false);;
+            let result = lwVm.memory.private_data.get(this).defaultPrevented;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'defaultPrevented', arguments, result);
             return result;
         },
         get eventPhase() {
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).eventPhase, 0);;
+            let result = lwVm.memory.private_data.get(this).eventPhase;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'eventPhase', arguments, result);
             return result;
         },
@@ -85,7 +92,7 @@ Event = function Event(createObj_key) {//构造函数
         },
         get path() {
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = [];;
+            let result = [];
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'path', arguments, result);
             return result;
         },
@@ -97,7 +104,7 @@ Event = function Event(createObj_key) {//构造函数
         },
         get returnValue() {
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).returnValue, true);;
+            let result = lwVm.memory.private_data.get(this).returnValue;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'returnValue', arguments, result);
             return result;
         },
@@ -108,7 +115,7 @@ Event = function Event(createObj_key) {//构造函数
         },
         get srcElement() {
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).srcElement, null);;
+            let result = lwVm.memory.private_data.get(this).srcElement;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'srcElement', arguments, result);
             return result;
         },
@@ -126,19 +133,19 @@ Event = function Event(createObj_key) {//构造函数
         },
         get target() {
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).target, null);;
+            let result = lwVm.memory.private_data.get(this).target;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'target', arguments, result);
             return result;
         },
         get timeStamp() {
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).timeStamp, 2778.600000023842);;
+            let result = lwVm.memory.private_data.get(this).timeStamp;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Event', 'timeStamp', arguments, result);
             return result;
         },
         get type() {
             if (!Event.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            return lwVm.abs(lwVm.memory.private_data.get(this).type, "");
+            return lwVm.memory.private_data.get(this).type;
         }
     };
 

@@ -13,7 +13,7 @@ HTMLLIElement = function HTMLLIElement(createObj_key) {//构造函数
 
         get type() {
             if (!HTMLLIElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).type, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).type, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLIElement', 'type', arguments, result);
             return result;
         },
@@ -24,7 +24,7 @@ HTMLLIElement = function HTMLLIElement(createObj_key) {//构造函数
         },
         get value() {
             if (!HTMLLIElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).value, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).value, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLIElement', 'value', arguments, result);
             return result;
         },

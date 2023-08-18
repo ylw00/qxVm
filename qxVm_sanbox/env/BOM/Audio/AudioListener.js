@@ -18,7 +18,7 @@ AudioListener = function AudioListener(createObj_key) {
                 ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38, -3.4028234663852886e+38);
                 lwVm.memory.private_data.get(this).forwardX = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioListener', 'forwardX', arguments, result);
             return result;
         },
@@ -29,7 +29,7 @@ AudioListener = function AudioListener(createObj_key) {
                 ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38, -3.4028234663852886e+38);
                 lwVm.memory.private_data.get(this).forwardY = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioListener', 'forwardY', arguments, result);
             return result;
         },
@@ -40,7 +40,7 @@ AudioListener = function AudioListener(createObj_key) {
                 ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", -1, 3.4028234663852886e+38, -3.4028234663852886e+38);
                 lwVm.memory.private_data.get(this).forwardZ = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioListener', 'forwardZ', arguments, result);
             return result;
         },
@@ -51,7 +51,7 @@ AudioListener = function AudioListener(createObj_key) {
                 ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38, -3.4028234663852886e+38);
                 lwVm.memory.private_data.get(this).positionX = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioListener', 'positionX', arguments, result);
             return result;
         },
@@ -62,7 +62,7 @@ AudioListener = function AudioListener(createObj_key) {
                 ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38, -3.4028234663852886e+38);
                 lwVm.memory.private_data.get(this).positionY = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioListener', 'positionY', arguments, result);
             return result;
         },
@@ -73,7 +73,7 @@ AudioListener = function AudioListener(createObj_key) {
                 ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38, -3.4028234663852886e+38);
                 lwVm.memory.private_data.get(this).positionZ = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioListener', 'positionZ', arguments, result);
             return result;
         },
@@ -96,7 +96,7 @@ AudioListener = function AudioListener(createObj_key) {
                 ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38, -3.4028234663852886e+38);
                 lwVm.memory.private_data.get(this).upX = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioListener', 'upX', arguments, result);
             return result;
         },
@@ -107,7 +107,7 @@ AudioListener = function AudioListener(createObj_key) {
                 ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 1, 3.4028234663852886e+38, -3.4028234663852886e+38);
                 lwVm.memory.private_data.get(this).upY = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioListener', 'upY', arguments, result);
             return result;
         },
@@ -118,7 +118,7 @@ AudioListener = function AudioListener(createObj_key) {
                 ele = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 0, 3.4028234663852886e+38);
                 lwVm.memory.private_data.get(this).upZ = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioListener', 'upZ', arguments, result);
             return result;
         },

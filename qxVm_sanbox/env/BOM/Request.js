@@ -29,13 +29,13 @@ Request = function Request() {//构造函数
         },
         get bodyUsed() {
             if (!Request.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).bodyUsed, false);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).bodyUsed, false);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Request', 'bodyUsed', arguments, result);
             return result;
         },
         get cache() {
             if (!Request.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).cache, "default");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).cache, "default");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Request', 'cache', arguments, result);
             return result;
         },
@@ -47,13 +47,13 @@ Request = function Request() {//构造函数
         },
         get credentials() {
             if (!Request.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).credentials, "same-origin");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).credentials, "same-origin");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Request', 'credentials', arguments, result);
             return result;
         },
         get destination() {
             if (!Request.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).destination, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).destination, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Request', 'destination', arguments, result);
             return result;
         },
@@ -65,19 +65,19 @@ Request = function Request() {//构造函数
         },
         get headers() {
             if (!Request.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).headers, new class Headers { });;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).headers, new class Headers { });
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Request', 'headers', arguments, result);
             return result;
         },
         get integrity() {
             if (!Request.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).integrity, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).integrity, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Request', 'integrity', arguments, result);
             return result;
         },
         get isHistoryNavigation() {
             if (!Request.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).isHistoryNavigation, false);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).isHistoryNavigation, false);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Request', 'isHistoryNavigation', arguments, result);
             return result;
         },
@@ -89,43 +89,43 @@ Request = function Request() {//构造函数
         },
         get keepalive() {
             if (!Request.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).keepalive, false);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).keepalive, false);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Request', 'keepalive', arguments, result);
             return result;
         },
         get method() {
             if (!Request.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).method, "GET");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).method, "GET");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Request', 'method', arguments, result);
             return result;
         },
         get mode() {
             if (!Request.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).mode, "cors");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).mode, "cors");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Request', 'mode', arguments, result);
             return result;
         },
         get redirect() {
             if (!Request.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).redirect, "follow");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).redirect, "follow");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Request', 'redirect', arguments, result);
             return result;
         },
         get referrer() {
             if (!Request.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).referrer, "about:client");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).referrer, "about:client");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Request', 'referrer', arguments, result);
             return result;
         },
         get referrerPolicy() {
             if (!Request.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).referrerPolicy, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).referrerPolicy, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Request', 'referrerPolicy', arguments, result);
             return result;
         },
         get signal() { // 这个有问题
             if (!Request.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).signal, new class AbortSignal { aborted = false; onabort = null });;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).signal, new class AbortSignal { aborted = false; onabort = null });
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Request', 'referrerPolicy', arguments, result);
             return result;
         },

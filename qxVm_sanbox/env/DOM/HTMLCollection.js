@@ -12,7 +12,7 @@ HTMLCollection = function HTMLCollection(createObj_key) {//构造函数
     HTMLCollection.prototype = {
         item(index) {
             if (!HTMLCollection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = this[index];;
+            let result = this[index];
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLCollection', 'item', arguments, result);
             return result;
         },
@@ -24,7 +24,7 @@ HTMLCollection = function HTMLCollection(createObj_key) {//构造函数
         },
         namedItem(name) {
             if (!HTMLCollection.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = this[name];;
+            let result = this[name];
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLCollection', 'namedItem', arguments, result);
             return result;
         }

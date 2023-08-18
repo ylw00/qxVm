@@ -17,7 +17,7 @@ AudioNode = function AudioNode(createObj_key, channelCountMode) {
     AudioNode.prototype = {
         get channelCount() {
             if (!AudioNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).channelCount, 2);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).channelCount, 2);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioNode', 'channelCount', arguments, result);
             return result;
         },
@@ -28,7 +28,7 @@ AudioNode = function AudioNode(createObj_key, channelCountMode) {
         },
         get channelCountMode() {
             if (!AudioNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).channelCountMode, "max");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).channelCountMode, "max");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioNode', 'channelCountMode', arguments, result);
             return result;
         },
@@ -39,7 +39,7 @@ AudioNode = function AudioNode(createObj_key, channelCountMode) {
         },
         get channelInterpretation() {
             if (!AudioNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).channelInterpretation, "speakers");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).channelInterpretation, "speakers");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioNode', 'channelInterpretation', arguments, result);
             return result;
         },
@@ -62,7 +62,7 @@ AudioNode = function AudioNode(createObj_key, channelCountMode) {
                 ele = new OfflineAudioContext(lwVm.memory.$createObj_key);
                 lwVm.memory.private_data.get(this).context = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioNode', 'context', arguments, result);
             return result;
         },
@@ -74,13 +74,13 @@ AudioNode = function AudioNode(createObj_key, channelCountMode) {
         },
         get numberOfInputs() {
             if (!AudioNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).numberOfInputs, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).numberOfInputs, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioNode', 'numberOfInputs', arguments, result);
             return result;
         },
         get numberOfOutputs() {
             if (!AudioNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).numberOfOutputs, 1);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).numberOfOutputs, 1);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioNode', 'numberOfOutputs', arguments, result);
             return result;
         },

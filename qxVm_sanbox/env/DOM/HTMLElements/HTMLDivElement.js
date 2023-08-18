@@ -13,7 +13,7 @@ HTMLDivElement = function HTMLDivElement(createObj_key) {//构造函数
     HTMLDivElement.prototype = {
         get align() {
             if (!HTMLDivElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); }
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).align, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).align, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLDivElement', 'align', arguments, result);
             return result;
         },

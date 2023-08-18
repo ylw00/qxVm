@@ -19,13 +19,13 @@ MutationEvent = function MutationEvent(createObj_key) {
     MutationEvent.prototype = {
         get attrChange() {
             if (!MutationEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 0;;
+            let result = 0;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MutationEvent', 'attrChange', arguments, result);
             return result;
         },
         get attrName() {
             if (!MutationEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = "";;
+            let result = "";
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MutationEvent', 'attrName', arguments, result);
             return result;
         },
@@ -37,19 +37,19 @@ MutationEvent = function MutationEvent(createObj_key) {
         },
         get newValue() {
             if (!MutationEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = "";;
+            let result = "";
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MutationEvent', 'newValue', arguments, result);
             return result;
         },
         get prevValue() {
             if (!MutationEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = "";;
+            let result = "";
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MutationEvent', 'prevValue', arguments, result);
             return result;
         },
         get relatedNode() {
             if (!MutationEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = null;;
+            let result = null;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MutationEvent', 'relatedNode', arguments, result);
             return result;
         },

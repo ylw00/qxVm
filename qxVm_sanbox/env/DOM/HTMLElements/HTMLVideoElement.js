@@ -25,7 +25,7 @@ HTMLVideoElement = function HTMLVideoElement(createObj_key) {//构造函数
         },
         get disablePictureInPicture() {
             if (!HTMLVideoElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).disablePictureInPicture, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).disablePictureInPicture, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLVideoElement', 'disablePictureInPicture', arguments, result);
             return result;
         },
@@ -42,7 +42,7 @@ HTMLVideoElement = function HTMLVideoElement(createObj_key) {//构造函数
         },
         get height() {
             if (!HTMLVideoElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).height, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).height, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLVideoElement', 'height', arguments, result);
             return result;
         },
@@ -53,7 +53,7 @@ HTMLVideoElement = function HTMLVideoElement(createObj_key) {//构造函数
         },
         get onenterpictureinpicture() {
             if (!HTMLVideoElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onenterpictureinpicture, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onenterpictureinpicture, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLVideoElement', 'onenterpictureinpicture', arguments, result);
             return result;
         },
@@ -64,7 +64,7 @@ HTMLVideoElement = function HTMLVideoElement(createObj_key) {//构造函数
         },
         get onleavepictureinpicture() {
             if (!HTMLVideoElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onleavepictureinpicture, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onleavepictureinpicture, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLVideoElement', 'onleavepictureinpicture', arguments, result);
             return result;
         },
@@ -75,7 +75,7 @@ HTMLVideoElement = function HTMLVideoElement(createObj_key) {//构造函数
         },
         get playsInline() {
             if (!HTMLVideoElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).playsInline, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).playsInline, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLVideoElement', 'playsInline', arguments, result);
             return result;
         },
@@ -86,7 +86,7 @@ HTMLVideoElement = function HTMLVideoElement(createObj_key) {//构造函数
         },
         get poster() {
             if (!HTMLVideoElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).poster, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).poster, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLVideoElement', 'poster', arguments, result);
             return result;
         },
@@ -109,31 +109,31 @@ HTMLVideoElement = function HTMLVideoElement(createObj_key) {//构造函数
         },
         get videoHeight() {
             if (!HTMLVideoElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).videoHeight, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).videoHeight, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLVideoElement', 'videoHeight', arguments, result);
             return result;
         },
         get videoWidth() {
             if (!HTMLVideoElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).videoWidth, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).videoWidth, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLVideoElement', 'videoWidth', arguments, result);
             return result;
         },
         get webkitDecodedFrameCount() {
             if (!HTMLVideoElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).webkitDecodedFrameCount, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).webkitDecodedFrameCount, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLVideoElement', 'webkitDecodedFrameCount', arguments, result);
             return result;
         },
         get webkitDisplayingFullscreen() {
             if (!HTMLVideoElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).webkitDisplayingFullscreen, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).webkitDisplayingFullscreen, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLVideoElement', 'webkitDisplayingFullscreen', arguments, result);
             return result;
         },
         get webkitDroppedFrameCount() {
             if (!HTMLVideoElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).webkitDroppedFrameCount, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).webkitDroppedFrameCount, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLVideoElement', 'webkitDroppedFrameCount', arguments, result);
             return result;
         },
@@ -163,13 +163,13 @@ HTMLVideoElement = function HTMLVideoElement(createObj_key) {//构造函数
         },
         get webkitSupportsFullscreen() {
             if (!HTMLVideoElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).webkitSupportsFullscreen, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).webkitSupportsFullscreen, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLVideoElement', 'webkitSupportsFullscreen', arguments, result);
             return result;
         },
         get width() {
             if (!HTMLVideoElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).width, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).width, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLVideoElement', 'width', arguments, result);
             return result;
         },

@@ -12,7 +12,7 @@ BarProp = function BarProp(createObj_key) {
     BarProp.prototype = {
         get visible() {
             if (!BarProp.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = true;;
+            let result = true;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'BarProp', 'visible', arguments, result);
             return result;
         },

@@ -662,7 +662,7 @@ Element = function Element() {
         },
         get innerHTML() {
             if (!Element.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).innerHTML, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).innerHTML, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Element', 'innerHTML', arguments, result);
             return result;
         },

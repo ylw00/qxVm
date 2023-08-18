@@ -13,7 +13,7 @@ RTCSessionDescription = function RTCSessionDescription(createObj_key, sdp, type)
     RTCSessionDescription.prototype = {
         get sdp() {
             if (!RTCSessionDescription.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).sdp, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).sdp, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCSessionDescription', 'sdp', arguments, result);
             return result;
         },
@@ -30,7 +30,7 @@ RTCSessionDescription = function RTCSessionDescription(createObj_key, sdp, type)
         },
         get type() {
             if (!RTCSessionDescription.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).type, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).type, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCSessionDescription', 'type', arguments, result);
             return result;
         },

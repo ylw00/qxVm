@@ -116,25 +116,25 @@ navigator = {};
     Navigator.prototype = {
         get appCodeName() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.appCodeName;;
+            let result = $attribute_map.appCodeName;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'appCodeName', arguments, result);
             return result;
         },
         get appName() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.appName;;
+            let result = $attribute_map.appName;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'appName', arguments, result);
             return result;
         },
         get appVersion() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.appVersion;;
+            let result = $attribute_map.appVersion;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'appVersion', arguments, result);
             return result;
         },
         get bluetooth() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.bluetooth;;
+            let result = $attribute_map.bluetooth;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'bluetooth', arguments, result);
             return result;
         },
@@ -152,43 +152,43 @@ navigator = {};
         },
         get clipboard() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.clipboard;;
+            let result = $attribute_map.clipboard;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'clipboard', arguments, result);
             return result;
         },
         get connection() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.connection;;
+            let result = $attribute_map.connection;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'connection', arguments, result);
             return result;
         },
         get cookieEnabled() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.cookieEnabled;;
+            let result = $attribute_map.cookieEnabled;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'cookieEnabled', arguments, result);
             return result;
         },
         get credentials() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.credentials;;
+            let result = $attribute_map.credentials;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'credentials', arguments, result);
             return result;
         },
         get deviceMemory() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.deviceMemory;;
+            let result = $attribute_map.deviceMemory;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'deviceMemory', arguments, result);
             return result;
         },
         get doNotTrack() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.doNotTrack;;
+            let result = $attribute_map.doNotTrack;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'doNotTrack', arguments, result);
             return result;
         },
         get geolocation() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.geolocation;;
+            let result = $attribute_map.geolocation;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'geolocation', arguments, result);
             return result;
         },
@@ -236,127 +236,127 @@ navigator = {};
         },
         get hardwareConcurrency() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.hardwareConcurrency;;
+            let result = $attribute_map.hardwareConcurrency;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'hardwareConcurrency', arguments, result);
             return result;
         },
         get hid() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.hid;;
+            let result = $attribute_map.hid;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'hid', arguments, result);
             return result;
         },
         get ink() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.ink;;
+            let result = $attribute_map.ink;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'ink', arguments, result);
             return result;
         },
         get keyboard() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.keyboard;;
+            let result = $attribute_map.keyboard;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'keyboard', arguments, result);
             return result;
         },
         get language() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.languages;;
+            let result = $attribute_map.languages;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'language', arguments, result);
             return result;
         },
         get languages() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.languages;;
+            let result = $attribute_map.languages;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'languages', arguments, result);
             return result;
         },
         get locks() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.locks;;
+            let result = $attribute_map.locks;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'locks', arguments, result);
             return result;
         },
         get managed() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.managed;;
+            let result = $attribute_map.managed;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'managed', arguments, result);
             return result;
         },
         get maxTouchPoints() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.maxTouchPoints;;
+            let result = $attribute_map.maxTouchPoints;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'maxTouchPoints', arguments, result);
             return result;
         },
         get mediaCapabilities() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.mediaCapabilities;;
+            let result = $attribute_map.mediaCapabilities;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'mediaCapabilities', arguments, result);
             return result;
         },
         get mediaDevices() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.mediaDevices;;
+            let result = $attribute_map.mediaDevices;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'mediaDevices', arguments, result);
             return result;
         },
         get mediaSession() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.mediaSession;;
+            let result = $attribute_map.mediaSession;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'mediaSession', arguments, result);
             return result;
         },
         get mimeTypes() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.mimeTypes;;
+            let result = $attribute_map.mimeTypes;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'mimeTypes', arguments, result);
             return result;
         },
         get onLine() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onLine;;
+            let result = $attribute_map.onLine;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'onLine', arguments, result);
             return result;
         },
         get pdfViewerEnabled() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.pdfViewerEnabled;;
+            let result = $attribute_map.pdfViewerEnabled;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'pdfViewerEnabled', arguments, result);
             return result;
         },
         get permissions() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.permissions;;
+            let result = $attribute_map.permissions;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'permissions', arguments, result);
             return result;
         },
         get platform() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.platform;;
+            let result = $attribute_map.platform;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'platform', arguments, result);
             return result;
         },
         get plugins() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.plugins;;
+            let result = $attribute_map.plugins;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'plugins', arguments, result);
             return result;
         },
         get presentation() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.presentation;;
+            let result = $attribute_map.presentation;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'presentation', arguments, result);
             return result;
         },
         get product() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.product;;
+            let result = $attribute_map.product;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'product', arguments, result);
             return result;
         },
         get productSub() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.productSub;;
+            let result = $attribute_map.productSub;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'productSub', arguments, result);
             return result;
         },
@@ -380,7 +380,7 @@ navigator = {};
         },
         get scheduling() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.scheduling;;
+            let result = $attribute_map.scheduling;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'scheduling', arguments, result);
             return result;
         },
@@ -393,13 +393,13 @@ navigator = {};
         get serial() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
 
-            let result = $attribute_map.serial;;
+            let result = $attribute_map.serial;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'serial', arguments, result);
             return result;
         },
         get serviceWorker() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.serviceWorker;;
+            let result = $attribute_map.serviceWorker;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'serviceWorker', arguments, result);
             return result;
         },
@@ -417,7 +417,7 @@ navigator = {};
         },
         get storage() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.storage;;
+            let result = $attribute_map.storage;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'storage', arguments, result);
             return result;
         },
@@ -429,37 +429,37 @@ navigator = {};
         },
         get usb() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = new lwVm.memory.$createObj_key();;
+            let result = new lwVm.memory.$createObj_key();
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'usb', arguments, result);
             return result;
         },
         get userActivation() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.userActivation;;
+            let result = $attribute_map.userActivation;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'userActivation', arguments, result);
             return result;
         },
         get userAgent() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.userAgent;;
+            let result = $attribute_map.userAgent;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'userAgent', arguments, result);
             return result;
         },
         get userAgentData() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.userAgentData;;
+            let result = $attribute_map.userAgentData;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'userAgentData', arguments, result);
             return result;
         },
         get vendor() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.vendor;;
+            let result = $attribute_map.vendor;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'vendor', arguments, result);
             return result;
         },
         get vendorSub() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.vendorSub;;
+            let result = $attribute_map.vendorSub;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'vendorSub', arguments, result);
             return result;
         },
@@ -471,19 +471,19 @@ navigator = {};
         },
         get virtualKeyboard() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.virtualKeyboard;;
+            let result = $attribute_map.virtualKeyboard;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'virtualKeyboard', arguments, result);
             return result;
         },
         get wakeLock() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.wakeLock;;
+            let result = $attribute_map.wakeLock;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'wakeLock', arguments, result);
             return result;
         },
         get webdriver() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.webdriver;;
+            let result = $attribute_map.webdriver;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'webdriver', arguments, result);
             return result;
         },
@@ -491,19 +491,19 @@ navigator = {};
         },
         get webkitPersistentStorage() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.webkitPersistentStorage;;
+            let result = $attribute_map.webkitPersistentStorage;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'webkitPersistentStorage', arguments, result);
             return result;
         },
         get webkitTemporaryStorage() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.webkitTemporaryStorage;;
+            let result = $attribute_map.webkitTemporaryStorage;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'webkitTemporaryStorage', arguments, result);
             return result;
         },
         get xr() {
             if (!Navigator.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.xr;;
+            let result = $attribute_map.xr;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Navigator', 'xr', arguments, result);
             return result;
         },

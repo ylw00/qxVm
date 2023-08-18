@@ -19,7 +19,7 @@ NavigatorManagedData = function NavigatorManagedData(createObj_key) {
         },
         get onmanagedconfigurationchange() {
             if (!NavigatorManagedData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmanagedconfigurationchange, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmanagedconfigurationchange, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'NavigatorManagedData', 'onmanagedconfigurationchange', arguments, result);
             return result;
         },

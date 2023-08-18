@@ -10,18 +10,18 @@ MimeTypeArray = function MimeTypeArray() {
 
     MimeTypeArray.prototype = {
         item(index) {
-            let result = this[index];;
+            let result = this[index];
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'MimeTypeArray', 'item', arguments, result);
             return result;
         },
         get length() {
             if (!MimeTypeArray.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.memory.mimeTypeArray.length;;
+            let result = lwVm.memory.mimeTypeArray.length;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MimeTypeArray', 'length', arguments, result);
             return result;
         },
         namedItem(key) {
-            let result = this[key];;
+            let result = this[key];
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'MimeTypeArray', 'namedItem', arguments, result);
             return result;
         }

@@ -94,25 +94,25 @@ Document = function Document(createObj_key) {//构造函数
     Document.prototype = {
         get URL() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = location.href;;
+            let result = location.href;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'URL', arguments, result);
             return result;
         },
         get activeElement() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.activeElement;;
+            let result = $attribute_map.activeElement;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'activeElement', arguments, result);
             return result;
         },
         adoptNode() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.adoptNode;;
+            let result = $attribute_map.adoptNode;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'adoptNode', arguments, result);
             return result;
         },
         get adoptedStyleSheets() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.adoptedStyleSheets;;
+            let result = $attribute_map.adoptedStyleSheets;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'adoptedStyleSheets', arguments, result);
             return result;
         },
@@ -122,7 +122,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get alinkColor() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.alinkColor;;
+            let result = $attribute_map.alinkColor;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'alinkColor', arguments, result);
             return result;
         },
@@ -132,31 +132,31 @@ Document = function Document(createObj_key) {//构造函数
         },
         get all() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.all;;
+            let result = $attribute_map.all;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'all', arguments, result);
             return result;
         },
         get anchors() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.anchors;;
+            let result = $attribute_map.anchors;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'anchors', arguments, result);
             return result;
         },
         append() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.append;;
+            let result = $attribute_map.append;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'append', arguments, result);
             return result;
         },
         get applets() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.applets;;
+            let result = $attribute_map.applets;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'applets', arguments, result);
             return result;
         },
         get bgColor() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.bgColor;;
+            let result = $attribute_map.bgColor;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'bgColor', arguments, result);
             return result;
         },
@@ -166,7 +166,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get body() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.body;;
+            let result = $attribute_map.body;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'body', arguments, result);
             return result;
         },
@@ -176,67 +176,67 @@ Document = function Document(createObj_key) {//构造函数
         },
         captureEvents() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.captureEvents;;
+            let result = $attribute_map.captureEvents;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'captureEvents', arguments, result);
             return result;
         },
         caretRangeFromPoint() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.caretRangeFromPoint;;
+            let result = $attribute_map.caretRangeFromPoint;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'caretRangeFromPoint', arguments, result);
             return result;
         },
         get characterSet() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 'UTF-8';;
+            let result = 'UTF-8';
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'characterSet', arguments, result);
             return result;
         },
         get charset() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 'UTF-8';;
+            let result = 'UTF-8';
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'charset', arguments, result);
             return result;
         },
         get childElementCount() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.childElementCount;;
+            let result = $attribute_map.childElementCount;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'childElementCount', arguments, result);
             return result;
         },
         get children() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.children;;
+            let result = $attribute_map.children;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'children', arguments, result);
             return result;
         },
         clear() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.clear;;
+            let result = $attribute_map.clear;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'clear', arguments, result);
             return result;
         },
         close() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.close;;
+            let result = $attribute_map.close;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'close', arguments, result);
             return result;
         },
         get compatMode() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 'CSS1Compat';;
+            let result = 'CSS1Compat';
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'compatMode', arguments, result);
             return result;
         },
         get contentType() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.contentType;;
+            let result = $attribute_map.contentType;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'contentType', arguments, result);
             return result;
         },
         get cookie() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.cookie;;
+            let result = $attribute_map.cookie;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'cookie', arguments, result);
             return result;
         },
@@ -275,31 +275,31 @@ Document = function Document(createObj_key) {//构造函数
         },
         createAttribute() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.createAttribute;;
+            let result = $attribute_map.createAttribute;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'createAttribute', arguments, result);
             return result;
         },
         createAttributeNS() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.createAttributeNS;;
+            let result = $attribute_map.createAttributeNS;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'createAttributeNS', arguments, result);
             return result;
         },
         createCDATASection() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.createCDATASection;;
+            let result = $attribute_map.createCDATASection;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'createCDATASection', arguments, result);
             return result;
         },
         createComment() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.createComment;;
+            let result = $attribute_map.createComment;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'createComment', arguments, result);
             return result;
         },
         createDocumentFragment() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.createDocumentFragment;;
+            let result = $attribute_map.createDocumentFragment;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'createDocumentFragment', arguments, result);
             return result;
         },
@@ -314,13 +314,13 @@ Document = function Document(createObj_key) {//构造函数
             };
             lwVm.memory.runElementList.push(ele);
 
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'createElement', arguments, result);
             return result;
         },
         createElementNS() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.createElementNS;;
+            let result = $attribute_map.createElementNS;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'createElementNS', arguments, result);
             return result;
         },
@@ -375,61 +375,61 @@ Document = function Document(createObj_key) {//构造函数
         },
         createExpression() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.createExpression;;
+            let result = $attribute_map.createExpression;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'createExpression', arguments, result);
             return result;
         },
         createNSResolver() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.createNSResolver;;
+            let result = $attribute_map.createNSResolver;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'createNSResolver', arguments, result);
             return result;
         },
         createNodeIterator() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.createNodeIterator;;
+            let result = $attribute_map.createNodeIterator;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'createNodeIterator', arguments, result);
             return result;
         },
         createProcessingInstruction() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.createProcessingInstruction;;
+            let result = $attribute_map.createProcessingInstruction;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'createProcessingInstruction', arguments, result);
             return result;
         },
         createRange() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.createRange;;
+            let result = $attribute_map.createRange;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'createRange', arguments, result);
             return result;
         },
         createTextNode() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.createTextNode;;
+            let result = $attribute_map.createTextNode;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'createTextNode', arguments, result);
             return result;
         },
         createTreeWalker() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.createTreeWalker;;
+            let result = $attribute_map.createTreeWalker;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'createTreeWalker', arguments, result);
             return result;
         },
         get currentScript() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = null;;
+            let result = null;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'currentScript', arguments, result);
             return result;
         },
         get defaultView() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.defaultView;;
+            let result = $attribute_map.defaultView;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'defaultView', arguments, result);
             return result;
         },
         get designMode() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.designMode;;
+            let result = $attribute_map.designMode;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'designMode', arguments, result);
             return result;
         },
@@ -439,7 +439,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get dir() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.dir;;
+            let result = $attribute_map.dir;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'dir', arguments, result);
             return result;
         },
@@ -449,7 +449,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get doctype() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.doctype;;
+            let result = $attribute_map.doctype;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'doctype', arguments, result);
             return result;
         },
@@ -471,13 +471,13 @@ Document = function Document(createObj_key) {//构造函数
         },
         get documentURI() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.documentURI;;
+            let result = $attribute_map.documentURI;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'documentURI', arguments, result);
             return result;
         },
         get domain() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.domain;;
+            let result = $attribute_map.domain;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'domain', arguments, result);
             return result;
         },
@@ -487,61 +487,61 @@ Document = function Document(createObj_key) {//构造函数
         },
         elementFromPoint() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.elementFromPoint;;
+            let result = $attribute_map.elementFromPoint;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'elementFromPoint', arguments, result);
             return result;
         },
         elementsFromPoint() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.elementsFromPoint;;
+            let result = $attribute_map.elementsFromPoint;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'elementsFromPoint', arguments, result);
             return result;
         },
         get embeds() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.embeds;;
+            let result = $attribute_map.embeds;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'embeds', arguments, result);
             return result;
         },
         evaluate() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.evaluate;;
+            let result = $attribute_map.evaluate;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'evaluate', arguments, result);
             return result;
         },
         execCommand() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.execCommand;;
+            let result = $attribute_map.execCommand;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'execCommand', arguments, result);
             return result;
         },
         exitFullscreen() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.exitFullscreen;;
+            let result = $attribute_map.exitFullscreen;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'exitFullscreen', arguments, result);
             return result;
         },
         exitPictureInPicture() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.exitPictureInPicture;;
+            let result = $attribute_map.exitPictureInPicture;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'exitPictureInPicture', arguments, result);
             return result;
         },
         exitPointerLock() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.exitPointerLock;;
+            let result = $attribute_map.exitPointerLock;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'exitPointerLock', arguments, result);
             return result;
         },
         get featurePolicy() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.featurePolicy;;
+            let result = $attribute_map.featurePolicy;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'featurePolicy', arguments, result);
             return result;
         },
         get fgColor() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.fgColor;;
+            let result = $attribute_map.fgColor;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'fgColor', arguments, result);
             return result;
         },
@@ -551,31 +551,31 @@ Document = function Document(createObj_key) {//构造函数
         },
         get firstElementChild() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.firstElementChild;;
+            let result = $attribute_map.firstElementChild;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'firstElementChild', arguments, result);
             return result;
         },
         get fonts() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.fonts;;
+            let result = $attribute_map.fonts;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'fonts', arguments, result);
             return result;
         },
         get forms() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.forms;;
+            let result = $attribute_map.forms;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'forms', arguments, result);
             return result;
         },
         get fragmentDirective() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.fragmentDirective;;
+            let result = $attribute_map.fragmentDirective;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'fragmentDirective', arguments, result);
             return result;
         },
         get fullscreen() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.fullscreen;;
+            let result = $attribute_map.fullscreen;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'fullscreen', arguments, result);
             return result;
         },
@@ -585,7 +585,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get fullscreenElement() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.fullscreenElement;;
+            let result = $attribute_map.fullscreenElement;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'fullscreenElement', arguments, result);
             return result;
         },
@@ -595,7 +595,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get fullscreenEnabled() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.fullscreenEnabled;;
+            let result = $attribute_map.fullscreenEnabled;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'fullscreenEnabled', arguments, result);
             return result;
         },
@@ -605,25 +605,25 @@ Document = function Document(createObj_key) {//构造函数
         },
         getAnimations() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.getAnimations;;
+            let result = $attribute_map.getAnimations;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'getAnimations', arguments, result);
             return result;
         },
         getElementById(id) {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.getElementById(id);;
+            let result = $attribute_map.getElementById(id);
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'getElementById', arguments, result);
             return result;
         },
         getElementsByClassName() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.getElementsByClassName;;
+            let result = $attribute_map.getElementsByClassName;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'getElementsByClassName', arguments, result);
             return result;
         },
         getElementsByName() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.getElementsByName;;
+            let result = $attribute_map.getElementsByName;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'getElementsByName', arguments, result);
             return result;
         },
@@ -652,19 +652,19 @@ Document = function Document(createObj_key) {//构造函数
         },
         getElementsByTagNameNS() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.getElementsByTagNameNS;;
+            let result = $attribute_map.getElementsByTagNameNS;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'getElementsByTagNameNS', arguments, result);
             return result;
         },
         getSelection() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.getSelection;;
+            let result = $attribute_map.getSelection;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'getSelection', arguments, result);
             return result;
         },
         hasFocus() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.hasFocus;;
+            let result = $attribute_map.hasFocus;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'hasFocus', arguments, result);
             return result;
         },
@@ -675,55 +675,55 @@ Document = function Document(createObj_key) {//构造函数
                 ele = new HTMLHeadElement(lwVm.memory.$createObj_key);
                 lwVm.memory.private_data.get(this).head = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'if ', arguments, result);
             return result;
         },
         get hidden() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = true;;
+            let result = true;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'hidden', arguments, result);
             return result;
         },
         get images() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.images;;
+            let result = $attribute_map.images;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'images', arguments, result);
             return result;
         },
         get implementation() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.implementation;;
+            let result = $attribute_map.implementation;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'implementation', arguments, result);
             return result;
         },
         importNode() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.importNode;;
+            let result = $attribute_map.importNode;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'importNode', arguments, result);
             return result;
         },
         get inputEncoding() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.inputEncoding;;
+            let result = $attribute_map.inputEncoding;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'inputEncoding', arguments, result);
             return result;
         },
         get lastElementChild() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.lastElementChild;;
+            let result = $attribute_map.lastElementChild;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'lastElementChild', arguments, result);
             return result;
         },
         get lastModified() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.lastModified;;
+            let result = $attribute_map.lastModified;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'lastModified', arguments, result);
             return result;
         },
         get linkColor() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.linkColor;;
+            let result = $attribute_map.linkColor;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'linkColor', arguments, result);
             return result;
         },
@@ -733,13 +733,13 @@ Document = function Document(createObj_key) {//构造函数
         },
         get links() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.links;;
+            let result = $attribute_map.links;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'links', arguments, result);
             return result;
         },
         get onabort() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onabort;;
+            let result = $attribute_map.onabort;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onabort', arguments, result);
             return result;
         },
@@ -749,7 +749,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onanimationend() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onanimationend;;
+            let result = $attribute_map.onanimationend;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onanimationend', arguments, result);
             return result;
         },
@@ -759,7 +759,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onanimationiteration() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onanimationiteration;;
+            let result = $attribute_map.onanimationiteration;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onanimationiteration', arguments, result);
             return result;
         },
@@ -769,7 +769,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onanimationstart() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onanimationstart;;
+            let result = $attribute_map.onanimationstart;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onanimationstart', arguments, result);
             return result;
         },
@@ -779,7 +779,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onauxclick() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onauxclick;;
+            let result = $attribute_map.onauxclick;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onauxclick', arguments, result);
             return result;
         },
@@ -789,7 +789,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onbeforecopy() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onbeforecopy;;
+            let result = $attribute_map.onbeforecopy;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onbeforecopy', arguments, result);
             return result;
         },
@@ -799,7 +799,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onbeforecut() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onbeforecut;;
+            let result = $attribute_map.onbeforecut;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onbeforecut', arguments, result);
             return result;
         },
@@ -809,7 +809,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onbeforepaste() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onbeforepaste;;
+            let result = $attribute_map.onbeforepaste;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onbeforepaste', arguments, result);
             return result;
         },
@@ -819,7 +819,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onbeforexrselect() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onbeforexrselect;;
+            let result = $attribute_map.onbeforexrselect;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onbeforexrselect', arguments, result);
             return result;
         },
@@ -829,7 +829,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onblur() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onblur;;
+            let result = $attribute_map.onblur;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onblur', arguments, result);
             return result;
         },
@@ -839,7 +839,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get oncancel() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.oncancel;;
+            let result = $attribute_map.oncancel;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'oncancel', arguments, result);
             return result;
         },
@@ -849,7 +849,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get oncanplay() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.oncanplay;;
+            let result = $attribute_map.oncanplay;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'oncanplay', arguments, result);
             return result;
         },
@@ -859,7 +859,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get oncanplaythrough() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.oncanplaythrough;;
+            let result = $attribute_map.oncanplaythrough;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'oncanplaythrough', arguments, result);
             return result;
         },
@@ -869,7 +869,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onchange() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onchange;;
+            let result = $attribute_map.onchange;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onchange', arguments, result);
             return result;
         },
@@ -879,7 +879,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onclick() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onclick;;
+            let result = $attribute_map.onclick;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onclick', arguments, result);
             return result;
         },
@@ -889,7 +889,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onclose() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onclose;;
+            let result = $attribute_map.onclose;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onclose', arguments, result);
             return result;
         },
@@ -899,7 +899,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get oncontextmenu() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.oncontextmenu;;
+            let result = $attribute_map.oncontextmenu;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'oncontextmenu', arguments, result);
             return result;
         },
@@ -909,7 +909,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get oncopy() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.oncopy;;
+            let result = $attribute_map.oncopy;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'oncopy', arguments, result);
             return result;
         },
@@ -919,7 +919,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get oncuechange() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.oncuechange;;
+            let result = $attribute_map.oncuechange;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'oncuechange', arguments, result);
             return result;
         },
@@ -929,7 +929,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get oncut() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.oncut;;
+            let result = $attribute_map.oncut;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'oncut', arguments, result);
             return result;
         },
@@ -939,7 +939,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get ondblclick() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.ondblclick;;
+            let result = $attribute_map.ondblclick;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'ondblclick', arguments, result);
             return result;
         },
@@ -949,7 +949,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get ondrag() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.ondrag;;
+            let result = $attribute_map.ondrag;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'ondrag', arguments, result);
             return result;
         },
@@ -959,7 +959,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get ondragend() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.ondragend;;
+            let result = $attribute_map.ondragend;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'ondragend', arguments, result);
             return result;
         },
@@ -969,7 +969,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get ondragenter() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.ondragenter;;
+            let result = $attribute_map.ondragenter;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'ondragenter', arguments, result);
             return result;
         },
@@ -979,7 +979,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get ondragleave() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.ondragleave;;
+            let result = $attribute_map.ondragleave;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'ondragleave', arguments, result);
             return result;
         },
@@ -989,7 +989,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get ondragover() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.ondragover;;
+            let result = $attribute_map.ondragover;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'ondragover', arguments, result);
             return result;
         },
@@ -999,7 +999,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get ondragstart() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.ondragstart;;
+            let result = $attribute_map.ondragstart;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'ondragstart', arguments, result);
             return result;
         },
@@ -1009,7 +1009,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get ondrop() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.ondrop;;
+            let result = $attribute_map.ondrop;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'ondrop', arguments, result);
             return result;
         },
@@ -1019,7 +1019,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get ondurationchange() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.ondurationchange;;
+            let result = $attribute_map.ondurationchange;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'ondurationchange', arguments, result);
             return result;
         },
@@ -1029,7 +1029,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onemptied() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onemptied;;
+            let result = $attribute_map.onemptied;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onemptied', arguments, result);
             return result;
         },
@@ -1039,7 +1039,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onended() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onended;;
+            let result = $attribute_map.onended;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onended', arguments, result);
             return result;
         },
@@ -1049,7 +1049,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onerror() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onerror;;
+            let result = $attribute_map.onerror;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onerror', arguments, result);
             return result;
         },
@@ -1059,7 +1059,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onfocus() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onfocus;;
+            let result = $attribute_map.onfocus;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onfocus', arguments, result);
             return result;
         },
@@ -1069,7 +1069,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onformdata() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onformdata;;
+            let result = $attribute_map.onformdata;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onformdata', arguments, result);
             return result;
         },
@@ -1079,7 +1079,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onfreeze() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onfreeze;;
+            let result = $attribute_map.onfreeze;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onfreeze', arguments, result);
             return result;
         },
@@ -1089,7 +1089,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onfullscreenchange() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onfullscreenchange;;
+            let result = $attribute_map.onfullscreenchange;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onfullscreenchange', arguments, result);
             return result;
         },
@@ -1099,7 +1099,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onfullscreenerror() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onfullscreenerror;;
+            let result = $attribute_map.onfullscreenerror;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onfullscreenerror', arguments, result);
             return result;
         },
@@ -1109,7 +1109,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get ongotpointercapture() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.ongotpointercapture;;
+            let result = $attribute_map.ongotpointercapture;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'ongotpointercapture', arguments, result);
             return result;
         },
@@ -1119,7 +1119,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get oninput() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.oninput;;
+            let result = $attribute_map.oninput;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'oninput', arguments, result);
             return result;
         },
@@ -1129,7 +1129,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get oninvalid() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.oninvalid;;
+            let result = $attribute_map.oninvalid;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'oninvalid', arguments, result);
             return result;
         },
@@ -1139,7 +1139,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onkeydown() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onkeydown;;
+            let result = $attribute_map.onkeydown;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onkeydown', arguments, result);
             return result;
         },
@@ -1149,7 +1149,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onkeypress() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onkeypress;;
+            let result = $attribute_map.onkeypress;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onkeypress', arguments, result);
             return result;
         },
@@ -1159,7 +1159,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onkeyup() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onkeyup;;
+            let result = $attribute_map.onkeyup;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onkeyup', arguments, result);
             return result;
         },
@@ -1169,7 +1169,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onload() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onload;;
+            let result = $attribute_map.onload;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onload', arguments, result);
             return result;
         },
@@ -1179,7 +1179,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onloadeddata() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onloadeddata;;
+            let result = $attribute_map.onloadeddata;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onloadeddata', arguments, result);
             return result;
         },
@@ -1189,7 +1189,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onloadedmetadata() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onloadedmetadata;;
+            let result = $attribute_map.onloadedmetadata;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onloadedmetadata', arguments, result);
             return result;
         },
@@ -1199,7 +1199,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onloadstart() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onloadstart;;
+            let result = $attribute_map.onloadstart;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onloadstart', arguments, result);
             return result;
         },
@@ -1209,7 +1209,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onlostpointercapture() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onlostpointercapture;;
+            let result = $attribute_map.onlostpointercapture;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onlostpointercapture', arguments, result);
             return result;
         },
@@ -1219,7 +1219,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onmousedown() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onmousedown;;
+            let result = $attribute_map.onmousedown;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onmousedown', arguments, result);
             return result;
         },
@@ -1231,7 +1231,7 @@ Document = function Document(createObj_key) {//构造函数
         onmouseleave: undefined,
         get onmousemove() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onmousemove;;
+            let result = $attribute_map.onmousemove;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onmousemove', arguments, result);
             return result;
         },
@@ -1241,7 +1241,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onmouseout() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onmouseout;;
+            let result = $attribute_map.onmouseout;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onmouseout', arguments, result);
             return result;
         },
@@ -1251,7 +1251,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onmouseover() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onmouseover;;
+            let result = $attribute_map.onmouseover;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onmouseover', arguments, result);
             return result;
         },
@@ -1261,7 +1261,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onmouseup() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onmouseup;;
+            let result = $attribute_map.onmouseup;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onmouseup', arguments, result);
             return result;
         },
@@ -1271,7 +1271,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onmousewheel() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onmousewheel;;
+            let result = $attribute_map.onmousewheel;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onmousewheel', arguments, result);
             return result;
         },
@@ -1281,7 +1281,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onpaste() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onpaste;;
+            let result = $attribute_map.onpaste;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onpaste', arguments, result);
             return result;
         },
@@ -1291,7 +1291,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onpause() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onpause;;
+            let result = $attribute_map.onpause;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onpause', arguments, result);
             return result;
         },
@@ -1301,7 +1301,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onplay() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onplay;;
+            let result = $attribute_map.onplay;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onplay', arguments, result);
             return result;
         },
@@ -1311,7 +1311,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onplaying() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onplaying;;
+            let result = $attribute_map.onplaying;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onplaying', arguments, result);
             return result;
         },
@@ -1321,7 +1321,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onpointercancel() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onpointercancel;;
+            let result = $attribute_map.onpointercancel;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onpointercancel', arguments, result);
             return result;
         },
@@ -1331,7 +1331,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onpointerdown() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onpointerdown;;
+            let result = $attribute_map.onpointerdown;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onpointerdown', arguments, result);
             return result;
         },
@@ -1341,7 +1341,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onpointerenter() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onpointerenter;;
+            let result = $attribute_map.onpointerenter;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onpointerenter', arguments, result);
             return result;
         },
@@ -1351,7 +1351,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onpointerleave() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onpointerleave;;
+            let result = $attribute_map.onpointerleave;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onpointerleave', arguments, result);
             return result;
         },
@@ -1361,7 +1361,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onpointerlockchange() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onpointerlockchange;;
+            let result = $attribute_map.onpointerlockchange;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onpointerlockchange', arguments, result);
             return result;
         },
@@ -1371,7 +1371,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onpointerlockerror() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onpointerlockerror;;
+            let result = $attribute_map.onpointerlockerror;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onpointerlockerror', arguments, result);
             return result;
         },
@@ -1381,7 +1381,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onpointermove() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onpointermove;;
+            let result = $attribute_map.onpointermove;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onpointermove', arguments, result);
             return result;
         },
@@ -1391,7 +1391,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onpointerout() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onpointerout;;
+            let result = $attribute_map.onpointerout;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onpointerout', arguments, result);
             return result;
         },
@@ -1401,7 +1401,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onpointerover() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onpointerover;;
+            let result = $attribute_map.onpointerover;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onpointerover', arguments, result);
             return result;
         },
@@ -1411,7 +1411,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onpointerrawupdate() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onpointerrawupdate;;
+            let result = $attribute_map.onpointerrawupdate;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onpointerrawupdate', arguments, result);
             return result;
         },
@@ -1421,7 +1421,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onpointerup() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onpointerup;;
+            let result = $attribute_map.onpointerup;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onpointerup', arguments, result);
             return result;
         },
@@ -1431,7 +1431,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onprogress() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onprogress;;
+            let result = $attribute_map.onprogress;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onprogress', arguments, result);
             return result;
         },
@@ -1441,7 +1441,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onratechange() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onratechange;;
+            let result = $attribute_map.onratechange;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onratechange', arguments, result);
             return result;
         },
@@ -1452,7 +1452,7 @@ Document = function Document(createObj_key) {//构造函数
         onreadystatechange: undefined,
         get onreset() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onreset;;
+            let result = $attribute_map.onreset;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onreset', arguments, result);
             return result;
         },
@@ -1462,7 +1462,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onresize() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onresize;;
+            let result = $attribute_map.onresize;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onresize', arguments, result);
             return result;
         },
@@ -1472,7 +1472,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onresume() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onresume;;
+            let result = $attribute_map.onresume;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onresume', arguments, result);
             return result;
         },
@@ -1482,7 +1482,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onscroll() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onscroll;;
+            let result = $attribute_map.onscroll;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onscroll', arguments, result);
             return result;
         },
@@ -1492,7 +1492,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onsearch() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onsearch;;
+            let result = $attribute_map.onsearch;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onsearch', arguments, result);
             return result;
         },
@@ -1502,7 +1502,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onsecuritypolicyviolation() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onsecuritypolicyviolation;;
+            let result = $attribute_map.onsecuritypolicyviolation;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onsecuritypolicyviolation', arguments, result);
             return result;
         },
@@ -1512,7 +1512,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onseeked() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onseeked;;
+            let result = $attribute_map.onseeked;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onseeked', arguments, result);
             return result;
         },
@@ -1522,7 +1522,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onseeking() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onseeking;;
+            let result = $attribute_map.onseeking;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onseeking', arguments, result);
             return result;
         },
@@ -1532,7 +1532,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onselect() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onselect;;
+            let result = $attribute_map.onselect;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onselect', arguments, result);
             return result;
         },
@@ -1542,7 +1542,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onselectionchange() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onselectionchange;;
+            let result = $attribute_map.onselectionchange;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onselectionchange', arguments, result);
             return result;
         },
@@ -1552,7 +1552,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onselectstart() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onselectstart;;
+            let result = $attribute_map.onselectstart;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onselectstart', arguments, result);
             return result;
         },
@@ -1562,7 +1562,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onslotchange() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onslotchange;;
+            let result = $attribute_map.onslotchange;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onslotchange', arguments, result);
             return result;
         },
@@ -1572,7 +1572,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onstalled() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onstalled;;
+            let result = $attribute_map.onstalled;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onstalled', arguments, result);
             return result;
         },
@@ -1582,7 +1582,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onsubmit() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onsubmit;;
+            let result = $attribute_map.onsubmit;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onsubmit', arguments, result);
             return result;
         },
@@ -1592,7 +1592,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onsuspend() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onsuspend;;
+            let result = $attribute_map.onsuspend;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onsuspend', arguments, result);
             return result;
         },
@@ -1602,7 +1602,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get ontimeupdate() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.ontimeupdate;;
+            let result = $attribute_map.ontimeupdate;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'ontimeupdate', arguments, result);
             return result;
         },
@@ -1612,7 +1612,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get ontoggle() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.ontoggle;;
+            let result = $attribute_map.ontoggle;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'ontoggle', arguments, result);
             return result;
         },
@@ -1622,7 +1622,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get ontransitioncancel() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.ontransitioncancel;;
+            let result = $attribute_map.ontransitioncancel;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'ontransitioncancel', arguments, result);
             return result;
         },
@@ -1632,7 +1632,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get ontransitionend() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.ontransitionend;;
+            let result = $attribute_map.ontransitionend;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'ontransitionend', arguments, result);
             return result;
         },
@@ -1642,7 +1642,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get ontransitionrun() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.ontransitionrun;;
+            let result = $attribute_map.ontransitionrun;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'ontransitionrun', arguments, result);
             return result;
         },
@@ -1652,7 +1652,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get ontransitionstart() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.ontransitionstart;;
+            let result = $attribute_map.ontransitionstart;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'ontransitionstart', arguments, result);
             return result;
         },
@@ -1662,7 +1662,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onvisibilitychange() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onvisibilitychange;;
+            let result = $attribute_map.onvisibilitychange;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onvisibilitychange', arguments, result);
             return result;
         },
@@ -1672,7 +1672,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onvolumechange() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onvolumechange;;
+            let result = $attribute_map.onvolumechange;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onvolumechange', arguments, result);
             return result;
         },
@@ -1682,7 +1682,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onwaiting() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onwaiting;;
+            let result = $attribute_map.onwaiting;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onwaiting', arguments, result);
             return result;
         },
@@ -1692,7 +1692,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onwebkitanimationend() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onwebkitanimationend;;
+            let result = $attribute_map.onwebkitanimationend;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onwebkitanimationend', arguments, result);
             return result;
         },
@@ -1702,7 +1702,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onwebkitanimationiteration() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onwebkitanimationiteration;;
+            let result = $attribute_map.onwebkitanimationiteration;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onwebkitanimationiteration', arguments, result);
             return result;
         },
@@ -1712,7 +1712,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onwebkitanimationstart() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onwebkitanimationstart;;
+            let result = $attribute_map.onwebkitanimationstart;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onwebkitanimationstart', arguments, result);
             return result;
         },
@@ -1722,7 +1722,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onwebkitfullscreenchange() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onwebkitfullscreenchange;;
+            let result = $attribute_map.onwebkitfullscreenchange;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onwebkitfullscreenchange', arguments, result);
             return result;
         },
@@ -1732,7 +1732,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onwebkitfullscreenerror() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onwebkitfullscreenerror;;
+            let result = $attribute_map.onwebkitfullscreenerror;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onwebkitfullscreenerror', arguments, result);
             return result;
         },
@@ -1742,7 +1742,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onwebkittransitionend() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onwebkittransitionend;;
+            let result = $attribute_map.onwebkittransitionend;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onwebkittransitionend', arguments, result);
             return result;
         },
@@ -1752,7 +1752,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get onwheel() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.onwheel;;
+            let result = $attribute_map.onwheel;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'onwheel', arguments, result);
             return result;
         },
@@ -1762,139 +1762,139 @@ Document = function Document(createObj_key) {//构造函数
         },
         open() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.open;;
+            let result = $attribute_map.open;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'open', arguments, result);
             return result;
         },
         get pictureInPictureElement() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.pictureInPictureElement;;
+            let result = $attribute_map.pictureInPictureElement;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'pictureInPictureElement', arguments, result);
             return result;
         },
         get pictureInPictureEnabled() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.pictureInPictureEnabled;;
+            let result = $attribute_map.pictureInPictureEnabled;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'pictureInPictureEnabled', arguments, result);
             return result;
         },
         get plugins() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.plugins;;
+            let result = $attribute_map.plugins;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'plugins', arguments, result);
             return result;
         },
         get pointerLockElement() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.pointerLockElement;;
+            let result = $attribute_map.pointerLockElement;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'pointerLockElement', arguments, result);
             return result;
         },
         prepend() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.prepend;;
+            let result = $attribute_map.prepend;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'prepend', arguments, result);
             return result;
         },
         queryCommandEnabled() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.queryCommandEnabled;;
+            let result = $attribute_map.queryCommandEnabled;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'queryCommandEnabled', arguments, result);
             return result;
         },
         queryCommandIndeterm() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.queryCommandIndeterm;;
+            let result = $attribute_map.queryCommandIndeterm;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'queryCommandIndeterm', arguments, result);
             return result;
         },
         queryCommandState() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.queryCommandState;;
+            let result = $attribute_map.queryCommandState;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'queryCommandState', arguments, result);
             return result;
         },
         queryCommandSupported() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.queryCommandSupported;;
+            let result = $attribute_map.queryCommandSupported;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'queryCommandSupported', arguments, result);
             return result;
         },
         queryCommandValue() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.queryCommandValue;;
+            let result = $attribute_map.queryCommandValue;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'queryCommandValue', arguments, result);
             return result;
         },
         querySelector() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.querySelector;;
+            let result = $attribute_map.querySelector;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'querySelector', arguments, result);
             return result;
         },
         querySelectorAll() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.querySelectorAll;;
+            let result = $attribute_map.querySelectorAll;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'querySelectorAll', arguments, result);
             return result;
         },
         get readyState() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = "complete";;
+            let result = "complete";
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'readyState', arguments, result);
             return result;
         },
         get referrer() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.referrer;;
+            let result = $attribute_map.referrer;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'referrer', arguments, result);
             return result;
         },
         releaseEvents() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.releaseEvents;;
+            let result = $attribute_map.releaseEvents;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'releaseEvents', arguments, result);
             return result;
         },
         replaceChildren() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.replaceChildren;;
+            let result = $attribute_map.replaceChildren;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'replaceChildren', arguments, result);
             return result;
         },
         get rootElement() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.rootElement;;
+            let result = $attribute_map.rootElement;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'rootElement', arguments, result);
             return result;
         },
         get scripts() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.scripts;;
+            let result = $attribute_map.scripts;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'scripts', arguments, result);
             return result;
         },
         get scrollingElement() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.scrollingElement;;
+            let result = $attribute_map.scrollingElement;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'scrollingElement', arguments, result);
             return result;
         },
         get styleSheets() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.styleSheets;;
+            let result = $attribute_map.styleSheets;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'styleSheets', arguments, result);
             return result;
         },
         get timeline() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.timeline;;
+            let result = $attribute_map.timeline;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'timeline', arguments, result);
             return result;
         },
         get title() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.title;;
+            let result = $attribute_map.title;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'title', arguments, result);
             return result;
         },
@@ -1904,13 +1904,13 @@ Document = function Document(createObj_key) {//构造函数
         },
         get visibilityState() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = "hidden";;
+            let result = "hidden";
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'visibilityState', arguments, result);
             return result;
         },
         get vlinkColor() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.vlinkColor;;
+            let result = $attribute_map.vlinkColor;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'vlinkColor', arguments, result);
             return result;
         },
@@ -1920,79 +1920,79 @@ Document = function Document(createObj_key) {//构造函数
         },
         get wasDiscarded() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = false;;
+            let result = false;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'wasDiscarded', arguments, result);
             return result;
         },
         webkitCancelFullScreen() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.webkitCancelFullScreen;;
+            let result = $attribute_map.webkitCancelFullScreen;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'webkitCancelFullScreen', arguments, result);
             return result;
         },
         get webkitCurrentFullScreenElement() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.webkitCurrentFullScreenElement;;
+            let result = $attribute_map.webkitCurrentFullScreenElement;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'webkitCurrentFullScreenElement', arguments, result);
             return result;
         },
         webkitExitFullscreen() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.webkitExitFullscreen;;
+            let result = $attribute_map.webkitExitFullscreen;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'webkitExitFullscreen', arguments, result);
             return result;
         },
         get webkitFullscreenElement() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.webkitFullscreenElement;;
+            let result = $attribute_map.webkitFullscreenElement;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'webkitFullscreenElement', arguments, result);
             return result;
         },
         get webkitFullscreenEnabled() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.webkitFullscreenEnabled;;
+            let result = $attribute_map.webkitFullscreenEnabled;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'webkitFullscreenEnabled', arguments, result);
             return result;
         },
         get webkitHidden() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = true;;
+            let result = true;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'webkitHidden', arguments, result);
             return result;
         },
         get webkitIsFullScreen() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.webkitIsFullScreen;;
+            let result = $attribute_map.webkitIsFullScreen;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'webkitIsFullScreen', arguments, result);
             return result;
         },
         get webkitVisibilityState() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.webkitVisibilityState;;
+            let result = $attribute_map.webkitVisibilityState;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'webkitVisibilityState', arguments, result);
             return result;
         },
         write() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.write;;
+            let result = $attribute_map.write;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'write', arguments, result);
             return result;
         },
         writeln() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.writeln;;
+            let result = $attribute_map.writeln;
             if (lwVm.config.log_print === true) lwVm.logAdd('Func', 'Document', 'writeln', arguments, result);
             return result;
         },
         get xmlEncoding() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.xmlEncoding;;
+            let result = $attribute_map.xmlEncoding;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'xmlEncoding', arguments, result);
             return result;
         },
         get xmlStandalone() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.xmlStandalone;;
+            let result = $attribute_map.xmlStandalone;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'xmlStandalone', arguments, result);
             return result;
         },
@@ -2002,7 +2002,7 @@ Document = function Document(createObj_key) {//构造函数
         },
         get xmlVersion() {
             if (!Document.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.xmlVersion;;
+            let result = $attribute_map.xmlVersion;
             if (lwVm.config.log_print === true) lwVm.logAdd('Get', 'Document', 'xmlVersion', arguments, result);
             return result;
         },

@@ -1,8 +1,7 @@
-PointerEvent = function PointerEvent(createObj_key) {//构造函数
-    if (createObj_key !== lwVm.memory.$createObj_key) {
-        throw new TypeError("Illegal constructor");
-    }
-    lwVm.memory.private_data.set(this, {})
+PointerEvent = function PointerEvent(type, ...args) {//构造函数
+    if (new.target !== PointerEvent) throw new TypeError(`Failed to construct 'PointerEvent': Please use the 'new' operator, this DOM object constructor cannot be called as a function.`)
+    lwVm.protectAddIsTrusted(this);
+    lwVm.memory.private_data.set(this, { })
 }; lwVm.safefunction(PointerEvent);
 
 ; (function () {
@@ -13,13 +12,13 @@ PointerEvent = function PointerEvent(createObj_key) {//构造函数
     PointerEvent.prototype = {
         get altitudeAngle() {
             if (!PointerEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).altitudeAngle, "");;
+            let result = lwVmlwVm.memory.private_data.get(this).altitudeAnglelwVm;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PointerEvent', 'altitudeAngle', arguments, result);
             return result;
         },
         get azimuthAngle() {
             if (!PointerEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).azimuthAngle, "");;
+            let result = lwVmlwVm.memory.private_data.get(this).azimuthAnglelwVm;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PointerEvent', 'azimuthAngle', arguments, result);
             return result;
         },
@@ -37,61 +36,61 @@ PointerEvent = function PointerEvent(createObj_key) {//构造函数
         },
         get height() {
             if (!PointerEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).height, "");;
+            let result = lwVmlwVm.memory.private_data.get(this).heightlwVm;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PointerEvent', 'height', arguments, result);
             return result;
         },
         get isPrimary() {
             if (!PointerEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).isPrimary, "");;
+            let result = lwVmlwVm.memory.private_data.get(this).isPrimarylwVm;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PointerEvent', 'isPrimary', arguments, result);
             return result;
         },
         get pointerId() {
             if (!PointerEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).pointerId, "");;
+            let result = lwVmlwVm.memory.private_data.get(this).pointerIdlwVm;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PointerEvent', 'pointerId', arguments, result);
             return result;
         },
         get pointerType() {
             if (!PointerEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).pointerType, "");;
+            let result = lwVmlwVm.memory.private_data.get(this).pointerTypelwVm;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PointerEvent', 'pointerType', arguments, result);
             return result;
         },
         get pressure() {
             if (!PointerEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).pressure, "");;
+            let result = lwVmlwVm.memory.private_data.get(this).pressurelwVm;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PointerEvent', 'pressure', arguments, result);
             return result;
         },
         get tangentialPressure() {
             if (!PointerEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).tangentialPressure, "");;
+            let result = lwVmlwVm.memory.private_data.get(this).tangentialPressurelwVm;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PointerEvent', 'tangentialPressure', arguments, result);
             return result;
         },
         get tiltX() {
             if (!PointerEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).tiltX, "");;
+            let result = lwVmlwVm.memory.private_data.get(this).tiltXlwVm;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PointerEvent', 'tiltX', arguments, result);
             return result;
         },
         get tiltY() {
             if (!PointerEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).tiltY, "");;
+            let result = lwVmlwVm.memory.private_data.get(this).tiltYlwVm;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PointerEvent', 'tiltY', arguments, result);
             return result;
         },
         get twist() {
             if (!PointerEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).twist, "");;
+            let result = lwVmlwVm.memory.private_data.get(this).twistlwVm;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PointerEvent', 'twist', arguments, result);
             return result;
         },
         get width() {
             if (!PointerEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).width, "");;
+            let result = lwVmlwVm.memory.private_data.get(this).widthlwVm;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PointerEvent', 'width', arguments, result);
             return result;
         },

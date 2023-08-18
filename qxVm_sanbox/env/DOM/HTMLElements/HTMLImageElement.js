@@ -13,7 +13,7 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
     HTMLImageElement.prototype = {
         get align() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).align, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).align, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'align', arguments, result);
             return result;
         },
@@ -24,7 +24,7 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get alt() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).alt, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).alt, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'alt', arguments, result);
             return result;
         },
@@ -35,7 +35,7 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get border() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).border, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).border, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'border', arguments, result);
             return result;
         },
@@ -46,13 +46,13 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get complete() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = true;;
+            let result = true;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'complete', arguments, result);
             return result;
         },
         get crossOrigin() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).crossOrigin, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).crossOrigin, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'crossOrigin', arguments, result);
             return result;
         },
@@ -63,7 +63,7 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get currentSrc() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).currentSrc, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).currentSrc, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'currentSrc', arguments, result);
             return result;
         },
@@ -75,7 +75,7 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get decoding() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).decoding, 'auto');;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).decoding, 'auto');
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'decoding', arguments, result);
             return result;
         },
@@ -86,7 +86,7 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get height() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).height, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).height, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'height', arguments, result);
             return result;
         },
@@ -102,7 +102,7 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get hspace() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).hspace, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).hspace, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'hspace', arguments, result);
             return result;
         },
@@ -116,7 +116,7 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get isMap() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).isMap, false);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).isMap, false);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'isMap', arguments, result);
             return result;
         },
@@ -127,7 +127,7 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get loading() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).loading, "auto");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).loading, "auto");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'loading', arguments, result);
             return result;
         },
@@ -138,7 +138,7 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get longDesc() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).longDesc, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).longDesc, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'longDesc', arguments, result);
             return result;
         },
@@ -149,7 +149,7 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get lowsrc() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).lowsrc, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).lowsrc, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'lowsrc', arguments, result);
             return result;
         },
@@ -160,7 +160,7 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get name() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).name, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).name, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'name', arguments, result);
             return result;
         },
@@ -171,19 +171,19 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get naturalHeight() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).naturalHeight, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).naturalHeight, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'naturalHeight', arguments, result);
             return result;
         },
         get naturalWidth() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).naturalWidth, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).naturalWidth, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'naturalWidth', arguments, result);
             return result;
         },
         get referrerPolicy() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).referrerPolicy, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).referrerPolicy, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'referrerPolicy', arguments, result);
             return result;
         },
@@ -194,7 +194,7 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get sizes() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).sizes, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).sizes, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'sizes', arguments, result);
             return result;
         },
@@ -205,7 +205,7 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get src() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).src, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).src, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'src', arguments, result);
             return result;
         },
@@ -216,7 +216,7 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get srcset() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).srcset, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).srcset, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'srcset', arguments, result);
             return result;
         },
@@ -227,7 +227,7 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get useMap() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).useMap, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).useMap, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'useMap', arguments, result);
             return result;
         },
@@ -238,7 +238,7 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get vspace() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).vspace, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).vspace, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'vspace', arguments, result);
             return result;
         },
@@ -249,7 +249,7 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get width() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).width, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).width, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'width', arguments, result);
             return result;
         },
@@ -260,7 +260,7 @@ HTMLImageElement = function HTMLImageElement(createObj_key) {//构造函数
         },
         get x() {
             if (!HTMLImageElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).x, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).x, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLImageElement', 'x', arguments, result);
             return result;
         },

@@ -13,7 +13,7 @@ DOMRect = function DOMRect(createObj_key) {
     DOMRect.prototype = {
         get height() {
             if (!DOMRect.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).height, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).height, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRect', 'height', arguments, result);
             return result;
         },
@@ -24,7 +24,7 @@ DOMRect = function DOMRect(createObj_key) {
         },
         get width() {
             if (!DOMRect.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).width, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).width, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRect', 'width', arguments, result);
             return result;
         },
@@ -35,7 +35,7 @@ DOMRect = function DOMRect(createObj_key) {
         },
         get x() {
             if (!DOMRect.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).x, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).x, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRect', 'x', arguments, result);
             return result;
         },
@@ -46,7 +46,7 @@ DOMRect = function DOMRect(createObj_key) {
         },
         get y() {
             if (!DOMRect.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).y, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).y, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRect', 'y', arguments, result);
             return result;
         },

@@ -29,7 +29,7 @@ AudioParam = function AudioParam(createObj_key, automationRate, defaultValue, ma
     AudioParam.prototype = {
         get automationRate() {
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).automationRate, "a-rate");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).automationRate, "a-rate");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioParam', 'automationRate', arguments, result);
             return result;
         },
@@ -52,7 +52,7 @@ AudioParam = function AudioParam(createObj_key, automationRate, defaultValue, ma
         },
         get defaultValue() {
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).defaultValue, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).defaultValue, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioParam', 'defaultValue', arguments, result);
             return result;
         },
@@ -70,13 +70,13 @@ AudioParam = function AudioParam(createObj_key, automationRate, defaultValue, ma
         },
         get maxValue() {
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.memory.private_data.get(this).maxValue;;
+            let result = lwVm.memory.private_data.get(this).maxValue;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioParam', 'maxValue', arguments, result);
             return result;
         },
         get minValue() {
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.memory.private_data.get(this).minValue;;
+            let result = lwVm.memory.private_data.get(this).minValue;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioParam', 'minValue', arguments, result);
             return result;
         },
@@ -88,7 +88,7 @@ AudioParam = function AudioParam(createObj_key, automationRate, defaultValue, ma
         },
         setValueAtTime() {
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 440, 22050);;
+            let result = new AudioParam(lwVm.memory.$createObj_key, "a-rate", 440, 22050);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'AudioParam', 'setValueAtTime', arguments, result);
             return result;
         },
@@ -100,7 +100,7 @@ AudioParam = function AudioParam(createObj_key, automationRate, defaultValue, ma
         },
         get value() {
             if (!AudioParam.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).value, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).value, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioParam', 'value', arguments, result);
             return result;
         },

@@ -20,19 +20,19 @@ Performance = function Performance(createObj_key) {//构造函数
         MemoryInfo.prototype = {
             get jsHeapSizeLimit() {
                 if (!MemoryInfo.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 2330000000;;
+            let result = 2330000000;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MemoryInfo', 'jsHeapSizeLimit', arguments, result);
             return result;
             },
             get totalJSHeapSize() {
                 if (!MemoryInfo.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 18200000;;
+            let result = 18200000;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MemoryInfo', 'totalJSHeapSize', arguments, result);
             return result;
             },
             get usedJSHeapSize() {
                 if (!MemoryInfo.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 15200000;;
+            let result = 15200000;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MemoryInfo', 'usedJSHeapSize', arguments, result);
             return result;
             },
@@ -69,7 +69,7 @@ Performance = function Performance(createObj_key) {//构造函数
         },
         get eventCounts() {
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).eventCounts, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).eventCounts, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Performance', 'eventCounts', arguments, result);
             return result;
         },
@@ -119,7 +119,7 @@ Performance = function Performance(createObj_key) {//构造函数
                 ele = new MemoryInfo(lwVm.memory.$createObj_key);
                 lwVm.memory.private_data.get(this).memory = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Performance', 'if ', arguments, result);
             return result;
         },
@@ -130,7 +130,7 @@ Performance = function Performance(createObj_key) {//构造函数
                 ele = new PerformanceNavigation(lwVm.memory.$createObj_key);
                 lwVm.memory.private_data.get(this).navigation = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Performance', 'if ', arguments, result);
             return result;
         },
@@ -142,7 +142,7 @@ Performance = function Performance(createObj_key) {//构造函数
         },
         get onresourcetimingbufferfull() {
             if (!Performance.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onresourcetimingbufferfull, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onresourcetimingbufferfull, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Performance', 'onresourcetimingbufferfull', arguments, result);
             return result;
         },
@@ -164,7 +164,7 @@ Performance = function Performance(createObj_key) {//构造函数
                 ele = (new Date().getTime()) + parseFloat((Math.random()).toFixed(1))
                 lwVm.memory.private_data.get(this).timeOrigin = ele
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Performance', 'timeOrigin', arguments, result);
             return result;
         },
@@ -175,7 +175,7 @@ Performance = function Performance(createObj_key) {//构造函数
                 ele = new PerformanceTiming(lwVm.memory.$createObj_key, parseInt(this.timeOrigin));
                 lwVm.memory.private_data.get(this).timing = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Performance', 'timing', arguments, result);
             return result;
         },

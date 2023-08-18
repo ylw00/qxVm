@@ -15,7 +15,7 @@ MediaStream = function MediaStream(createObj_key) {//构造函数
     MediaStream.prototype = {
         get active() {
             if (!MediaStream.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).active, true);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).active, true);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MediaStream', 'active', arguments, result);
             return result;
         },
@@ -57,13 +57,13 @@ MediaStream = function MediaStream(createObj_key) {//构造函数
         },
         get id() {
             if (!MediaStream.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).id, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).id, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MediaStream', 'id', arguments, result);
             return result;
         },
         get onactive() {
             if (!MediaStream.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onactive, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onactive, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MediaStream', 'onactive', arguments, result);
             return result;
         },
@@ -74,7 +74,7 @@ MediaStream = function MediaStream(createObj_key) {//构造函数
         },
         get onaddtrack() {
             if (!MediaStream.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onaddtrack, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onaddtrack, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MediaStream', 'onaddtrack', arguments, result);
             return result;
         },
@@ -85,7 +85,7 @@ MediaStream = function MediaStream(createObj_key) {//构造函数
         },
         get oninactive() {
             if (!MediaStream.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oninactive, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oninactive, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MediaStream', 'oninactive', arguments, result);
             return result;
         },
@@ -96,7 +96,7 @@ MediaStream = function MediaStream(createObj_key) {//构造函数
         },
         get onremovetrack() {
             if (!MediaStream.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onremovetrack, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onremovetrack, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MediaStream', 'onremovetrack', arguments, result);
             return result;
         },

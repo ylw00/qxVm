@@ -19,7 +19,7 @@ HID = function HID(createObj_key) {
         },
         get onconnect() {
             if (!HID.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onconnect, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onconnect, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HID', 'onconnect', arguments, result);
             return result;
         },
@@ -30,7 +30,7 @@ HID = function HID(createObj_key) {
         },
         get ondisconnect() {
             if (!HID.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondisconnect, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondisconnect, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HID', 'ondisconnect', arguments, result);
             return result;
         },

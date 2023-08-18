@@ -19,19 +19,19 @@ TrustedTypePolicyFactory = function TrustedTypePolicyFactory(createObj_key) {
         },
         get defaultPolicy() {
             if (!TrustedTypePolicyFactory.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = null;;
+            let result = null;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'TrustedTypePolicyFactory', 'defaultPolicy', arguments, result);
             return result;
         },
         get emptyHTML() {
             if (!TrustedTypePolicyFactory.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).emptyHTML, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).emptyHTML, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'TrustedTypePolicyFactory', 'emptyHTML', arguments, result);
             return result;
         },
         get emptyScript() {
             if (!TrustedTypePolicyFactory.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).emptyScript, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).emptyScript, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'TrustedTypePolicyFactory', 'emptyScript', arguments, result);
             return result;
         },

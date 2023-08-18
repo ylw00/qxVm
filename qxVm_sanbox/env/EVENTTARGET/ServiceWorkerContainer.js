@@ -13,7 +13,7 @@ ServiceWorkerContainer = function ServiceWorkerContainer(createObj_key) {
     ServiceWorkerContainer.prototype = {
         get controller() {
             if (!ServiceWorkerContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = null;;
+            let result = null;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'ServiceWorkerContainer', 'controller', arguments, result);
             return result;
         },
@@ -31,7 +31,7 @@ ServiceWorkerContainer = function ServiceWorkerContainer(createObj_key) {
         },
         get oncontrollerchange() {
             if (!ServiceWorkerContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncontrollerchange, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncontrollerchange, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'ServiceWorkerContainer', 'oncontrollerchange', arguments, result);
             return result;
         },
@@ -42,7 +42,7 @@ ServiceWorkerContainer = function ServiceWorkerContainer(createObj_key) {
         },
         get onmessage() {
             if (!ServiceWorkerContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmessage, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmessage, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'ServiceWorkerContainer', 'onmessage', arguments, result);
             return result;
         },
@@ -53,7 +53,7 @@ ServiceWorkerContainer = function ServiceWorkerContainer(createObj_key) {
         },
         get onmessageerror() {
             if (!ServiceWorkerContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmessageerror, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmessageerror, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'ServiceWorkerContainer', 'onmessageerror', arguments, result);
             return result;
         },
@@ -64,7 +64,7 @@ ServiceWorkerContainer = function ServiceWorkerContainer(createObj_key) {
         },
         get ready() {
             if (!ServiceWorkerContainer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = new Promise(function () { });;
+            let result = new Promise(function () { });
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'ServiceWorkerContainer', 'ready', arguments, result);
             return result;
         },

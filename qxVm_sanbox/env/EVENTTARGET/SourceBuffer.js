@@ -25,7 +25,7 @@ SourceBuffer = function SourceBuffer(createObj_key) {
         },
         get appendWindowEnd() {
             if (!SourceBuffer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).appendWindowEnd, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).appendWindowEnd, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SourceBuffer', 'appendWindowEnd', arguments, result);
             return result;
         },
@@ -36,7 +36,7 @@ SourceBuffer = function SourceBuffer(createObj_key) {
         },
         get appendWindowStart() {
             if (!SourceBuffer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).appendWindowStart, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).appendWindowStart, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SourceBuffer', 'appendWindowStart', arguments, result);
             return result;
         },
@@ -47,7 +47,7 @@ SourceBuffer = function SourceBuffer(createObj_key) {
         },
         get buffered() {
             if (!SourceBuffer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).buffered, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).buffered, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SourceBuffer', 'buffered', arguments, result);
             return result;
         },
@@ -59,7 +59,7 @@ SourceBuffer = function SourceBuffer(createObj_key) {
         },
         get mode() {
             if (!SourceBuffer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).mode, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).mode, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SourceBuffer', 'mode', arguments, result);
             return result;
         },
@@ -70,7 +70,7 @@ SourceBuffer = function SourceBuffer(createObj_key) {
         },
         get onabort() {
             if (!SourceBuffer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onabort, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onabort, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SourceBuffer', 'onabort', arguments, result);
             return result;
         },
@@ -81,7 +81,7 @@ SourceBuffer = function SourceBuffer(createObj_key) {
         },
         get onerror() {
             if (!SourceBuffer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onerror, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onerror, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SourceBuffer', 'onerror', arguments, result);
             return result;
         },
@@ -92,7 +92,7 @@ SourceBuffer = function SourceBuffer(createObj_key) {
         },
         get onupdate() {
             if (!SourceBuffer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onupdate, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onupdate, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SourceBuffer', 'onupdate', arguments, result);
             return result;
         },
@@ -103,7 +103,7 @@ SourceBuffer = function SourceBuffer(createObj_key) {
         },
         get onupdateend() {
             if (!SourceBuffer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onupdateend, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onupdateend, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SourceBuffer', 'onupdateend', arguments, result);
             return result;
         },
@@ -114,7 +114,7 @@ SourceBuffer = function SourceBuffer(createObj_key) {
         },
         get onupdatestart() {
             if (!SourceBuffer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onupdatestart, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onupdatestart, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SourceBuffer', 'onupdatestart', arguments, result);
             return result;
         },
@@ -131,7 +131,7 @@ SourceBuffer = function SourceBuffer(createObj_key) {
         },
         get timestampOffset() {
             if (!SourceBuffer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).timestampOffset, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).timestampOffset, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SourceBuffer', 'timestampOffset', arguments, result);
             return result;
         },
@@ -142,7 +142,7 @@ SourceBuffer = function SourceBuffer(createObj_key) {
         },
         get updating() {
             if (!SourceBuffer.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).updating, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).updating, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SourceBuffer', 'updating', arguments, result);
             return result;
         },

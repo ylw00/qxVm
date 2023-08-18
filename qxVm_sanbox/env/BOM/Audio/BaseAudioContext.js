@@ -23,7 +23,7 @@ BaseAudioContext = function BaseAudioContext(createObj_key) {//构造函数
                 ele = new AudioWorklet(lwVm.memory.$createObj_key);
                 lwVm.memory.private_data.get(this).audioWorklet = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'BaseAudioContext', 'audioWorklet', arguments, result);
             return result;
         },
@@ -85,7 +85,7 @@ BaseAudioContext = function BaseAudioContext(createObj_key) {//构造函数
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
             let ele = new DynamicsCompressorNode(lwVm.memory.$createObj_key);
             ele.channelCountMode = "clamped-max";
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createDynamicsCompressor', arguments, result);
             return result;
         },
@@ -103,7 +103,7 @@ BaseAudioContext = function BaseAudioContext(createObj_key) {//构造函数
         },
         createOscillator() {
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = new OscillatorNode();;
+            let result = new OscillatorNode();
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'BaseAudioContext', 'createOscillator', arguments, result);
             return result;
         },
@@ -139,7 +139,7 @@ BaseAudioContext = function BaseAudioContext(createObj_key) {//构造函数
         },
         get currentTime() {
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).currentTime, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).currentTime, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'BaseAudioContext', 'currentTime', arguments, result);
             return result;
         },
@@ -156,7 +156,7 @@ BaseAudioContext = function BaseAudioContext(createObj_key) {//构造函数
                 ele = new AudioDestinationNode(lwVm.memory.$createObj_key, "explicit");
                 lwVm.memory.private_data.get(this).destination = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'BaseAudioContext', 'destination', arguments, result);
             return result;
         },
@@ -167,13 +167,13 @@ BaseAudioContext = function BaseAudioContext(createObj_key) {//构造函数
                 ele = new AudioListener(lwVm.memory.$createObj_key);
                 lwVm.memory.private_data.get(this).listener = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'BaseAudioContext', 'listener', arguments, result);
             return result;
         },
         get onstatechange() {
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onstatechange, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onstatechange, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'BaseAudioContext', 'onstatechange', arguments, result);
             return result;
         },
@@ -184,7 +184,7 @@ BaseAudioContext = function BaseAudioContext(createObj_key) {//构造函数
         },
         get sampleRate() {
             if (!BaseAudioContext.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.memory.private_data.get(this).sampleRate;;
+            let result = lwVm.memory.private_data.get(this).sampleRate;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'BaseAudioContext', 'sampleRate', arguments, result);
             return result;
         },

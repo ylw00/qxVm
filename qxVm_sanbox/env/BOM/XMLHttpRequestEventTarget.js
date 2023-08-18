@@ -13,7 +13,7 @@ XMLHttpRequestEventTarget = function XMLHttpRequestEventTarget(createObj_key) {/
     XMLHttpRequestEventTarget.prototype = {
         get onabort() {
             if (!XMLHttpRequestEventTarget.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onabort, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onabort, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequestEventTarget', 'onabort', arguments, result);
             return result;
         },
@@ -24,7 +24,7 @@ XMLHttpRequestEventTarget = function XMLHttpRequestEventTarget(createObj_key) {/
         },
         get onerror() {
             if (!XMLHttpRequestEventTarget.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onerror, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onerror, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequestEventTarget', 'onerror', arguments, result);
             return result;
         },
@@ -35,7 +35,7 @@ XMLHttpRequestEventTarget = function XMLHttpRequestEventTarget(createObj_key) {/
         },
         get onload() {
             if (!XMLHttpRequestEventTarget.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onload, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onload, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequestEventTarget', 'onload', arguments, result);
             return result;
         },
@@ -46,7 +46,7 @@ XMLHttpRequestEventTarget = function XMLHttpRequestEventTarget(createObj_key) {/
         },
         get onloadend() {
             if (!XMLHttpRequestEventTarget.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onloadend, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onloadend, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequestEventTarget', 'onloadend', arguments, result);
             return result;
         },
@@ -57,7 +57,7 @@ XMLHttpRequestEventTarget = function XMLHttpRequestEventTarget(createObj_key) {/
         },
         get onloadstart() {
             if (!XMLHttpRequestEventTarget.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onloadstart, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onloadstart, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequestEventTarget', 'onloadstart', arguments, result);
             return result;
         },
@@ -68,7 +68,7 @@ XMLHttpRequestEventTarget = function XMLHttpRequestEventTarget(createObj_key) {/
         },
         get onprogress() {
             if (!XMLHttpRequestEventTarget.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onprogress, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onprogress, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequestEventTarget', 'onprogress', arguments, result);
             return result;
         },
@@ -79,7 +79,7 @@ XMLHttpRequestEventTarget = function XMLHttpRequestEventTarget(createObj_key) {/
         },
         get ontimeout() {
             if (!XMLHttpRequestEventTarget.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontimeout, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontimeout, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XMLHttpRequestEventTarget', 'ontimeout', arguments, result);
             return result;
         },

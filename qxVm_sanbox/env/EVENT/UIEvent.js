@@ -13,7 +13,7 @@ UIEvent = function UIEvent(createObj_key) {//构造函数
     UIEvent.prototype = {
         get detail() {
             if (!UIEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).detail, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).detail, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'UIEvent', 'detail', arguments, result);
             return result;
         },
@@ -25,13 +25,13 @@ UIEvent = function UIEvent(createObj_key) {//构造函数
         },
         get sourceCapabilities() {
             if (!UIEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).sourceCapabilities, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).sourceCapabilities, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'UIEvent', 'sourceCapabilities', arguments, result);
             return result;
         },
         get view() {
             if (!UIEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).view, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).view, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'UIEvent', 'view', arguments, result);
             return result;
         },

@@ -15,7 +15,7 @@ HTMLTitleElement = function HTMLTitleElement(createObj_key) {//构造函数
     HTMLTitleElement.prototype = {
         get text() {
             if (!HTMLTitleElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); }
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).text, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).text, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLTitleElement', 'text', arguments, result);
             return result;
         },

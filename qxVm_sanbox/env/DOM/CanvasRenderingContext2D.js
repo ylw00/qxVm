@@ -51,7 +51,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get canvas() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.memory.private_data.get(this).canvas;;
+            let result = lwVm.memory.private_data.get(this).canvas;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'canvas', arguments, result);
             return result;
         },
@@ -99,7 +99,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get direction() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).direction, "ltr");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).direction, "ltr");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'direction', arguments, result);
             return result;
         },
@@ -140,7 +140,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get fillStyle() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).fillStyle, "#000000");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).fillStyle, "#000000");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'fillStyle', arguments, result);
             return result;
         },
@@ -161,7 +161,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get filter() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).filter, "none");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).filter, "none");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'filter', arguments, result);
             return result;
         },
@@ -172,7 +172,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get font() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).font, "10px sans-serif");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).font, "10px sans-serif");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'font', arguments, result);
             return result;
         },
@@ -197,7 +197,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         getLineDash() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = [];;
+            let result = [];
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'CanvasRenderingContext2D', 'getLineDash', arguments, result);
             return result;
         },
@@ -232,7 +232,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get globalAlpha() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).globalAlpha, 1);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).globalAlpha, 1);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'globalAlpha', arguments, result);
             return result;
         },
@@ -243,7 +243,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get globalCompositeOperation() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).globalCompositeOperation, "source-over");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).globalCompositeOperation, "source-over");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'globalCompositeOperation', arguments, result);
             return result;
         },
@@ -254,7 +254,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get imageSmoothingEnabled() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).imageSmoothingEnabled, true);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).imageSmoothingEnabled, true);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'imageSmoothingEnabled', arguments, result);
             return result;
         },
@@ -265,7 +265,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get imageSmoothingQuality() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).imageSmoothingQuality, "low");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).imageSmoothingQuality, "low");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'imageSmoothingQuality', arguments, result);
             return result;
         },
@@ -288,7 +288,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get lineCap() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).lineCap, "butt");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).lineCap, "butt");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'lineCap', arguments, result);
             return result;
         },
@@ -299,7 +299,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get lineDashOffset() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).lineDashOffset, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).lineDashOffset, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'lineDashOffset', arguments, result);
             return result;
         },
@@ -315,7 +315,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get lineJoin() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).lineJoin, "miter");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).lineJoin, "miter");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'lineJoin', arguments, result);
             return result;
         },
@@ -332,7 +332,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get lineWidth() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).lineWidth, 1);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).lineWidth, 1);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'lineWidth', arguments, result);
             return result;
         },
@@ -354,7 +354,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get miterLimit() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).miterLimit, 10);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).miterLimit, 10);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'miterLimit', arguments, result);
             return result;
         },
@@ -436,7 +436,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get shadowBlur() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).shadowBlur, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).shadowBlur, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'shadowBlur', arguments, result);
             return result;
         },
@@ -452,7 +452,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get shadowColor() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).shadowColor, "rgba(0, 0, 0, 0)");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).shadowColor, "rgba(0, 0, 0, 0)");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'shadowColor', arguments, result);
             return result;
         },
@@ -463,7 +463,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get shadowOffsetX() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).shadowOffsetX, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).shadowOffsetX, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'shadowOffsetX', arguments, result);
             return result;
         },
@@ -479,7 +479,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get shadowOffsetY() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).shadowOffsetY, 0);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).shadowOffsetY, 0);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'shadowOffsetY', arguments, result);
             return result;
         },
@@ -507,7 +507,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get strokeStyle() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).strokeStyle, "#000000");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).strokeStyle, "#000000");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'strokeStyle', arguments, result);
             return result;
         },
@@ -524,7 +524,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get textAlign() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).textAlign, "start");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).textAlign, "start");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'textAlign', arguments, result);
             return result;
         },
@@ -535,7 +535,7 @@ CanvasRenderingContext2D = function CanvasRenderingContext2D(createObj_key, canv
         },
         get textBaseline() {
             if (!CanvasRenderingContext2D.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).textBaseline, "alphabetic");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).textBaseline, "alphabetic");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CanvasRenderingContext2D', 'textBaseline', arguments, result);
             return result;
         },

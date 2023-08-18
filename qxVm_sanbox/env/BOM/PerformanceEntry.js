@@ -14,25 +14,25 @@ PerformanceEntry = function PerformanceEntry(createObj_key) {
     PerformanceEntry.prototype = {
         get duration() {
             if (!PerformanceEntry.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).duration, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).duration, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PerformanceEntry', 'duration', arguments, result);
             return result;
         },
         get entryType() {
             if (!PerformanceEntry.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).entryType, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).entryType, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PerformanceEntry', 'entryType', arguments, result);
             return result;
         },
         get name() {
             if (!PerformanceEntry.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).name, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).name, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PerformanceEntry', 'name', arguments, result);
             return result;
         },
         get startTime() {
             if (!PerformanceEntry.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).startTime, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).startTime, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PerformanceEntry', 'startTime', arguments, result);
             return result;
         },

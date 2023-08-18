@@ -28,20 +28,20 @@ NodeList = function NodeList(createObj_key) {
             try{
                 return this[imdex]
             }catch(error){
-            let result = null;;
+            let result = null;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'NodeList', 'item', arguments, result);
             return result;
             }
         },
         keys() {
             if (!NodeList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = Object.keys(this);;
+            let result = Object.keys(this);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'NodeList', 'keys', arguments, result);
             return result;
         },
         get length() {
             if (!NodeList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).length, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).length, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'NodeList', 'length', arguments, result);
             return result;
         },

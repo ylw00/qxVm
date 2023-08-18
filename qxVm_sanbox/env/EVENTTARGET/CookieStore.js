@@ -31,7 +31,7 @@ CookieStore = function CookieStore(createObj_key) {
         },
         get onchange() {
             if (!CookieStore.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onchange, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onchange, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CookieStore', 'onchange', arguments, result);
             return result;
         },

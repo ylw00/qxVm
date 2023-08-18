@@ -116,7 +116,7 @@ HTMLElement = function HTMLElement(createObj_key) {
     HTMLElement.prototype = {
         get accessKey() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).accessKey, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).accessKey, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'accessKey', arguments, result);
             return result;
         },
@@ -133,7 +133,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get autocapitalize() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).autocapitalize, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).autocapitalize, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'autocapitalize', arguments, result);
             return result;
         },
@@ -144,7 +144,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get autofocus() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).autofocus, false);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).autofocus, false);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'autofocus', arguments, result);
             return result;
         },
@@ -167,7 +167,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get contentEditable() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).contentEditable, "inherit");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).contentEditable, "inherit");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'contentEditable', arguments, result);
             return result;
         },
@@ -186,13 +186,13 @@ HTMLElement = function HTMLElement(createObj_key) {
                 ele = new DOMStringMap();
                 lwVm.memory.private_data.get(this).dataset = ele;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLElement', 'if ', arguments, result);
             return result;
         },
         get dir() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).dir, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).dir, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'dir', arguments, result);
             return result;
         },
@@ -203,7 +203,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get draggable() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).draggable, false);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).draggable, false);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'draggable', arguments, result);
             return result;
         },
@@ -214,7 +214,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get enterKeyHint() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).enterKeyHint, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).enterKeyHint, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'enterKeyHint', arguments, result);
             return result;
         },
@@ -231,7 +231,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get hidden() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).hidden, false);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).hidden, false);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'hidden', arguments, result);
             return result;
         },
@@ -242,7 +242,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get innerText() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).innerText, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).innerText, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'innerText', arguments, result);
             return result;
         },
@@ -253,7 +253,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get inputMode() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).inputMode, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).inputMode, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'inputMode', arguments, result);
             return result;
         },
@@ -264,13 +264,13 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get isContentEditable() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).isContentEditable, false);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).isContentEditable, false);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'isContentEditable', arguments, result);
             return result;
         },
         get lang() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).lang, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).lang, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'lang', arguments, result);
             return result;
         },
@@ -281,7 +281,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get nonce() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).nonce, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).nonce, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'nonce', arguments, result);
             return result;
         },
@@ -292,37 +292,37 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get offsetHeight() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 0;;
+            let result = 0;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'offsetHeight', arguments, result);
             return result;
         },
         get offsetLeft() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 0;;
+            let result = 0;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'offsetLeft', arguments, result);
             return result;
         },
         get offsetParent() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = null;;
+            let result = null;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'offsetParent', arguments, result);
             return result;
         },
         get offsetTop() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 0;;
+            let result = 0;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'offsetTop', arguments, result);
             return result;
         },
         get offsetWidth() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 0;;
+            let result = 0;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'offsetWidth', arguments, result);
             return result;
         },
         get onabort() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onabort, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onabort, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onabort', arguments, result);
             return result;
         },
@@ -333,7 +333,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onanimationend() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onanimationend, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onanimationend, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onanimationend', arguments, result);
             return result;
         },
@@ -344,7 +344,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onanimationiteration() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onanimationiteration, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onanimationiteration, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onanimationiteration', arguments, result);
             return result;
         },
@@ -355,7 +355,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onanimationstart() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onanimationstart, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onanimationstart, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onanimationstart', arguments, result);
             return result;
         },
@@ -366,7 +366,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onauxclick() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onauxclick, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onauxclick, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onauxclick', arguments, result);
             return result;
         },
@@ -377,7 +377,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onbeforexrselect() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onbeforexrselect, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onbeforexrselect, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onbeforexrselect', arguments, result);
             return result;
         },
@@ -388,7 +388,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onblur() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onblur, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onblur, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onblur', arguments, result);
             return result;
         },
@@ -399,7 +399,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get oncancel() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncancel, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncancel, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'oncancel', arguments, result);
             return result;
         },
@@ -410,7 +410,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get oncanplay() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncanplay, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncanplay, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'oncanplay', arguments, result);
             return result;
         },
@@ -421,7 +421,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get oncanplaythrough() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncanplaythrough, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncanplaythrough, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'oncanplaythrough', arguments, result);
             return result;
         },
@@ -432,7 +432,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onchange() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onchange, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onchange, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onchange', arguments, result);
             return result;
         },
@@ -443,7 +443,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onclick() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onclick, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onclick, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onclick', arguments, result);
             return result;
         },
@@ -454,7 +454,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onclose() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onclose, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onclose, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onclose', arguments, result);
             return result;
         },
@@ -465,7 +465,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get oncontextmenu() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncontextmenu, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncontextmenu, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'oncontextmenu', arguments, result);
             return result;
         },
@@ -476,7 +476,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get oncopy() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncopy, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncopy, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'oncopy', arguments, result);
             return result;
         },
@@ -487,7 +487,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get oncuechange() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncuechange, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncuechange, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'oncuechange', arguments, result);
             return result;
         },
@@ -498,7 +498,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get oncut() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncut, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncut, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'oncut', arguments, result);
             return result;
         },
@@ -509,7 +509,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get ondblclick() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondblclick, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondblclick, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'ondblclick', arguments, result);
             return result;
         },
@@ -520,7 +520,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get ondrag() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondrag, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondrag, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'ondrag', arguments, result);
             return result;
         },
@@ -531,7 +531,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get ondragend() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragend, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragend, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'ondragend', arguments, result);
             return result;
         },
@@ -542,7 +542,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get ondragenter() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragenter, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragenter, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'ondragenter', arguments, result);
             return result;
         },
@@ -553,7 +553,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get ondragleave() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragleave, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragleave, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'ondragleave', arguments, result);
             return result;
         },
@@ -564,7 +564,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get ondragover() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragover, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragover, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'ondragover', arguments, result);
             return result;
         },
@@ -575,7 +575,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get ondragstart() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragstart, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragstart, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'ondragstart', arguments, result);
             return result;
         },
@@ -586,7 +586,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get ondrop() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondrop, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondrop, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'ondrop', arguments, result);
             return result;
         },
@@ -597,7 +597,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get ondurationchange() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondurationchange, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondurationchange, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'ondurationchange', arguments, result);
             return result;
         },
@@ -608,7 +608,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onemptied() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onemptied, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onemptied, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onemptied', arguments, result);
             return result;
         },
@@ -619,7 +619,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onended() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onended, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onended, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onended', arguments, result);
             return result;
         },
@@ -630,7 +630,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onerror() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onerror, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onerror, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onerror', arguments, result);
             return result;
         },
@@ -641,7 +641,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onfocus() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onfocus, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onfocus, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onfocus', arguments, result);
             return result;
         },
@@ -652,7 +652,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onformdata() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onformdata, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onformdata, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onformdata', arguments, result);
             return result;
         },
@@ -663,7 +663,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get ongotpointercapture() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ongotpointercapture, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ongotpointercapture, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'ongotpointercapture', arguments, result);
             return result;
         },
@@ -674,7 +674,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get oninput() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oninput, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oninput, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'oninput', arguments, result);
             return result;
         },
@@ -685,7 +685,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get oninvalid() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oninvalid, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oninvalid, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'oninvalid', arguments, result);
             return result;
         },
@@ -696,7 +696,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onkeydown() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onkeydown, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onkeydown, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onkeydown', arguments, result);
             return result;
         },
@@ -707,7 +707,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onkeypress() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onkeypress, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onkeypress, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onkeypress', arguments, result);
             return result;
         },
@@ -718,7 +718,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onkeyup() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onkeyup, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onkeyup, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onkeyup', arguments, result);
             return result;
         },
@@ -729,7 +729,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onload() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onload, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onload, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onload', arguments, result);
             return result;
         },
@@ -740,7 +740,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onloadeddata() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onloadeddata, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onloadeddata, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onloadeddata', arguments, result);
             return result;
         },
@@ -751,7 +751,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onloadedmetadata() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onloadedmetadata, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onloadedmetadata, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onloadedmetadata', arguments, result);
             return result;
         },
@@ -762,7 +762,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onloadstart() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onloadstart, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onloadstart, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onloadstart', arguments, result);
             return result;
         },
@@ -773,7 +773,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onlostpointercapture() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onlostpointercapture, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onlostpointercapture, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onlostpointercapture', arguments, result);
             return result;
         },
@@ -784,7 +784,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onmousedown() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmousedown, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmousedown, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onmousedown', arguments, result);
             return result;
         },
@@ -795,7 +795,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onmousemove() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmousemove, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmousemove, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onmousemove', arguments, result);
             return result;
         },
@@ -806,7 +806,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onmouseout() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmouseout, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmouseout, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onmouseout', arguments, result);
             return result;
         },
@@ -817,7 +817,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onmouseover() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmouseover, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmouseover, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onmouseover', arguments, result);
             return result;
         },
@@ -828,7 +828,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onmouseup() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmouseup, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmouseup, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onmouseup', arguments, result);
             return result;
         },
@@ -839,7 +839,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onmousewheel() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmousewheel, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmousewheel, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onmousewheel', arguments, result);
             return result;
         },
@@ -850,7 +850,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onpaste() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpaste, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpaste, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onpaste', arguments, result);
             return result;
         },
@@ -861,7 +861,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onpause() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpause, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpause, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onpause', arguments, result);
             return result;
         },
@@ -872,7 +872,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onplay() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onplay, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onplay, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onplay', arguments, result);
             return result;
         },
@@ -883,7 +883,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onplaying() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onplaying, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onplaying, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onplaying', arguments, result);
             return result;
         },
@@ -894,7 +894,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onpointercancel() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointercancel, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointercancel, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onpointercancel', arguments, result);
             return result;
         },
@@ -905,7 +905,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onpointerdown() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerdown, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerdown, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onpointerdown', arguments, result);
             return result;
         },
@@ -916,7 +916,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onpointerenter() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerenter, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerenter, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onpointerenter', arguments, result);
             return result;
         },
@@ -927,7 +927,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onpointerleave() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerleave, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerleave, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onpointerleave', arguments, result);
             return result;
         },
@@ -938,7 +938,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onpointermove() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointermove, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointermove, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onpointermove', arguments, result);
             return result;
         },
@@ -949,7 +949,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onpointerout() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerout, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerout, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onpointerout', arguments, result);
             return result;
         },
@@ -960,7 +960,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onpointerover() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerover, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerover, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onpointerover', arguments, result);
             return result;
         },
@@ -971,7 +971,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onpointerrawupdate() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerrawupdate, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerrawupdate, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onpointerrawupdate', arguments, result);
             return result;
         },
@@ -982,7 +982,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onpointerup() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerup, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerup, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onpointerup', arguments, result);
             return result;
         },
@@ -993,7 +993,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onprogress() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onprogress, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onprogress, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onprogress', arguments, result);
             return result;
         },
@@ -1004,7 +1004,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onratechange() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onratechange, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onratechange, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onratechange', arguments, result);
             return result;
         },
@@ -1015,7 +1015,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onreset() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onreset, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onreset, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onreset', arguments, result);
             return result;
         },
@@ -1026,7 +1026,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onresize() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onresize, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onresize, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onresize', arguments, result);
             return result;
         },
@@ -1037,7 +1037,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onscroll() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onscroll, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onscroll, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onscroll', arguments, result);
             return result;
         },
@@ -1048,7 +1048,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onsecuritypolicyviolation() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onsecuritypolicyviolation, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onsecuritypolicyviolation, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onsecuritypolicyviolation', arguments, result);
             return result;
         },
@@ -1059,7 +1059,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onseeked() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onseeked, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onseeked, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onseeked', arguments, result);
             return result;
         },
@@ -1070,7 +1070,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onseeking() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onseeking, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onseeking, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onseeking', arguments, result);
             return result;
         },
@@ -1081,7 +1081,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onselect() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onselect, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onselect, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onselect', arguments, result);
             return result;
         },
@@ -1092,7 +1092,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onselectionchange() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onselectionchange, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onselectionchange, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onselectionchange', arguments, result);
             return result;
         },
@@ -1103,7 +1103,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onselectstart() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onselectstart, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onselectstart, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onselectstart', arguments, result);
             return result;
         },
@@ -1114,7 +1114,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onslotchange() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onslotchange, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onslotchange, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onslotchange', arguments, result);
             return result;
         },
@@ -1125,7 +1125,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onstalled() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onstalled, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onstalled, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onstalled', arguments, result);
             return result;
         },
@@ -1136,7 +1136,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onsubmit() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onsubmit, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onsubmit, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onsubmit', arguments, result);
             return result;
         },
@@ -1147,7 +1147,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onsuspend() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onsuspend, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onsuspend, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onsuspend', arguments, result);
             return result;
         },
@@ -1158,7 +1158,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get ontimeupdate() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontimeupdate, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontimeupdate, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'ontimeupdate', arguments, result);
             return result;
         },
@@ -1169,7 +1169,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get ontoggle() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontoggle, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontoggle, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'ontoggle', arguments, result);
             return result;
         },
@@ -1180,7 +1180,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get ontransitioncancel() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontransitioncancel, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontransitioncancel, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'ontransitioncancel', arguments, result);
             return result;
         },
@@ -1191,7 +1191,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get ontransitionend() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontransitionend, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontransitionend, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'ontransitionend', arguments, result);
             return result;
         },
@@ -1202,7 +1202,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get ontransitionrun() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontransitionrun, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontransitionrun, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'ontransitionrun', arguments, result);
             return result;
         },
@@ -1213,7 +1213,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get ontransitionstart() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontransitionstart, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontransitionstart, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'ontransitionstart', arguments, result);
             return result;
         },
@@ -1224,7 +1224,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onvolumechange() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onvolumechange, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onvolumechange, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onvolumechange', arguments, result);
             return result;
         },
@@ -1235,7 +1235,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onwaiting() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwaiting, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwaiting, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onwaiting', arguments, result);
             return result;
         },
@@ -1246,7 +1246,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onwebkitanimationend() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwebkitanimationend, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwebkitanimationend, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onwebkitanimationend', arguments, result);
             return result;
         },
@@ -1257,7 +1257,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onwebkitanimationiteration() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwebkitanimationiteration, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwebkitanimationiteration, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onwebkitanimationiteration', arguments, result);
             return result;
         },
@@ -1268,7 +1268,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onwebkitanimationstart() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwebkitanimationstart, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwebkitanimationstart, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onwebkitanimationstart', arguments, result);
             return result;
         },
@@ -1279,7 +1279,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onwebkittransitionend() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwebkittransitionend, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwebkittransitionend, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onwebkittransitionend', arguments, result);
             return result;
         },
@@ -1290,7 +1290,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get onwheel() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwheel, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwheel, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'onwheel', arguments, result);
             return result;
         },
@@ -1301,7 +1301,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get outerText() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).outerText, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).outerText, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'outerText', arguments, result);
             return result;
         },
@@ -1312,7 +1312,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get spellcheck() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).spellcheck, true);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).spellcheck, true);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'spellcheck', arguments, result);
             return result;
         },
@@ -1336,7 +1336,7 @@ HTMLElement = function HTMLElement(createObj_key) {
             }else{
                 ele = ele.style;
             }
-            let result = ele;;
+            let result = ele;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'HTMLElement', 'for ', arguments, result);
             return result;
         },
@@ -1347,7 +1347,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get tabIndex() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).tabIndex, -1);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).tabIndex, -1);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'tabIndex', arguments, result);
             return result;
         },
@@ -1358,7 +1358,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get title() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).title, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).title, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'title', arguments, result);
             return result;
         },
@@ -1369,7 +1369,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get translate() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).translate, true);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).translate, true);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'translate', arguments, result);
             return result;
         },
@@ -1380,7 +1380,7 @@ HTMLElement = function HTMLElement(createObj_key) {
         },
         get virtualKeyboardPolicy() {
             if (!HTMLElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).virtualKeyboardPolicy, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).virtualKeyboardPolicy, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLElement', 'virtualKeyboardPolicy', arguments, result);
             return result;
         },

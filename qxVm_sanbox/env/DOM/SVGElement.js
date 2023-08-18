@@ -29,7 +29,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
     SVGElement.prototype = {
         get autofocus() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).autofocus, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).autofocus, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'autofocus', arguments, result);
             return result;
         },
@@ -46,13 +46,13 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get className() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).className, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).className, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'className', arguments, result);
             return result;
         },
         get dataset() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).dataset, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).dataset, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'dataset', arguments, result);
             return result;
         },
@@ -64,7 +64,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get nonce() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).nonce, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).nonce, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'nonce', arguments, result);
             return result;
         },
@@ -75,7 +75,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onabort() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onabort, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onabort, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onabort', arguments, result);
             return result;
         },
@@ -86,7 +86,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onanimationend() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onanimationend, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onanimationend, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onanimationend', arguments, result);
             return result;
         },
@@ -97,7 +97,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onanimationiteration() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onanimationiteration, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onanimationiteration, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onanimationiteration', arguments, result);
             return result;
         },
@@ -108,7 +108,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onanimationstart() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onanimationstart, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onanimationstart, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onanimationstart', arguments, result);
             return result;
         },
@@ -119,7 +119,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onauxclick() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onauxclick, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onauxclick, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onauxclick', arguments, result);
             return result;
         },
@@ -130,7 +130,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onbeforexrselect() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onbeforexrselect, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onbeforexrselect, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onbeforexrselect', arguments, result);
             return result;
         },
@@ -141,7 +141,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onblur() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onblur, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onblur, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onblur', arguments, result);
             return result;
         },
@@ -152,7 +152,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get oncancel() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncancel, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncancel, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'oncancel', arguments, result);
             return result;
         },
@@ -163,7 +163,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get oncanplay() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncanplay, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncanplay, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'oncanplay', arguments, result);
             return result;
         },
@@ -174,7 +174,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get oncanplaythrough() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncanplaythrough, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncanplaythrough, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'oncanplaythrough', arguments, result);
             return result;
         },
@@ -185,7 +185,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onchange() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onchange, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onchange, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onchange', arguments, result);
             return result;
         },
@@ -196,7 +196,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onclick() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onclick, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onclick, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onclick', arguments, result);
             return result;
         },
@@ -207,7 +207,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onclose() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onclose, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onclose, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onclose', arguments, result);
             return result;
         },
@@ -218,7 +218,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get oncontextmenu() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncontextmenu, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncontextmenu, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'oncontextmenu', arguments, result);
             return result;
         },
@@ -229,7 +229,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get oncopy() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncopy, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncopy, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'oncopy', arguments, result);
             return result;
         },
@@ -240,7 +240,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get oncuechange() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncuechange, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncuechange, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'oncuechange', arguments, result);
             return result;
         },
@@ -251,7 +251,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get oncut() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncut, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oncut, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'oncut', arguments, result);
             return result;
         },
@@ -262,7 +262,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get ondblclick() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondblclick, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondblclick, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'ondblclick', arguments, result);
             return result;
         },
@@ -273,7 +273,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get ondrag() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondrag, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondrag, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'ondrag', arguments, result);
             return result;
         },
@@ -284,7 +284,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get ondragend() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragend, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragend, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'ondragend', arguments, result);
             return result;
         },
@@ -295,7 +295,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get ondragenter() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragenter, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragenter, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'ondragenter', arguments, result);
             return result;
         },
@@ -306,7 +306,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get ondragleave() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragleave, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragleave, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'ondragleave', arguments, result);
             return result;
         },
@@ -317,7 +317,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get ondragover() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragover, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragover, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'ondragover', arguments, result);
             return result;
         },
@@ -328,7 +328,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get ondragstart() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragstart, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondragstart, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'ondragstart', arguments, result);
             return result;
         },
@@ -339,7 +339,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get ondrop() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondrop, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondrop, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'ondrop', arguments, result);
             return result;
         },
@@ -350,7 +350,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get ondurationchange() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondurationchange, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondurationchange, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'ondurationchange', arguments, result);
             return result;
         },
@@ -361,7 +361,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onemptied() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onemptied, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onemptied, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onemptied', arguments, result);
             return result;
         },
@@ -372,7 +372,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onended() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onended, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onended, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onended', arguments, result);
             return result;
         },
@@ -383,7 +383,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onerror() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onerror, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onerror, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onerror', arguments, result);
             return result;
         },
@@ -394,7 +394,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onfocus() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onfocus, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onfocus, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onfocus', arguments, result);
             return result;
         },
@@ -405,7 +405,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onformdata() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onformdata, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onformdata, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onformdata', arguments, result);
             return result;
         },
@@ -416,7 +416,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get ongotpointercapture() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ongotpointercapture, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ongotpointercapture, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'ongotpointercapture', arguments, result);
             return result;
         },
@@ -427,7 +427,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get oninput() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oninput, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oninput, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'oninput', arguments, result);
             return result;
         },
@@ -438,7 +438,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get oninvalid() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).oninvalid, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).oninvalid, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'oninvalid', arguments, result);
             return result;
         },
@@ -449,7 +449,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onkeydown() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onkeydown, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onkeydown, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onkeydown', arguments, result);
             return result;
         },
@@ -460,7 +460,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onkeypress() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onkeypress, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onkeypress, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onkeypress', arguments, result);
             return result;
         },
@@ -471,7 +471,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onkeyup() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onkeyup, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onkeyup, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onkeyup', arguments, result);
             return result;
         },
@@ -482,7 +482,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onload() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onload, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onload, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onload', arguments, result);
             return result;
         },
@@ -493,7 +493,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onloadeddata() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onloadeddata, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onloadeddata, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onloadeddata', arguments, result);
             return result;
         },
@@ -504,7 +504,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onloadedmetadata() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onloadedmetadata, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onloadedmetadata, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onloadedmetadata', arguments, result);
             return result;
         },
@@ -515,7 +515,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onloadstart() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onloadstart, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onloadstart, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onloadstart', arguments, result);
             return result;
         },
@@ -526,7 +526,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onlostpointercapture() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onlostpointercapture, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onlostpointercapture, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onlostpointercapture', arguments, result);
             return result;
         },
@@ -537,7 +537,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onmousedown() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmousedown, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmousedown, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onmousedown', arguments, result);
             return result;
         },
@@ -548,7 +548,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onmousemove() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmousemove, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmousemove, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onmousemove', arguments, result);
             return result;
         },
@@ -559,7 +559,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onmouseout() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmouseout, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmouseout, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onmouseout', arguments, result);
             return result;
         },
@@ -570,7 +570,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onmouseover() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmouseover, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmouseover, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onmouseover', arguments, result);
             return result;
         },
@@ -581,7 +581,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onmouseup() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmouseup, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmouseup, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onmouseup', arguments, result);
             return result;
         },
@@ -592,7 +592,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onmousewheel() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmousewheel, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onmousewheel, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onmousewheel', arguments, result);
             return result;
         },
@@ -603,7 +603,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onpaste() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpaste, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpaste, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onpaste', arguments, result);
             return result;
         },
@@ -614,7 +614,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onpause() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpause, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpause, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onpause', arguments, result);
             return result;
         },
@@ -625,7 +625,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onplay() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onplay, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onplay, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onplay', arguments, result);
             return result;
         },
@@ -636,7 +636,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onplaying() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onplaying, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onplaying, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onplaying', arguments, result);
             return result;
         },
@@ -647,7 +647,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onpointercancel() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointercancel, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointercancel, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onpointercancel', arguments, result);
             return result;
         },
@@ -658,7 +658,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onpointerdown() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerdown, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerdown, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onpointerdown', arguments, result);
             return result;
         },
@@ -669,7 +669,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onpointerenter() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerenter, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerenter, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onpointerenter', arguments, result);
             return result;
         },
@@ -680,7 +680,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onpointerleave() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerleave, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerleave, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onpointerleave', arguments, result);
             return result;
         },
@@ -691,7 +691,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onpointermove() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointermove, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointermove, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onpointermove', arguments, result);
             return result;
         },
@@ -702,7 +702,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onpointerout() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerout, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerout, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onpointerout', arguments, result);
             return result;
         },
@@ -713,7 +713,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onpointerover() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerover, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerover, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onpointerover', arguments, result);
             return result;
         },
@@ -724,7 +724,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onpointerrawupdate() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerrawupdate, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerrawupdate, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onpointerrawupdate', arguments, result);
             return result;
         },
@@ -735,7 +735,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onpointerup() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerup, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onpointerup, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onpointerup', arguments, result);
             return result;
         },
@@ -746,7 +746,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onprogress() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onprogress, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onprogress, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onprogress', arguments, result);
             return result;
         },
@@ -757,7 +757,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onratechange() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onratechange, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onratechange, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onratechange', arguments, result);
             return result;
         },
@@ -768,7 +768,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onreset() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onreset, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onreset, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onreset', arguments, result);
             return result;
         },
@@ -779,7 +779,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onresize() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onresize, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onresize, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onresize', arguments, result);
             return result;
         },
@@ -790,7 +790,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onscroll() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onscroll, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onscroll, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onscroll', arguments, result);
             return result;
         },
@@ -801,7 +801,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onsecuritypolicyviolation() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onsecuritypolicyviolation, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onsecuritypolicyviolation, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onsecuritypolicyviolation', arguments, result);
             return result;
         },
@@ -812,7 +812,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onseeked() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onseeked, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onseeked, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onseeked', arguments, result);
             return result;
         },
@@ -823,7 +823,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onseeking() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onseeking, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onseeking, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onseeking', arguments, result);
             return result;
         },
@@ -834,7 +834,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onselect() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onselect, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onselect, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onselect', arguments, result);
             return result;
         },
@@ -845,7 +845,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onselectionchange() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onselectionchange, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onselectionchange, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onselectionchange', arguments, result);
             return result;
         },
@@ -856,7 +856,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onselectstart() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onselectstart, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onselectstart, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onselectstart', arguments, result);
             return result;
         },
@@ -867,7 +867,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onslotchange() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onslotchange, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onslotchange, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onslotchange', arguments, result);
             return result;
         },
@@ -878,7 +878,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onstalled() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onstalled, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onstalled, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onstalled', arguments, result);
             return result;
         },
@@ -889,7 +889,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onsubmit() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onsubmit, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onsubmit, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onsubmit', arguments, result);
             return result;
         },
@@ -900,7 +900,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onsuspend() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onsuspend, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onsuspend, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onsuspend', arguments, result);
             return result;
         },
@@ -911,7 +911,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get ontimeupdate() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontimeupdate, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontimeupdate, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'ontimeupdate', arguments, result);
             return result;
         },
@@ -922,7 +922,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get ontoggle() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontoggle, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontoggle, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'ontoggle', arguments, result);
             return result;
         },
@@ -933,7 +933,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get ontransitioncancel() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontransitioncancel, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontransitioncancel, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'ontransitioncancel', arguments, result);
             return result;
         },
@@ -944,7 +944,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get ontransitionend() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontransitionend, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontransitionend, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'ontransitionend', arguments, result);
             return result;
         },
@@ -955,7 +955,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get ontransitionrun() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontransitionrun, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontransitionrun, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'ontransitionrun', arguments, result);
             return result;
         },
@@ -966,7 +966,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get ontransitionstart() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontransitionstart, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ontransitionstart, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'ontransitionstart', arguments, result);
             return result;
         },
@@ -977,7 +977,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onvolumechange() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onvolumechange, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onvolumechange, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onvolumechange', arguments, result);
             return result;
         },
@@ -988,7 +988,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onwaiting() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwaiting, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwaiting, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onwaiting', arguments, result);
             return result;
         },
@@ -999,7 +999,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onwebkitanimationend() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwebkitanimationend, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwebkitanimationend, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onwebkitanimationend', arguments, result);
             return result;
         },
@@ -1010,7 +1010,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onwebkitanimationiteration() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwebkitanimationiteration, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwebkitanimationiteration, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onwebkitanimationiteration', arguments, result);
             return result;
         },
@@ -1021,7 +1021,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onwebkitanimationstart() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwebkitanimationstart, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwebkitanimationstart, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onwebkitanimationstart', arguments, result);
             return result;
         },
@@ -1032,7 +1032,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onwebkittransitionend() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwebkittransitionend, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwebkittransitionend, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onwebkittransitionend', arguments, result);
             return result;
         },
@@ -1043,7 +1043,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get onwheel() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwheel, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwheel, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'onwheel', arguments, result);
             return result;
         },
@@ -1054,13 +1054,13 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get ownerSVGElement() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ownerSVGElement, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ownerSVGElement, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'ownerSVGElement', arguments, result);
             return result;
         },
         get style() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).style, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).style, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'style', arguments, result);
             return result;
         },
@@ -1071,7 +1071,7 @@ SVGElement = function SVGElement(createObj_key) {//构造函数
         },
         get tabIndex() {
             if (!SVGElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).tabIndex, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).tabIndex, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGElement', 'tabIndex', arguments, result);
             return result;
         },

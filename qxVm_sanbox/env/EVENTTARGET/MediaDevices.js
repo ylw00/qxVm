@@ -37,7 +37,7 @@ MediaDevices = function MediaDevices(createObj_key) {
         },
         get ondevicechange() {
             if (!MediaDevices.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondevicechange, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondevicechange, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MediaDevices', 'ondevicechange', arguments, result);
             return result;
         },

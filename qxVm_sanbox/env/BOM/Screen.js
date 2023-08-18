@@ -30,37 +30,37 @@ screen = {};
     Screen.prototype = {
         get availHeight() {
             if (!Screen.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.availHeight;;
+            let result = $attribute_map.availHeight;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Screen', 'availHeight', arguments, result);
             return result;
         },
         get availLeft() {
             if (!Screen.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.availLeft;;
+            let result = $attribute_map.availLeft;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Screen', 'availLeft', arguments, result);
             return result;
         },
         get availTop() {
             if (!Screen.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.availTop;;
+            let result = $attribute_map.availTop;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Screen', 'availTop', arguments, result);
             return result;
         },
         get availWidth() {
             if (!Screen.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.availWidth;;
+            let result = $attribute_map.availWidth;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Screen', 'availWidth', arguments, result);
             return result;
         },
         get colorDepth() {
             if (!Screen.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.colorDepth;;
+            let result = $attribute_map.colorDepth;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Screen', 'colorDepth', arguments, result);
             return result;
         },
         get height() {
             if (!Screen.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.height;;
+            let result = $attribute_map.height;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Screen', 'height', arguments, result);
             return result;
         },
@@ -72,7 +72,7 @@ screen = {};
         },
         get pixelDepth() {
             if (!Screen.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = $attribute_map.pixelDepth;;
+            let result = $attribute_map.pixelDepth;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Screen', 'pixelDepth', arguments, result);
             return result;
         },

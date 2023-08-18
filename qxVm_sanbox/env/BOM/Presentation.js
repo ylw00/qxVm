@@ -13,7 +13,7 @@ Presentation = function Presentation(createObj_key) {
     Presentation.prototype = {
         get defaultRequest() {
             if (!Presentation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).defaultRequest, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).defaultRequest, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Presentation', 'defaultRequest', arguments, result);
             return result;
         },
@@ -24,7 +24,7 @@ Presentation = function Presentation(createObj_key) {
         },
         get receiver() {
             if (!Presentation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = null;;
+            let result = null;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Presentation', 'receiver', arguments, result);
             return result;
         },

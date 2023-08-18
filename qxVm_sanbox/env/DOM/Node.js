@@ -41,14 +41,14 @@ lwVm.safefunction(Node);
         },
         get baseURI() {
             if (!Node.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).baseURI, location.href);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).baseURI, location.href);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Node', 'baseURI', arguments, result);
             return result;
         },
         get childNodes() {
             // debugger;
             if (!Node.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).childNodes, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).childNodes, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Node', 'childNodes', arguments, result);
             return result;
         },
@@ -72,7 +72,7 @@ lwVm.safefunction(Node);
         },
         get firstChild() {
             if (!Node.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).firstChild, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).firstChild, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Node', 'firstChild', arguments, result);
             return result;
         },
@@ -94,7 +94,7 @@ lwVm.safefunction(Node);
         },
         get isConnected() {
             if (!Node.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).isConnected, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).isConnected, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Node', 'isConnected', arguments, result);
             return result;
         },
@@ -118,7 +118,7 @@ lwVm.safefunction(Node);
         },
         get lastChild() {   // 返回一个html
             if (!Node.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).lastChild, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).lastChild, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Node', 'isSameNode', arguments, result);
             return result;
         },
@@ -136,14 +136,14 @@ lwVm.safefunction(Node);
         },
         get nextSibling() {
             if (!Node.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).nextSibling, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).nextSibling, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Node', 'nextSibling', arguments, result);
             return result;
         },
         get nodeName() {
             if (!Node.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
             let node_name = lwVm.htmls_toStringTag(this).toUpperCase();
-            let result = node_name === 'DOCUMENT' ? '#document' : node_name;;
+            let result = node_name === 'DOCUMENT' ? '#document' : node_name;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Node', 'nodeName', arguments, result);
             return result;
         },
@@ -155,7 +155,7 @@ lwVm.safefunction(Node);
         },
         get nodeValue() {
             if (!Node.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).nodeValue, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).nodeValue, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Node', 'nodeValue', arguments, result);
             return result;
         },
@@ -172,25 +172,25 @@ lwVm.safefunction(Node);
         },
         get ownerDocument() {
             if (!Node.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = null;;
+            let result = null;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Node', 'ownerDocument', arguments, result);
             return result;
         },
         get parentElement() {
             if (!Node.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = null;;
+            let result = null;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Node', 'parentElement', arguments, result);
             return result;
         },
         get parentNode() {
             if (!Node.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = this;;
+            let result = this;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Node', 'parentNode', arguments, result);
             return result;
         },
         get previousSibling() {
             if (!Node.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = null;;
+            let result = null;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Node', 'previousSibling', arguments, result);
             return result;
         },
@@ -208,7 +208,7 @@ lwVm.safefunction(Node);
         },
         get textContent() {
             if (!Node.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).textContent, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).textContent, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Node', 'textContent', arguments, result);
             return result;
         },

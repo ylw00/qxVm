@@ -19,7 +19,7 @@ PerformanceNavigation = function PerformanceNavigation(createObj_key) {
     PerformanceNavigation.prototype = {
         get redirectCount() {
             if (!PerformanceNavigation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 0;;
+            let result = 0;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PerformanceNavigation', 'redirectCount', arguments, result);
             return result;
         },
@@ -31,7 +31,7 @@ PerformanceNavigation = function PerformanceNavigation(createObj_key) {
         },
         get type() {
             if (!PerformanceNavigation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 0;;
+            let result = 0;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PerformanceNavigation', 'type', arguments, result);
             return result;
         },

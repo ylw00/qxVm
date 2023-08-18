@@ -19,7 +19,7 @@ XRSystem = function XRSystem(createObj_key) {
         },
         get ondevicechange() {
             if (!XRSystem.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondevicechange, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondevicechange, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'XRSystem', 'ondevicechange', arguments, result);
             return result;
         },

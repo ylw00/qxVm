@@ -49,7 +49,7 @@ DOMTokenList = function DOMTokenList(createObj_key) {//构造函数
         },
         get length() {
             if (!DOMTokenList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).length, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).length, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMTokenList', 'length', arguments, result);
             return result;
         },
@@ -85,7 +85,7 @@ DOMTokenList = function DOMTokenList(createObj_key) {//构造函数
         },
         get value() {
             if (!DOMTokenList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).value, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).value, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMTokenList', 'value', arguments, result);
             return result;
         },

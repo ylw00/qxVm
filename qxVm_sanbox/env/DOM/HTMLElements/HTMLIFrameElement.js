@@ -13,7 +13,7 @@ HTMLIFrameElement = function HTMLIFrameElement(createObj_key) {
     HTMLIFrameElement.prototype = {
         get align() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).align, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).align, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'align', arguments, result);
             return result;
         },
@@ -24,7 +24,7 @@ HTMLIFrameElement = function HTMLIFrameElement(createObj_key) {
         },
         get allow() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).allow, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).allow, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'allow', arguments, result);
             return result;
         },
@@ -35,7 +35,7 @@ HTMLIFrameElement = function HTMLIFrameElement(createObj_key) {
         },
         get allowFullscreen() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).allowFullscreen, false);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).allowFullscreen, false);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'allowFullscreen', arguments, result);
             return result;
         },
@@ -46,7 +46,7 @@ HTMLIFrameElement = function HTMLIFrameElement(createObj_key) {
         },
         get allowPaymentRequest() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).allowPaymentRequest, false);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).allowPaymentRequest, false);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'allowPaymentRequest', arguments, result);
             return result;
         },
@@ -57,19 +57,19 @@ HTMLIFrameElement = function HTMLIFrameElement(createObj_key) {
         },
         get contentDocument() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).contentDocument, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).contentDocument, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'contentDocument', arguments, result);
             return result;
         },
         get contentWindow() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).contentWindow, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).contentWindow, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'contentWindow', arguments, result);
             return result;
         },
         get csp() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).csp, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).csp, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'csp', arguments, result);
             return result;
         },
@@ -80,13 +80,13 @@ HTMLIFrameElement = function HTMLIFrameElement(createObj_key) {
         },
         get featurePolicy() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).featurePolicy, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).featurePolicy, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'featurePolicy', arguments, result);
             return result;
         },
         get frameBorder() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).frameBorder, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).frameBorder, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'frameBorder', arguments, result);
             return result;
         },
@@ -103,7 +103,7 @@ HTMLIFrameElement = function HTMLIFrameElement(createObj_key) {
         },
         get height() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).height, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).height, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'height', arguments, result);
             return result;
         },
@@ -114,7 +114,7 @@ HTMLIFrameElement = function HTMLIFrameElement(createObj_key) {
         },
         get loading() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).loading, "auto");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).loading, "auto");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'loading', arguments, result);
             return result;
         },
@@ -125,7 +125,7 @@ HTMLIFrameElement = function HTMLIFrameElement(createObj_key) {
         },
         get longDesc() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).longDesc, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).longDesc, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'longDesc', arguments, result);
             return result;
         },
@@ -136,7 +136,7 @@ HTMLIFrameElement = function HTMLIFrameElement(createObj_key) {
         },
         get marginHeight() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).marginHeight, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).marginHeight, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'marginHeight', arguments, result);
             return result;
         },
@@ -147,7 +147,7 @@ HTMLIFrameElement = function HTMLIFrameElement(createObj_key) {
         },
         get marginWidth() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).marginWidth, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).marginWidth, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'marginWidth', arguments, result);
             return result;
         },
@@ -158,7 +158,7 @@ HTMLIFrameElement = function HTMLIFrameElement(createObj_key) {
         },
         get name() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).name, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).name, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'name', arguments, result);
             return result;
         },
@@ -169,7 +169,7 @@ HTMLIFrameElement = function HTMLIFrameElement(createObj_key) {
         },
         get referrerPolicy() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).referrerPolicy, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).referrerPolicy, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'referrerPolicy', arguments, result);
             return result;
         },
@@ -188,7 +188,7 @@ HTMLIFrameElement = function HTMLIFrameElement(createObj_key) {
         },
         get scrolling() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).scrolling, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).scrolling, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'scrolling', arguments, result);
             return result;
         },
@@ -199,7 +199,7 @@ HTMLIFrameElement = function HTMLIFrameElement(createObj_key) {
         },
         get src() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).src, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).src, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'src', arguments, result);
             return result;
         },
@@ -210,7 +210,7 @@ HTMLIFrameElement = function HTMLIFrameElement(createObj_key) {
         },
         get srcdoc() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).srcdoc, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).srcdoc, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'srcdoc', arguments, result);
             return result;
         },
@@ -221,7 +221,7 @@ HTMLIFrameElement = function HTMLIFrameElement(createObj_key) {
         },
         get width() {
             if (!HTMLIFrameElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).width, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).width, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLIFrameElement', 'width', arguments, result);
             return result;
         },

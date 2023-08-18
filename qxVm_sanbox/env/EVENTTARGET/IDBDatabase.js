@@ -34,19 +34,19 @@ IDBDatabase = function IDBDatabase(createObj_key, name, version) {
         },
         get name() {
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.memory.private_data.get(this).name;;
+            let result = lwVm.memory.private_data.get(this).name;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'IDBDatabase', 'name', arguments, result);
             return result;
         },
         get objectStoreNames() {
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).objectStoreNames, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).objectStoreNames, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'IDBDatabase', 'objectStoreNames', arguments, result);
             return result;
         },
         get onabort() {
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onabort, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onabort, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'IDBDatabase', 'onabort', arguments, result);
             return result;
         },
@@ -57,7 +57,7 @@ IDBDatabase = function IDBDatabase(createObj_key, name, version) {
         },
         get onclose() {
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onclose);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onclose);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'IDBDatabase', 'onclose', arguments, result);
             return result;
         },
@@ -68,7 +68,7 @@ IDBDatabase = function IDBDatabase(createObj_key, name, version) {
         },
         get onerror() {
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onerror, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onerror, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'IDBDatabase', 'onerror', arguments, result);
             return result;
         },
@@ -79,7 +79,7 @@ IDBDatabase = function IDBDatabase(createObj_key, name, version) {
         },
         get onversionchange() {
             if (!IDBDatabase.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onversionchange, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onversionchange, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'IDBDatabase', 'onversionchange', arguments, result);
             return result;
         },

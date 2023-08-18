@@ -13,7 +13,7 @@ AudioScheduledSourceNode = function AudioScheduledSourceNode(createObj_key) {
     AudioScheduledSourceNode.prototype = {
         get onended() {
             if (!AudioScheduledSourceNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onended, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onended, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioScheduledSourceNode', 'onended', arguments, result);
             return result;
         },

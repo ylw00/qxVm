@@ -13,7 +13,7 @@ SVGGraphicsElement = function SVGGraphicsElement(createObj_key) {//构造函数
     SVGGraphicsElement.prototype = {
         get farthestViewportElement() {
             if (!SVGGraphicsElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).farthestViewportElement, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).farthestViewportElement, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGGraphicsElement', 'farthestViewportElement', arguments, result);
             return result;
         },
@@ -37,25 +37,25 @@ SVGGraphicsElement = function SVGGraphicsElement(createObj_key) {//构造函数
         },
         get nearestViewportElement() {
             if (!SVGGraphicsElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).nearestViewportElement, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).nearestViewportElement, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGGraphicsElement', 'nearestViewportElement', arguments, result);
             return result;
         },
         get requiredExtensions() {
             if (!SVGGraphicsElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).requiredExtensions, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).requiredExtensions, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGGraphicsElement', 'requiredExtensions', arguments, result);
             return result;
         },
         get systemLanguage() {
             if (!SVGGraphicsElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).systemLanguage, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).systemLanguage, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGGraphicsElement', 'systemLanguage', arguments, result);
             return result;
         },
         get transform() {
             if (!SVGGraphicsElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).transform, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).transform, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SVGGraphicsElement', 'transform', arguments, result);
             return result;
         },

@@ -13,7 +13,7 @@ HTMLLinkElement = function HTMLLinkElement(createObj_key) {//构造函数
     HTMLLinkElement.prototype = {
         get as() {
             if (!HTMLLinkElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).as, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).as, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLinkElement', 'as', arguments, result);
             return result;
         },
@@ -24,7 +24,7 @@ HTMLLinkElement = function HTMLLinkElement(createObj_key) {//构造函数
         },
         get charset() {
             if (!HTMLLinkElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).charset, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).charset, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLinkElement', 'charset', arguments, result);
             return result;
         },
@@ -35,7 +35,7 @@ HTMLLinkElement = function HTMLLinkElement(createObj_key) {//构造函数
         },
         get crossOrigin() {
             if (!HTMLLinkElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).crossOrigin, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).crossOrigin, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLinkElement', 'crossOrigin', arguments, result);
             return result;
         },
@@ -46,7 +46,7 @@ HTMLLinkElement = function HTMLLinkElement(createObj_key) {//构造函数
         },
         get disabled() {
             if (!HTMLLinkElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).disabled, false);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).disabled, false);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLinkElement', 'disabled', arguments, result);
             return result;
         },
@@ -57,7 +57,7 @@ HTMLLinkElement = function HTMLLinkElement(createObj_key) {//构造函数
         },
         get href() {
             if (!HTMLLinkElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).href, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).href, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLinkElement', 'href', arguments, result);
             return result;
         },
@@ -68,7 +68,7 @@ HTMLLinkElement = function HTMLLinkElement(createObj_key) {//构造函数
         },
         get hreflang() {
             if (!HTMLLinkElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).hreflang, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).hreflang, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLinkElement', 'hreflang', arguments, result);
             return result;
         },
@@ -79,7 +79,7 @@ HTMLLinkElement = function HTMLLinkElement(createObj_key) {//构造函数
         },
         get imageSizes() {
             if (!HTMLLinkElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).imageSizes, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).imageSizes, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLinkElement', 'imageSizes', arguments, result);
             return result;
         },
@@ -90,7 +90,7 @@ HTMLLinkElement = function HTMLLinkElement(createObj_key) {//构造函数
         },
         get imageSrcset() {
             if (!HTMLLinkElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).imageSrcset, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).imageSrcset, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLinkElement', 'imageSrcset', arguments, result);
             return result;
         },
@@ -101,7 +101,7 @@ HTMLLinkElement = function HTMLLinkElement(createObj_key) {//构造函数
         },
         get integrity() {
             if (!HTMLLinkElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).integrity, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).integrity, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLinkElement', 'integrity', arguments, result);
             return result;
         },
@@ -112,7 +112,7 @@ HTMLLinkElement = function HTMLLinkElement(createObj_key) {//构造函数
         },
         get media() {
             if (!HTMLLinkElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).media, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).media, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLinkElement', 'media', arguments, result);
             return result;
         },
@@ -123,7 +123,7 @@ HTMLLinkElement = function HTMLLinkElement(createObj_key) {//构造函数
         },
         get referrerPolicy() {
             if (!HTMLLinkElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).referrerPolicy, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).referrerPolicy, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLinkElement', 'referrerPolicy', arguments, result);
             return result;
         },
@@ -134,7 +134,7 @@ HTMLLinkElement = function HTMLLinkElement(createObj_key) {//构造函数
         },
         get rel() {
             if (!HTMLLinkElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).rel, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).rel, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLinkElement', 'rel', arguments, result);
             return result;
         },
@@ -153,7 +153,7 @@ HTMLLinkElement = function HTMLLinkElement(createObj_key) {//构造函数
         },
         get rev() {
             if (!HTMLLinkElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).rev, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).rev, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLinkElement', 'rev', arguments, result);
             return result;
         },
@@ -164,13 +164,13 @@ HTMLLinkElement = function HTMLLinkElement(createObj_key) {//构造函数
         },
         get sheet() {
             if (!HTMLLinkElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).sheet, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).sheet, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLinkElement', 'sheet', arguments, result);
             return result;
         },
         get sizes() {  // DOMTokenList
             if (!HTMLLinkElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).sizes, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).sizes, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLinkElement', 'sheet', arguments, result);
             return result;
         },
@@ -181,7 +181,7 @@ HTMLLinkElement = function HTMLLinkElement(createObj_key) {//构造函数
         },
         get target() {
             if (!HTMLLinkElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).target, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).target, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLinkElement', 'target', arguments, result);
             return result;
         },
@@ -192,7 +192,7 @@ HTMLLinkElement = function HTMLLinkElement(createObj_key) {//构造函数
         },
         get type() {
             if (!HTMLLinkElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).type, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).type, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLinkElement', 'type', arguments, result);
             return result;
         },

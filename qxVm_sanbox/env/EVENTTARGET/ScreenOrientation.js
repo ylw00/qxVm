@@ -13,7 +13,7 @@ ScreenOrientation = function ScreenOrientation(createObj_key) {
     ScreenOrientation.prototype = {
         get angle() {
             if (!ScreenOrientation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 0;;
+            let result = 0;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'ScreenOrientation', 'angle', arguments, result);
             return result;
         },
@@ -25,7 +25,7 @@ ScreenOrientation = function ScreenOrientation(createObj_key) {
         },
         get onchange() {
             if (!ScreenOrientation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onchange, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onchange, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'ScreenOrientation', 'onchange', arguments, result);
             return result;
         },
@@ -35,7 +35,7 @@ ScreenOrientation = function ScreenOrientation(createObj_key) {
         },
         get type() {
             if (!ScreenOrientation.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = "landscape-primary";;
+            let result = "landscape-primary";
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'ScreenOrientation', 'type', arguments, result);
             return result;
         },

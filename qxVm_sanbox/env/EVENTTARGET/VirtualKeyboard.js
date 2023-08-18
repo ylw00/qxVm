@@ -23,7 +23,7 @@ VirtualKeyboard = function VirtualKeyboard(createObj_key) {
         },
         get ongeometrychange() {
             if (!VirtualKeyboard.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ongeometrychange, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ongeometrychange, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'VirtualKeyboard', 'ongeometrychange', arguments, result);
             return result;
         },
@@ -34,7 +34,7 @@ VirtualKeyboard = function VirtualKeyboard(createObj_key) {
         },
         get overlaysContent() {
             if (!VirtualKeyboard.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).overlaysContent, false);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).overlaysContent, false);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'VirtualKeyboard', 'overlaysContent', arguments, result);
             return result;
         },

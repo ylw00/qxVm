@@ -30,7 +30,7 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get autoplay() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).autoplay, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).autoplay, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'autoplay', arguments, result);
             return result;
         },
@@ -41,7 +41,7 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get buffered() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).buffered, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).buffered, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'buffered', arguments, result);
             return result;
         },
@@ -59,7 +59,7 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get controls() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).controls, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).controls, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'controls', arguments, result);
             return result;
         },
@@ -70,7 +70,7 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get controlsList() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).controlsList, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).controlsList, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'controlsList', arguments, result);
             return result;
         },
@@ -81,7 +81,7 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get crossOrigin() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).crossOrigin, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).crossOrigin, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'crossOrigin', arguments, result);
             return result;
         },
@@ -92,13 +92,13 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get currentSrc() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).currentSrc, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).currentSrc, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'currentSrc', arguments, result);
             return result;
         },
         get currentTime() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).currentTime, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).currentTime, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'currentTime', arguments, result);
             return result;
         },
@@ -109,7 +109,7 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get defaultMuted() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).defaultMuted, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).defaultMuted, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'defaultMuted', arguments, result);
             return result;
         },
@@ -120,7 +120,7 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get defaultPlaybackRate() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).defaultPlaybackRate, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).defaultPlaybackRate, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'defaultPlaybackRate', arguments, result);
             return result;
         },
@@ -131,7 +131,7 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get disableRemotePlayback() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).disableRemotePlayback, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).disableRemotePlayback, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'disableRemotePlayback', arguments, result);
             return result;
         },
@@ -142,19 +142,19 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get duration() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).duration, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).duration, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'duration', arguments, result);
             return result;
         },
         get ended() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ended, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ended, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'ended', arguments, result);
             return result;
         },
         get error() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).error, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).error, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'error', arguments, result);
             return result;
         },
@@ -166,7 +166,7 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get loop() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).loop, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).loop, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'loop', arguments, result);
             return result;
         },
@@ -177,7 +177,7 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get muted() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).muted, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).muted, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'muted', arguments, result);
             return result;
         },
@@ -188,13 +188,13 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get networkState() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).networkState, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).networkState, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'networkState', arguments, result);
             return result;
         },
         get onencrypted() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onencrypted, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onencrypted, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'onencrypted', arguments, result);
             return result;
         },
@@ -205,7 +205,7 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get onwaitingforkey() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwaitingforkey, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onwaitingforkey, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'onwaitingforkey', arguments, result);
             return result;
         },
@@ -222,7 +222,7 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get paused() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).paused, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).paused, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'paused', arguments, result);
             return result;
         },
@@ -234,7 +234,7 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get playbackRate() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).playbackRate, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).playbackRate, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'playbackRate', arguments, result);
             return result;
         },
@@ -245,13 +245,13 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get played() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).played, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).played, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'played', arguments, result);
             return result;
         },
         get preload() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).preload, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).preload, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'preload', arguments, result);
             return result;
         },
@@ -262,7 +262,7 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get preservesPitch() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).preservesPitch, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).preservesPitch, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'preservesPitch', arguments, result);
             return result;
         },
@@ -273,25 +273,25 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get readyState() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).readyState, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).readyState, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'readyState', arguments, result);
             return result;
         },
         get remote() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).remote, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).remote, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'remote', arguments, result);
             return result;
         },
         get seekable() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).seekable, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).seekable, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'seekable', arguments, result);
             return result;
         },
         get seeking() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).seeking, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).seeking, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'seeking', arguments, result);
             return result;
         },
@@ -303,13 +303,13 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get sinkId() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).sinkId, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).sinkId, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'sinkId', arguments, result);
             return result;
         },
         get src() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).src, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).src, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'src', arguments, result);
             return result;
         },
@@ -320,7 +320,7 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get srcObject() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).srcObject, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).srcObject, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'srcObject', arguments, result);
             return result;
         },
@@ -331,13 +331,13 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get textTracks() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).textTracks, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).textTracks, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'textTracks', arguments, result);
             return result;
         },
         get volume() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).volume, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).volume, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'volume', arguments, result);
             return result;
         },
@@ -348,7 +348,7 @@ HTMLMediaElement = function HTMLMediaElement(createObj_key) {//构造函数
         },
         get webkitAudioDecodedByteCount() {
             if (!HTMLMediaElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).webkitAudioDecodedByteCount, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).webkitAudioDecodedByteCount, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLMediaElement', 'webkitAudioDecodedByteCount', arguments, result);
             return result;
         },

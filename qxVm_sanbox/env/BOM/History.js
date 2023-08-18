@@ -29,7 +29,7 @@ history = {};
         },
         get length() {
             if (!History.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = Object.keys(this).length;;
+            let result = Object.keys(this).length;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'History', 'length', arguments, result);
             return result;
         },
@@ -47,7 +47,7 @@ history = {};
         },
         get scrollRestoration() {
             if (!History.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = "auto";;
+            let result = "auto";
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'History', 'scrollRestoration', arguments, result);
             return result;
         },

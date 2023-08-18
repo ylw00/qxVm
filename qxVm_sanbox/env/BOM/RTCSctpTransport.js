@@ -13,19 +13,19 @@ RTCSctpTransport = function RTCSctpTransport(createObj_key) {
     RTCSctpTransport.prototype = {
         get maxChannels() {
             if (!RTCSctpTransport.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).maxChannels, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).maxChannels, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCSctpTransport', 'maxChannels', arguments, result);
             return result;
         },
         get maxMessageSize() {
             if (!RTCSctpTransport.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).maxMessageSize, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).maxMessageSize, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCSctpTransport', 'maxMessageSize', arguments, result);
             return result;
         },
         get onstatechange() {
             if (!RTCSctpTransport.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onstatechange, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onstatechange, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCSctpTransport', 'onstatechange', arguments, result);
             return result;
         },
@@ -36,13 +36,13 @@ RTCSctpTransport = function RTCSctpTransport(createObj_key) {
         },
         get state() {
             if (!RTCSctpTransport.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).state, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).state, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCSctpTransport', 'state', arguments, result);
             return result;
         },
         get transport() {
             if (!RTCSctpTransport.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).transport, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).transport, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'RTCSctpTransport', 'transport', arguments, result);
             return result;
         },

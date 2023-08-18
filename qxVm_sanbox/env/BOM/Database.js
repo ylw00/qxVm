@@ -18,15 +18,15 @@ openDatabase = undefined;
         SQLResultSetRowList.prototype = {
             item() {
                 if (!SQLResultSetRowList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.memory.private_data.get(this).rows;
-            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'SQLResultSetRowList', 'item', arguments, result);
-            return result;
+                let result = lwVm.memory.private_data.get(this).rows;
+                if (lwVm.config.logOpen === true) lwVm.logAdd('Func', 'SQLResultSetRowList', 'item', arguments, result);
+                return result;
             },
             get length() {
                 if (!SQLResultSetRowList.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).length, 0);;
-            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SQLResultSetRowList', 'length', arguments, result);
-            return result;
+                let result = lwVm.abs(lwVm.memory.private_data.get(this).length, 0);
+                if (lwVm.config.logOpen === true) lwVm.logAdd('Get', 'SQLResultSetRowList', 'length', arguments, result);
+                return result;
             },
         }
         lwVm.rename(SQLResultSetRowList.prototype, "SQLResultSetRowList");
@@ -50,23 +50,23 @@ openDatabase = undefined;
         SQLResultSet.prototype = {
             get insertId() {
                 if (!SQLResultSet.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).insertId, "");;
-            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SQLResultSet', 'insertId', arguments, result);
-            return result;
+                let result = lwVm.abs(lwVm.memory.private_data.get(this).insertId, "");
+                if (lwVm.config.logOpen === true) lwVm.logAdd('Get', 'SQLResultSet', 'insertId', arguments, result);
+                return result;
             },
             get rows() {
                 if (!SQLResultSet.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
 
                 // let sql_result_row_list = new SQLResultSetRowList(lwVm.memory.$createObj_key, {"value": window.sql_values});
-            let result = { "value": "0" };
-            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SQLResultSet', 'rows', arguments, result);
-            return result;
+                let result = { "value": "0" };
+                if (lwVm.config.logOpen === true) lwVm.logAdd('Get', 'SQLResultSet', 'rows', arguments, result);
+                return result;
             },
             get rowsAffected() {
                 if (!SQLResultSet.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).rowsAffected, "");;
-            if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'SQLResultSet', 'rowsAffected', arguments, result);
-            return result;
+                let result = lwVm.abs(lwVm.memory.private_data.get(this).rowsAffected, "");
+                if (lwVm.config.logOpen === true) lwVm.logAdd('Get', 'SQLResultSet', 'rowsAffected', arguments, result);
+                return result;
             },
         }
         lwVm.rename(SQLResultSet.prototype, "SQLResultSet");
@@ -94,14 +94,14 @@ openDatabase = undefined;
                 try {
 
                 } catch (error) {
-            let result = errorCallback(this, sql_result);;
-            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'SQLTransaction', '} catch ', arguments, result);
-            return result;
+                    let result = errorCallback(this, sql_result);
+                    if (lwVm.config.logOpen === true) lwVm.logAdd('Func', 'SQLTransaction', '} catch ', arguments, result);
+                    return result;
                 }
                 let sql_result = new SQLResultSet(lwVm.memory.$createObj_key);
-            let result = succrssCallback(this, sql_result);
-            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'SQLTransaction', '} catch ', arguments, result);
-            return result;
+                let result = succrssCallback(this, sql_result);
+                if (lwVm.config.logOpen === true) lwVm.logAdd('Func', 'SQLTransaction', '} catch ', arguments, result);
+                return result;
             }
         }
         lwVm.rename(SQLTransaction.prototype, "SQLTransaction");
@@ -138,16 +138,16 @@ openDatabase = undefined;
             },
             readTransaction(func) {
                 if (!Database.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = undefined;
-            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Database', 'readTransaction', arguments, result);
-            return result;
+                let result = undefined;
+                if (lwVm.config.logOpen === true) lwVm.logAdd('Func', 'Database', 'readTransaction', arguments, result);
+                return result;
             },
             transaction(func) {
                 if (!Database.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
                 let sql_tran = new SQLTransaction(lwVm.memory.$createObj_key);
-            let result = func(sql_tran);;
-            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Database', 'transaction', arguments, result);
-            return result;
+                let result = func(sql_tran);
+                if (lwVm.config.logOpen === true) lwVm.logAdd('Func', 'Database', 'transaction', arguments, result);
+                return result;
             },
             get version() {
                 if (!Database.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
@@ -165,8 +165,8 @@ openDatabase = undefined;
 
         let db = buffer_memory[name];
         if (db) {
-            let result = db;;
-            if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Database', 'if ', arguments, result);
+            let result = db;
+            if (lwVm.config.logOpen === true) lwVm.logAdd('Func', 'Database', 'if ', arguments, result);
             return result;
         }
         db = new Database(lwVm.memory.$createObj_key, version);

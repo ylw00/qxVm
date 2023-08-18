@@ -13,7 +13,7 @@ MediaSession = function MediaSession(createObj_key) {
     MediaSession.prototype = {
         get metadata() {
             if (!MediaSession.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).metadata, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).metadata, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MediaSession', 'metadata', arguments, result);
             return result;
         },
@@ -24,7 +24,7 @@ MediaSession = function MediaSession(createObj_key) {
         },
         get playbackState() {
             if (!MediaSession.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).playbackState, "none");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).playbackState, "none");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'MediaSession', 'playbackState', arguments, result);
             return result;
         },

@@ -14,7 +14,7 @@ Text = function Text(wholeText) {
     Text.prototype = {
         get assignedSlot() {
             if (!Text.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).assignedSlot, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).assignedSlot, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Text', 'assignedSlot', arguments, result);
             return result;
         },

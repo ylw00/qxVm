@@ -16,7 +16,7 @@ AudioDestinationNode = function AudioDestinationNode(createObj_key, channelCount
     AudioDestinationNode.prototype = {
         get maxChannelCount() {
             if (!AudioDestinationNode.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.memory.private_data.get(this).maxChannelCount;;
+            let result = lwVm.memory.private_data.get(this).maxChannelCount;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'AudioDestinationNode', 'maxChannelCount', arguments, result);
             return result;
         },

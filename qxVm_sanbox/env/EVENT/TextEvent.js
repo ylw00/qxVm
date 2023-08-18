@@ -13,7 +13,7 @@ TextEvent = function TextEvent(createObj_key) {
     TextEvent.prototype = {
         get data() {
             if (!TextEvent.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).data, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).data, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'TextEvent', 'data', arguments, result);
             return result;
         },

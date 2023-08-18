@@ -13,25 +13,25 @@ DOMRectReadOnly = function DOMRectReadOnly(createObj_key) {
     DOMRectReadOnly.prototype = {
         get bottom() {
             if (!DOMRectReadOnly.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 0;;
+            let result = 0;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRectReadOnly', 'bottom', arguments, result);
             return result;
         },
         get height() {
             if (!DOMRectReadOnly.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 0;;
+            let result = 0;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRectReadOnly', 'height', arguments, result);
             return result;
         },
         get left() {
             if (!DOMRectReadOnly.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 0;;
+            let result = 0;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRectReadOnly', 'left', arguments, result);
             return result;
         },
         get right() {
             if (!DOMRectReadOnly.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 0;;
+            let result = 0;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRectReadOnly', 'right', arguments, result);
             return result;
         },
@@ -43,25 +43,25 @@ DOMRectReadOnly = function DOMRectReadOnly(createObj_key) {
         },
         get top() {
             if (!DOMRectReadOnly.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 0;;
+            let result = 0;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRectReadOnly', 'top', arguments, result);
             return result;
         },
         get width() {
             if (!DOMRectReadOnly.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 0;;
+            let result = 0;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRectReadOnly', 'width', arguments, result);
             return result;
         },
         get x() {
             if (!DOMRectReadOnly.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 0;;
+            let result = 0;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRectReadOnly', 'x', arguments, result);
             return result;
         },
         get y() {
             if (!DOMRectReadOnly.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = 0;;
+            let result = 0;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'DOMRectReadOnly', 'y', arguments, result);
             return result;
         },

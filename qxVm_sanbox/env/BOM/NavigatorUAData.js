@@ -27,13 +27,13 @@ NavigatorUAData = function NavigatorUAData(createObj_key) {//构造函数
         },
         get mobile() {
             if (!NavigatorUAData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = false;;
+            let result = false;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'NavigatorUAData', 'mobile', arguments, result);
             return result;
         },
         get platform() {
             if (!NavigatorUAData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = "Windows";;
+            let result = "Windows";
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'NavigatorUAData', 'platform', arguments, result);
             return result;
         },

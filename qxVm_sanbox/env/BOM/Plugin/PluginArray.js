@@ -12,19 +12,19 @@ lwVm.safefunction(PluginArray);
     PluginArray.prototype = {
         item(index) {
             if (!PluginArray.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = this[index];;
+            let result = this[index];
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'PluginArray', 'item', arguments, result);
             return result;
         },
         get length() {
             if (!PluginArray.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.memory.pluginArray.temp.length;;
+            let result = lwVm.memory.pluginArray.temp.length;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'PluginArray', 'length', arguments, result);
             return result;
         },
         namedItem(key) {
             if (!PluginArray.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = this[key];;
+            let result = this[key];
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'PluginArray', 'namedItem', arguments, result);
             return result;
         },

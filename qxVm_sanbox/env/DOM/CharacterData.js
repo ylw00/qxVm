@@ -31,7 +31,7 @@ CharacterData = function (createObj_key) {//构造函数
         },
         get data() {
             if (!CharacterData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).data, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).data, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CharacterData', 'data', arguments, result);
             return result;
         },
@@ -54,19 +54,19 @@ CharacterData = function (createObj_key) {//构造函数
         },
         get length() {
             if (!CharacterData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).length, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).length, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CharacterData', 'length', arguments, result);
             return result;
         },
         get nextElementSibling() {
             if (!CharacterData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).nextElementSibling, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).nextElementSibling, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CharacterData', 'nextElementSibling', arguments, result);
             return result;
         },
         get previousElementSibling() {
             if (!CharacterData.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).previousElementSibling, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).previousElementSibling, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CharacterData', 'previousElementSibling', arguments, result);
             return result;
         },

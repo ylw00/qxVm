@@ -13,19 +13,19 @@ HTMLLabelElement = function HTMLLabelElement(createObj_key) {//构造函数
     HTMLLabelElement.prototype = {
         get control() {
             if (!HTMLLabelElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).control, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).control, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLabelElement', 'control', arguments, result);
             return result;
         },
         get form() {
             if (!HTMLLabelElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).form, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).form, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLabelElement', 'form', arguments, result);
             return result;
         },
         get htmlFor() {
             if (!HTMLLabelElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).htmlFor, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).htmlFor, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLLabelElement', 'htmlFor', arguments, result);
             return result;
         },

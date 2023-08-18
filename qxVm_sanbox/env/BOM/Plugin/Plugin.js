@@ -23,7 +23,7 @@ Plugin = function Plugin() {
         },
         item(index) {
             // debugger;
-            let result = this[index];;
+            let result = this[index];
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Plugin', 'item', arguments, result);
             return result;
         },
@@ -40,7 +40,7 @@ Plugin = function Plugin() {
             return result;
         },
         namedItem(key) {
-            let result = this[key];;
+            let result = this[key];
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Plugin', 'namedItem', arguments, result);
             return result;
         },
@@ -73,7 +73,7 @@ Plugin = function Plugin() {
             plugin.length = plugin_data.MimeTypes.length;
         }
         Object.setPrototypeOf(plugin, Plugin.prototype)
-            let result = plugin;;
+            let result = plugin;
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'Plugin', 'namedItem', arguments, result);
             return result;
     }

@@ -25,7 +25,49 @@ function QXVm_help(){
     `)
 }
 
+
+
+/**
+ * 注册 express APP
+ * @returns express
+ */
+ function QXVM_registerServer() {
+    let APP = express();
+    APP.use(express.json({ limit: '50mb' }));
+    APP.use(express.urlencoded({ limit: '50mb', extended: true }));
+    APP.use(bodyParser.json({ limit: '10mb', extended: true }));
+    return APP;
+}
+
+
+/**
+ * 注册server回调,是否开始server,取决与port是否不为空
+ * @param {String} method      get|post
+ * @param {String} route       路由
+ * @param {Number} port        端口, 如果端口为空, 则不开启服务
+ * @param {Function} callback  回调
+ */
+function QXVM_registerCallback(method, route, port, callback) {
+    let APP = QXVM_registerCallback.APP || (() => {
+        QXVM_registerCallback.APP = QXVM_registerServer();
+        return QXVM_registerCallback.APP;
+    })()
+
+    method = method.toLowerCase();
+    APP[method](route, callback);
+    if (port !== undefined && TOOLS.isNumber(port)) {
+        APP.listen(port, () => {
+            console.log(`框架服务开启 ${port} 端口`);
+        });
+    }
+}
+
+
+
+
 module.exports = {
     sanbox: SANBOX.QXVm_sanbox,
     help: QXVm_help,
+    registerServer: QXVM_registerServer,
+    registerCallback: QXVM_registerCallback,
 };

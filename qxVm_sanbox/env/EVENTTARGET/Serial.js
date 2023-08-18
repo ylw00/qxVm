@@ -19,7 +19,7 @@ Serial = function Serial(createObj_key) {
         },
         get onconnect() {
             if (!Serial.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).onconnect, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).onconnect, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Serial', 'onconnect', arguments, result);
             return result;
         },
@@ -30,7 +30,7 @@ Serial = function Serial(createObj_key) {
         },
         get ondisconnect() {
             if (!Serial.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondisconnect, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).ondisconnect, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'Serial', 'ondisconnect', arguments, result);
             return result;
         },

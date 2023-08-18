@@ -13,7 +13,7 @@ HTMLHtmlElement = function HTMLHtmlElement(createObj_key) {//构造函数
     HTMLHtmlElement.prototype = {
         get version() {
             if (!HTMLHtmlElement.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); }
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).version, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).version, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'HTMLHtmlElement', 'version', arguments, result);
             return result;
         },

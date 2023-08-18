@@ -13,7 +13,7 @@ CSSStyleDeclaration = function CSSStyleDeclaration(createObj_key) {//构造函�
 
         get cssFloat() {
             if (!CSSStyleDeclaration.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).cssFloat, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).cssFloat, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CSSStyleDeclaration', 'cssFloat', arguments, result);
             return result;
         },
@@ -24,7 +24,7 @@ CSSStyleDeclaration = function CSSStyleDeclaration(createObj_key) {//构造函�
         },
         get cssText() {
             if (!CSSStyleDeclaration.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).cssText, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).cssText, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CSSStyleDeclaration', 'cssText', arguments, result);
             return result;
         },
@@ -53,13 +53,13 @@ CSSStyleDeclaration = function CSSStyleDeclaration(createObj_key) {//构造函�
         },
         get length() {
             if (!CSSStyleDeclaration.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).length, "");;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).length, "");
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CSSStyleDeclaration', 'length', arguments, result);
             return result;
         },
         get parentRule() {
             if (!CSSStyleDeclaration.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = lwVm.abs(lwVm.memory.private_data.get(this).parentRule, null);;
+            let result = lwVm.abs(lwVm.memory.private_data.get(this).parentRule, null);
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Get', 'CSSStyleDeclaration', 'parentRule', arguments, result);
             return result;
         },
