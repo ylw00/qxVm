@@ -23,7 +23,6 @@
 ## 2023-08-18更新
 
 - 具体细节看demo文件内部的描述
-
 - 完善事件调用(demoEventVm.js)
 - 增加一些常用方法封装
 - 增加开启nodeServer 功能封装(demoServerVm.js)
