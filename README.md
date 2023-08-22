@@ -87,6 +87,7 @@ console.log(result.get_form())
 
 
 ## 如果觉得框架还不错, 可以给作者一些动力
-![a91fb35e1f5076630bb9f0f06424d57](https://github.com/ylw00/qxVm/assets/69897076/c140e412-0c7c-4ce2-9d36-9eb9f4757efe)
+
+![a91fb35e1f5076630bb9f0f06424d57_661x900](https://github.com/ylw00/qxVm/assets/69897076/a3ba3c70-318d-4f13-a80a-88ae044b99ac)
 
 
