@@ -26,6 +26,8 @@
 - 封装浏览器事件得主动调用函数`lwVm.callListener`(只实现load, 以及鼠标事件, 其他同理, 自己去实现)
 - 完善浏览器事件对需要得参数, 具体使用方式看 demoEventVm.js, demoEvent.js
 - 增加一些常用方法封装导出, 便于对框架内部得状态做更新
+- 增加给event实例添加isTrusted属性得功能函数`protectAddIsTrusted`
+- 增加自定义log得功能函数`logAddMyLog`
 - 增加开启nodeServer功能封装, 便于在某些情况加开放api, 具体使用方式看 demoServerVm.js, demoServer.js
 - 可能后续更新的脚步放缓慢
 
@@ -82,4 +84,8 @@ console.log(result.get_form())
 - 瑞数, 阿里, 腾讯, 
 - https://mp.weixin.qq.com/s/Py7I6RG7UT9EtdpXlV98aA
 - https://mp.weixin.qq.com/s/SSlZEMQhNxOlA3rzSNY37w
+
+## 如果觉得框架还不错, 可以给作者一些动力
+![a91fb35e1f5076630bb9f0f06424d57](https://github.com/ylw00/qxVm/assets/69897076/c140e412-0c7c-4ce2-9d36-9eb9f4757efe)
+
 
