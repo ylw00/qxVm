@@ -9,7 +9,7 @@ function ReadCode(name, dir) {
 }
 
 
-const js_code = ReadCode(`/eventDemo.js`);
+const js_code = ReadCode(`/demoEvent.js.js`);
 const user_config = {
     isTest:true,
     compress: false,
