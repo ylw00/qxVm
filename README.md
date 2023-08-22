@@ -13,6 +13,7 @@
  ## 声明(必看)
 
 - (可忽略)持续更新, 看start量随心情更新
+- 不会实现得很完善,但是该有的必须有, 毕竟我做这个没有任何收益
 - 不会在已有的基础之上添加新的api功能
 - 框架内部的dom操作不可信(开源版本没有加入dom解析), 需要重写(详情见/z_working/rs4.js)
 - 推荐`vscode`插件`Code Runner` 右键运行 
@@ -22,10 +23,11 @@
 
 ## 2023-08-18更新
 
-- 具体细节看demo文件内部的描述
-- 完善浏览器事件的封装调用, 以及传参(demoEventVm.js)
-- 增加一些常用方法封装
-- 增加开启nodeServer功能封装, 便于在某些情况加开放api(demoServerVm.js)
+- 封装浏览器事件得主动调用函数`lwVm.callListener`(只实现load, 以及鼠标事件, 其他同理, 自己去实现)
+- 完善浏览器事件对需要得参数, 具体使用方式看 demoEventVm.js, demoEvent.js
+- 增加一些常用方法封装导出, 便于对框架内部得状态做更新
+- 增加开启nodeServer功能封装, 便于在某些情况加开放api, 具体使用方式看 demoServerVm.js, demoServer.js
+- 可能后续更新的脚步放缓慢
 
 
 
