@@ -23,13 +23,12 @@
 ## 2023-08-18更新
 
 - 封装浏览器事件得主动调用函数`lwVm.callListener`(只实现load, 以及鼠标事件, 其他同理, 自己去实现)
-- 注意, 不用的事件参数对应不同的原型, 实现之前需要先去浏览器测试明白
+- 注意, `不用的事件参数对应不同的原型`, 实现之前需要先去浏览器测试明白
 - 完善浏览器事件对需要得参数, 具体使用方式看 demoEventVm.js, demoEvent.js
 - 增加一些常用方法封装导出, 便于对框架内部得状态做更新
 - 增加给event实例添加isTrusted属性得功能函数`protectAddIsTrusted`
 - 增加自定义log得功能函数`logAddMyLog`
 - 增加开启nodeServer功能封装, 便于在某些情况加开放api, 具体使用方式看 demoServerVm.js, demoServer.js
-- 可能后续更新的脚步放缓慢
 
 
 
