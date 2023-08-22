@@ -78,7 +78,7 @@ console.log(result.get_form())
 - 浏览器中组成字符串, 保存到本地, 具体可以看 (https://mp.weixin.qq.com/s/lDlylUGWS2qtCGBh-1RKFQ)
 - 半自动方式可以看(qxVm_sanbox\tools\create_ptototype_js.py)
 
-## qxVm最新
+## qxVm最新(不开源)
 
 - 瑞数, 阿里, 腾讯, 
 - https://mp.weixin.qq.com/s/Py7I6RG7UT9EtdpXlV98aA
