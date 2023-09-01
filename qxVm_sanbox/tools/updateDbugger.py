@@ -46,19 +46,19 @@ def gen_new_js(js_all: str):
             upjs = str(new_js[-1].strip())
             if strip_js == '},' or strip_js == '}':
                 if upjs.endswith('new TypeError("Illegal constructor"); };'):
-                    js = f"            let result = undefined;\n            if (qxVm.config.log_print === true) qxVm.logAdd('Func', '{prototype}', '{funcName}', arguments, result);\n            return result;\n" + js
+                    js = f"            let result = undefined;\n            if (qxVm.config.logOpen === true) qxVm.logAdd('Func', '{prototype}', '{funcName}', arguments, result);\n            return result;\n" + js
 
                 elif upjs.startswith('return '):
                     del new_js[-1]
                     _1, _2 = upjs.split(' ', 1)
-                    js = f"            let result = {_2};\n            if (qxVm.config.log_print === true) qxVm.logAdd('Func', '{prototype}', '{funcName}', arguments, result);\n            return result;\n" + js
+                    js = f"            let result = {_2};\n            if (qxVm.config.logOpen === true) qxVm.logAdd('Func', '{prototype}', '{funcName}', arguments, result);\n            return result;\n" + js
 
                 # new_js.append(js)
         elif get:
             upjs = str(new_js[-1].strip())
             if strip_js == '},':
                 if upjs.endswith('new TypeError("Illegal constructor"); };'):
-                    js = f"            let result = undefined;\n            if (qxVm.config.log_print === true) qxVm.logAdd('Get', '{prototype}', '{funcName}', arguments, result);\n            return result;\n" + js
+                    js = f"            let result = undefined;\n            if (qxVm.config.logOpen === true) qxVm.logAdd('Get', '{prototype}', '{funcName}', arguments, result);\n            return result;\n" + js
 
                 elif upjs.startswith('return '):
                     # if 'onmanagedconfigurationchange' in upjs:
@@ -66,18 +66,18 @@ def gen_new_js(js_all: str):
                     #     pass
                     del new_js[-1]
                     _1, _2 = upjs.split(' ', 1)
-                    js = f"            let result = {_2};\n            if (qxVm.config.log_print === true) qxVm.logAdd('Get', '{prototype}', '{funcName}', arguments, result);\n            return result;\n" + js
+                    js = f"            let result = {_2};\n            if (qxVm.config.logOpen === true) qxVm.logAdd('Get', '{prototype}', '{funcName}', arguments, result);\n            return result;\n" + js
         elif _set:
             if strip_js == '},':
                 _1 = new_js[-1]
                 del new_js[-1]
                 upjs = str(_1.strip())
                 if upjs.endswith('new TypeError("Illegal constructor"); };'):
-                    js = f"            if (qxVm.config.log_print === true) qxVm.logAdd('Set', '{prototype}', '{funcName}', arguments);\n            qxVm.memory.private_data.get(this).{funcName} = value;\n" + js
+                    js = f"            if (qxVm.config.logOpen === true) qxVm.logAdd('Set', '{prototype}', '{funcName}', arguments);\n            qxVm.memory.private_data.get(this).{funcName} = value;\n" + js
                 elif upjs.startswith('qxVm.memory.private_data.get(this)'):
-                    js = f"            if (qxVm.config.log_print === true) qxVm.logAdd('Set', '{prototype}', '{funcName}', arguments);\n" + _1 + '\n' + js
+                    js = f"            if (qxVm.config.logOpen === true) qxVm.logAdd('Set', '{prototype}', '{funcName}', arguments);\n" + _1 + '\n' + js
                 elif upjs.startswith('$attribute_map'):
-                    js = f"            if (qxVm.config.log_print === true) qxVm.logAdd('Set', '{prototype}', '{funcName}', arguments);\n" + _1 + "\n" + js
+                    js = f"            if (qxVm.config.logOpen === true) qxVm.logAdd('Set', '{prototype}', '{funcName}', arguments);\n" + _1 + "\n" + js
 
         new_js.append(js)
         # print(js)

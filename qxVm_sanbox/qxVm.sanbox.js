@@ -14,7 +14,7 @@ function QXVm_help(){
             logOpen: true           // 是否日志打印(调试模式)
         }
         canvas: String,             // 自定义canvas指纹
-        window_attribute: Object,   // 自定义window属性(暴露window出来)
+        window_attribute: Object,   // 自定义window属性(暴露window出来, 设置非浏览器环境对象/参数)
         plugin: Array,              // 自定义浏览器插件
         env: Object {               // 自定义浏览器环境
             navigator: Object,      // 针对 加密UA和请求UA必须一致的情况
@@ -22,6 +22,10 @@ function QXVm_help(){
             document: Object        // 自定义属性
         }
     }
+:exports: { 
+    printLog: function, 
+    {{func_name}}: {{func_name}},
+}
     `)
 }
 
