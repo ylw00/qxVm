@@ -13,7 +13,15 @@ StorageManager = function StorageManager(createObj_key) {
     StorageManager.prototype = {
         estimate() {
             if (!StorageManager.prototype.isPrototypeOf(this)) { throw new TypeError("Illegal constructor"); };
-            let result = undefined;
+            let result = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve({
+                        quota: 193274155008,
+                        usage: 0,
+                        usageDetails: {},
+                    })
+                }, 0)
+            });
             if (lwVm.config.logOpen=== true) lwVm.logAdd('Func', 'StorageManager', 'estimate', arguments, result);
             return result;
         },
