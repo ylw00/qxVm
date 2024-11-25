@@ -1,6 +1,6 @@
 # qxVm补环境框架简介
 
-- 个人微信 y2783693683
+- 个人微信 y278369368
 - 微信公众号: y小白的笔记(https://mp.weixin.qq.com/s/GGqecHvqN54IzL3ap5c28A)
 - git: https://github.com/ylw00/qxVm
 - 基于 `node16`, `vm2`模块, 纯js设计一个补环境框架
